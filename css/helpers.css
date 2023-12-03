@@ -1,0 +1,62 @@
+button,
+#srButton,
+/* input[type="radio"], */
+input[type="checkbox"] {
+    all: unset;
+}
+
+[type=radio] {
+    display: none;
+    z-index: 200;
+    position: relative;
+    top: -60px;
+}
+
+
+img,
+button {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+img {
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.active {
+    border: 3px solid #611b19;
+    opacity: 1;
+    /* transition: all 0.2s ease; */
+    border-radius: 0px;
+    transform: scale(1.5%);
+    border-radius: 10px;
+}
+
+
+.noneDisplay {
+    display: none;
+}
+
+
+/*  ===  HEADER  ===
+******************************************* */
+
+
+/*  ===  CAROUSEL  ===
+******************************************* */
+
+
+/*  ===  INFO  ===
+******************************************* */
+
+
+/*  ===  DATA  ===
+******************************************* */

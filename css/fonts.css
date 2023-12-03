@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap');
+
+
+/*  ===  HEADER  ===
+******************************************* */
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #c9b8b8;
+}
+
+.manu_icon {
+    position: relative;
+    justify-self: end;
+    width: 1.9rem;
+}
+
+@media (max-height: 570px) {
+    .header h1 {
+        font-size: 1.9rem;
+    }
+
+    .manu_icon {
+        width: 1.5rem;
+    }
+}
+
+
+/*  ===  CAROUSEL  ===
+******************************************* */
+.carousel__cell {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* category description */
+.categoy_description_box {
+    font-size: 1.8rem;
+}
+
+.food {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-shadow: 2px 1px #303336;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    font-size: 90%;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 1px;
+}
+
+@media (max-height: 570px) {
+
+    .category,
+    .description_content {
+        font-size: 80%
+    }
+
+    .food {
+        font-size: 70%;
+    }
+}
+
+/*  ===  INFO  ===
+******************************************* */
+
+
+/*  ===  DATA  ===
+******************************************* */

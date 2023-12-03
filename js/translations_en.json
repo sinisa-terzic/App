@@ -1,0 +1,390 @@
+{
+    "digitalMenu": "e-Menu<sup>&trade;</sup>",
+    "category_choose": "Choose category",
+    "logo": "Welcome",
+    "setting": "Settings",
+    "language": "Language",
+    "info": {
+        "info_content": "Info: +382 67 806 066"
+    },
+    "category": {
+        "category_1": "Cold appetizers",
+        "category_2": "Vegetable specialties",
+        "category_3": "Salads and sides",
+        "category_4": "Seafood specialties",
+        "category_5": "Wine list",
+        "category_6": "Strong drinks",
+        "category_7": "Non-alcoholic drinks",
+        "category_8": "Contracted groups",
+        "category_9": "Delicacies"
+    },
+    "cat1": {
+        "description": "EN U hladna predjela se nalazi domaći pršut, domaći sir, slana riba i ... još mnogo toga ...",
+        "translations": [
+            {
+                "title_key": "EN ćelije 1",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "EN ćelije 2",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 3",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    },
+    "cat2": {
+        "description": "EN Specijaliteti od povrća ubrajaju paprike, tikvice, patlidžan, šargarepu i ...",
+        "translations": [
+            {
+                "title_key": "EN ćelije 2",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 3",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 1",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "EN ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    },
+    "cat3": {
+        "description": "EN Salate i prilozi: masline, paradajz, krompir, kupus ...",
+        "translations": [
+            {
+                "title_key": "EN ćelije 1",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 2",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "EN ćelije 3",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    },
+    "cat4": {
+        "description": "EN riba, lignje, hobotnica, školje, bakalar ...",
+        "translations": [
+            {
+                "title_key": "EN ćelije 1",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 2",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "EN ćelije 3",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    },
+    "cat5": {
+        "description": "EN crno, rose, bijelo ...",
+        "translations": [
+            {
+                "title_key": "EN ćelije 2",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 3",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 3",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "EN ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    },
+    "cat6": {
+        "description": "EN loza, viljamovka, vodtka, viski, likeri ...",
+        "translations": [
+            {
+                "title_key": "EN ćelije 1",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "EN ćelije 2",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 3",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    },
+    "cat7": {
+        "description": "EN kafa, čaj, bezalkoholna pića, pivo, voda ...",
+        "translations": [
+            {
+                "title_key": "EN ćelije 1",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "EN ćelije 2",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 3",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    },
+    "cat8": {
+        "description": "EN meni za ugovorene grupe",
+        "translations": [
+            {
+                "title_key": "EN ćelije 1",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "EN ćelije 2",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 3",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    },
+    "cat9": {
+        "description": "EN voćni, čokoladni, slani kolači ...",
+        "translations": [
+            {
+                "title_key": "EN ćelije 2",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/4.jpg"
+            },
+            {
+                "title_key": "EN ćelije 2",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 3",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "EN ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "EN ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "EN ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    }
+}

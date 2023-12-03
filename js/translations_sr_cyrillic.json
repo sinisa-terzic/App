@@ -1,0 +1,390 @@
+{
+    "digitalMenu": "e-Meни<sup>&trade;</sup>",
+    "category_choose": "Изаберите категорију",
+    "logo": "Добродошли",
+    "setting": "Подешавања",
+    "language": "Језик",
+    "info": {
+        "info_content": "Инфо: +382 67 806 066"
+    },
+    "category": {
+        "category_1": "Хладна предјела",
+        "category_2": "Специјалитети од поврћа",
+        "category_3": "Салате и прилози",
+        "category_4": "Морски специјалитети",
+        "category_5": "Карта вина",
+        "category_6": "Жестока пића",
+        "category_7": "Безалкохолна пића",
+        "category_8": "Уговорене групе",
+        "category_9": "Посластице"
+    },
+    "cat1": {
+        "description": "СР U hladna predjela se nalazi domaći pršut, domaći sir, slana riba i ... još mnogo toga ...",
+        "translations": [
+            {
+                "title_key": "СР ćelije 1",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "СР ćelije 2",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 3",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    },
+    "cat2": {
+        "description": "СР Specijaliteti od povrća ubrajaju paprike, tikvice, patlidžan, šargarepu i ...",
+        "translations": [
+            {
+                "title_key": "СР ćelije 2",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 3",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 1",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "СР ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    },
+    "cat3": {
+        "description": "СР Salate i prilozi: masline, paradajz, krompir, kupus ...",
+        "translations": [
+            {
+                "title_key": "СР ćelije 1",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 2",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "СР ćelije 3",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    },
+    "cat4": {
+        "description": "СР riba, lignje, hobotnica, školje, bakalar ...",
+        "translations": [
+            {
+                "title_key": "СР ćelije 1",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 2",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "СР ćelije 3",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    },
+    "cat5": {
+        "description": "СР crno, rose, bijelo ...",
+        "translations": [
+            {
+                "title_key": "СР ćelije 2",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 3",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 3",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "СР ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    },
+    "cat6": {
+        "description": "СР loza, viljamovka, vodtka, viski, likeri ...",
+        "translations": [
+            {
+                "title_key": "СР ćelije 1",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "СР ćelije 2",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 3",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    },
+    "cat7": {
+        "description": "СР kafa, čaj, bezalkoholna pića, pivo, voda ...",
+        "translations": [
+            {
+                "title_key": "СР ćelije 1",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "СР ćelije 2",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 3",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    },
+    "cat8": {
+        "description": "СР meni za ugovorene grupe",
+        "translations": [
+            {
+                "title_key": "СР ćelije 1",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "СР ćelije 2",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 3",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    },
+    "cat9": {
+        "description": "СР voćni, čokoladni, slani kolači ...",
+        "translations": [
+            {
+                "title_key": "СР ćelije 2",
+                "text_key": "Ovo je text_key ćelije 1.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/4.jpg"
+            },
+            {
+                "title_key": "СР ćelije 2",
+                "text_key": "Ovo je text_key ćelije 3.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 3",
+                "text_key": "Ovo je text_key ćelije 2.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            },
+            {
+                "title_key": "СР ćelije 4",
+                "text_key": "Ovo je text_key ćelije 4.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/3.jpg"
+            },
+            {
+                "title_key": "СР ćelije 5",
+                "text_key": "Ovo je text_key ćelije 5.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/2.jpg"
+            },
+            {
+                "title_key": "СР ćelije 6",
+                "text_key": "Ovo je text_key ćelije 6.",
+                "cost_key": "25.00€",
+                "imageSrc": "img/food/1.jpg"
+            }
+        ]
+    }
+}

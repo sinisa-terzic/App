@@ -1,0 +1,126 @@
+/*  ===  SETTING  ===
+******************************************* */
+.setting {
+    /* padding: 10px; */
+    /* visibility: hidden; */
+    position: absolute;
+    width: 60%;
+    height: 40vh;
+    top: 100%;
+    right: 0rem;
+    transform: translateX(100%);
+    transition: all 110ms ease-out;
+    /* opacity: 0; */
+    z-index: 3;
+    background-color: #fff;
+}
+
+.setting.translateX {
+    transform: translateX(0%);
+}
+
+.settingTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    background-color: #5f1a19;
+    padding: 1rem 0.7rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.settingTitle svg {
+    width: 1.4rem;
+    fill: #F5F5F5;
+}
+
+
+.navbar,
+.languageSection {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.languageBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    font-size: 1.9rem;
+    border-bottom: 1px solid #607d8b;
+}
+
+
+
+/* #language {
+    display: block;
+    width: 35px;
+} */
+
+#language img {
+    border: 1px solid #607d8b;
+    border: 1px solid #E0E0E0;
+    /* border-radius: 100%; */
+    /* opacity: 0.8; */
+}
+
+#chooseLanguage {
+    align-self: flex-start;
+}
+
+#language,
+#chooseLanguage {
+    display: block;
+    width: 3.5rem;
+}
+
+.language {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    top: 8.4rem;
+    color: #000;
+    background-color: #F5F5F5;
+    left: -0;
+    right: 0;
+    padding: 1rem;
+    /* width: 143px; */
+    font-size: 1.6rem;
+    /* border-top-left-radius: 10px; */
+    /* border-bottom-left-radius: 10px; */
+}
+
+
+.ExYu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cyrillic_latin_color {
+    color: #890606;
+}
+
+
+/* .changeLanguageButton {
+    padding: 2px 5px;
+} */
+
+.changeLanguageButton:hover {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.tag-animation {
+    transition: opacity 0.1s ease-in, transform 0.2s ease-in;
+    opacity: 0;
+    transform: translateY(30px);
+}
