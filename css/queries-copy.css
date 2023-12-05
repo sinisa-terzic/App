@@ -1,0 +1,256 @@
+/* Stilovi za uređaje u landscape orijentaciji i širinu veću od 500px */
+
+
+/*******************************************/
+/* primer samo za landscape
+/*******************************************/
+/* @media screen and (orientation: landscape) and (min-width: 500px) {
+    .questionnaire {
+        display: grid;
+    }
+} */
+
+
+/*******************************************/
+/* For Mobile Phones Portrait or Landscape View */
+/*******************************************/
+@media screen and (max-device-width: 640px) {
+    .scene {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+/*******************************************/
+/* za oba slučaja landscape i portrait
+/*******************************************/
+@media screen and (min-width: 500px) {
+    .questionnaire {
+        display: grid;
+    }
+
+
+    /*  ===  HEADER  ===
+    ******************************************* */
+
+
+    /*  ===  CAROUSEL  ===
+    ******************************************* */
+
+
+    /*  ===  INFO  ===
+    ******************************************* */
+
+
+    /*  ===  DATA  ===
+    ******************************************* */
+
+}
+
+
+/*******************************************/
+/* Ako je visina viewporta oko 800px
+/*******************************************/
+@media (min-height: 700px) {
+    /* .content-container {
+        top: calc(41.1vh);
+    } */
+
+    /*  ===  HEADER  ===
+    ******************************************* */
+
+
+    /*  ===  CAROUSEL  ===
+    ******************************************* */
+
+
+    /*  ===  INFO  ===
+    ******************************************* */
+
+
+    /*  ===  DATA  ===
+    ******************************************* */
+
+}
+
+/*******************************************/
+/* Ako je visina viewporta oko 680px
+/*******************************************/
+@media (max-height: 680px) {
+    /* .scene {
+        width: 180px;
+        height: 110px;
+    }
+
+
+    .info img {
+        width: 30rem;
+    } */
+
+
+    /*  ===  HEADER  ===
+    ******************************************* */
+
+
+    /*  ===  CAROUSEL  ===
+    ******************************************* */
+
+
+    /*  ===  INFO  ===
+    ******************************************* */
+
+
+    /*  ===  DATA  ===
+    ******************************************* */
+
+
+}
+
+
+/*******************************************/
+/* Ako je visina viewporta oko 
+/*******************************************/
+@media (max-height: 570px) {
+
+    /* .scene {
+        width: 150px;
+        height: 90px;
+    }
+
+    .carousel_control {
+        height: 1.5rem;
+    }
+
+    .button {
+        width: 4rem;
+    }
+
+    .stop_play {
+        width: 1.1rem;
+    }
+
+    .logo {
+        align-self: end;
+        font-size: 1.8rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .info img {
+        width: 25rem;
+    } */
+
+
+    /*  ===  HEADER  ===
+    ******************************************* */
+
+
+    /*  ===  CAROUSEL  ===
+    ******************************************* */
+    /* .categoy_description_box {
+        height: 3.5rem;
+    }
+
+    .description_content {
+        height: 3.5rem;
+    } */
+
+
+    /*  ===  INFO  ===
+    ******************************************* */
+
+
+    /*  ===  DATA  ===
+    ******************************************* */
+
+}
+
+
+/*******************************************/
+/* Stil za Samsung Galaxy S8 i slične uređaje
+/*******************************************/
+@media only screen and (device-width: 360px) and (device-height: 740px) and (-webkit-device-pixel-ratio: 4) {
+    .scene {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+
+
+
+
+
+/*******************************************/
+/* For iPhone 4 Portrait or Landscape View */
+/*******************************************/
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    .scene {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/*******************************************/
+/* For iPhone 5 Portrait or Landscape View */
+/*******************************************/
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    .scene {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/*******************************************/
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+/*******************************************/
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+    .scene {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/*******************************************/
+/* Stil za iPhone 6/7/8 i slične uređaje
+/*******************************************/
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    .scene {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/*******************************************/
+/* Stil za iPhone X i slične uređaje
+/*******************************************/
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .scene {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+
+
+/*******************************************/
+/* For Desktop View */
+/*******************************************/
+/* @media screen and (min-width: 1024px) {
+    .scene {
+        width: 150px;
+        height: 150px;
+    }
+} */
+
+
+/*******************************************/
+/* For Tablet View */
+/*******************************************/
+/* @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .scene {
+        width: 150px;
+        height: 150px;
+    }
+} */

@@ -68,7 +68,7 @@ function loadTranslations(language) {
                                 // Dobavljanje ključa na osnovu indeksa (index) i konvertovanje u string (cat1, cat2, ...)
                                 const categoryKey = 'cat' + (index + 1);
 
-                                // console.log('Klik na ćeliju sa indeksom:', index);
+                                console.log('Klik na ćeliju sa indeksom:', index);
 
                                 // Uklonite klasu koja pokreće animaciju na .description
                                 description.classList.remove('description');
@@ -104,8 +104,8 @@ function loadTranslations(language) {
 
                             description.textContent = category.description;
 
-                            // Dodavanje novih itemDiv elemenata za svaki objekat unutar translations niza
-                            category.translations.forEach(function (item) {
+                            /* // Dodavanje novih itemDiv elemenata za svaki objekat unutar translations niza
+                            category.translations.forEach(function (item, index) {
                                 // Kreiranje novog div-a za svaki objekat
                                 const itemDiv = document.createElement('div');
                                 itemDiv.classList.add('itemDiv');
@@ -138,9 +138,137 @@ function loadTranslations(language) {
                                 itemDiv.appendChild(image);
                                 itemDiv.appendChild(textContainerDiv);
 
+
+
+                                // Dodajte event listener za prikazivanje overlay-a
+                                image.addEventListener('click', function () {
+                                    // showOverlay(item);
+                                    console.log('kliknuto na sliku ' + index)
+                                });
+
+
+                                // Dodavanje div-a za svaki objekat unutar kategorije
+                                container.appendChild(itemDiv);
+
+                            }); */
+
+
+
+
+
+                            // Dodavanje novih itemDiv elemenata za svaki objekat unutar translations niza
+                            category.translations.forEach(function (item, index) {
+                                // Kreiranje novog div-a za svaki objekat
+                                const itemDiv = document.createElement('div');
+                                itemDiv.classList.add('itemDiv');
+
+                                // Kreiranje novog div-a za h1 i dva p taga
+                                const textContainerDiv = document.createElement('div');
+                                textContainerDiv.classList.add('textContainerDiv');
+
+                                // Kreiranje novih elemenata za svaki objekat
+                                const image = document.createElement('img');
+                                const title = document.createElement('h1');
+                                title.classList.add('title');
+                                const periphrasis = document.createElement('p');
+                                periphrasis.classList.add('periphrasis');
+                                const cost = document.createElement('p');
+                                cost.classList.add('cost');
+
+                                // Postavljanje atributa i teksta za trenutni objekat
+                                image.src = item.imageSrc;
+                                title.textContent = item.title_key;
+                                periphrasis.textContent = item.text_key;
+                                cost.textContent = item.cost_key;
+
+                                // Dodavanje h1 i dva p taga u poseban div
+                                textContainerDiv.appendChild(title);
+                                textContainerDiv.appendChild(periphrasis);
+                                textContainerDiv.appendChild(cost);
+
+                                // Dodavanje novih elemenata u div
+                                itemDiv.appendChild(image);
+                                itemDiv.appendChild(textContainerDiv);
+
+
+
+
+
+
+                                // Kreiranje novog div-a za overlay
+                                const overlay = document.createElement('div');
+                                overlay.classList.add('overlay');
+                                overlay.classList.add('noneDisplay');
+
+                                // Kreiranje novog div-a za background
+                                const backgroundDiv = document.createElement('div');
+                                backgroundDiv.classList.add('backgroundDiv');
+
+                                // Kreiranje novog div-a za opis itemDiv-a
+                                const descriptionDiv = document.createElement('div');
+                                descriptionDiv.classList.add('descriptionDiv');
+                                descriptionDiv.classList.add('noneDisplay');
+
+                                // Kreiranje gornjeg div-a sa slikom
+                                const topDiv = document.createElement('div');
+                                topDiv.classList.add('topDiv');
+
+                                // Dodavanje slike u gornji div
+                                const topImage = document.createElement('img');
+                                topImage.src = item.imageSrc;
+                                topDiv.appendChild(topImage);
+
+                                // Dodavanje gornjeg div-a u descriptionDiv
+                                descriptionDiv.appendChild(topDiv);
+
+                                // Kreiranje donjeg div-a sa h1, h2 i paragrafima
+                                const bottomDiv = document.createElement('div');
+                                bottomDiv.classList.add('bottomDiv');
+
+                                // Dodavanje h1, p i h2, p, p u donji div
+                                const h1 = document.createElement('h1');
+                                h1.textContent = item.title_key;;
+                                const p1 = document.createElement('p');
+                                p1.textContent = 'Your first paragraph text';
+                                const h2 = document.createElement('h2');
+                                h2.textContent = 'Your h2 text';
+                                const p2 = document.createElement('p');
+                                p2.textContent = 'Your second paragraph text';
+                                const p3 = document.createElement('p');
+                                p3.textContent = 'Your third paragraph text';
+
+                                // Dodavanje elemenata u donji div
+                                bottomDiv.appendChild(h1);
+                                bottomDiv.appendChild(p1);
+                                bottomDiv.appendChild(h2);
+                                bottomDiv.appendChild(p2);
+                                bottomDiv.appendChild(p3);
+
+                                // Dodavanje donjeg div-a u descriptionDiv
+                                descriptionDiv.appendChild(bottomDiv);
+
+                                // Dodajte event listener za prikazivanje opisa na klik
+                                image.addEventListener('click', function () {
+                                    overlay.classList.remove('noneDisplay');
+                                    descriptionDiv.classList.remove('noneDisplay');
+                                    console.log('slika: ' + index);
+                                });
+
+                                // Dodajte event listener za sakrivanje opisa na klik
+                                backgroundDiv.addEventListener('click', function () {
+                                    overlay.classList.add('noneDisplay');
+                                    // descriptionDiv.classList.add('noneDisplay');
+                                });
+
+                                // Dodavanje opisnog div-a za svaki objekat unutar kategorije
+                                overlay.appendChild(backgroundDiv);
+                                overlay.appendChild(descriptionDiv);
+                                itemDiv.appendChild(overlay);
+
                                 // Dodavanje div-a za svaki objekat unutar kategorije
                                 container.appendChild(itemDiv);
                             });
+
                         }
                     }
                 }

@@ -424,3 +424,60 @@ body {
   /* width: 100%; */
   justify-self: center;
 }
+
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.backgroundDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Crna poluprozirna pozadina */
+  z-index: 1;
+  /* Manji z-index od descriptionDiv */
+}
+
+.descriptionDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  /* Bela pozadina za opis */
+  z-index: 2;
+  /* Veći z-index od backgroundDiv */
+  /* Ostali stilovi za opis */
+}
+
+
+
+
+
+/* .descriptionDiv {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.topDiv img {
+  /* Dodajte stilove prema potrebama */
+}
+
+.bottomDiv {
+  /* Dodajte stilove prema potrebama */
+}
