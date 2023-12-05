@@ -67,6 +67,8 @@ headerLogo.addEventListener('click', function () {
     description.classList.add('noneDisplay');
     category.classList.remove('noneDisplay');
     info.classList.remove('translateY');
+    setting_box.classList.remove('translateX');
+    darkOpen.classList.remove('visibility');
 });
 
 
