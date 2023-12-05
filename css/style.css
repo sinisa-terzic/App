@@ -13,8 +13,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   font-family: 'Montserrat', sans-serif;
+  /* font-size: calc(16px + (105 - 16) * ((100vw - 320px) / (1600 - 320))); */
 }
 
 
@@ -51,8 +54,8 @@ body {
   align-items: center;
   height: 10vh;
   padding: 0 15px 0 10px;
-  background-color: #260a0a;
-  border-bottom: 3px solid #892624;
+  background-color: #1b121c;
+  border-bottom: 4px solid #573a59;
 }
 
 .headerLogo {
@@ -69,6 +72,8 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 2;
+  /* opacity: 0.3; */
+  /* transition: all 100ms ease; */
   visibility: hidden;
 }
 
@@ -227,7 +232,7 @@ body {
 }
 
 .category {
-  color: #260a0a;
+  color: #2b2a1c;
   z-index: 2;
   position: relative;
   border-bottom: 1px solid #260a0a;
@@ -272,7 +277,7 @@ body {
   border-top: 1px solid #892624;
   border-bottom: 1px solid #892624;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-  z-index: 2;
+  z-index: 1;
   overflow: hidden;
 }
 
@@ -298,7 +303,7 @@ body {
 .info {
   position: relative;
   padding: 0 1rem;
-  background-color: #144b4c;
+  background-color: #2a1c2c;
   display: grid;
   height: 100%;
   transition: all 0.2s ease-in-out;
