@@ -6,8 +6,8 @@ const cellCount = cellElements.length;
 let selectedIndex = 0;
 let isPlaying = false;
 let rotationInterval;
-let cellSize = 180; // Širina ili visina pojedinačnog elementa
-const gapSize = 5; // Razmak između elemenata
+let cellSize = 200; // Širina ili visina pojedinačnog elementa
+const gapSize = 6; // Razmak između elemenata
 const isHorizontal = true;
 const rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
 let radius, theta;
@@ -15,17 +15,16 @@ let radius, theta;
 // Prilagodi dimenzije prema visini prozora pomoću JavaScript-a
 function setDimensions() {
     const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-
     if (viewportHeight <= 570) {
         cellSize = 150; // Prilagodite dimenzije prema potrebi
         scene.classList.remove('medium-screen', 'large-screen');
-    } else if (viewportHeight > 880) {
-        cellSize = 200; // Prilagodite dimenzije prema potrebi
-        scene.classList.add('large-screen');
+    } else if (viewportHeight <= 640) {
+        cellSize = 180; // Prilagodite dimenzije prema potrebi
     } else {
-        cellSize = 180; // Vratite na osnovnu vrednost
-        scene.classList.remove('large-screen', 'small-screen');
+        cellSize = 200; // Vratite na osnovnu vrednost
     }
+
+    changeCarousel(); // Ponovo postavite dimenzije karusela
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -33,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     startRotation();
 });
 
-window.addEventListener('resize', setDimensions); // Pratite promene u veličini prozora
+window.addEventListener('resize', setDimensions);
 
 function rotateCarousel() {
     var angle = theta * (selectedIndex + 0.01) * -1;

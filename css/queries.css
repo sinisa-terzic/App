@@ -22,30 +22,14 @@
 
 
 /*******************************************/
-/* Ako je visina viewporta oko 800px
+/* Ako je visina viewporta oko 680px */
 /*******************************************/
-@media (min-height: 801px) {
-    .scene {
-        width: 200px;
-        height: 120px;
-    }
-}
-
-/*******************************************/
-/* Ako je visina viewporta oko 680px
-/*******************************************/
-@media (max-height: 680px) {
+@media (max-height: 640px) {
     .scene {
         width: 180px;
         height: 110px;
     }
-
-
-    .info img {
-        width: 30rem;
-    }
 }
-
 
 /*******************************************/
 /* Ako je visina viewporta oko 
@@ -87,10 +71,4 @@
         height: 3rem;
     }
 
-}
-
-
-.scene.large-screen {
-    width: 200px;
-    height: 120px;
 }
