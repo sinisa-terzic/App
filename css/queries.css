@@ -24,12 +24,12 @@
 /*******************************************/
 /* Ako je visina viewporta oko 680px */
 /*******************************************/
-@media (max-height: 650px) {
+/* @media (max-height: 650px) {
     .scene {
         width: 180px;
         height: 110px;
     }
-}
+} */
 
 /*******************************************/
 /* Ako je visina viewporta oko 

@@ -18,9 +18,9 @@ function setDimensions() {
     if (viewportHeight <= 570) {
         cellSize = 150; // Prilagodite dimenzije prema potrebi
         scene.classList.remove('medium-screen', 'large-screen');
-    } else if (viewportHeight <= 650) {
+    }/*  else if (viewportHeight <= 650) {
         cellSize = 180; // Prilagodite dimenzije prema potrebi
-    } else {
+    } */ else {
         cellSize = 200; // Vratite na osnovnu vrednost
     }
 
