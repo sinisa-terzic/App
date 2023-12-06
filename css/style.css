@@ -453,15 +453,16 @@ body {
   position: absolute;
   top: 40%;
   left: 50%;
+  width: 80%;
   padding: 1rem;
   transform: translate(-50%, -50%);
   background-color: white;
   z-index: 2;
 }
 
-.topDiv img {
+/* .topDiv img {
   width: 250px;
-}
+} */
 
 .bottomDiv {
   display: grid;
