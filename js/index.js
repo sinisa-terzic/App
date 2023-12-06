@@ -238,6 +238,7 @@ function loadTranslations(language) {
                                 p3.textContent = 'Your third paragraph text';
                                 const p4 = document.createElement('p');
                                 p4.textContent = item.cost_key;
+                                p4.classList.add('cost')
 
                                 // Dodavanje elemenata u donji div
                                 bottomDiv.appendChild(h1);
