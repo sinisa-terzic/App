@@ -108,11 +108,11 @@
     }
 
     .carousel_control {
-        height: 1.5rem;
+        height: 1.4rem;
     }
 
     .button {
-        width: 4rem;
+        width: 2.5rem;
     }
 
     .stop_play {
@@ -137,11 +137,11 @@
     /*  ===  CAROUSEL  ===
     ******************************************* */
     .categoy_description_box {
-        height: 3.5rem;
+        height: 3rem;
     }
 
     .description_content {
-        height: 3.5rem;
+        height: 3rem;
     }
 
 
