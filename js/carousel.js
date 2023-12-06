@@ -5,7 +5,7 @@ const cellCount = cellElements.length;
 let selectedIndex = 0;
 let isPlaying = false;
 let rotationInterval;
-let cellSize = 200; // Širina ili visina pojedinačnog elementa
+let cellSize = 180; // Širina ili visina pojedinačnog elementa
 const gapSize = 5; // Razmak između elemenata
 const isHorizontal = true;
 const rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
@@ -17,10 +17,10 @@ function setDimensions() {
 
     if (viewportHeight <= 570) {
         cellSize = 150; // Prilagodite dimenzije prema potrebi
-    } else if (viewportHeight <= 680) {
+    } /* else if (viewportHeight <= 680) {
         cellSize = 180; // Prilagodite dimenzije prema potrebi
-    } else {
-        cellSize = 200; // Vratite na osnovnu vrednost
+    }  */else {
+        cellSize = 180; // Vratite na osnovnu vrednost
     }
 }
 

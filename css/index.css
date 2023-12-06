@@ -1,0 +1,131 @@
+/* Resetovanje stilizacije za radio dugmad */
+
+
+/* .languageSection {
+    margin-bottom: 20px;
+    position: relative;
+} */
+
+.ExYu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cyrillic_latin label {
+    cursor: pointer;
+}
+
+.cyrillic_latin_color {
+    color: #890606;
+}
+
+/* .scene {
+    height: 200px;
+    display: flex;
+    gap: 10px;
+} */
+
+.cell {
+    background-color: rgb(122, 122, 122);
+    width: 100px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.active {
+    border-bottom: 4px solid red;
+}
+
+
+.content-container {
+    display: grid;
+    gap: 1rem;
+    transition: opacity 0.1s step-end;
+    padding: 0 0 1rem 0;
+}
+
+.content-container.opacity {
+    opacity: 0;
+    transition: opacity 0.2s step-start;
+}
+
+/* .content-container:last-child {
+    padding-bottom: 20px;
+} */
+
+.content-container.active-item {
+    opacity: 0;
+}
+
+.itemDiv {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    /* border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    overflow: hidden;
+    /* border-top: 1px solid #607d8b;
+    border-bottom: 1px solid #607d8b; */
+}
+
+
+.descriptionParagraph {
+    white-space: nowrap;
+    animation: marquee 5s linear infinite;
+}
+
+/* @keyframes marquee {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+} */
+
+.itemDiv img {
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.textContainerDiv {
+    display: grid;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    background: linear-gradient(180deg, rgba(177, 177, 177, 0.06) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(2, 0, 36, 0.07) 100%);
+    width: 100%;
+}
+
+.title {
+    color: #37474F;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.periphrasis {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0 1rem;
+}
+
+.cost {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #4c3114;
+    padding: 5px 10px;
+    /* align-self: self-end; */
+    /* width: 100%; */
+    justify-self: center;
+}
+
+/* .noneDisplay {
+    display: none;
+
+} */
