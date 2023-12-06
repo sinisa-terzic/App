@@ -231,11 +231,13 @@ function loadTranslations(language) {
                                 const p1 = document.createElement('p');
                                 p1.textContent = 'Your first paragraph text';
                                 const h2 = document.createElement('h2');
-                                h2.textContent = 'Your h2 text';
+                                h2.textContent = 'Uz ovo ide:';
                                 const p2 = document.createElement('p');
                                 p2.textContent = 'Your second paragraph text';
                                 const p3 = document.createElement('p');
                                 p3.textContent = 'Your third paragraph text';
+                                const p4 = document.createElement('p');
+                                p4.textContent = item.cost_key;
 
                                 // Dodavanje elemenata u donji div
                                 bottomDiv.appendChild(h1);
@@ -243,6 +245,7 @@ function loadTranslations(language) {
                                 bottomDiv.appendChild(h2);
                                 bottomDiv.appendChild(p2);
                                 bottomDiv.appendChild(p3);
+                                bottomDiv.appendChild(p4);
 
                                 // Dodavanje donjeg div-a u descriptionDiv
                                 descriptionDiv.appendChild(bottomDiv);
