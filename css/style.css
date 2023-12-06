@@ -466,9 +466,30 @@ body {
 
 .bottomDiv {
   display: grid;
-  font-size: 200%;
+  /* font-size: 200%; */
+}
+
+.bottomDiv .title {
+  margin: 1rem 0 0.5rem;
+}
+
+.bottomDiv .periphrasis {
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+.bottomDiv .reference {
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.bottomDiv .drink {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
 }
 
 .bottomDiv .cost {
   justify-self: end;
+  margin-top: 1rem;
 }
