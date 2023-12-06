@@ -1,4 +1,5 @@
 let carousel = document.querySelector('.carousel');
+const scene = document.querySelector('.scene');
 const cells = carousel.querySelectorAll('.carousel__cell');
 const cellElements = Array.from(cells);
 const cellCount = cellElements.length;
@@ -17,10 +18,13 @@ function setDimensions() {
 
     if (viewportHeight <= 570) {
         cellSize = 150; // Prilagodite dimenzije prema potrebi
-    } /* else if (viewportHeight <= 680) {
-        cellSize = 180; // Prilagodite dimenzije prema potrebi
-    }  */else {
+        scene.classList.remove('medium-screen', 'large-screen');
+    } else if (viewportHeight > 880) {
+        cellSize = 200; // Prilagodite dimenzije prema potrebi
+        scene.classList.add('large-screen');
+    } else {
         cellSize = 180; // Vratite na osnovnu vrednost
+        scene.classList.remove('large-screen', 'small-screen');
     }
 }
 
