@@ -91,7 +91,7 @@ body {
 
 .scene {
   position: relative;
-  width: 200px;
+  width: 190px;
   height: 120px;
   margin: 1rem auto;
   perspective: 1000px;
