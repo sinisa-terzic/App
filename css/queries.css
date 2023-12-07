@@ -38,6 +38,11 @@
         width: 220px;
         height: 140px;
     }
+
+    .info img {
+        width: 34rem;
+    }
+
 }
 
 
