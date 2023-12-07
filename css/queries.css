@@ -31,6 +31,16 @@
     }
 } */
 
+
+
+@media screen and (min-width: 400px) {
+    .scene {
+        width: 220px;
+        height: 130px;
+    }
+}
+
+
 /*******************************************/
 /* Ako je visina viewporta oko 
 /*******************************************/

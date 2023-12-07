@@ -15,12 +15,15 @@ let radius, theta;
 // Prilagodi dimenzije prema visini prozora pomoću JavaScript-a
 function setDimensions() {
     const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     if (viewportHeight <= 570) {
         cellSize = 150; // Prilagodite dimenzije prema potrebi
         scene.classList.remove('medium-screen', 'large-screen');
-    }/*  else if (viewportHeight <= 650) {
-        cellSize = 180; // Prilagodite dimenzije prema potrebi
-    } */ else {
+    } else if (viewportWidth > 400) {
+        cellSize = 220; // Prilagodite dimenzije prema potrebi
+        // scene.classList.remove('medium-screen');
+        // scene.classList.add('large-screen');
+    } else {
         cellSize = 200; // Vratite na osnovnu vrednost
     }
 
