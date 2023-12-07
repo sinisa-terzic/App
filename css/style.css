@@ -53,7 +53,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 8vh;
-  padding: 0 15px 0 10px;
+  padding: 0 1.4rem;
   background-color: #1b121c;
   border-bottom: 4px solid #573a59;
 }
@@ -115,7 +115,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  opacity: 0.95;
+  /* opacity: 0.95; */
   transition: transform 1s, opacity 0.3s;
   overflow: hidden;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
@@ -208,14 +208,16 @@ body {
 .carousel_control {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 0;
+  align-items: flex-start;
+  /* margin: 1rem 0; */
   padding: 0 1rem;
-  height: 2.5rem;
+  height: 2.8rem;
   align-items: center;
+  /* background-color: #e8e7e8; */
 }
 
 .button {
-  width: 3.2rem;
+  width: 3.8rem;
   border: none;
 }
 
@@ -229,6 +231,7 @@ body {
   height: 4rem;
   display: flex;
   justify-content: center;
+  /* background-color: #e8e7e8; */
 }
 
 .category {
@@ -303,7 +306,7 @@ body {
 .info {
   position: relative;
   padding: 0 1rem;
-  background-color: #2a1c2c;
+  background-color: #1b121c;
   display: grid;
   height: 100%;
   transition: all 0.2s ease-in-out;
