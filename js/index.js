@@ -233,7 +233,7 @@ function loadTranslations(language) {
                                 p1.classList.add('periphrasis');
                                 p1.textContent = item.text_key;
                                 const h2 = document.createElement('h2');
-                                h2.textContent = 'Uz ovo ide:';
+                                h2.textContent = 'preporučujemo uz ovo:';
                                 h2.classList.add('reference');
                                 const p2 = document.createElement('p');
                                 p2.textContent = 'Your second paragraph text';

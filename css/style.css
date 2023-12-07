@@ -479,8 +479,12 @@ body {
 }
 
 .bottomDiv .reference {
-  margin-bottom: 0.5rem;
+  margin: 1rem 0 0.5rem;
   font-size: 1.6rem;
+  /* color: #585858; */
+  font-weight: 600;
+  border-bottom: 1px solid #585858;
+  padding-bottom: 0.2rem;
 }
 
 .bottomDiv .drink {
@@ -490,6 +494,6 @@ body {
 }
 
 .bottomDiv .cost {
-  justify-self: end;
-  margin-top: 1rem;
+  /* justify-self: end; */
+  margin-top: 2rem;
 }
