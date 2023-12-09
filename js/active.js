@@ -10,6 +10,7 @@ function toggleAlertTheme() {
     setting_box.classList.toggle('translateX');
     // alertThemeElement.classList.toggle('settingBoxOpen');
     darkOpen.classList.toggle('visibility');
+    languageBox.classList.add("noneDisplay");
 
     stop.classList.add('noneDisplay');
     play.classList.remove('noneDisplay');
@@ -21,6 +22,49 @@ manu_icon_open.addEventListener('click', toggleAlertTheme);
 // settingButtonClose.addEventListener('click', toggleAlertTheme);
 darkOpen.addEventListener('click', toggleAlertTheme);
 settingTitle.addEventListener('click', toggleAlertTheme);
+
+
+
+///////////////////////////////////////////////////////////
+// change color
+const switcherHeader = document.querySelector('.header');
+const switcherInfo = document.querySelector('.info');
+const switcher_dark = document.querySelector('#switcher_dark');
+const switcher_light = document.querySelector('#switcher_light');
+const switcher_middle = document.querySelector('#switcher_middle');
+
+switcher_dark.addEventListener('click', function () {
+    switcherHeader.classList.add('switcher_dark');
+    switcherHeader.classList.remove('switcher_light');
+    switcherHeader.classList.remove('switcher_middle');
+    switcherInfo.classList.add('switcher_dark');
+    switcherInfo.classList.remove('switcher_light');
+    switcherInfo.classList.remove('switcher_middle');
+    setting_box.classList.remove('translateX');
+    darkOpen.classList.remove('visibility');
+});
+
+switcher_light.addEventListener('click', function () {
+    switcherHeader.classList.remove('switcher_dark');
+    switcherHeader.classList.add('switcher_light');
+    switcherHeader.classList.remove('switcher_middle');
+    switcherInfo.classList.remove('switcher_dark');
+    switcherInfo.classList.add('switcher_light');
+    switcherInfo.classList.remove('switcher_middle');
+    setting_box.classList.remove('translateX');
+    darkOpen.classList.remove('visibility');
+});
+
+switcher_middle.addEventListener('click', function () {
+    switcherHeader.classList.remove('switcher_dark');
+    switcherHeader.classList.remove('switcher_light');
+    switcherHeader.classList.add('switcher_middle');
+    switcherInfo.classList.remove('switcher_dark');
+    switcherInfo.classList.remove('switcher_light');
+    switcherInfo.classList.add('switcher_middle');
+    setting_box.classList.remove('translateX');
+    darkOpen.classList.remove('visibility');
+});
 
 
 ///////////////////////////////////////////////////////

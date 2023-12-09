@@ -311,18 +311,20 @@ function loadTranslations(language) {
             }
 
 
-            /* tags = document.querySelectorAll('.food');
+            tags = document.querySelectorAll('.food, #digitalMenu, .logo, .category, .textContainerDiv');
             tags.forEach(tag => {
                 tag.style.opacity = "0";
+                tag.style.transform = "translateY(100%)";
             });
             // Sačekajte trenutak pre nego što postavite nove podatke
             setTimeout(() => {
 
                 tags.forEach(tag => {
                     tag.style.opacity = "1";
+                    tag.style.transform = "translateY(0%)";
                 });
 
-            }, 100); // Promenite vreme prelaza prema potrebi */
+            }, 50); // Promenite vreme prelaza prema potrebi
 
         })
         .catch(error => console.error('Error loading data:', error));
@@ -365,12 +367,16 @@ document.getElementById("srButton").addEventListener("click", function () {
 document.getElementById("enButton").addEventListener("click", function () {
     changeLanguage('en');
     resetStyling();
+    setting_box.classList.remove('translateX');
+    darkOpen.classList.remove('visibility');
     localStorage.setItem('selectedLanguage', 'en');
 });
 
 document.getElementById("ruButton").addEventListener("click", function () {
     changeLanguage('ru');
     resetStyling();
+    setting_box.classList.remove('translateX');
+    darkOpen.classList.remove('visibility');
     localStorage.setItem('selectedLanguage', 'ru');
 });
 
@@ -401,6 +407,8 @@ latinRadio.addEventListener('change', function () {
         changeLanguage('sr'); // Postavi jezik na srpski latinica
         // localStorage.setItem('checkedRadio', 'latin');
         localStorage.removeItem('checkedRadio', 'cyrillic');
+        setting_box.classList.remove('translateX');
+        darkOpen.classList.remove('visibility');
     }
 });
 
@@ -411,6 +419,8 @@ cyrillicRadio.addEventListener('change', function () {
         latinLabel.classList.remove('cyrillic_latin_color');
         changeLanguage('sr_cyrillic'); // Postavi jezik na srpski ćirilica
         localStorage.setItem('checkedRadio', 'cyrillic');
+        setting_box.classList.remove('translateX');
+        darkOpen.classList.remove('visibility');
     }
 });
 
