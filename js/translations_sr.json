@@ -20,7 +20,7 @@
         "category_9": "Poslastice"
     },
     "cat1": {
-        "description": "SR U hladna predjela se nalazi domaći pršut, domaći sir, slana riba i ... još mnogo toga ...",
+        "description": "&#9642; SR U hladna predjela se nalazi domaći pršut, domaći sir, slana riba i ... još mnogo toga ...",
         "translations": [
             {
                 "title_key": "SR ćelije 1",
@@ -61,7 +61,7 @@
         ]
     },
     "cat2": {
-        "description": "SR Specijaliteti od povrća ubrajaju paprike, tikvice, patlidžan, šargarepu i ...",
+        "description": "&#9642; SR Specijaliteti od povrća ubrajaju paprike, tikvice, patlidžan, šargarepu i ...",
         "translations": [
             {
                 "title_key": "SR ćelije 2",
@@ -102,7 +102,7 @@
         ]
     },
     "cat3": {
-        "description": "SR Salate i prilozi: masline, paradajz, krompir, kupus ...",
+        "description": "&#9642; SR Salate i prilozi: masline, paradajz, krompir, kupus ...",
         "translations": [
             {
                 "title_key": "SR ćelije 1",
@@ -143,7 +143,7 @@
         ]
     },
     "cat4": {
-        "description": "SR riba, lignje, hobotnica, školje, bakalar ...",
+        "description": "&#9642; SR riba, lignje, hobotnica, školje, bakalar ...",
         "translations": [
             {
                 "title_key": "SR ćelije 1",
@@ -184,7 +184,7 @@
         ]
     },
     "cat5": {
-        "description": "SR crno, rose, bijelo ...",
+        "description": "&#9642; SR crno, rose, bijelo ...",
         "translations": [
             {
                 "title_key": "SR ćelije 2",
@@ -225,7 +225,7 @@
         ]
     },
     "cat6": {
-        "description": "SR loza, viljamovka, vodtka, viski, likeri ...",
+        "description": "&#9642; SR loza, viljamovka, vodtka, viski, likeri ...",
         "translations": [
             {
                 "title_key": "SR ćelije 1",
@@ -266,7 +266,7 @@
         ]
     },
     "cat7": {
-        "description": "SR kafa, čaj, bezalkoholna pića, pivo, voda ...",
+        "description": "&#9642; SR kafa, čaj, bezalkoholna pića, pivo, voda ...",
         "translations": [
             {
                 "title_key": "SR ćelije 1",
@@ -307,7 +307,7 @@
         ]
     },
     "cat8": {
-        "description": "SR meni za ugovorene grupe",
+        "description": "&#9642; SR meni za ugovorene grupe",
         "translations": [
             {
                 "title_key": "SR ćelije 1",
@@ -348,7 +348,7 @@
         ]
     },
     "cat9": {
-        "description": "SR voćni, čokoladni, slani kolači ...",
+        "description": "&#9642; SR voćni, čokoladni, slani kolači ...",
         "translations": [
             {
                 "title_key": "SR ćelije 2",

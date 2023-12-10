@@ -117,78 +117,53 @@ cells.forEach(function (cell, index) {
 
 ///////////////////////////////////////////////////////
 // Rotacija pokretom ruke
-let animationFrame;
-let isDragging = false;
-const isTouchDevice = 'ontouchstart' in document.documentElement;
-const startEvent = isTouchDevice ? 'touchstart' : 'mousedown';
-const moveEvent = isTouchDevice ? 'touchmove' : 'mousemove';
-const endEvent = isTouchDevice ? 'touchend' : 'mouseup';
+var isDragging = false;
+var startX, diffX, previousX;
+var isAnimating = false;
+var animationFrame;
+var dampingFactor = 0.1; // Faktor usporavanja
+const cellWidth = carousel.offsetWidth; // Trenutno ne služe ničem
+const cellHeight = carousel.offsetHeight; // Trenutno ne služe ničem
 
-carousel.addEventListener('touchstart', function (e) {
+// ----------------------------------------------------------------------
+
+var isTouchDevice = 'ontouchstart' in document.documentElement;
+var startEvent = isTouchDevice ? 'touchstart' : 'mousedown';
+var moveEvent = isTouchDevice ? 'touchmove' : 'mousemove';
+var endEvent = isTouchDevice ? 'touchend' : 'mouseup';
+
+carousel.addEventListener(startEvent, function (e) {
     isDragging = true;
-    startX = e.touches[0].clientX;
+    startX = isTouchDevice ? e.touches[0].clientX : e.clientX;
     previousX = startX;
     cancelAnimationFrame(animationFrame);
     isAnimating = false;
 });
 
-document.addEventListener('touchmove', function (e) {
+carousel.addEventListener(endEvent, function (e) {
     if (isDragging) {
-        const clientX = e.touches[0].clientX;
+        var clientX = isTouchDevice ? e.changedTouches[0].clientX : e.clientX;
         diffX = clientX - startX;
 
-        // Postavljanje maksimalne brzine rotacije
-        const maxSpeed = 0;
-
+        // Promenite selectedIndex na osnovu pomeranja miša
         if (Math.abs(diffX) > cellSize / 2) {
-            // Prilagodba na maksimalnu brzinu
-            const adjustedDiffX = Math.min(Math.abs(diffX), maxSpeed) * Math.sign(diffX);
-            selectedIndex += adjustedDiffX;
-            startX = clientX;
-            changeCarousel();
-        }
-
-        // Dodatna provjera za horizontalni swipe
-        const threshold = 50;
-
-        if (Math.abs(diffX) > threshold) {
-            // Promijenite selectedIndex na temelju pomaka miša
             if (diffX < 0) {
-                selectedIndex++;
-                console.log('Swipe left');
+                selectedIndex += 1;
             } else {
-                selectedIndex--;
-                console.log('Swipe right');
+                selectedIndex -= 1;
             }
-
             startX = clientX;
             changeCarousel();
             stop.classList.add('noneDisplay');
             play.classList.remove('noneDisplay');
             stopRotation();
         }
+
+        if (!isAnimating && Math.abs(clientX - previousX) > 10) {
+            isAnimating = true;
+        }
     }
 });
-
-carousel.addEventListener('touchend', function () {
-    isDragging = false;
-});
-
-
-function animateCarousel(targetIndex) {
-    // Interpolacija prema ciljnom indeksu
-    selectedIndex += (targetIndex - selectedIndex) * 0.1;
-
-    // Pozivanje funkcije za promjenu carousel-a
-    changeCarousel();
-
-    // Provjera uvjeta za završetak animacije
-    if (Math.abs(targetIndex - selectedIndex) > 0.01) {
-        animationFrame = requestAnimationFrame(() => animateCarousel(targetIndex));
-    } else {
-        isAnimating = false;
-    }
-}
 
 
 //////////////////////////////////////////////////////

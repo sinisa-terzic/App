@@ -12,19 +12,8 @@ function loadTranslations(language) {
         .then(response => response.json())
         .then(data => {
 
-            // Očisti kontejner pre nego što dodate nove elemente
-            /* const container = document.querySelector('.content-container');
-            container.innerHTML = ''; */
-
-
-            // Kreiranje descriptionParagraph van funkcije kako bi bio globalno dostupan
-            /* const descriptionParagraph = document.createElement('p');
-            descriptionParagraph.classList.add('descriptionParagraph');
-            container.appendChild(descriptionParagraph); */
-
             // Kreiranje description paragrpaph van funkcije kako bi bio globalno dostupan
             const description = document.querySelector('.description')
-
 
             // Poziv funkcije za postavljanje prevoda
             setTranslations(data);
@@ -62,33 +51,46 @@ function loadTranslations(language) {
 
                         const itemDiv = document.querySelector('.data-container')
                         const cells = document.querySelectorAll('.carousel__cell');
+                        const descriptionElements = document.querySelectorAll('.description');
+
                         // Dodavanje Event Listener-a na svaku ćeliju karusela
-                        cells.forEach(function (cell, index) {
-                            cell.addEventListener('click', function () {
-                                // Dobavljanje ključa na osnovu indeksa (index) i konvertovanje u string (cat1, cat2, ...)
-                                const categoryKey = 'cat' + (index + 1);
-
-                                console.log('Klik na ćeliju sa indeksom:', index);
-
-                                // Uklonite klasu koja pokreće animaciju na .description
-                                description.classList.remove('description');
-
-                                // Sačekajte malo da se animacija resetuje (npr. 10ms)
-                                setTimeout(() => {
-                                    // Ponovo dodajte klasu kako biste ponovo pokrenuli animaciju na .description
-                                    description.classList.add('description');
-                                }, 0);
-
-
-                                // console.log(categoryKey)
-
-
-                                itemDiv.scrollTop = 0;
-
-                                // Prikazivanje podataka za odabranu kategoriju
-                                displayCategoryData(translations[categoryKey]);
-                            });
+                        cells.forEach((cell, index) => {
+                            cell.addEventListener('click', () => handleCellClick(index));
                         });
+
+                        function handleCellClick(index) {
+                            const categoryKey = 'cat' + (index + 1);
+                            console.log('Klik na ćeliju sa indeksom:', index);
+
+                            resetAnimation();
+                            itemDiv.scrollTop = 0;
+
+                            // Prikazivanje podataka za odabranu kategoriju
+                            displayCategoryData(translations[categoryKey]);
+                        }
+
+                        function resetAnimation() {
+                            descriptionElements.forEach((description) => {
+                                description.style.animation = 'none';
+                                description.offsetHeight;
+                                description.style.animation = null;
+                                description.style.paddingLeft = '50px';
+                                description.style.animationPlayState = 'running';
+
+                                const textLength = description.innerText.length;
+
+                                if (textLength > 60) {
+                                    description.style.animationDuration = '20s';
+                                } else if (textLength > 50) {
+                                    description.style.animationDuration = '15s';
+                                } else if (textLength > 30) {
+                                    description.style.animationDuration = '12s';
+                                } else {
+                                    description.style.animationDuration = '7s';
+                                }
+                            });
+                        }
+
 
 
                         // Funkcija za prikazivanje podataka kategorije
@@ -99,61 +101,10 @@ function loadTranslations(language) {
                                 itemDiv.remove();
                             });
 
-                            // Postavljanje teksta opisa kategorije
-                            // descriptionParagraph.textContent = category.description;
 
-                            description.textContent = category.description;
-
-                            /* // Dodavanje novih itemDiv elemenata za svaki objekat unutar translations niza
-                            category.translations.forEach(function (item, index) {
-                                // Kreiranje novog div-a za svaki objekat
-                                const itemDiv = document.createElement('div');
-                                itemDiv.classList.add('itemDiv');
-
-                                // Kreiranje novog div-a za h1 i dva p taga
-                                const textContainerDiv = document.createElement('div');
-                                textContainerDiv.classList.add('textContainerDiv');
-
-                                // Kreiranje novih elemenata za svaki objekat
-                                const image = document.createElement('img');
-                                const title = document.createElement('h1');
-                                title.classList.add('title');
-                                const periphrasis = document.createElement('p');
-                                periphrasis.classList.add('periphrasis');
-                                const cost = document.createElement('p');
-                                cost.classList.add('cost');
-
-                                // Postavljanje atributa i teksta za trenutni objekat
-                                image.src = item.imageSrc;
-                                title.textContent = item.title_key;
-                                periphrasis.textContent = item.text_key;
-                                cost.textContent = item.cost_key;
-
-                                // Dodavanje h1 i dva p taga u poseban div
-                                textContainerDiv.appendChild(title);
-                                textContainerDiv.appendChild(periphrasis);
-                                textContainerDiv.appendChild(cost);
-
-                                // Dodavanje novih elemenata u div
-                                itemDiv.appendChild(image);
-                                itemDiv.appendChild(textContainerDiv);
-
-
-
-                                // Dodajte event listener za prikazivanje overlay-a
-                                image.addEventListener('click', function () {
-                                    // showOverlay(item);
-                                    console.log('kliknuto na sliku ' + index)
-                                });
-
-
-                                // Dodavanje div-a za svaki objekat unutar kategorije
-                                container.appendChild(itemDiv);
-
-                            }); */
-
-
-
+                            descriptionElements.forEach(function (description) {
+                                description.innerHTML = category.description;
+                            });
 
 
                             // Dodavanje novih itemDiv elemenata za svaki objekat unutar translations niza
@@ -189,9 +140,6 @@ function loadTranslations(language) {
                                 // Dodavanje novih elemenata u div
                                 itemDiv.appendChild(image);
                                 itemDiv.appendChild(textContainerDiv);
-
-
-
 
 
 
@@ -281,10 +229,6 @@ function loadTranslations(language) {
                         }
                     }
                 }
-                /* let currentSelectedIndex = 0;
-                const initialCategoryKey = 'cat' + (currentSelectedIndex + 1);
-                displayCategoryData(translations[initialCategoryKey]); */
-
                 // Pronalaženje aktivne ćelije
                 const activeCell = document.querySelector('.carousel__cell.active');
 
@@ -343,10 +287,26 @@ function setLanguageText(language) {
     const ruButton = document.getElementById("ruButton");
 
     const buttonMappings = {
-        'en': { image: '<img id="language" src="img/flag/eng.svg" alt="English">', show: [srButton, ruButton], hide: [enButton] },
-        'sr': { image: '<img id="language" src="img/flag/yu.svg" alt="English">', show: [srButton, enButton, ruButton, cyrillic_latin], hide: [] },
-        'sr_cyrillic': { image: '<img id="language" src="img/flag/yu.svg" alt="English">', show: [srButton, enButton, ruButton, cyrillic_latin], hide: [] },
-        'ru': { image: '<img id="language" src="img/flag/rus.svg" alt="Русский">', show: [enButton, srButton], hide: [ruButton] }
+        'en': {
+            image: '<img id="language" src="img/flag/eng.svg" alt="English">',
+            show: [srButton, ruButton],
+            hide: [enButton]
+        },
+        'sr': {
+            image: '<img id="language" src="img/flag/yu.svg" alt="English">',
+            show: [srButton, enButton, ruButton, cyrillic_latin],
+            hide: []
+        },
+        'sr_cyrillic': {
+            image: '<img id="language" src="img/flag/yu.svg" alt="English">',
+            show: [srButton, enButton, ruButton, cyrillic_latin],
+            hide: []
+        },
+        'ru': {
+            image: '<img id="language" src="img/flag/rus.svg" alt="Русский">',
+            show: [enButton, srButton],
+            hide: [ruButton]
+        }
     };
 
     const buttonConfig = buttonMappings[language];
@@ -367,6 +327,8 @@ document.getElementById("srButton").addEventListener("click", function () {
 document.getElementById("enButton").addEventListener("click", function () {
     changeLanguage('en');
     resetStyling();
+    cyrillicLabel.classList.remove('cyrillic_latin_color');
+    latinLabel.classList.remove('cyrillic_latin_color');
     setting_box.classList.remove('translateX');
     darkOpen.classList.remove('visibility');
     localStorage.setItem('selectedLanguage', 'en');
@@ -375,6 +337,8 @@ document.getElementById("enButton").addEventListener("click", function () {
 document.getElementById("ruButton").addEventListener("click", function () {
     changeLanguage('ru');
     resetStyling();
+    cyrillicLabel.classList.remove('cyrillic_latin_color');
+    latinLabel.classList.remove('cyrillic_latin_color');
     setting_box.classList.remove('translateX');
     darkOpen.classList.remove('visibility');
     localStorage.setItem('selectedLanguage', 'ru');
@@ -471,7 +435,5 @@ function toggleButtons() {
 }
 languageText.addEventListener("click", toggleButtons);
 languageBox.addEventListener("click", toggleButtons);
-// latinRadio.addEventListener("change", toggleButtons);
 latinRadio.addEventListener("click", toggleButtons);
-// cyrillicRadio.addEventListener("change", toggleButtons);
 cyrillicRadio.addEventListener("click", toggleButtons);

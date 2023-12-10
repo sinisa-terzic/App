@@ -54,7 +54,7 @@ body {
   align-items: center;
   height: 9vh;
   padding: 0 1.4rem;
-  background-color: #1b121c;
+  /* background-color: #1b121c; */
   border-bottom: 4px solid #573a59;
 }
 
@@ -104,7 +104,7 @@ body {
   position: absolute;
   transform: translateZ(-288px);
   transform-style: preserve-3d;
-  transition: transform 1s;
+  transition: transform 1s ease;
 }
 
 .carousel__cell {
@@ -285,18 +285,19 @@ body {
 }
 
 .description {
-  width: 100%;
+  /* width: 100%; */
   white-space: nowrap;
-  animation: marquee 15s linear infinite;
+  text-align: right;
+  animation: marquee 15s linear infinite paused;
 }
 
 @keyframes marquee {
-  0% {
-    transform: translateX(110%);
+  from {
+    transform: translateX(0)
   }
 
-  100% {
-    transform: translateX(-200%);
+  to {
+    transform: translateX(-100%)
   }
 }
 
@@ -306,7 +307,7 @@ body {
 .info {
   position: relative;
   padding: 0 1rem;
-  background-color: #1b121c;
+  /* background-color: #1b121c; */
   display: grid;
   height: 100%;
   /* transition: all 0.2s ease-in-out; */

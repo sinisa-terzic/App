@@ -79,20 +79,20 @@
 .switcher_dark,
 .switcher_light,
 .switcher_middle {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.05s ease;
 }
 
 .switcher_dark {
-    background-color: #1b121c;
+    background-color: #252425;
 }
 
 
 .switcher_light {
-    background-color: #9f0000;
+    background-color: #600f0f;
 }
 
 .switcher_middle {
-    background-color: #4b0082;
+    background-color: #14213d;
 }
 
 

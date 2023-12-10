@@ -20,7 +20,7 @@
         "category_9": "Delicacies"
     },
     "cat1": {
-        "description": "EN U hladna predjela se nalazi domaći pršut, domaći sir, slana riba i ... još mnogo toga ...",
+        "description": "&#9642; EN U hladna predjela se nalazi domaći pršut, domaći sir, slana riba i ... još mnogo toga ...",
         "translations": [
             {
                 "title_key": "EN ćelije 1",
@@ -61,7 +61,7 @@
         ]
     },
     "cat2": {
-        "description": "EN Specijaliteti od povrća ubrajaju paprike, tikvice, patlidžan, šargarepu i ...",
+        "description": "&#9642; EN Specijaliteti od povrća ubrajaju paprike, tikvice, patlidžan, šargarepu i ...",
         "translations": [
             {
                 "title_key": "EN ćelije 2",
@@ -102,7 +102,7 @@
         ]
     },
     "cat3": {
-        "description": "EN Salate i prilozi: masline, paradajz, krompir, kupus ...",
+        "description": "&#9642; EN Salate i prilozi: masline, paradajz, krompir, kupus ...",
         "translations": [
             {
                 "title_key": "EN ćelije 1",
@@ -143,7 +143,7 @@
         ]
     },
     "cat4": {
-        "description": "EN riba, lignje, hobotnica, školje, bakalar ...",
+        "description": "&#9642; EN riba, lignje, hobotnica, školje, bakalar ...",
         "translations": [
             {
                 "title_key": "EN ćelije 1",
@@ -184,7 +184,7 @@
         ]
     },
     "cat5": {
-        "description": "EN crno, rose, bijelo ...",
+        "description": "&#9642; EN crno, rose, bijelo ...",
         "translations": [
             {
                 "title_key": "EN ćelije 2",
@@ -225,7 +225,7 @@
         ]
     },
     "cat6": {
-        "description": "EN loza, viljamovka, vodtka, viski, likeri ...",
+        "description": "&#9642; EN loza, viljamovka, vodtka, viski, likeri ...",
         "translations": [
             {
                 "title_key": "EN ćelije 1",
@@ -266,7 +266,7 @@
         ]
     },
     "cat7": {
-        "description": "EN kafa, čaj, bezalkoholna pića, pivo, voda ...",
+        "description": "&#9642; EN kafa, čaj, bezalkoholna pića, pivo, voda ...",
         "translations": [
             {
                 "title_key": "EN ćelije 1",
@@ -307,7 +307,7 @@
         ]
     },
     "cat8": {
-        "description": "EN meni za ugovorene grupe",
+        "description": "&#9642; EN meni za ugovorene grupe",
         "translations": [
             {
                 "title_key": "EN ćelije 1",
@@ -348,7 +348,7 @@
         ]
     },
     "cat9": {
-        "description": "EN voćni, čokoladni, slani kolači ...",
+        "description": "&#9642; EN voćni, čokoladni, slani kolači ...",
         "translations": [
             {
                 "title_key": "EN ćelije 2",

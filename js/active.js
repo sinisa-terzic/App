@@ -33,7 +33,7 @@ const switcher_dark = document.querySelector('#switcher_dark');
 const switcher_light = document.querySelector('#switcher_light');
 const switcher_middle = document.querySelector('#switcher_middle');
 
-switcher_dark.addEventListener('click', function () {
+/*switcher_dark.addEventListener('click', function () {
     switcherHeader.classList.add('switcher_dark');
     switcherHeader.classList.remove('switcher_light');
     switcherHeader.classList.remove('switcher_middle');
@@ -64,7 +64,74 @@ switcher_middle.addEventListener('click', function () {
     switcherInfo.classList.add('switcher_middle');
     setting_box.classList.remove('translateX');
     darkOpen.classList.remove('visibility');
+}); */
+
+
+// Funkcija za postavljanje izabrane boje u lokalnom skladištu
+function saveColorPreference(color) {
+    localStorage.setItem('colorPreference', color);
+}
+
+// Funkcija za učitavanje izabrane boje iz lokalnog skladišta
+function loadColorPreference() {
+    return localStorage.getItem('colorPreference');
+}
+
+// Funkcije za postavljanje boje na osnovu izabrane vrednosti
+function setColorPreference(color) {
+    switcherHeader.classList.remove('switcher_dark', 'switcher_light', 'switcher_middle');
+    switcherInfo.classList.remove('switcher_dark', 'switcher_light', 'switcher_middle');
+
+    switch (color) {
+        case 'dark':
+            switcherHeader.classList.add('switcher_dark');
+            switcherInfo.classList.add('switcher_dark');
+            break;
+        case 'light':
+            switcherHeader.classList.add('switcher_light');
+            switcherInfo.classList.add('switcher_light');
+            break;
+        case 'middle':
+            switcherHeader.classList.add('switcher_middle');
+            switcherInfo.classList.add('switcher_middle');
+            break;
+        default:
+            // Ako nema odgovarajuće vrednosti, možete postaviti podrazumevanu boju
+            setColorPreference('dark');
+            break;
+    }
+}
+
+// Dodajte Event Listener-e na dugmad za promenu boje
+switcher_dark.addEventListener('click', function () {
+    saveColorPreference('dark');
+    setColorPreference('dark');
+    setting_box.classList.remove('translateX');
+    darkOpen.classList.remove('visibility');
 });
+
+switcher_light.addEventListener('click', function () {
+    saveColorPreference('light');
+    setColorPreference('light');
+    setting_box.classList.remove('translateX');
+    darkOpen.classList.remove('visibility');
+});
+
+switcher_middle.addEventListener('click', function () {
+    saveColorPreference('middle');
+    setColorPreference('middle');
+    setting_box.classList.remove('translateX');
+    darkOpen.classList.remove('visibility');
+});
+
+// Učitajte izabrane boje prilikom pokretanja skripte
+document.addEventListener("DOMContentLoaded", function () {
+    const savedColorPreference = loadColorPreference();
+    if (savedColorPreference) {
+        setColorPreference(savedColorPreference);
+    }
+});
+
 
 
 ///////////////////////////////////////////////////////

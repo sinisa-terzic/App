@@ -37,13 +37,10 @@ img {
 
 
 .active {
-    border: 2px solid #1b121c;
-    border-bottom: 5px solid #1b121c;
+    border-top: 3px solid #700c15;
+    border-bottom: 5px solid #700c15;
     opacity: 1;
-    /* transition: all 0.2s ease; */
-    border-radius: 0px;
-    transform: scale(1.5%);
-    border-radius: 10px;
+    border-radius: 0.5rem;
 }
 
 
