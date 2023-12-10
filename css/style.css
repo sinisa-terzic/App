@@ -480,6 +480,7 @@ body {
 .bottomDiv .periphrasis {
   margin-bottom: 0.5rem;
   padding: 0;
+  font-size: 1.6rem;
 }
 
 .bottomDiv .reference {
@@ -500,4 +501,10 @@ body {
 .bottomDiv .cost {
   /* justify-self: end; */
   margin-top: 2rem;
+}
+
+.bottomDiv ul {
+  font-size: 1.6rem;
+  /* list-style: none; */
+  list-style-position: inside;
 }

@@ -74,17 +74,17 @@ function loadTranslations(language) {
                                 description.style.animation = 'none';
                                 description.offsetHeight;
                                 description.style.animation = null;
-                                description.style.paddingLeft = '50px';
+                                description.style.paddingLeft = '150px';
                                 description.style.animationPlayState = 'running';
 
                                 const textLength = description.innerText.length;
 
                                 if (textLength > 60) {
-                                    description.style.animationDuration = '20s';
+                                    description.style.animationDuration = '17s';
                                 } else if (textLength > 50) {
-                                    description.style.animationDuration = '15s';
+                                    description.style.animationDuration = '14s';
                                 } else if (textLength > 30) {
-                                    description.style.animationDuration = '12s';
+                                    description.style.animationDuration = '11s';
                                 } else {
                                     description.style.animationDuration = '7s';
                                 }
@@ -125,6 +125,7 @@ function loadTranslations(language) {
                                 periphrasis.classList.add('periphrasis');
                                 const cost = document.createElement('p');
                                 cost.classList.add('cost');
+                                // cost.classList.add('switcher_dark');
 
                                 // Postavljanje atributa i teksta za trenutni objekat
                                 image.src = item.imageSrc;
@@ -177,28 +178,42 @@ function loadTranslations(language) {
                                 const h1 = document.createElement('h1');
                                 h1.textContent = item.title_key;
                                 h1.classList.add('title');
+
                                 const p1 = document.createElement('p');
                                 p1.classList.add('periphrasis');
                                 p1.textContent = item.text_key;
+
                                 const h2 = document.createElement('h2');
                                 h2.textContent = 'preporučujemo uz ovo:';
                                 h2.classList.add('reference');
-                                const p2 = document.createElement('p');
-                                p2.textContent = 'Your second paragraph text';
-                                p2.classList.add('drink');
-                                const p3 = document.createElement('p');
-                                p3.textContent = 'Your third paragraph text';
-                                p3.classList.add('drink');
+
+                                // Kreiranje liste (ul elementa)
+                                const list = document.createElement('ul');
+
+                                // Provera da li postoji drink objekat
+                                if (item.drink && typeof item.drink === 'object') {
+                                    // Iteracija kroz podatke u drink objektu i dodavanje svake vrednosti u listu
+                                    for (const drinkKey in item.drink) {
+                                        if (item.drink.hasOwnProperty(drinkKey)) {
+                                            const listItem = document.createElement('li');
+                                            listItem.textContent = item.drink[drinkKey];
+                                            list.appendChild(listItem);
+                                        }
+                                    }
+                                } else {
+                                    console.error('Error: Missing or invalid drink data for item:', item);
+                                }
+
                                 const p4 = document.createElement('p');
                                 p4.textContent = item.cost_key;
-                                p4.classList.add('cost')
+                                p4.classList.add('cost');
+                                // p4.classList.add('switcher_dark');
 
                                 // Dodavanje elemenata u donji div
                                 bottomDiv.appendChild(h1);
                                 bottomDiv.appendChild(p1);
                                 bottomDiv.appendChild(h2);
-                                bottomDiv.appendChild(p2);
-                                bottomDiv.appendChild(p3);
+                                bottomDiv.appendChild(list);
                                 bottomDiv.appendChild(p4);
 
                                 // Dodavanje donjeg div-a u descriptionDiv
