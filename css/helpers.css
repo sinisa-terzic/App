@@ -37,10 +37,32 @@ img {
 
 
 .active {
-    border-top: 3px solid #700c15;
-    border-bottom: 5px solid #700c15;
+    border-top: 2px solid #700c15;
+    border-bottom: 4px solid #2e0000;
+    opacity: 1;
+    border-radius: 0.8rem;
+}
+
+.active_switcher_dark,
+.active_switcher_light,
+.active_switcher_middle {
     opacity: 1;
     border-radius: 0.5rem;
+}
+
+.active_switcher_dark {
+    border-top: 3px solid #11161d;
+    border-bottom: 5px solid #11161d;
+}
+
+.active_switcher_light {
+    border-top: 3px solid #2e0000;
+    border-bottom: 5px solid #2e0000;
+}
+
+.active_switcher_middle {
+    border-top: 3px solid #091f2a;
+    border-bottom: 5px solid #091f2a;
 }
 
 
