@@ -55,7 +55,7 @@ body {
   height: 9vh;
   padding: 0 1.4rem;
   /* background-color: #1b121c; */
-  border-bottom: 4px solid #573a59;
+  border-bottom: 4px solid #000;
 }
 
 .headerLogo {
@@ -312,7 +312,7 @@ body {
   height: 100%;
   /* transition: all 0.2s ease-in-out; */
   grid-template-rows: 1fr 3fr 1fr;
-  border-top: 4px solid #573a59;
+  border-top: 3px solid #000;
 }
 
 .info.translateY {

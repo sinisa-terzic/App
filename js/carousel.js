@@ -97,7 +97,7 @@ cells.forEach(function (cell, index) {
         container.classList.add('active-item');
         setTimeout(() => {
             container.classList.remove('active-item');
-        }, 50);
+        }, 0);
 
         description.classList.remove('noneDisplay');
         category.classList.add('noneDisplay');
@@ -106,6 +106,7 @@ cells.forEach(function (cell, index) {
         selectedIndex = index;
         // Rotirajte karusel kako biste postavili kliknutu ćeliju u centar
         rotateCarousel();
+        changeCarousel();
 
         stop.classList.add('noneDisplay');
         play.classList.remove('noneDisplay');
