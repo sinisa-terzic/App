@@ -73,7 +73,7 @@ function setColorPreference(color) {
 switcher_dark.addEventListener('click', function () {
     saveColorPreference('dark');
     setColorPreference('dark');
-    changeBackgroundColors('switcher_dark');
+    changeBackgroundColors();
     setting_box.classList.remove('translateX');
     darkOpen.classList.remove('visibility');
 });
@@ -81,7 +81,7 @@ switcher_dark.addEventListener('click', function () {
 switcher_light.addEventListener('click', function () {
     saveColorPreference('light');
     setColorPreference('light');
-    changeBackgroundColors('switcher_light');
+    changeBackgroundColors();
     setting_box.classList.remove('translateX');
     darkOpen.classList.remove('visibility');
 });
@@ -89,25 +89,46 @@ switcher_light.addEventListener('click', function () {
 switcher_middle.addEventListener('click', function () {
     saveColorPreference('middle');
     setColorPreference('middle');
-    changeBackgroundColors('switcher_middle');
+    changeBackgroundColors();
     setting_box.classList.remove('translateX');
     darkOpen.classList.remove('visibility');
 });
 
 
 // Funkcija za promenu boje pozadine svih p tagova sa klasom 'cost'
-function changeBackgroundColors(colorClass) {
+function changeBackgroundColors() {
     // Izaberite sve p tagove sa klasom 'cost'
     const costElements = document.querySelectorAll('.cost');
 
-    // Iterirajte kroz sve p tagove i postavite im boju pozadine
+    // Proverite izabranu boju i primenite odgovarajuću klasu na svaki element
+    const savedColorPreference = loadColorPreference();
+
     costElements.forEach(function (costElement) {
         // Uklonite sve prethodne klase boje
         costElement.classList.remove('switcher_dark', 'switcher_light', 'switcher_middle');
-        // Dodajte novu klasu boje
-        costElement.classList.add(colorClass);
+
+        switch (savedColorPreference) {
+            case 'dark':
+                costElement.classList.add('switcher_dark');
+                break;
+            case 'light':
+                costElement.classList.add('switcher_light');
+                break;
+            case 'middle':
+                costElement.classList.add('switcher_middle');
+                break;
+            default:
+                // Ako nema odgovarajuće vrednosti, možete postaviti podrazumevanu boju
+                costElement.classList.add('switcher_dark');
+                break;
+        }
     });
 }
+
+
+// Pozovite funkciju prilikom promene boje ili drugih relevantnih događaja
+// Na primer, možete je pozvati prilikom promene boje klikom na dugmad switcher_dark, switcher_light, switcher_middle itd.
+
 
 
 // Učitajte izabrane boje prilikom pokretanja skripte
@@ -115,9 +136,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const savedColorPreference = loadColorPreference();
     if (savedColorPreference) {
         setColorPreference(savedColorPreference);
+        // Ostavite poziv funkcije za promenu boje ovdje kako biste primenili boje prilikom učitavanja skripte
+        changeBackgroundColors();
     }
 });
-
 
 
 ///////////////////////////////////////////////////////

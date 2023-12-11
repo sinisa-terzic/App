@@ -125,7 +125,14 @@ function loadTranslations(language) {
                                 periphrasis.classList.add('periphrasis');
                                 const cost = document.createElement('p');
                                 cost.classList.add('cost');
-                                cost.classList.add('switcher_dark');
+                                // Proverite postojeće klase u dokumentu i primenite odgovarajuću boju
+                                if (switcherHeader.classList.contains('switcher_dark')) {
+                                    cost.classList.add('switcher_dark');
+                                } else if (switcherHeader.classList.contains('switcher_light')) {
+                                    cost.classList.add('switcher_light');
+                                } else if (switcherHeader.classList.contains('switcher_middle')) {
+                                    cost.classList.add('switcher_middle');
+                                }
 
                                 // Postavljanje atributa i teksta za trenutni objekat
                                 image.src = item.imageSrc;
@@ -207,7 +214,13 @@ function loadTranslations(language) {
                                 const p4 = document.createElement('p');
                                 p4.textContent = item.cost_key;
                                 p4.classList.add('cost');
-                                p4.classList.add('switcher_dark');
+                                if (switcherHeader.classList.contains('switcher_dark')) {
+                                    p4.classList.add('switcher_dark');
+                                } else if (switcherHeader.classList.contains('switcher_light')) {
+                                    p4.classList.add('switcher_light');
+                                } else if (switcherHeader.classList.contains('switcher_middle')) {
+                                    p4.classList.add('switcher_middle');
+                                }
 
                                 // Dodavanje elemenata u donji div
                                 bottomDiv.appendChild(h1);
