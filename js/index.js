@@ -125,7 +125,7 @@ function loadTranslations(language) {
                                 periphrasis.classList.add('periphrasis');
                                 const cost = document.createElement('p');
                                 cost.classList.add('cost');
-                                // cost.classList.add('switcher_dark');
+                                cost.classList.add('switcher_dark');
 
                                 // Postavljanje atributa i teksta za trenutni objekat
                                 image.src = item.imageSrc;
@@ -207,7 +207,7 @@ function loadTranslations(language) {
                                 const p4 = document.createElement('p');
                                 p4.textContent = item.cost_key;
                                 p4.classList.add('cost');
-                                // p4.classList.add('switcher_dark');
+                                p4.classList.add('switcher_dark');
 
                                 // Dodavanje elemenata u donji div
                                 bottomDiv.appendChild(h1);

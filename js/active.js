@@ -73,7 +73,7 @@ function setColorPreference(color) {
 switcher_dark.addEventListener('click', function () {
     saveColorPreference('dark');
     setColorPreference('dark');
-    // changeBackgroundColors('switcher_dark');
+    changeBackgroundColors('switcher_dark');
     setting_box.classList.remove('translateX');
     darkOpen.classList.remove('visibility');
 });
@@ -81,7 +81,7 @@ switcher_dark.addEventListener('click', function () {
 switcher_light.addEventListener('click', function () {
     saveColorPreference('light');
     setColorPreference('light');
-    // changeBackgroundColors('switcher_light');
+    changeBackgroundColors('switcher_light');
     setting_box.classList.remove('translateX');
     darkOpen.classList.remove('visibility');
 });
@@ -89,13 +89,13 @@ switcher_light.addEventListener('click', function () {
 switcher_middle.addEventListener('click', function () {
     saveColorPreference('middle');
     setColorPreference('middle');
-    // changeBackgroundColors('switcher_middle');
+    changeBackgroundColors('switcher_middle');
     setting_box.classList.remove('translateX');
     darkOpen.classList.remove('visibility');
 });
 
 
-/* // Funkcija za promenu boje pozadine svih p tagova sa klasom 'cost'
+// Funkcija za promenu boje pozadine svih p tagova sa klasom 'cost'
 function changeBackgroundColors(colorClass) {
     // Izaberite sve p tagove sa klasom 'cost'
     const costElements = document.querySelectorAll('.cost');
@@ -107,7 +107,7 @@ function changeBackgroundColors(colorClass) {
         // Dodajte novu klasu boje
         costElement.classList.add(colorClass);
     });
-} */
+}
 
 
 // Učitajte izabrane boje prilikom pokretanja skripte
