@@ -105,7 +105,6 @@ cells.forEach(function (cell, index) {
 
         selectedIndex = index;
         // Rotirajte karusel kako biste postavili kliknutu ćeliju u centar
-        rotateCarousel();
         changeCarousel();
 
         stop.classList.add('noneDisplay');

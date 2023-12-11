@@ -74,19 +74,19 @@ function loadTranslations(language) {
                                 description.style.animation = 'none';
                                 description.offsetHeight;
                                 description.style.animation = null;
-                                description.style.paddingLeft = '35%';
+                                description.style.paddingLeft = '25%';
                                 description.style.animationPlayState = 'running';
 
                                 const textLength = description.innerText.length;
 
                                 if (textLength > 60) {
-                                    description.style.animationDuration = '17s';
+                                    description.style.animationDuration = '15s';
                                 } else if (textLength > 50) {
-                                    description.style.animationDuration = '14s';
+                                    description.style.animationDuration = '12s';
                                 } else if (textLength > 30) {
-                                    description.style.animationDuration = '11s';
+                                    description.style.animationDuration = '9s';
                                 } else {
-                                    description.style.animationDuration = '7s';
+                                    description.style.animationDuration = '6s';
                                 }
                             });
                         }
