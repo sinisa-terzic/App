@@ -74,7 +74,7 @@ function loadTranslations(language) {
                                 description.style.animation = 'none';
                                 description.offsetHeight;
                                 description.style.animation = null;
-                                description.style.paddingLeft = '150px';
+                                description.style.paddingLeft = '35%';
                                 description.style.animationPlayState = 'running';
 
                                 const textLength = description.innerText.length;
