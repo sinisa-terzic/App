@@ -35,9 +35,9 @@
 
 @media screen and (min-width: 400px) {
 
-    /* .header {
-        height: 10vh;
-    } */
+    .header {
+        height: 7.5vh;
+    }
 
     .scene {
         width: 220px;
@@ -54,7 +54,7 @@
 /*******************************************/
 /* Ako je visina viewporta oko 
 /*******************************************/
-@media (max-height: 600px) {
+@media (max-height: 620px) {
 
     .scene {
         width: 150px;
@@ -62,7 +62,7 @@
     }
 
     .carousel_control {
-        height: 2rem;
+        height: 1.5rem;
         align-items: flex-start;
     }
 

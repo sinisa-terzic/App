@@ -12,7 +12,7 @@
 .manu_icon {
     position: relative;
     justify-self: end;
-    width: 1.9rem;
+    width: 1.8rem;
 }
 
 @media (max-height: 570px) {
@@ -21,13 +21,17 @@
     }
 
     .manu_icon {
-        width: 1.5rem;
+        width: 1.6rem;
     }
 }
 
 @media screen and (min-width: 400px) {
     .header h1 {
         font-size: 2.4rem;
+    }
+
+    .manu_icon {
+        width: 1.8rem;
     }
 }
 

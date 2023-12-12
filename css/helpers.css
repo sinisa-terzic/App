@@ -37,10 +37,11 @@ img {
 
 
 .active {
-    border-top: 2px solid #700c15;
-    border-bottom: 4px solid #2e0000;
+    border-top: 1px solid #700c15;
+    border-bottom: 3px solid #2e0000;
     opacity: 1;
-    border-radius: 0.8rem;
+    /* border-radius: 1rem; */
+    box-shadow: 2px 2px 3px #BDBDBD;
 }
 
 .active_switcher_dark,

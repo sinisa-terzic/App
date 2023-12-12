@@ -26,7 +26,7 @@
                 "title_key": "EN ćelije 1",
                 "text_key": "Ovo je text_key ćelije 1.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -36,7 +36,7 @@
                 "title_key": "EN ćelije 2",
                 "text_key": "Ovo je text_key ćelije 2.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -46,7 +46,7 @@
                 "title_key": "EN ćelije 3",
                 "text_key": "Ovo je text_key ćelije 3.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -56,7 +56,7 @@
                 "title_key": "EN ćelije 4",
                 "text_key": "Ovo je text_key ćelije 4.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -66,7 +66,7 @@
                 "title_key": "EN ćelije 5",
                 "text_key": "Ovo je text_key ćelije 5.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -76,7 +76,7 @@
                 "title_key": "EN ćelije 6",
                 "text_key": "Ovo je text_key ćelije 6.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -91,7 +91,7 @@
                 "title_key": "EN ćelije 2",
                 "text_key": "Ovo je text_key ćelije 1.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -101,7 +101,7 @@
                 "title_key": "EN ćelije 3",
                 "text_key": "Ovo je text_key ćelije 2.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -111,7 +111,7 @@
                 "title_key": "EN ćelije 1",
                 "text_key": "Ovo je text_key ćelije 3.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -121,7 +121,7 @@
                 "title_key": "EN ćelije 4",
                 "text_key": "Ovo je text_key ćelije 4.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -131,7 +131,7 @@
                 "title_key": "EN ćelije 5",
                 "text_key": "Ovo je text_key ćelije 5.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -141,7 +141,7 @@
                 "title_key": "EN ćelije 6",
                 "text_key": "Ovo je text_key ćelije 6.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -156,7 +156,7 @@
                 "title_key": "EN ćelije 1",
                 "text_key": "Ovo je text_key ćelije 1.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -166,7 +166,7 @@
                 "title_key": "EN ćelije 2",
                 "text_key": "Ovo je text_key ćelije 2.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -176,7 +176,7 @@
                 "title_key": "EN ćelije 3",
                 "text_key": "Ovo je text_key ćelije 3.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -186,7 +186,7 @@
                 "title_key": "EN ćelije 4",
                 "text_key": "Ovo je text_key ćelije 4.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -196,7 +196,7 @@
                 "title_key": "EN ćelije 5",
                 "text_key": "Ovo je text_key ćelije 5.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -206,7 +206,7 @@
                 "title_key": "EN ćelije 6",
                 "text_key": "Ovo je text_key ćelije 6.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -221,7 +221,7 @@
                 "title_key": "EN ćelije 1",
                 "text_key": "Ovo je text_key ćelije 1.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -231,7 +231,7 @@
                 "title_key": "EN ćelije 2",
                 "text_key": "Ovo je text_key ćelije 2.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -241,7 +241,7 @@
                 "title_key": "EN ćelije 3",
                 "text_key": "Ovo je text_key ćelije 3.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -251,7 +251,7 @@
                 "title_key": "EN ćelije 4",
                 "text_key": "Ovo je text_key ćelije 4.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -261,7 +261,7 @@
                 "title_key": "EN ćelije 5",
                 "text_key": "Ovo je text_key ćelije 5.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -271,7 +271,7 @@
                 "title_key": "EN ćelije 6",
                 "text_key": "Ovo je text_key ćelije 6.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -286,7 +286,7 @@
                 "title_key": "EN ćelije 2",
                 "text_key": "Ovo je text_key ćelije 1.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -296,7 +296,7 @@
                 "title_key": "EN ćelije 3",
                 "text_key": "Ovo je text_key ćelije 2.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -306,7 +306,7 @@
                 "title_key": "EN ćelije 3",
                 "text_key": "Ovo je text_key ćelije 3.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -316,7 +316,7 @@
                 "title_key": "EN ćelije 4",
                 "text_key": "Ovo je text_key ćelije 4.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -326,7 +326,7 @@
                 "title_key": "EN ćelije 5",
                 "text_key": "Ovo je text_key ćelije 5.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -336,7 +336,7 @@
                 "title_key": "EN ćelije 6",
                 "text_key": "Ovo je text_key ćelije 6.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -351,7 +351,7 @@
                 "title_key": "EN ćelije 1",
                 "text_key": "Ovo je text_key ćelije 1.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -361,7 +361,7 @@
                 "title_key": "EN ćelije 2",
                 "text_key": "Ovo je text_key ćelije 2.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -371,7 +371,7 @@
                 "title_key": "EN ćelije 3",
                 "text_key": "Ovo je text_key ćelije 3.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -381,7 +381,7 @@
                 "title_key": "EN ćelije 4",
                 "text_key": "Ovo je text_key ćelije 4.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -391,7 +391,7 @@
                 "title_key": "EN ćelije 5",
                 "text_key": "Ovo je text_key ćelije 5.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -401,7 +401,7 @@
                 "title_key": "EN ćelije 6",
                 "text_key": "Ovo je text_key ćelije 6.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -416,7 +416,7 @@
                 "title_key": "EN ćelije 1",
                 "text_key": "Ovo je text_key ćelije 1.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -426,7 +426,7 @@
                 "title_key": "EN ćelije 2",
                 "text_key": "Ovo je text_key ćelije 2.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -436,7 +436,7 @@
                 "title_key": "EN ćelije 3",
                 "text_key": "Ovo je text_key ćelije 3.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -446,7 +446,7 @@
                 "title_key": "EN ćelije 4",
                 "text_key": "Ovo je text_key ćelije 4.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -456,7 +456,7 @@
                 "title_key": "EN ćelije 5",
                 "text_key": "Ovo je text_key ćelije 5.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -466,7 +466,7 @@
                 "title_key": "EN ćelije 6",
                 "text_key": "Ovo je text_key ćelije 6.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -481,7 +481,7 @@
                 "title_key": "EN ćelije 1",
                 "text_key": "Ovo je text_key ćelije 1.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -491,7 +491,7 @@
                 "title_key": "EN ćelije 2",
                 "text_key": "Ovo je text_key ćelije 2.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -501,7 +501,7 @@
                 "title_key": "EN ćelije 3",
                 "text_key": "Ovo je text_key ćelije 3.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -511,7 +511,7 @@
                 "title_key": "EN ćelije 4",
                 "text_key": "Ovo je text_key ćelije 4.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -521,7 +521,7 @@
                 "title_key": "EN ćelije 5",
                 "text_key": "Ovo je text_key ćelije 5.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -531,7 +531,7 @@
                 "title_key": "EN ćelije 6",
                 "text_key": "Ovo je text_key ćelije 6.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -546,7 +546,7 @@
                 "title_key": "EN ćelije 2",
                 "text_key": "Ovo je text_key ćelije 1.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/4.jpg",
+                "imageSrc": "img/food/pr/4.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -556,7 +556,7 @@
                 "title_key": "EN ćelije 2",
                 "text_key": "Ovo je text_key ćelije 3.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -566,7 +566,7 @@
                 "title_key": "EN ćelije 3",
                 "text_key": "Ovo je text_key ćelije 2.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -576,7 +576,7 @@
                 "title_key": "EN ćelije 4",
                 "text_key": "Ovo je text_key ćelije 4.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/3.jpg",
+                "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -586,7 +586,7 @@
                 "title_key": "EN ćelije 5",
                 "text_key": "Ovo je text_key ćelije 5.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/2.jpg",
+                "imageSrc": "img/food/pr/2.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -596,7 +596,7 @@
                 "title_key": "EN ćelije 6",
                 "text_key": "Ovo je text_key ćelije 6.",
                 "cost_key": "25.00€",
-                "imageSrc": "img/food/1.jpg",
+                "imageSrc": "img/food/pr/1.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"

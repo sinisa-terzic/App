@@ -193,6 +193,7 @@ const prevButton = document.querySelector('.previous-button');
 prevButton.addEventListener('click', function () {
     selectedIndex--;
     changeCarousel();
+    stopRotation();
 });
 
 // Dodajte event listenere za touchstart i touchend događaje
@@ -216,6 +217,7 @@ const nextButton = document.querySelector('.next-button');
 nextButton.addEventListener('click', function () {
     selectedIndex++;
     changeCarousel();
+    stopRotation();
 });
 
 // Dodajte event listenere za touchstart i touchend događaje

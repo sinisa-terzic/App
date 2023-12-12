@@ -136,6 +136,9 @@ function loadTranslations(language) {
 
                                 // Postavljanje atributa i teksta za trenutni objekat
                                 image.src = item.imageSrc;
+                                image.alt = 'food';
+                                image.width = image.width;
+                                image.height = image.height;
                                 title.textContent = item.title_key;
                                 periphrasis.textContent = item.text_key;
                                 cost.textContent = item.cost_key;
@@ -316,22 +319,22 @@ function setLanguageText(language) {
 
     const buttonMappings = {
         'en': {
-            image: '<img id="language" src="img/flag/eng.svg" alt="English">',
+            image: '<img id="language" src="img/flag/eng.svg" alt="English" width="35" height="22">',
             show: [srButton, ruButton],
             hide: [enButton]
         },
         'sr': {
-            image: '<img id="language" src="img/flag/yu.svg" alt="English">',
+            image: '<img id="language" src="img/flag/yu.svg" alt="Yu" width="35" height="22">',
             show: [srButton, enButton, ruButton, cyrillic_latin],
             hide: []
         },
         'sr_cyrillic': {
-            image: '<img id="language" src="img/flag/yu.svg" alt="English">',
+            image: '<img id="language" src="img/flag/yu.svg" alt="Jy" width="35" height="22">',
             show: [srButton, enButton, ruButton, cyrillic_latin],
             hide: []
         },
         'ru': {
-            image: '<img id="language" src="img/flag/rus.svg" alt="Русский">',
+            image: '<img id="language" src="img/flag/rus.svg" alt="Русский" width="35" height="22">',
             show: [enButton, srButton],
             hide: [ruButton]
         }

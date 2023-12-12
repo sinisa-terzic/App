@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (savedColorPreference) {
         setColorPreference(savedColorPreference);
         // Ostavite poziv funkcije za promenu boje ovdje kako biste primenili boje prilikom učitavanja skripte
-        changeBackgroundColors();
+        // changeBackgroundColors();
     }
 });
 
@@ -197,6 +197,19 @@ document.querySelectorAll('img').forEach(function (img) {
     img.addEventListener('contextmenu', function (e) {
         e.preventDefault();
     });
+    // Create a new image to get the real dimensions
+    var temporaryImage = new Image();
+    temporaryImage.src = img.src;
+
+    // Set dimensions after the image is loaded
+    temporaryImage.onload = function () {
+        // Set width and height attributes for the image
+        img.setAttribute('width', temporaryImage.width);
+        img.setAttribute('height', temporaryImage.height);
+    };
+
 });
+
+
 
 
