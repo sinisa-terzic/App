@@ -63,10 +63,10 @@ body {
 }
 
 .dark {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 93vh;
-  top: 100%;
+  top: 7vh;
   right: 0;
   bottom: 0;
   left: 0;
