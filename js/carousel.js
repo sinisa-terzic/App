@@ -222,6 +222,11 @@ headerLogo.addEventListener('click', function () {
     const infoDiv = document.querySelector('.info');
     infoDiv.classList.remove('noneDisplay');
 
-    // Ponovo proverite i prikažite/uklonite "Izaberite kategoriju" info div
-    // checkAndDisplayInfo();
+    darkOpen.classList.add('noneDisplay');
+    languageBox.classList.remove("translateX");
+    switcher.classList.remove('translateX');
+    checkbox_1.checked = false;
+    checkbox_2.checked = false;
+
+    startRotation();
 });

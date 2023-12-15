@@ -80,6 +80,7 @@
 }
 
 .switcher_dark,
+.switcher_blue,
 .switcher_light,
 .switcher_middle {
     transition: all 0.05s ease;
@@ -90,7 +91,7 @@
 }
 
 .switcher_blue {
-    background-color: #0c266f;
+    background-color: #192d50;
 }
 
 .switcher_brown {
