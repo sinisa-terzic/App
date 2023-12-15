@@ -53,7 +53,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 7vh;
-  padding: 0 1.4rem;
+  padding: 0 1.6rem 0 0.5rem;
   /* background-color: #1b121c; */
   border-bottom: 4px solid #000;
 }
