@@ -128,28 +128,28 @@ nextButton.addEventListener('click', () => {
 
 ///////////////////////////////////////////////////
 // 
-const languageSetting = document.querySelector('.languageBox');
-const darkOpen = document.querySelector('.dark')
+// const languageSetting = document.querySelector('.languageBox');
+// const darkOpen = document.querySelector('.dark')
 
-function toggleAlertTheme() {
-  // setting_box.classList.toggle('translateX');
-  // alertThemeElement.classList.toggle('settingBoxOpen');
-  darkOpen.classList.toggle('visibility');
-  // languageBox.classList.remove("noneDisplay");
-  // languageBox.classList.add("noneDisplay");
-
-  /*  stop.classList.add('noneDisplay');
-   play.classList.remove('noneDisplay');
-   stopRotation();
-   selectFirstCell(); */
-}
-
-// darkOpen.addEventListener('click', toggleAlertTheme);
-languageSetting.addEventListener('click', toggleAlertTheme);
-
-// languageSetting.addEventListener('click', () => {
+// function toggleAlertTheme() {
+//   // setting_box.classList.toggle('translateX');
+//   // alertThemeElement.classList.toggle('settingBoxOpen');
 //   darkOpen.classList.toggle('visibility');
-// });
+//   // languageBox.classList.remove("noneDisplay");
+//   // languageBox.classList.add("noneDisplay");
+
+//   /*  stop.classList.add('noneDisplay');
+//    play.classList.remove('noneDisplay');
+//    stopRotation();
+//    selectFirstCell(); */
+// }
+
+// // darkOpen.addEventListener('click', toggleAlertTheme);
+// languageSetting.addEventListener('click', toggleAlertTheme);
+
+// // languageSetting.addEventListener('click', () => {
+// //   darkOpen.classList.toggle('visibility');
+// // });
 
 
 ///////////////////////////////////////////////////////
