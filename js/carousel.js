@@ -1,5 +1,6 @@
 let carousel = document.querySelector('.carousel');
 const scene = document.querySelector('.scene');
+const dataContainer = document.getElementById('data');
 const cells = carousel.querySelectorAll('.carousel__cell');
 const cellElements = Array.from(cells);
 const cellCount = cellElements.length;
@@ -80,88 +81,44 @@ function stopRotation() {
     play.classList.remove('noneDisplay');
 }
 
-///////////////////////////////////////////////////
-// Klik događaj za svaku ćeliju i dodela active Dodajte klik događaj za svaku ćeliju
-cells.forEach(function (cell, index) {
-    cell.addEventListener('click', function () {
-        // Uklonite klasu "active" sa svih ćelija
-        cells.forEach(function (cell) {
-            cell.classList.remove('active');
-
-        });
-
-        // Dodelite klasu "active" kliknutoj ćeliji
-        cell.classList.add('active');
-        container.classList.remove('opacity');
-        // Za animaciju
-        container.classList.add('active-item');
-        setTimeout(() => {
-            container.classList.remove('active-item');
-        }, 0);
-
-        description.classList.remove('noneDisplay');
-        category.classList.add('noneDisplay');
-        info.classList.add('translateY');
-
-        selectedIndex = index;
-        // Rotirajte karusel kako biste postavili kliknutu ćeliju u centar
-        changeCarousel();
-
-        stop.classList.add('noneDisplay');
-        play.classList.remove('noneDisplay');
-        stopRotation()
-
-    });
-});
-
 
 ///////////////////////////////////////////////////////
 // Rotacija pokretom ruke
-var isDragging = false;
-var startX, diffX, previousX;
-var isAnimating = false;
-var animationFrame;
-var dampingFactor = 0.1; // Faktor usporavanja
-const cellWidth = carousel.offsetWidth; // Trenutno ne služe ničem
-const cellHeight = carousel.offsetHeight; // Trenutno ne služe ničem
+let isDragging = false;
+let startX, diffX, previousX;
 
-// ----------------------------------------------------------------------
+// Determine the event names based on whether it's a carousel or not
+const startEvent = carousel ? 'touchstart' : 'mousedown';
+const moveEvent = carousel ? 'touchmove' : 'mousemove';
+const endEvent = carousel ? 'touchend' : 'mouseup';
 
-var isTouchDevice = 'ontouchstart' in document.documentElement;
-var startEvent = isTouchDevice ? 'touchstart' : 'mousedown';
-var moveEvent = isTouchDevice ? 'touchmove' : 'mousemove';
-var endEvent = isTouchDevice ? 'touchend' : 'mouseup';
-
+// Add event listener for the start event
 carousel.addEventListener(startEvent, function (e) {
     isDragging = true;
-    startX = isTouchDevice ? e.touches[0].clientX : e.clientX;
+    startX = carousel ? e.touches[0].clientX : e.clientX;
     previousX = startX;
-    cancelAnimationFrame(animationFrame);
-    isAnimating = false;
 });
 
-carousel.addEventListener(endEvent, function (e) {
+// Add event listener for the move event
+carousel.addEventListener(moveEvent, function (e) {
     if (isDragging) {
-        var clientX = isTouchDevice ? e.changedTouches[0].clientX : e.clientX;
+        const clientX = carousel ? e.changedTouches[0].clientX : e.clientX;
         diffX = clientX - startX;
 
-        // Promenite selectedIndex na osnovu pomeranja miša
+        // Change selectedIndex based on mouse movement
         if (Math.abs(diffX) > cellSize / 2) {
             if (diffX < 0) {
                 selectedIndex += 1;
+                // console.log('aaa');
             } else {
                 selectedIndex -= 1;
+                // console.log('bbb');
             }
             startX = clientX;
             changeCarousel();
-            stop.classList.add('noneDisplay');
-            play.classList.remove('noneDisplay');
-            stopRotation();
         }
 
-        if (!isAnimating && Math.abs(clientX - previousX) > 10) {
-            isAnimating = true;
-        }
+        stopRotation();
     }
 });
 
@@ -169,7 +126,7 @@ carousel.addEventListener(endEvent, function (e) {
 //////////////////////////////////////////////////////
 // Pokreni rotaciju
 const play = document.querySelector('.play');
-play.addEventListener('click', function () {
+play.addEventListener('click', () => {
     startRotation();
     play.classList.add('noneDisplay');
     // var stop = document.querySelector('.stop');
@@ -179,7 +136,7 @@ play.addEventListener('click', function () {
 //////////////////////////////////////////////////////
 // Stopiraj rotaciju
 const stop = document.querySelector('.stop');
-stop.addEventListener('click', function () {
+stop.addEventListener('click', () => {
     stopRotation();
     stop.classList.add('noneDisplay');
     // var play = document.querySelector('.play');
@@ -190,14 +147,14 @@ stop.addEventListener('click', function () {
 //////////////////////////////////////////////////////
 // Dodajte klik događaj za dugme za prethodnu ćeliju
 const prevButton = document.querySelector('.previous-button');
-prevButton.addEventListener('click', function () {
+prevButton.addEventListener('click', () => {
     selectedIndex--;
     changeCarousel();
     stopRotation();
 });
 
 // Dodajte event listenere za touchstart i touchend događaje
-prevButton.addEventListener('touchstart', function () {
+prevButton.addEventListener('touchstart', () => {
     // Funkcija koja se poziva kada se touchstart događa
     touchInterval = setInterval(function () {
         selectedIndex--;
@@ -214,14 +171,14 @@ prevButton.addEventListener('touchend', function () {
 //////////////////////////////////////////////////////
 // Dodajte klik događaj za dugme za sledeću ćeliju
 const nextButton = document.querySelector('.next-button');
-nextButton.addEventListener('click', function () {
+nextButton.addEventListener('click', () => {
     selectedIndex++;
     changeCarousel();
     stopRotation();
 });
 
 // Dodajte event listenere za touchstart i touchend događaje
-nextButton.addEventListener('touchstart', function () {
+nextButton.addEventListener('touchstart', () => {
     // Funkcija koja se poziva kada se touchstart događa
     touchInterval = setInterval(function () {
         selectedIndex++;
@@ -230,10 +187,41 @@ nextButton.addEventListener('touchstart', function () {
     }, 1000); // Promenite vreme intervala prema vašim potrebama
 });
 
-nextButton.addEventListener('touchend', function () {
+nextButton.addEventListener('touchend', () => {
     // Funkcija koja se poziva kada se touchend događa
     clearInterval(touchInterval);
 });
 
 
-// changeCarousel();
+///////////////////////////////////////////////////
+// const languageSetting = document.querySelector('.languageBox');
+const darkOpen = document.querySelector('.dark')
+
+darkOpen.addEventListener('click', () => {
+    darkOpen.classList.remove('visibility');
+    languageBox.classList.remove("translateX");
+    switcher.classList.remove('translateX');
+    checkbox_1.checked = false;
+    checkbox_2.checked = false;
+});
+
+
+///////////////////////////////////////////////////////
+//
+const headerLogo = document.querySelector('.headerLogo');
+headerLogo.addEventListener('click', function () {
+    cells.forEach(function (cell) {
+        cell.classList.remove('active');
+    });
+
+    // Očistimo sadržaj kontejnera
+    const dataContainer = document.getElementById('data');
+    dataContainer.classList.add('noneDisplay');
+    dataContainer.innerHTML = '';
+
+    const infoDiv = document.querySelector('.info');
+    infoDiv.classList.remove('noneDisplay');
+
+    // Ponovo proverite i prikažite/uklonite "Izaberite kategoriju" info div
+    // checkAndDisplayInfo();
+});

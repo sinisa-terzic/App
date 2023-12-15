@@ -1,36 +1,10 @@
 ///////////////////////////////////////////////////////////
-// OPEN SETTING BOX
-const manu_icon_open = document.querySelector('.manu_icon')
-const setting_box = document.querySelector('.setting');
-const settingTitle = document.querySelector('.settingTitle');
-const manu_icon_clode = document.querySelector('.manu_icon_clode')
-const darkOpen = document.querySelector('.dark')
-
-function toggleAlertTheme() {
-    setting_box.classList.toggle('translateX');
-    // alertThemeElement.classList.toggle('settingBoxOpen');
-    darkOpen.classList.toggle('visibility');
-    languageBox.classList.add("noneDisplay");
-
-    stop.classList.add('noneDisplay');
-    play.classList.remove('noneDisplay');
-    stopRotation();
-    selectFirstCell();
-}
-
-manu_icon_open.addEventListener('click', toggleAlertTheme);
-// settingButtonClose.addEventListener('click', toggleAlertTheme);
-darkOpen.addEventListener('click', toggleAlertTheme);
-settingTitle.addEventListener('click', toggleAlertTheme);
-
-
-
-///////////////////////////////////////////////////////////
 // change color
 const switcherHeader = document.querySelector('.header');
 const switcherInfo = document.querySelector('.info');
 const switcher_dark = document.querySelector('#switcher_dark');
-const switcher_light = document.querySelector('#switcher_light');
+const switcher_blue = document.querySelector('#switcher_blue');
+const switcher_brown = document.querySelector('#switcher_brown');
 const switcher_middle = document.querySelector('#switcher_middle');
 
 
@@ -46,17 +20,21 @@ function loadColorPreference() {
 
 // Funkcije za postavljanje boje na osnovu izabrane vrednosti
 function setColorPreference(color) {
-    switcherHeader.classList.remove('switcher_dark', 'switcher_light', 'switcher_middle');
-    switcherInfo.classList.remove('switcher_dark', 'switcher_light', 'switcher_middle');
+    switcherHeader.classList.remove('switcher_dark', 'switcher_blue', 'switcher_brown', 'switcher_middle');
+    switcherInfo.classList.remove('switcher_dark', 'switcher_blue', 'switcher_brown', 'switcher_middle');
 
     switch (color) {
         case 'dark':
             switcherHeader.classList.add('switcher_dark');
             switcherInfo.classList.add('switcher_dark');
             break;
-        case 'light':
-            switcherHeader.classList.add('switcher_light');
-            switcherInfo.classList.add('switcher_light');
+        case 'blue':
+            switcherHeader.classList.add('switcher_blue');
+            switcherInfo.classList.add('switcher_blue');
+            break;
+        case 'brown':
+            switcherHeader.classList.add('switcher_brown');
+            switcherInfo.classList.add('switcher_brown');
             break;
         case 'middle':
             switcherHeader.classList.add('switcher_middle');
@@ -74,24 +52,36 @@ switcher_dark.addEventListener('click', function () {
     saveColorPreference('dark');
     setColorPreference('dark');
     changeBackgroundColors();
-    setting_box.classList.remove('translateX');
+    switcher.classList.remove('translateX');
     darkOpen.classList.remove('visibility');
+    checkbox_2.checked = false;
 });
 
-switcher_light.addEventListener('click', function () {
-    saveColorPreference('light');
-    setColorPreference('light');
+switcher_blue.addEventListener('click', function () {
+    saveColorPreference('blue');
+    setColorPreference('blue');
     changeBackgroundColors();
-    setting_box.classList.remove('translateX');
+    switcher.classList.remove('translateX');
     darkOpen.classList.remove('visibility');
+    checkbox_2.checked = false;
+});
+
+switcher_brown.addEventListener('click', function () {
+    saveColorPreference('brown');
+    setColorPreference('brown');
+    changeBackgroundColors();
+    switcher.classList.remove('translateX');
+    darkOpen.classList.remove('visibility');
+    checkbox_2.checked = false;
 });
 
 switcher_middle.addEventListener('click', function () {
     saveColorPreference('middle');
     setColorPreference('middle');
     changeBackgroundColors();
-    setting_box.classList.remove('translateX');
+    switcher.classList.remove('translateX');
     darkOpen.classList.remove('visibility');
+    checkbox_2.checked = false;
 });
 
 
@@ -105,14 +95,17 @@ function changeBackgroundColors() {
 
     costElements.forEach(function (costElement) {
         // Uklonite sve prethodne klase boje
-        costElement.classList.remove('switcher_dark', 'switcher_light', 'switcher_middle');
+        costElement.classList.remove('switcher_dark', 'switcher_blue', 'switcher_brown', 'switcher_middle');
 
         switch (savedColorPreference) {
             case 'dark':
                 costElement.classList.add('switcher_dark');
                 break;
-            case 'light':
-                costElement.classList.add('switcher_light');
+            case 'blue':
+                costElement.classList.add('switcher_blue');
+                break;
+            case 'brown':
+                costElement.classList.add('switcher_brown');
                 break;
             case 'middle':
                 costElement.classList.add('switcher_middle');
@@ -142,29 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-///////////////////////////////////////////////////////
-// Funkcija za postavljanje karusela na prvu ćeliju i za druge ćelije
-function selectFirstCell() {
-    const cells = document.querySelectorAll('.carousel__cell');
-
-    /* if (cells.length > 0) {
-        cells[0].click(); // Kliknite na prvu ćeliju
-        console.log('Radi za prvu ćeliju');
-    } */
-
-    cells.forEach((cell, index) => {
-        // cells[0].click(); // Kliknite na prvu ćeliju
-        cell.addEventListener('click', () => {
-            // console.log(`Kliknuli ste na ćeliju ${index + 1}`);
-        });
-    });
-
-    // console.log('Radi');
-}
-
-
-
-const container = document.querySelector('.content-container');
+/* const container = document.querySelector('.content-container');
 const description = document.querySelector('.description_content');
 const category = document.querySelector('.category');
 const info = document.querySelector('.info');
@@ -188,7 +159,7 @@ headerLogo.addEventListener('click', function () {
     info.classList.remove('translateY');
     setting_box.classList.remove('translateX');
     darkOpen.classList.remove('visibility');
-});
+}); */
 
 
 ///////////////////////////////////////////////////////////
