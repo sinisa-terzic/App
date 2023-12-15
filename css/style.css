@@ -72,7 +72,6 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 2;
-  visibility: hidden;
 }
 
 .dark.visibility {

@@ -198,7 +198,7 @@ nextButton.addEventListener('touchend', () => {
 const darkOpen = document.querySelector('.dark')
 
 darkOpen.addEventListener('click', () => {
-    darkOpen.classList.remove('visibility');
+    darkOpen.classList.add('noneDisplay');
     languageBox.classList.remove("translateX");
     switcher.classList.remove('translateX');
     checkbox_1.checked = false;

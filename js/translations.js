@@ -342,12 +342,12 @@ checkbox_1.addEventListener('change', () => {
     if (checkbox_1.checked) {
         languageBox.classList.add('translateX');
         switcher.classList.remove('translateX');
-        darkOpen.classList.add('visibility');
+        darkOpen.classList.remove('noneDisplay');
         checkbox_2.checked = false;
         // console.log('Čekboks je označen.');
     } else {
         languageBox.classList.remove('translateX');
-        darkOpen.classList.remove('visibility');
+        darkOpen.classList.add('noneDisplay');
         // console.log('Čekboks nije označen.');
     }
 });
@@ -386,12 +386,12 @@ checkbox_2.addEventListener('change', () => {
     if (checkbox_2.checked) {
         switcher.classList.add('translateX');
         languageBox.classList.remove('translateX');
-        darkOpen.classList.add('visibility');
+        darkOpen.classList.remove('noneDisplay');
         checkbox_1.checked = false;
         // console.log('Čekboks je označen.');
     } else {
         switcher.classList.remove('translateX');
-        darkOpen.classList.remove('visibility');
+        darkOpen.classList.add('noneDisplay');
         // console.log('Čekboks nije označen.');
     }
 });
