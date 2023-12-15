@@ -35,9 +35,9 @@
 
 @media screen and (min-width: 400px) {
 
-    .header {
+    /* .header {
         height: 7.5vh;
-    }
+    } */
 
     .scene {
         width: 220px;
