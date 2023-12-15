@@ -53,7 +53,7 @@ switcher_dark.addEventListener('click', function () {
     setColorPreference('dark');
     changeBackgroundColors();
     switcher.classList.remove('translateX');
-    darkOpen.classList.remove('visibility');
+    darkOpen.classList.add('noneDisplay');
     checkbox_2.checked = false;
 });
 
@@ -62,7 +62,7 @@ switcher_blue.addEventListener('click', function () {
     setColorPreference('blue');
     changeBackgroundColors();
     switcher.classList.remove('translateX');
-    darkOpen.classList.remove('visibility');
+    darkOpen.classList.add('noneDisplay');
     checkbox_2.checked = false;
 });
 
@@ -71,7 +71,7 @@ switcher_brown.addEventListener('click', function () {
     setColorPreference('brown');
     changeBackgroundColors();
     switcher.classList.remove('translateX');
-    darkOpen.classList.remove('visibility');
+    darkOpen.classList.add('noneDisplay');
     checkbox_2.checked = false;
 });
 
@@ -80,7 +80,7 @@ switcher_middle.addEventListener('click', function () {
     setColorPreference('middle');
     changeBackgroundColors();
     switcher.classList.remove('translateX');
-    darkOpen.classList.remove('visibility');
+    darkOpen.classList.add('noneDisplay');
     checkbox_2.checked = false;
 });
 
