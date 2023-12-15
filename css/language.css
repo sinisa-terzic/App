@@ -1,21 +1,13 @@
 /*  ===  SETTING  ===
 ******************************************* */
 .setting {
-    /* position: absolute;
-    width: 60%;
-    top: 100%;
-    right: 0rem;
-    transform: translateX(100%);
-    transition: all 110ms ease-out;
-    z-index: 3;
-    background-color: #fff; */
     display: flex;
     align-items: center;
     gap: 1.8rem;
 }
 
 .setting svg {
-    width: 1.5rem;
+    width: 1.6rem;
     fill: #fff;
 }
 
