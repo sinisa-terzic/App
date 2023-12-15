@@ -65,13 +65,13 @@
 }
 
 .switcher_titl {
-    border-bottom: 1px solid;
-    padding-bottom: 0.1rem;
+    border-bottom: 1px dotted #7f7f7f;
+    padding-bottom: 0.4rem;
 }
 
 .switcherBox {
     gap: 1rem;
-    padding: 0.8rem 0 0;
+    padding: 1rem 0 0;
 }
 
 .colorchange {
@@ -127,7 +127,7 @@
 .language {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     position: absolute;
     top: calc(100% + 4px);
     color: #000;
@@ -144,9 +144,22 @@
 }
 
 .language_flag {
-    gap: 0.5rem;
+    gap: 0.6rem;
     align-items: center;
 }
+
+
+.language_flag {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    position: relative;
+}
+
+
+/* .rus {
+    border-bottom: none;
+} */
 
 
 .ExYu {
@@ -156,6 +169,8 @@
 
 .cyrillic_latin {
     font-size: 1.6rem;
+    position: absolute;
+    right: 0;
 }
 
 .flag {
