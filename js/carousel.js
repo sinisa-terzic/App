@@ -227,6 +227,4 @@ headerLogo.addEventListener('click', function () {
     switcher.classList.remove('translateX');
     checkbox_1.checked = false;
     checkbox_2.checked = false;
-
-    startRotation();
 });
