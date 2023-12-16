@@ -132,16 +132,32 @@ function setTranslations(translations) {
                 overlay.innerHTML = `
                     <div class="backgroundDiv"></div>
                     <div class="descriptionDiv">
+
                         <div class="topDiv">
                             <img src="${data.imageSrc}" alt="${data.title_key}">
                         </div>
+
                         <div class="bottomDiv">
-                            <h1 class="title">${data.title_key}</h1>
+                            <div class="flex between_center mtb-10">
+                                <h1 class="title">${data.title_key}</h1>
+                                <p class="cost">${data.cost_key}</p>
+                            </div>
+                            
                             <p class="periphrasis">${data.text_key}</p>
                             <h2 class="reference">${data.hereWith}:</h2>
                             <ul id="drinkList"></ul> 
 
-                            <p class="cost">${data.cost_key}</p>
+
+                            <div class="bottomDiv_button grid fg-10 ta-c mtb-10">
+                                <button class="back" title="stop">Nazad</button> 
+                            </div>
+
+                            <!--
+                             <div class="bottomDiv_button grid g_2_1 fg-10 ta-c mtb-10">
+                                <button class="basket" title="stop">Ubaci u korpu</button> 
+                                <button class="back" title="stop">Nazad</button> 
+                            </div> 
+                            -->
                         </div>
                     </div>
                 `;
@@ -160,6 +176,13 @@ function setTranslations(translations) {
                 });
 
                 // Dodajte event listener za prikazivanje opisa na klik
+                const back = dataDiv.querySelector('.back');
+                back.addEventListener('click', function () {
+                    overlay.classList.add('noneDisplay');
+                    // descriptionDiv.classList.remove('noneDisplay');
+                });
+
+
                 const dataImg = dataDiv.querySelector('.dataImg');
                 dataImg.addEventListener('click', function () {
                     overlay.classList.remove('noneDisplay');
@@ -167,7 +190,7 @@ function setTranslations(translations) {
                     console.log('slika: ' + index);
                 });
 
-                // Dodajte event listener za sakrivanje opisa na klik
+
                 const backgroundDiv = overlay.querySelector('.backgroundDiv');
                 backgroundDiv.addEventListener('click', function () {
                     overlay.classList.add('noneDisplay');

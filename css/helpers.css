@@ -31,10 +31,31 @@ img {
 }
 
 
+.ta-c {
+    text-align: center;
+}
+
+
 .flex {
     display: flex;
 }
 
+.between_center {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fg-10 {
+    gap: 1rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.g_2_1 {
+    grid-template-columns: 2fr 1fr;
+}
 
 .active {
     border-top: 1px solid #700c15;
@@ -42,6 +63,19 @@ img {
     opacity: 1;
     /* border-radius: 1rem; */
     box-shadow: 2px 2px 3px #BDBDBD;
+}
+
+.mt-10 {
+    margin-top: 1rem;
+}
+
+.mtb-10 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mb-5 {
+    margin-bottom: 0.5rem;
 }
 
 .active_switcher_dark,

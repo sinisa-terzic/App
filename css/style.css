@@ -478,9 +478,9 @@ body {
   /* font-size: 200%; */
 }
 
-.bottomDiv .title {
+/* .bottomDiv .title {
   margin: 1rem 0 0.5rem;
-}
+} */
 
 .bottomDiv .periphrasis {
   margin-bottom: 0.5rem;
@@ -504,10 +504,10 @@ body {
   margin-bottom: 0.2rem;
 }
 
-.bottomDiv .cost {
+/* .bottomDiv .cost {
   justify-self: end;
   margin-top: 2rem;
-}
+} */
 
 .bottomDiv ul {
   font-size: 1.6rem;
@@ -518,4 +518,26 @@ body {
 
 .bottomDiv ul li {
   margin-bottom: 0.5rem;
+}
+
+.bottomDiv_button {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.bottomDiv_button .back,
+.bottomDiv_button .basket {
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  background-color: #000;
+}
+
+.bottomDiv_button .back {
+  justify-self: end;
+  padding: 0.5rem 3rem;
+}
+
+.g_2_1.bottomDiv_button .back {
+  justify-self: auto;
 }
