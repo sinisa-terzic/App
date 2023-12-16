@@ -172,6 +172,7 @@ function setTranslations(translations) {
                 Object.values(data.drink).forEach(drinkValue => {
                     const drinkItem = document.createElement('li');
                     drinkItem.textContent = drinkValue;
+                    drinkItem.classList.add('periphrasis');
                     drinkList.appendChild(drinkItem);
                 });
 

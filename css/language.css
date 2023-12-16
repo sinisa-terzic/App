@@ -7,7 +7,7 @@
 }
 
 .setting svg {
-    width: 1.6rem;
+    width: 4.2vw;
     fill: #fff;
 }
 
@@ -110,7 +110,7 @@
 #language,
 #chooseLanguage {
     display: block;
-    width: 1.5rem;
+    width: 4.2vw;
 }
 
 .language {
@@ -195,12 +195,12 @@
 
 @media screen and (min-width: 400px) {
 
-    #language,
+    /* #language,
     #chooseLanguage {
         width: 1.6rem;
     }
 
     .setting svg {
         width: 1.7rem;
-    }
+    } */
 }

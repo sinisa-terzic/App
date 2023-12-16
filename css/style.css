@@ -224,7 +224,7 @@ body {
 
 .line_img {
   width: 10rem;
-  /* opacity: 0.3; */
+  opacity: 0.3;
 }
 
 
@@ -342,7 +342,7 @@ body {
 .logo {
   align-self: center;
   justify-self: center;
-  font-size: 2rem;
+  font-size: 4.5vw;
   font-weight: 300;
   color: #ede7e7;
   letter-spacing: 0.1rem;
@@ -350,7 +350,7 @@ body {
 }
 
 .info img {
-  width: 30rem;
+  width: 80vw;
   align-self: center;
   justify-self: center;
   /* opacity: 0.7; */
@@ -358,10 +358,8 @@ body {
 
 .info_content {
   align-self: center;
-  /* padding: 0 20px 20px; */
-  /* justify-self: self-start; */
   color: #ede7e7;
-  font-size: 1.5rem;
+  font-size: 3.5vw;
 }
 
 
@@ -413,18 +411,18 @@ body {
 
 .title {
   color: #37474F;
-  font-size: 1.8rem;
+  font-size: 4.5vw;
   font-weight: 600;
 }
 
 .periphrasis {
-  font-size: 1.4rem;
+  font-size: 3.4vw;
   font-weight: 500;
   padding: 0 1rem;
 }
 
 .cost {
-  font-size: 1.4rem;
+  font-size: 3.5vw;
   font-weight: 500;
   color: #fff;
   /* background-color: #4c3114; */
@@ -485,16 +483,16 @@ body {
 .bottomDiv .periphrasis {
   margin-bottom: 0.5rem;
   padding: 0;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   font-weight: normal;
 }
 
 .bottomDiv .reference {
   margin: 1rem 0 0.5rem;
-  font-size: 1.6rem;
-  /* color: #585858; */
-  font-weight: 600;
-  border-bottom: 1px solid #585858;
+  font-size: 3.5vw;
+  color: #37474F;
+  font-weight: 500;
+  border-bottom: 1px solid #37474F;
   padding-bottom: 0.2rem;
 }
 
@@ -510,7 +508,7 @@ body {
 } */
 
 .bottomDiv ul {
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   /* list-style: none; */
   list-style-position: inside;
   padding: 0.5rem 0;
@@ -527,15 +525,16 @@ body {
 
 .bottomDiv_button .back,
 .bottomDiv_button .basket {
-  font-size: 1.8rem;
+  font-size: 3.5vw;
   color: #fff;
   padding: 0.5rem 1rem;
   background-color: #000;
+  letter-spacing: 0.15rem;
 }
 
 .bottomDiv_button .back {
   justify-self: end;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem;
 }
 
 .g_2_1.bottomDiv_button .back {
