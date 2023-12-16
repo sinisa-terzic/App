@@ -209,6 +209,10 @@ darkOpen.addEventListener('click', () => {
 ///////////////////////////////////////////////////////
 //
 const headerLogo = document.querySelector('.headerLogo');
+const description_content = document.querySelector('.description_content');
+const descriptions = document.querySelectorAll('.description');
+const categoy_text = document.querySelector('.categoy_text');
+
 headerLogo.addEventListener('click', function () {
     cells.forEach(function (cell) {
         cell.classList.remove('active');
@@ -223,7 +227,9 @@ headerLogo.addEventListener('click', function () {
     infoDiv.classList.remove('noneDisplay');
 
     darkOpen.classList.add('noneDisplay');
-    languageBox.classList.remove("translateX");
+    description_content.classList.add('noneDisplay');
+    categoy_text.classList.remove('noneDisplay');
+    languageBox.classList.remove('translateX');
     switcher.classList.remove('translateX');
     checkbox_1.checked = false;
     checkbox_2.checked = false;

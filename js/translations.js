@@ -31,7 +31,8 @@ function setTranslations(translations) {
         } else if (translations.hasOwnProperty('info') && translations.info.hasOwnProperty(translationKey)) {
             element.innerHTML = translations.info[translationKey];
         } else if (translationKey.startsWith('cat') && translations.hasOwnProperty(translationKey) && translations[translationKey].hasOwnProperty('description')) {
-            element.innerHTML = translations[translationKey].description;
+            console.log('Found category with description:', translations[translationKey].description);
+            element.textContent = translations[translationKey].description;
         } else {
             console.warn(`Translation not found for key: ${translationKey}`);
             // console.log('Translations object:', translations);
@@ -45,6 +46,8 @@ function setTranslations(translations) {
                 cell.classList.remove('active');
             });
 
+            description_content.classList.remove('noneDisplay');
+            categoy_text.classList.add('noneDisplay');
             cell.classList.add('active');
             selectedIndex = index;
             rotateCarousel();
@@ -65,17 +68,44 @@ function setTranslations(translations) {
             const currentData = translations['cat' + (index + 1)];
 
 
+            // Iteriraj kroz svaki element
+            descriptions.forEach((description, index) => {
+                // Postavi tekst za trenutni element
+                if (currentData && currentData.description) {
+                    description.innerHTML = currentData.description;
+                } else {
+                    console.warn(`Description not found for category: ${currentData}`);
+                }
+            });
+
+            function resetAnimation() {
+                descriptions.forEach((description) => {
+                    description.style.animation = 'none';
+                    description.offsetHeight;
+                    description.style.animation = null;
+                    description.style.paddingLeft = '25%';
+                    description.style.animationPlayState = 'running';
+
+                    const textLength = description.innerText.length;
+
+                    if (textLength > 60) {
+                        description.style.animationDuration = '15s';
+                    } else if (textLength > 50) {
+                        description.style.animationDuration = '12s';
+                    } else if (textLength > 30) {
+                        description.style.animationDuration = '9s';
+                    } else {
+                        description.style.animationDuration = '6s';
+                    }
+                });
+            }
+
+            resetAnimation();
+
+
 
             // Iteriramo kroz sve objekte u currentData.menu
             currentData.translations.forEach((data, index) => {
-
-
-                /* const dataContent = document.createElement('div');
-                dataContent.classList.add('content-container');
-                dataContent.id = 'content-container';
-
-                // Dodajemo novi div u kontejner
-                dataContainer.appendChild(dataContent); */
 
                 // Kreiramo novi div za svaki podatak
                 const dataDiv = document.createElement('div');
@@ -142,7 +172,7 @@ function setTranslations(translations) {
                 backgroundDiv.addEventListener('click', function () {
                     overlay.classList.add('noneDisplay');
                     // descriptionDiv.classList.add('noneDisplay');
-                    console.log('neće da radi')
+                    console.log('neće da radi');
                 });
 
             });

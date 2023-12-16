@@ -135,33 +135,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/* const container = document.querySelector('.content-container');
-const description = document.querySelector('.description_content');
-const category = document.querySelector('.category');
-const info = document.querySelector('.info');
-
-///////////////////////////////////////////////////////
-//
-const headerLogo = document.querySelector('.headerLogo')
-headerLogo.addEventListener('click', function () {
-    cells.forEach(function (cell) {
-        cell.classList.remove('active');
-    });
-    // Obrišite sve prethodne <div> elemente sa podacima
-    const existingDataDivs = container.querySelectorAll('.descriptionParagraph');
-    existingDataDivs.forEach(function (element) {
-        element.innerHTML = '';
-    });
-
-    container.classList.add('opacity');
-    description.classList.add('noneDisplay');
-    category.classList.remove('noneDisplay');
-    info.classList.remove('translateY');
-    setting_box.classList.remove('translateX');
-    darkOpen.classList.remove('visibility');
-}); */
-
-
 ///////////////////////////////////////////////////////////
 // stop selected image
 document.querySelectorAll('img').forEach(function (img) {

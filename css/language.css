@@ -103,18 +103,6 @@
 }
 
 
-
-/* #language {
-    display: block;
-    width: 35px;
-} */
-
-/* #language img {
-    border: 1px solid #b4b4b4;
-    border-radius: 100%;
-    opacity: 0.9;
-} */
-
 #chooseLanguage {
     align-self: flex-start;
 }
@@ -203,4 +191,16 @@
 
 .translateX {
     transform: translateX(0%);
+}
+
+@media screen and (min-width: 400px) {
+
+    #language,
+    #chooseLanguage {
+        width: 1.6rem;
+    }
+
+    .setting svg {
+        width: 1.7rem;
+    }
 }
