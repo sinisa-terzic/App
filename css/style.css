@@ -342,7 +342,7 @@ body {
 .logo {
   align-self: center;
   justify-self: center;
-  font-size: 4.5vw;
+  font-size: 5vw;
   font-weight: 300;
   color: #ede7e7;
   letter-spacing: 0.1rem;
@@ -525,7 +525,7 @@ body {
 
 .bottomDiv_button .back,
 .bottomDiv_button .basket {
-  font-size: 3.5vw;
+  font-size: 4vw;
   color: #fff;
   padding: 0.5rem 1rem;
   background-color: #000;
