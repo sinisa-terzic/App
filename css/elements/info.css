@@ -1,0 +1,36 @@
+/*  ===  INFO  ===
+******************************************* */
+.info {
+    position: relative;
+    padding: 0 1rem;
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.info::before {
+    content: '';
+    width: 100%;
+    height: 1rem;
+    background-image: url(../../img/border/border-top.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -1px;
+    background-size: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.info.translateY {
+    z-index: 5;
+    display: none;
+}
+
+.info img {
+    width: 85vw;
+    align-self: center;
+    justify-self: center;
+}

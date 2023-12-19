@@ -1,0 +1,171 @@
+button,
+#srButton,
+input[type="checkbox"] {
+    all: unset;
+}
+
+/* input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+} */
+
+[type=radio] {
+    display: none;
+    z-index: 200;
+    position: relative;
+    top: -60px;
+}
+
+
+img,
+button {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+img {
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+}
+
+
+.ta-c {
+    text-align: center;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+.grid {
+    display: grid;
+}
+
+.xy_center {
+    justify-content: center;
+    align-items: center;
+}
+
+.x_center {
+    justify-content: center;
+}
+
+.y_center {
+    align-items: center;
+}
+
+.xy_s_center {
+    align-self: center;
+    justify-self: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.between_center {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center_end {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.g-5 {
+    gap: 0.5rem;
+}
+
+.g-10 {
+    gap: 1rem;
+}
+
+.g-20 {
+    gap: 2rem;
+}
+
+
+
+.g_2_1 {
+    grid-template-columns: 2fr 1fr;
+}
+
+.g_1_2_1 {
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.active {
+    border-top: 1px solid #700c15;
+    border-bottom: 3px solid #2e0000;
+    opacity: 1;
+    /* border-radius: 1rem; */
+    box-shadow: 2px 2px 3px #BDBDBD;
+}
+
+.mt-10 {
+    margin-top: 1rem;
+}
+
+.mtb-10 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mb-5 {
+    margin-bottom: 0.5rem;
+}
+
+.active_switcher_dark,
+.active_switcher_light,
+.active_switcher_middle {
+    opacity: 1;
+    border-radius: 0.5rem;
+}
+
+.active_switcher_dark {
+    border-top: 3px solid #11161d;
+    border-bottom: 5px solid #11161d;
+}
+
+.active_switcher_light {
+    border-top: 3px solid #2e0000;
+    border-bottom: 5px solid #2e0000;
+}
+
+.active_switcher_middle {
+    border-top: 3px solid #091f2a;
+    border-bottom: 5px solid #091f2a;
+}
+
+
+.noneDisplay {
+    display: none;
+}
+
+
+/*  ===  HEADER  ===
+******************************************* */
+
+
+/*  ===  CAROUSEL  ===
+******************************************* */
+
+
+/*  ===  INFO  ===
+******************************************* */
+
+
+/*  ===  DATA  ===
+******************************************* */

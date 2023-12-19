@@ -386,7 +386,7 @@ const languageBox = document.querySelector(".language");
 // Kreirajte čekboks element
 const checkbox_1 = document.createElement('input');
 checkbox_1.type = 'checkbox';
-checkbox_1.id = 'language';
+// checkbox_1.id = 'language';
 
 language.parentNode.replaceChild(checkbox_1, language);
 
@@ -431,7 +431,7 @@ const switcher = document.querySelector('.switcher');
 // Kreirajte čekboks element
 const checkbox_2 = document.createElement('input');
 checkbox_2.type = 'checkbox';
-checkbox_2.id = 'Layer_1';
+// checkbox_2.id = 'Layer_1';
 
 layout.parentNode.replaceChild(checkbox_2, layout);
 

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap');
+
+
+.header h1 {
+    font-size: 6vw;
+    font-weight: 300;
+    color: #EEE;
+    opacity: 0.8;
+}
+
+.language {
+    color: #000;
+    font-size: 4.5vw;
+    font-weight: 500;
+}
+
+.cyrillic_latin {
+    font-size: 1.6rem;
+}
+
+.cyrillic_latin_color {
+    color: #890606;
+}
+
+.switcher {
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+#carousel {
+    text-align: center;
+}
+
+.carousel__cell,
+.food,
+.cost {
+    color: #fff;
+}
+
+.carousel__cell {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.food {
+    text-shadow: 2px 1px #303336;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 90%;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 1px;
+}
+
+.categoy_description_box {
+    font-size: 1.6rem;
+}
+
+.logo,
+.info_content {
+    color: #ede7e7;
+}
+
+.logo {
+    font-size: 5vw;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+}
+
+.info_content {
+    align-self: center;
+    font-size: 3.5vw;
+}
+
+
+.title {
+    color: #37474F;
+    font-size: 4.5vw;
+    font-weight: 600;
+}
+
+.periphrasis,
+.cost {
+    font-size: 3.5vw;
+    font-weight: 500;
+}
+
+.periphrasis {
+    padding: 0 1rem;
+}
+
+.cost {
+    padding: 5px 10px;
+    justify-self: center;
+}

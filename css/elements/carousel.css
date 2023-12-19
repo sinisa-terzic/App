@@ -1,0 +1,212 @@
+/*  ===  CAROUSEL  ===
+******************************************* */
+#carousel,
+.scene,
+.category {
+    position: relative;
+}
+
+.carousel,
+.carousel__cell,
+.category::before,
+.category::after {
+    position: absolute;
+}
+
+
+.scene {
+    width: 190px;
+    height: 120px;
+    margin: 1rem auto;
+    perspective: 2000px;
+    perspective-origin: 50% 50%;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-288px);
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+}
+
+.carousel__cell {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #a3a3a3;
+    /* opacity: 0.95; */
+    transition: transform 1s, opacity 0.3s;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1.5rem;
+    backface-visibility: hidden;
+}
+
+.carousel__cell:nth-child(9n+1) {
+    background-image: url('../../img/food/cat/1.jpg');
+}
+
+.carousel__cell:nth-child(9n+2) {
+    background-image: url('../../img/food/cat/2.jpg');
+}
+
+.carousel__cell:nth-child(9n+3) {
+    background-image: url('../../img/food/cat/3.jpg');
+}
+
+.carousel__cell:nth-child(9n+4) {
+    background-image: url('../../img/food/cat/4.jpg');
+}
+
+.carousel__cell:nth-child(9n+5) {
+    background-image: url('../../img/food/cat/5.jpg');
+}
+
+.carousel__cell:nth-child(9n+6) {
+    background-image: url('../../img/food/cat/6.jpg');
+}
+
+.carousel__cell:nth-child(9n+7) {
+    background-image: url('../../img/food/cat/7.jpg');
+}
+
+.carousel__cell:nth-child(9n+8) {
+    background-image: url('../../img/food/cat/8.jpg');
+}
+
+.carousel__cell:nth-child(9n+0) {
+    background-image: url('../../img/food/cat/9.jpg');
+}
+
+.carousel__cell:nth-child(1) {
+    transform: rotateY(0deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(2) {
+    transform: rotateY(40deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(3) {
+    transform: rotateY(80deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(4) {
+    transform: rotateY(120deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(5) {
+    transform: rotateY(160deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(6) {
+    transform: rotateY(200deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(7) {
+    transform: rotateY(240deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(8) {
+    transform: rotateY(280deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(9) {
+    transform: rotateY(320deg) translateZ(288px);
+}
+
+.carousel__cell:last-child {
+    z-index: 999;
+    /* Prilagodite vrednost prema potrebi */
+    pointer-events: auto;
+}
+
+.food {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+
+.carousel_control {
+    padding: 0 1rem;
+    height: 2.7rem;
+}
+
+.button {
+    width: 10vw;
+    border: none;
+}
+
+.stop_play {
+    width: 3vw;
+}
+
+.line_img {
+    width: 25vw;
+    opacity: 0.3;
+}
+
+
+/* category description */
+.categoy_description_box {
+    height: 3.5rem;
+}
+
+.category {
+    color: #2b2a1c;
+    z-index: 1;
+    border-bottom: 1px solid #260a0a;
+}
+
+.category::before,
+.category::after {
+    content: "";
+    top: 50%;
+    display: block;
+    width: 10%;
+    height: 0.1rem;
+    background-color: #892624;
+}
+
+.category::before {
+    left: 105%;
+}
+
+.category::after {
+    right: 105%;
+}
+
+
+.description_content {
+    width: 100%;
+    height: 3.5rem;
+    margin-top: 0.5rem;
+    background-color: #fff;
+    border-top: 1px dotted #1b121c;
+    border-bottom: 1px dotted #1b121c;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.description {
+    white-space: nowrap;
+    text-align: right;
+    animation: marquee 15s linear infinite paused;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(-100%)
+    }
+}

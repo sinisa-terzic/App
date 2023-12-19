@@ -1,0 +1,130 @@
+/*  ===  HEADER  ===
+******************************************* */
+.header {
+    position: relative;
+    height: 7vh;
+    padding: 0 1.6rem 0 1rem;
+    border-bottom: 1px solid #2f0808;
+}
+
+.headerLogo {
+    flex: 1;
+}
+
+
+/* setting */
+.setting svg {
+    width: 4.2vw;
+    fill: #fff;
+}
+
+
+/* language */
+.navbar,
+.languageSection {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#language,
+#chooseLanguage {
+    display: block;
+    width: 4.2vw;
+}
+
+.language,
+.switcher {
+    position: absolute;
+    right: 0px;
+    width: 60vw;
+    padding: 1rem;
+    top: calc(100% + 4px);
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 55;
+    transform: translateX(100%);
+}
+
+.language {
+    flex-direction: column;
+}
+
+.language_flag {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    position: relative;
+}
+
+.flag {
+    width: 5.5vw;
+}
+
+.cyrillic_latin {
+    position: absolute;
+    right: 0;
+}
+
+
+/* switcher */
+.switcher_titl {
+    border-bottom: 1px dotted #7f7f7f;
+    padding-bottom: 0.4rem;
+}
+
+.switcherBox {
+    padding: 1rem 0 0;
+}
+
+.colorchange {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.switcher_dark,
+.switcher_blue,
+.switcher_light,
+.switcher_middle {
+    transition: all 0.05s ease;
+}
+
+.switcher_dark {
+    background-color: #11161d;
+}
+
+.switcher_blue {
+    background-color: #192d50;
+}
+
+.switcher_brown {
+    background-color: #5a0a0a;
+}
+
+.switcher_middle {
+    background-color: #091f2a;
+}
+
+
+.translateX {
+    transform: translateX(0%);
+}
+
+
+/* dark */
+.dark {
+    position: fixed;
+    width: 100vw;
+    height: 93vh;
+    top: 7vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.dark.visibility {
+    visibility: visible;
+}

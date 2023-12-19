@@ -27,10 +27,10 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -38,10 +38,10 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -49,10 +49,10 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -60,10 +60,10 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -71,10 +71,10 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -82,10 +82,10 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]
@@ -98,10 +98,10 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -109,10 +109,10 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -120,10 +120,10 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -131,10 +131,10 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -142,10 +142,10 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -153,10 +153,10 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]
@@ -169,10 +169,10 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -180,10 +180,10 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -191,10 +191,10 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -202,10 +202,10 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -213,10 +213,10 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -224,10 +224,10 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]
@@ -240,10 +240,10 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -251,10 +251,10 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -262,10 +262,10 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -273,10 +273,10 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -284,10 +284,10 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -295,10 +295,10 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]
@@ -311,10 +311,10 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -322,10 +322,10 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -333,10 +333,10 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -344,10 +344,10 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -355,10 +355,10 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -366,10 +366,10 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]
@@ -382,10 +382,10 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -393,10 +393,10 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -404,10 +404,10 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -415,10 +415,10 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -426,10 +426,10 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -437,10 +437,10 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]
@@ -453,10 +453,10 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -464,10 +464,10 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -475,10 +475,10 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -486,10 +486,10 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -497,10 +497,10 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -508,10 +508,10 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]
@@ -524,10 +524,10 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -535,10 +535,10 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -546,10 +546,10 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -557,10 +557,10 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -568,10 +568,10 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -579,10 +579,10 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]
@@ -595,10 +595,10 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/4.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -606,10 +606,10 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -617,10 +617,10 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -628,10 +628,10 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -639,10 +639,10 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -650,10 +650,10 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "With this, we recommend",
+                "hereWith": "recommended with this",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]

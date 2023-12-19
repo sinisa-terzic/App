@@ -27,19 +27,19 @@
                 "text_key": "Opis za artikl 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Bijelo vino",
-                    "drink_3": "Desrt"
+                    "drink_3": "Desert"
                 }
             },
             {
                 "title_key": "Artikl 2",
                 "text_key": "Opis za artikl 2.",
-                "cost_key": "25.00€",
+                "cost_key": "5.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Kafa"
@@ -48,12 +48,12 @@
             {
                 "title_key": "Artikl 3",
                 "text_key": "Opis za artikl 3.",
-                "cost_key": "25.00€",
+                "cost_key": "3.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -61,10 +61,10 @@
                 "text_key": "Opis za artikl 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/4.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -72,10 +72,10 @@
                 "text_key": "Opis za artikl 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/5.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -83,10 +83,10 @@
                 "text_key": "Opis za artikl 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/6.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]
@@ -99,10 +99,10 @@
                 "text_key": "Opis za artikl 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -110,10 +110,10 @@
                 "text_key": "Opis za artikl 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -121,10 +121,10 @@
                 "text_key": "Opis za artikl 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -132,10 +132,10 @@
                 "text_key": "Opis za artikl 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -143,10 +143,10 @@
                 "text_key": "Opis za artikl 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -154,10 +154,10 @@
                 "text_key": "Opis za artikl 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]
@@ -170,10 +170,10 @@
                 "text_key": "Opis za artikl 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -181,10 +181,10 @@
                 "text_key": "Opis za artikl 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -192,10 +192,10 @@
                 "text_key": "Opis za artikl 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -203,10 +203,10 @@
                 "text_key": "Opis za artikl 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -214,10 +214,10 @@
                 "text_key": "Opis za artikl 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -225,10 +225,10 @@
                 "text_key": "Opis za artikl 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]
@@ -241,10 +241,10 @@
                 "text_key": "Opis za artikl 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -252,10 +252,10 @@
                 "text_key": "Opis za artikl 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -263,10 +263,10 @@
                 "text_key": "Opis za artikl 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -274,10 +274,10 @@
                 "text_key": "Opis za artikl 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -285,10 +285,10 @@
                 "text_key": "Opis za artikl 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -296,10 +296,10 @@
                 "text_key": "Opis za artikl 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]
@@ -312,10 +312,10 @@
                 "text_key": "Opis za artikl 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -323,10 +323,10 @@
                 "text_key": "Opis za artikl 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -334,10 +334,10 @@
                 "text_key": "Opis za artikl 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -345,10 +345,10 @@
                 "text_key": "Opis za artikl 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -356,10 +356,10 @@
                 "text_key": "Opis za artikl 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -367,10 +367,10 @@
                 "text_key": "Opis za artikl 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]
@@ -383,10 +383,10 @@
                 "text_key": "Opis za artikl 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -394,10 +394,10 @@
                 "text_key": "Opis za artikl 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -405,10 +405,10 @@
                 "text_key": "Opis za artikl 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -416,10 +416,10 @@
                 "text_key": "Opis za artikl 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -427,10 +427,10 @@
                 "text_key": "Opis za artikl 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -438,10 +438,10 @@
                 "text_key": "Opis za artikl 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]
@@ -454,10 +454,10 @@
                 "text_key": "Opis za artikl 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -465,10 +465,10 @@
                 "text_key": "Opis za artikl 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -476,10 +476,10 @@
                 "text_key": "Opis za artikl 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -487,10 +487,10 @@
                 "text_key": "Opis za artikl 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -498,10 +498,10 @@
                 "text_key": "Opis za artikl 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -509,10 +509,10 @@
                 "text_key": "Opis za artikl 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]
@@ -525,10 +525,10 @@
                 "text_key": "Opis za artikl 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -536,10 +536,10 @@
                 "text_key": "Opis za artikl 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -547,10 +547,10 @@
                 "text_key": "Opis za artikl 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -558,10 +558,10 @@
                 "text_key": "Opis za artikl 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -569,10 +569,10 @@
                 "text_key": "Opis za artikl 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -580,10 +580,10 @@
                 "text_key": "Opis za artikl 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]
@@ -594,34 +594,34 @@
             {
                 "title_key": "Artikl 2",
                 "text_key": "Opis za artikl 1.",
-                "cost_key": "25.00€",
+                "cost_key": "7.00€",
                 "imageSrc": "img/food/pr/4.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
                 "title_key": "Artikl 2",
                 "text_key": "Opis za artikl 3.",
-                "cost_key": "25.00€",
+                "cost_key": "15.20€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
                 "title_key": "Artikl 3",
                 "text_key": "Opis za artikl 2.",
-                "cost_key": "25.00€",
+                "cost_key": "8.50€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -629,10 +629,10 @@
                 "text_key": "Opis za artikl 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -640,10 +640,10 @@
                 "text_key": "Opis za artikl 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             },
             {
@@ -651,10 +651,10 @@
                 "text_key": "Opis za artikl 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "uz ovo preporučujemo",
+                "hereWith": "preporuka uz ovo",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desrt"
+                    "drink_2": "Desert"
                 }
             }
         ]

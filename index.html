@@ -14,11 +14,21 @@
 
   <title>Bokeški gušti</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/elements/general.css">
+  <link rel="stylesheet" href="css/elements/fonts.css">
+  <link rel="stylesheet" href="css/elements/header.css">
+  <link rel="stylesheet" href="css/elements/carousel.css">
+  <link rel="stylesheet" href="css/elements/info.css">
+  <link rel="stylesheet" href="css/elements/data.css">
+  <link rel="stylesheet" href="css/elements/helpers.css">
+  <link rel="stylesheet" href="css/elements/queries.css">
+
+
+  <!--  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/language.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/helpers.css">
-  <link rel="stylesheet" href="css/queries.css">
+  <link rel="stylesheet" href="css/queries.css"> -->
 
 
 </head>
@@ -31,13 +41,13 @@
   </div>
 
   <!-- HEADER ================================== -->
-  <header class="header switcher_dark" id="header">
+  <header class="header flex between_center switcher_dark" id="header">
     <div class="headerLogo">
       <h1 data-translation-key="digitalMenu"></h1>
     </div>
 
     <!-- setting -->
-    <div class="setting" id="setting">
+    <div class="setting flex y_center g-20" id="setting">
 
       <!-- language -->
       <div class="languageBox">
@@ -49,11 +59,11 @@
 
           <img id="language" src="img/menu/language+.svg" alt="English" width="35" height="22">
 
-          <div class="language">
+          <div class="language flex g-10">
 
-            <div class="ExYu">
+            <div class="ExYu flex between">
 
-              <div class="language_flag flex">
+              <div class="language_flag flex y_center g-10">
                 <img class="flag" src="img/flag/yu.svg" alt="Ex-Yu" width="35" height="22">
                 <button class="changeLanguageButton" id="srButton" data-language="sr" disabled>Ex-Yu</button>
 
@@ -71,12 +81,12 @@
               </div>
             </div>
 
-            <div class="language_flag flex">
+            <div class="language_flag flex y_center g-10">
               <img class="flag" src="img/flag/eng.svg" alt="English" width="35" height="22">
               <button class="changeLanguageButton" id="enButton" data-language="en">English</button>
             </div>
 
-            <div class="language_flag flex rus">
+            <div class="language_flag flex y_center g-10" rus">
               <img class="flag" src="img/flag/rus.svg" alt="Русский" width="35" height="22">
               <button class="changeLanguageButton" id="ruButton" data-language="ru">Русский</button>
             </div>
@@ -100,10 +110,10 @@
           <path class="st0" d="M9.6,7.7H3.5 M9.6,4.1H0.5 M9.6,0.5H1.5" />
         </svg>
         <!-- switcher -->
-        <div class="switcher">
+        <div class="switcher grid g-5">
           <p class="switcher_titl" data-translation-key="switcher">Promjena boja</p>
 
-          <div class="switcherBox flex">
+          <div class="switcherBox flex g-10">
             <div class="colorchange switcher_dark" id="switcher_dark"></div>
             <div class="colorchange switcher_blue" id="switcher_blue"></div>
             <div class="colorchange switcher_brown" id="switcher_brown"></div>
@@ -125,7 +135,7 @@
       <div id="carousel__content" class="carousel">
 
         <!-- category_1 -->
-        <div id="carousel__cell" class="carousel__cell">
+        <div id="carousel__cell" class="carousel__cell flex center_end">
           <p class="food" data-translation-key="category_1"></p>
         </div>
         <!-- category_2 -->
@@ -165,8 +175,8 @@
     </div>
 
     <!-- command -->
-    <div class="carousel_control" id="control">
-      <button class="previous-button button" title="previous">
+    <div class="carousel_control flex between_center" id="control">
+      <button class="previous-button button flex" title="previous">
         <!-- <img src="img/command/arrow-right.svg" alt="Arrow left"> -->
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1"
           x="0px" y="0px" viewBox="0 0 50 15" style="enable-background:new 0 0 50 15;" xml:space="preserve">
@@ -199,9 +209,9 @@
         </svg>
       </button>
 
-      <img class="line_img" src="img/border/line.svg" alt="" srcset="">
+      <img class="line_img flex" src="img/border/line.svg" alt="" srcset="">
 
-      <button class="play stop_play noneDisplay" title="play">
+      <button class="play stop_play flex noneDisplay" title="play">
         <!-- <img src="img/command/play.svg" alt="Arrow left"> -->
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2_1_"
           x="0px" y="0px" viewBox="0 0 11 15" style="enable-background:new 0 0 11 15;" xml:space="preserve">
@@ -217,7 +227,7 @@
         </svg>
       </button>
 
-      <button class="stop stop_play" title="stop">
+      <button class="stop stop_play flex" title="stop">
         <!-- <img src="img/command/stop.svg" alt="Arrow left"> -->
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1"
           x="0px" y="0px" viewBox="0 0 11 15" style="enable-background:new 0 0 11 15;" xml:space="preserve">
@@ -233,9 +243,9 @@
         </svg>
       </button>
 
-      <img class="line_img" src="img/border/line.svg" alt="" srcset="">
+      <img class="line_img flex" src="img/border/line.svg" alt="" srcset="">
 
-      <button class="next-button button" title="next">
+      <button class="next-button button flex" title="next">
         <!-- <img src="img/command/arrow-left.svg" alt="Arrow right"> -->
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1"
           x="0px" y="0px" viewBox="0 0 50 15" style="enable-background:new 0 0 50 15;" xml:space="preserve">
@@ -255,12 +265,12 @@
     </div> <!-- end command -->
 
     <!-- category_description -->
-    <div class="categoy_description_box">
+    <div class="categoy_description_box flex xy_center">
       <div class="categoy_text">
         <p class="category" data-translation-key="category_choose"></p>
       </div> <!-- end category_description -->
 
-      <div class="description_content noneDisplay">
+      <div class="description_content flex y_center noneDisplay">
         <p class="description"></p>
         <p class="description"></p>
 
@@ -276,9 +286,9 @@
 
 
   <!-- INFO ================================== -->
-  <section class="info switcher_dark" id="info">
-    <p class="logo" data-translation-key="logo">Logo</p>
-    <img src="img/logo/logo.svg" alt="" srcset="">
+  <section class="info grid switcher_dark" id="info">
+    <p class="logo xy_s_center" data-translation-key="logo">Logo</p>
+    <img src="img/logo/logo.svg" alt="logo">
     <p class="info_content" data-translation-key="info_content">Informacije</p>
     </div>
   </section> <!-- END INFO -->
@@ -289,7 +299,7 @@
   <section class="data-container" id="data">
 
 
-    <div id="content-container" class="content-container opacity"></div>
+    <div id="content-container" class="content-container grid opacity"></div>
 
   </section> <!-- END DATA -->
 
