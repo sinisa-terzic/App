@@ -117,11 +117,10 @@
     transform: rotateY(320deg) translateZ(288px);
 }
 
-.carousel__cell:last-child {
+/* .carousel__cell:last-child {
     z-index: 999;
-    /* Prilagodite vrednost prema potrebi */
     pointer-events: auto;
-}
+}*/
 
 .food {
     position: absolute;
