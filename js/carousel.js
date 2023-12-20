@@ -1,6 +1,7 @@
 let carousel = document.querySelector('.carousel');
 const scene = document.querySelector('.scene');
 const dataContainer = document.getElementById('data');
+const dataItem = document.getElementById('content-container');
 const cells = carousel.querySelectorAll('.carousel__cell');
 const cellElements = Array.from(cells);
 const cellCount = cellElements.length;
@@ -211,7 +212,7 @@ darkOpen.addEventListener('click', () => {
 const headerLogo = document.querySelector('.headerLogo');
 const description_content = document.querySelector('.description_content');
 const descriptions = document.querySelectorAll('.description');
-const categoy_text = document.querySelector('.categoy_text');
+const categoy_description_box = document.querySelector('.categoy_description_box');
 
 headerLogo.addEventListener('click', function () {
     cells.forEach(function (cell) {
@@ -219,16 +220,16 @@ headerLogo.addEventListener('click', function () {
     });
 
     // Očistimo sadržaj kontejnera
-    const dataContainer = document.getElementById('data');
-    dataContainer.classList.add('noneDisplay');
-    dataContainer.innerHTML = '';
+    /*  const dataContainer = document.getElementById('data');
+     dataContainer.classList.add('noneDisplay');
+     dataContainer.innerHTML = ''; */
 
     const infoDiv = document.querySelector('.info');
     infoDiv.classList.remove('noneDisplay');
 
     darkOpen.classList.add('noneDisplay');
-    description_content.classList.add('noneDisplay');
-    categoy_text.classList.remove('noneDisplay');
+    // description_content.classList.add('noneDisplay');
+    categoy_description_box.classList.remove('noneDisplay');
     languageBox.classList.remove('translateX');
     switcher.classList.remove('translateX');
     checkbox_1.checked = false;

@@ -9,7 +9,9 @@ html,
 body {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    touch-action: pan-down;
+    overscroll-behavior: none;
+    overflow: hidden !important;
     margin: 0;
     padding: 0;
     font-family: sans-serif;

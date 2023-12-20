@@ -52,6 +52,7 @@ switcher_dark.addEventListener('click', function () {
     saveColorPreference('dark');
     setColorPreference('dark');
     changeBackgroundColors();
+    changeDescriptionColors();
     switcher.classList.remove('translateX');
     darkOpen.classList.add('noneDisplay');
     checkbox_2.checked = false;
@@ -61,6 +62,7 @@ switcher_blue.addEventListener('click', function () {
     saveColorPreference('blue');
     setColorPreference('blue');
     changeBackgroundColors();
+    changeDescriptionColors();
     switcher.classList.remove('translateX');
     darkOpen.classList.add('noneDisplay');
     checkbox_2.checked = false;
@@ -70,6 +72,7 @@ switcher_brown.addEventListener('click', function () {
     saveColorPreference('brown');
     setColorPreference('brown');
     changeBackgroundColors();
+    changeDescriptionColors();
     switcher.classList.remove('translateX');
     darkOpen.classList.add('noneDisplay');
     checkbox_2.checked = false;
@@ -79,6 +82,7 @@ switcher_middle.addEventListener('click', function () {
     saveColorPreference('middle');
     setColorPreference('middle');
     changeBackgroundColors();
+    changeDescriptionColors();
     switcher.classList.remove('translateX');
     darkOpen.classList.add('noneDisplay');
     checkbox_2.checked = false;
@@ -117,6 +121,40 @@ function changeBackgroundColors() {
         }
     });
 }
+
+
+function changeDescriptionColors() {
+    // Izaberite sve p tagove sa klasom 'cost'
+    const costElements = document.querySelectorAll('summary');
+
+    // Proverite izabranu boju i primenite odgovarajuću klasu na svaki element
+    const savedColorPreference = loadColorPreference();
+
+    costElements.forEach(function (costElement) {
+        // Uklonite sve prethodne klase boje
+        costElement.classList.remove('switcher_dark', 'switcher_blue', 'switcher_brown', 'switcher_middle');
+
+        switch (savedColorPreference) {
+            case 'dark':
+                costElement.classList.add('switcher_dark');
+                break;
+            case 'blue':
+                costElement.classList.add('switcher_blue');
+                break;
+            case 'brown':
+                costElement.classList.add('switcher_brown');
+                break;
+            case 'middle':
+                costElement.classList.add('switcher_middle');
+                break;
+            default:
+                // Ako nema odgovarajuće vrednosti, možete postaviti podrazumevanu boju
+                costElement.classList.add('switcher_dark');
+                break;
+        }
+    });
+}
+
 
 
 // Pozovite funkciju prilikom promene boje ili drugih relevantnih događaja

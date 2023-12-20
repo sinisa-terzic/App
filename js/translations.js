@@ -3,7 +3,7 @@ const savedLanguage = localStorage.getItem('selectedLanguage');
 
 // Inicijalno postavite trenutni jezik na "sr" ako nije sačuvan
 let currentLanguage = savedLanguage || 'sr';
-
+const descriptionDiv = document.createElement('div');
 
 // Funkcija za učitavanje prevoda za odabrani jezik
 function loadTranslations(language) {
@@ -46,8 +46,8 @@ function setTranslations(translations) {
                 cell.classList.remove('active');
             });
 
-            description_content.classList.remove('noneDisplay');
-            categoy_text.classList.add('noneDisplay');
+            // description_content.classList.remove('noneDisplay');
+            categoy_description_box.classList.add('noneDisplay');
             cell.classList.add('active');
             selectedIndex = index;
             rotateCarousel();
@@ -62,7 +62,8 @@ function setTranslations(translations) {
 
 
             dataContainer.classList.remove('noneDisplay');
-            dataContainer.innerHTML = '';
+            dataItem.innerHTML = '';
+            // descriptionDiv = descriptionDiv
 
             // Access data for the current index (index + 1 because indices in JavaScript start from 0)
             const currentData = translations['cat' + (index + 1)];
@@ -103,6 +104,19 @@ function setTranslations(translations) {
             resetAnimation();
 
 
+            // Kreiramo novi div za opis kategorije
+
+            // Postavljamo podatke u HTML unutar novog div-a
+            descriptionDiv.innerHTML = `
+                        <div class="description_content flex y_center">
+                            <details>
+                                <summary>Opis kategorije</summary>
+                                <p class="description">${currentData.description}</p>
+                            </details>
+                        </div>
+                    `;
+
+            dataContainer.appendChild(descriptionDiv);
 
             // Iteriramo kroz sve objekte u currentData.menu
             currentData.translations.forEach((data, index) => {
@@ -122,7 +136,9 @@ function setTranslations(translations) {
                 `;
 
                 // Dodajemo novi div u kontejner
-                dataContainer.appendChild(dataDiv);
+                dataItem.appendChild(dataDiv);
+
+                dataContainer.appendChild(dataItem);
 
                 // Kreiranje novog div-a za overlay
                 const overlay = document.createElement('div');
@@ -203,6 +219,20 @@ function setTranslations(translations) {
 
             const costs = document.querySelectorAll('.cost');
             costs.forEach(cost => {
+                if (switcherHeader.classList.contains('switcher_dark')) {
+                    cost.classList.add('switcher_dark');
+                } else if (switcherHeader.classList.contains('switcher_blue')) {
+                    cost.classList.add('switcher_blue');
+                } else if (switcherHeader.classList.contains('switcher_brown')) {
+                    cost.classList.add('switcher_brown');
+                } else if (switcherHeader.classList.contains('switcher_middle')) {
+                    cost.classList.add('switcher_middle');
+                }
+            });
+
+
+            const summary = document.querySelectorAll('summary');
+            summary.forEach(cost => {
                 if (switcherHeader.classList.contains('switcher_dark')) {
                     cost.classList.add('switcher_dark');
                 } else if (switcherHeader.classList.contains('switcher_blue')) {

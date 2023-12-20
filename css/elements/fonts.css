@@ -46,14 +46,21 @@
     text-shadow: 2px 1px #303336;
     text-transform: uppercase;
     text-align: center;
-    font-size: 90%;
+    font-size: 80%;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.6);
     letter-spacing: 1px;
 }
 
-.categoy_description_box {
+.categoy_description_box,
+.description_content {
     font-size: 1.6rem;
+}
+
+
+.description {
+    font-size: 1.7rem;
+    transition: all 400ms ease-out;
 }
 
 .logo,
