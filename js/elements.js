@@ -41,11 +41,11 @@ function setSectionHeights() {
 
 
     // Postavite visinu info sekcije
-    document.getElementById('info').style.height = infoHeight + 'vh';
+    document.getElementById('info').style.height = infoHeight + '%';
 
-    document.getElementById('data').style.height = dataHeight + 'vh';
-    document.getElementById('data').style.marginTop = margin + 'vh';
-    document.getElementById('data').style.marginBottom = margin + 'vh';
+    document.getElementById('data').style.height = dataHeight + '%';
+    document.getElementById('data').style.marginTop = margin + '%';
+    document.getElementById('data').style.marginBottom = margin + '%';
 }
 
 // Disable pull-to-refresh if overscroll occurs
