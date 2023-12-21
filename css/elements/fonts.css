@@ -53,12 +53,12 @@
 }
 
 .categoy_description_box,
-.description_content {
+summary {
     font-size: 1.6rem;
 }
 
 
-.description {
+details {
     font-size: 1.7rem;
     transition: all 400ms ease-out;
 }
