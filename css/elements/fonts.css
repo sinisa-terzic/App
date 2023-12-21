@@ -52,19 +52,19 @@
     letter-spacing: 1px;
 }
 
-.categoy_description_box {
+.categoy_description_box,
+.summary {
     font-size: 1.6rem;
 }
 
 
 .summary {
-    font-size: 16px;
     color: #fff;
     padding: 1rem;
 }
 
 .description {
-    font-size: 17px;
+    font-size: 1.7rem;
     transition: all 400ms ease-out;
     padding: 0.5rem 1rem;
 }
