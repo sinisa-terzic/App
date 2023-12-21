@@ -85,7 +85,7 @@
 } */
 
 .description {
-    font-size: 3.5vw;
+    font-size: 1.8rem;
     transition: all 400ms ease-out;
     padding: 0.5rem 1rem;
 }
