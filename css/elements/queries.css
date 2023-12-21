@@ -31,9 +31,13 @@
     }
 } */
 
-
-
 @media screen and (min-width: 370px) {
+    .scene {
+        height: 19dvh;
+    }
+}
+
+@media screen and (min-width: 400px) {
 
     /* .header {
         height: 7.5vh;
@@ -41,7 +45,7 @@
 
     .scene {
         width: 220px;
-        height: 18vh;
+        height: 140px;
     }
 
     /* .info img {
@@ -51,6 +55,7 @@
 }
 
 
+
 /*******************************************/
 /* Ako je visina viewporta oko 
 /*******************************************/
@@ -58,7 +63,7 @@
 
     .scene {
         width: 150px;
-        height: 20vh;
+        height: 95px;
     }
 
     .carousel_control {
@@ -88,7 +93,7 @@
         height: 3rem;
     }
 
-    /* .description_content {
+    /*    .description_content {
         height: 3rem;
     } */
 

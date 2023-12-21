@@ -16,8 +16,8 @@
 
 .scene {
     width: 190px;
-    height: 17vh;
-    margin: 1.2vh auto;
+    height: 17dvh;
+    margin: 1.2dvh auto;
     perspective: 2000px;
     perspective-origin: 50% 50%;
 }
@@ -134,7 +134,7 @@
 
 .carousel_control {
     padding: 0 1rem;
-    height: 3.2vh;
+    height: 3.2dvh;
 }
 
 .button {
@@ -154,7 +154,7 @@
 
 /* category description */
 .categoy_description_box {
-    height: 5vh;
+    height: 5dvh;
 }
 
 .category {

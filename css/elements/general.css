@@ -8,7 +8,8 @@
 html,
 body {
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
+    min-block-size: 100dvb;
     touch-action: pan-down;
     overscroll-behavior: none;
     overflow: hidden !important;
