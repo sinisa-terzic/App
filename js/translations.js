@@ -104,7 +104,9 @@ function setTranslations(translations) {
             // Postavljamo podatke u HTML unutar novog div-a
             descriptionDiv.innerHTML = `
                 <div class="description_content">
-                    <p class="summary">${currentData.details}</p>
+                    <span role="term" aria-details="pure-css">
+                        <p class="summary">${currentData.details}</p>
+                    </span>
                     <p class="description noneDisplay">${currentData.description}</p>
                 </div>
             `;
