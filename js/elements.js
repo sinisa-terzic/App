@@ -33,19 +33,19 @@ function setSectionHeights() {
 
     // Izračun preostale visine za info sekciju
     // const infoHeight = viewportHeight - headerHeight - carouselHeight;
-    const infoHeight = 65.6;
+    // const infoHeight = 65.6;
 
     // Visina data sekcije
-    // const dataHeight = viewportHeight - headerHeight - carouselHeight - 2 * margin;
-    const dataHeight = 67.36;
+    const dataHeight = viewportHeight - headerHeight - carouselHeight - 2 * margin;
+    // const dataHeight = 67.36;
 
 
     // Postavite visinu info sekcije
-    document.getElementById('info').style.height = infoHeight + 'vh';
+    // document.getElementById('info').style.height = infoHeight + 'vh';
 
-    document.getElementById('data').style.height = dataHeight + 'vh';
-    document.getElementById('data').style.marginTop = margin + 'vh';
-    document.getElementById('data').style.marginBottom = margin + 'vh';
+    document.getElementById('data').style.height = dataHeight + 'px';
+    document.getElementById('data').style.marginTop = margin + 'px';
+    document.getElementById('data').style.marginBottom = margin + 'px';
 }
 
 // Disable pull-to-refresh if overscroll occurs
