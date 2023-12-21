@@ -185,13 +185,11 @@
 .description_content {
     width: 100%;
     margin-bottom: 1rem;
-    /* height: 3.5rem; */
-    /* margin-top: 0.5rem; */
-    background-color: #fff;
-    border-top: 1px dotted #1b121c;
+    /* background-color: #fff; */
+    /* border-top: 1px dotted #1b121c; */
     border-bottom: 1px dotted #1b121c;
     /* box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03); */
-    z-index: 1;
+    /* z-index: 1; */
     /* overflow: hidden; */
 }
 
@@ -212,17 +210,8 @@
 }
 
 
-details {
-    width: 100%;
-}
 
-summary {
-    padding: 1rem;
-    /* background-color: #11161d; */
-    /* width: 100%; */
-    color: rgb(255 255 255 / 85%);
-}
 
-.description {
+/* .description {
     padding: 0.5rem 1rem;
-}
+} */

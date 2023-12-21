@@ -211,7 +211,6 @@ darkOpen.addEventListener('click', () => {
 //
 const headerLogo = document.querySelector('.headerLogo');
 const description_content = document.querySelector('.description_content');
-const descriptions = document.querySelectorAll('.description');
 const categoy_description_box = document.querySelector('.categoy_description_box');
 
 headerLogo.addEventListener('click', function () {
@@ -235,3 +234,4 @@ headerLogo.addEventListener('click', function () {
     checkbox_1.checked = false;
     checkbox_2.checked = false;
 });
+

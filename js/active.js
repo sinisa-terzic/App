@@ -125,7 +125,7 @@ function changeBackgroundColors() {
 
 function changeDescriptionColors() {
     // Izaberite sve p tagove sa klasom 'cost'
-    const costElements = document.querySelectorAll('summary');
+    const costElements = document.querySelectorAll('.summary');
 
     // Proverite izabranu boju i primenite odgovarajuću klasu na svaki element
     const savedColorPreference = loadColorPreference();

@@ -30,9 +30,6 @@ function setTranslations(translations) {
             element.innerHTML = translations.category[translationKey];
         } else if (translations.hasOwnProperty('info') && translations.info.hasOwnProperty(translationKey)) {
             element.innerHTML = translations.info[translationKey];
-        } else if (translationKey.startsWith('cat') && translations.hasOwnProperty(translationKey) && translations[translationKey].hasOwnProperty('description')) {
-            console.log('Found category with description:', translations[translationKey].description);
-            element.textContent = translations[translationKey].description;
         } else {
             console.warn(`Translation not found for key: ${translationKey}`);
             // console.log('Translations object:', translations);
@@ -69,7 +66,7 @@ function setTranslations(translations) {
             const currentData = translations['cat' + (index + 1)];
 
 
-            // Iteriraj kroz svaki element
+            /* // Iteriraj kroz svaki element
             descriptions.forEach((description, index) => {
                 // Postavi tekst za trenutni element
                 if (currentData && currentData.description) {
@@ -77,9 +74,9 @@ function setTranslations(translations) {
                 } else {
                     console.warn(`Description not found for category: ${currentData}`);
                 }
-            });
+            }); */
 
-            function resetAnimation() {
+            /* function resetAnimation() {
                 descriptions.forEach((description) => {
                     description.style.animation = 'none';
                     description.offsetHeight;
@@ -101,22 +98,19 @@ function setTranslations(translations) {
                 });
             }
 
-            resetAnimation();
+            resetAnimation(); */
 
-
-            // Kreiramo novi div za opis kategorije
 
             // Postavljamo podatke u HTML unutar novog div-a
             descriptionDiv.innerHTML = `
-                        <div class="description_content flex y_center">
-                            <details>
-                                <summary class="flex"><p>${currentData.details}</p></summary>
-                                <p class="description">${currentData.description}</p>
-                            </details>
-                        </div>
-                    `;
+                <div class="description_content">
+                    <p class="summary">${currentData.details}</p>
+                    <p class="description noneDisplay">${currentData.description}</p>
+                </div>
+            `;
 
             dataContainer.appendChild(descriptionDiv);
+
 
             // Iteriramo kroz sve objekte u currentData.menu
             currentData.translations.forEach((data, index) => {
@@ -231,7 +225,8 @@ function setTranslations(translations) {
             });
 
 
-            const summary = document.querySelectorAll('summary');
+            const summary = document.querySelectorAll('.summary');
+            const description = descriptionDiv.querySelector('.description');
             summary.forEach(cost => {
                 if (switcherHeader.classList.contains('switcher_dark')) {
                     cost.classList.add('switcher_dark');
@@ -242,6 +237,15 @@ function setTranslations(translations) {
                 } else if (switcherHeader.classList.contains('switcher_middle')) {
                     cost.classList.add('switcher_middle');
                 }
+            });
+
+            summary.forEach(summary => {
+                summary.addEventListener('click', () => {
+                    // Iteriraj kroz sve elemente unutar NodeList-a
+
+                    // Toggle klasu 'noneDisplay' na svakom elementu
+                    description.classList.toggle('noneDisplay');
+                });
             });
 
         });
