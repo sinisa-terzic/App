@@ -116,7 +116,7 @@
 .dark {
     position: fixed;
     width: 100vw;
-    height: 93vh;
+    min-block-size: 93dvb;
     top: 7vh;
     right: 0;
     bottom: 0;
