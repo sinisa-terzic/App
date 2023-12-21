@@ -61,8 +61,8 @@ summary p {
     font-size: 16px;
 }
 
-details p {
-    font-size: 17px;
+details .description {
+    font-size: 18px;
     transition: all 400ms ease-out;
 }
 
