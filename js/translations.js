@@ -108,10 +108,12 @@ function setTranslations(translations) {
 
             // Postavljamo podatke u HTML unutar novog div-a
             descriptionDiv.innerHTML = `
-                            <details class="description_content flex y_center">
-                                <summary><p>${currentData.details}</p></summary>
+                        <div class="description_content flex y_center">
+                            <details>
+                                <summary class="flex"><p>${currentData.details}</p></summary>
                                 <p class="description">${currentData.description}</p>
                             </details>
+                        </div>
                     `;
 
             dataContainer.appendChild(descriptionDiv);
