@@ -228,7 +228,7 @@ headerLogo.addEventListener('click', function () {
     infoDiv.classList.remove('noneDisplay');
 
     darkOpen.classList.add('noneDisplay');
-    // description_content.classList.add('noneDisplay');
+    dataContainer.classList.add('noneDisplay');
     categoy_description_box.classList.remove('noneDisplay');
     languageBox.classList.remove('translateX');
     switcher.classList.remove('translateX');
