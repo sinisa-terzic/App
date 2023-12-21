@@ -54,14 +54,14 @@
 
 .categoy_description_box,
 .summary {
-    font-size: 3.6vw;
+    font-size: 4vw;
 }
 
 
 .summary {
     color: #fff;
     width: 100%;
-    min-block-size: 3.2dvb;
+    min-block-size: 4dvb;
     display: flex;
     align-items: center;
 }
@@ -85,7 +85,7 @@
 } */
 
 .description {
-    font-size: 3.8vw;
+    font-size: 3vw;
     transition: all 400ms ease-out;
     padding: 0.5rem 1rem;
 }
