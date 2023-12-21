@@ -20,6 +20,7 @@
         "category_9": "Poslastice"
     },
     "cat1": {
+        "details": "Opis kategorije",
         "description": "&#9642; SR U hladna predjela se nalazi domaći pršut, domaći sir, slana riba i ... još mnogo toga ...",
         "translations": [
             {
@@ -28,6 +29,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Bijelo vino",
@@ -40,6 +42,7 @@
                 "cost_key": "5.00€",
                 "imageSrc": "img/food/pr/2.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Kafa"
@@ -51,6 +54,7 @@
                 "cost_key": "3.00€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -62,6 +66,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/4.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -73,6 +78,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/5.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -84,6 +90,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/6.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -92,6 +99,7 @@
         ]
     },
     "cat2": {
+        "details": "Opis kategorije",
         "description": "&#9642; SR Specijaliteti od povrća ubrajaju paprike, tikvice, patlidžan, šargarepu i ...",
         "translations": [
             {
@@ -100,6 +108,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -111,6 +120,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -122,6 +132,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -133,6 +144,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -144,6 +156,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -155,6 +168,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -163,6 +177,7 @@
         ]
     },
     "cat3": {
+        "details": "Opis kategorije",
         "description": "&#9642; SR Salate i prilozi: masline, paradajz, krompir, kupus ...",
         "translations": [
             {
@@ -171,6 +186,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -182,6 +198,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -193,6 +210,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -204,6 +222,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -215,6 +234,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -226,6 +246,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -234,6 +255,7 @@
         ]
     },
     "cat4": {
+        "details": "Opis kategorije",
         "description": "&#9642; SR riba, lignje, hobotnica, školje, bakalar ...",
         "translations": [
             {
@@ -242,6 +264,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -253,6 +276,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -264,6 +288,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -275,6 +300,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -286,6 +312,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -297,6 +324,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -305,6 +333,7 @@
         ]
     },
     "cat5": {
+        "details": "Opis kategorije",
         "description": "&#9642; SR crno, rose, bijelo ...",
         "translations": [
             {
@@ -313,6 +342,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -324,6 +354,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -335,6 +366,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -346,6 +378,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -357,6 +390,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -368,6 +402,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -376,6 +411,7 @@
         ]
     },
     "cat6": {
+        "details": "Opis kategorije",
         "description": "&#9642; SR loza, viljamovka, vodtka, viski, likeri ...",
         "translations": [
             {
@@ -384,6 +420,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -395,6 +432,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -406,6 +444,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -417,6 +456,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -428,6 +468,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -439,6 +480,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -447,6 +489,7 @@
         ]
     },
     "cat7": {
+        "details": "Opis kategorije",
         "description": "&#9642; SR kafa, čaj, bezalkoholna pića, pivo, voda ...",
         "translations": [
             {
@@ -455,6 +498,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -466,6 +510,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -477,6 +522,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -488,6 +534,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -499,6 +546,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -510,6 +558,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -518,6 +567,7 @@
         ]
     },
     "cat8": {
+        "details": "Opis kategorije",
         "description": "&#9642; SR meni za ugovorene grupe",
         "translations": [
             {
@@ -526,6 +576,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -537,6 +588,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -548,6 +600,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -559,6 +612,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -570,6 +624,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -581,6 +636,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -589,6 +645,7 @@
         ]
     },
     "cat9": {
+        "details": "Opis kategorije",
         "description": "&#9642; SR voćni, čokoladni, slani kolači ...",
         "translations": [
             {
@@ -597,6 +654,7 @@
                 "cost_key": "7.00€",
                 "imageSrc": "img/food/pr/4.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -608,6 +666,7 @@
                 "cost_key": "15.20€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -619,6 +678,7 @@
                 "cost_key": "8.50€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -630,6 +690,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -641,6 +702,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"
@@ -652,6 +714,7 @@
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
                 "hereWith": "preporuka uz ovo",
+                "back": "Nazad",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desert"

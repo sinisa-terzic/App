@@ -20,6 +20,7 @@
         "category_9": "Посластице"
     },
     "cat1": {
+        "details": "Опис категорије",
         "description": "&#9642; СР U hladna predjela se nalazi domaći pršut, domaći sir, slana riba i ... još mnogo toga ...",
         "translations": [
             {
@@ -27,7 +28,8 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -38,7 +40,8 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -49,7 +52,8 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -60,7 +64,8 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -71,7 +76,8 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -82,7 +88,8 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -91,6 +98,7 @@
         ]
     },
     "cat2": {
+        "details": "Опис категорије",
         "description": "&#9642; СР Specijaliteti od povrća ubrajaju paprike, tikvice, patlidžan, šargarepu i ...",
         "translations": [
             {
@@ -98,7 +106,8 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -109,7 +118,8 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -120,7 +130,8 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -131,7 +142,8 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -142,7 +154,8 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -153,7 +166,8 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -162,6 +176,7 @@
         ]
     },
     "cat3": {
+        "details": "Опис категорије",
         "description": "&#9642; СР Salate i prilozi: masline, paradajz, krompir, kupus ...",
         "translations": [
             {
@@ -169,7 +184,8 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -180,7 +196,8 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -191,7 +208,8 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -202,7 +220,8 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -213,7 +232,8 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -224,7 +244,8 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -233,6 +254,7 @@
         ]
     },
     "cat4": {
+        "details": "Опис категорије",
         "description": "&#9642; СР riba, lignje, hobotnica, školje, bakalar ...",
         "translations": [
             {
@@ -240,7 +262,8 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -251,7 +274,8 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -262,7 +286,8 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -273,7 +298,8 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -284,7 +310,8 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -295,7 +322,8 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -304,6 +332,7 @@
         ]
     },
     "cat5": {
+        "details": "Опис категорије",
         "description": "&#9642; СР crno, rose, bijelo ...",
         "translations": [
             {
@@ -311,7 +340,8 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -322,7 +352,8 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -333,7 +364,8 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -344,7 +376,8 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -355,7 +388,8 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -366,7 +400,8 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -375,6 +410,7 @@
         ]
     },
     "cat6": {
+        "details": "Опис категорије",
         "description": "&#9642; СР loza, viljamovka, vodtka, viski, likeri ...",
         "translations": [
             {
@@ -382,7 +418,8 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -393,7 +430,8 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -404,7 +442,8 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -415,7 +454,8 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -426,7 +466,8 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -437,7 +478,8 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -446,6 +488,7 @@
         ]
     },
     "cat7": {
+        "details": "Опис категорије",
         "description": "&#9642; СР kafa, čaj, bezalkoholna pića, pivo, voda ...",
         "translations": [
             {
@@ -453,7 +496,8 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -464,7 +508,8 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -475,7 +520,8 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -486,7 +532,8 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -497,7 +544,8 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -508,7 +556,8 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -517,6 +566,7 @@
         ]
     },
     "cat8": {
+        "details": "Опис категорије",
         "description": "&#9642; СР meni za ugovorene grupe",
         "translations": [
             {
@@ -524,7 +574,8 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -535,7 +586,8 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -546,7 +598,8 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -557,7 +610,8 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -568,7 +622,8 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -579,7 +634,8 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -588,6 +644,7 @@
         ]
     },
     "cat9": {
+        "details": "Опис категорије",
         "description": "&#9642; СР voćni, čokoladni, slani kolači ...",
         "translations": [
             {
@@ -595,7 +652,8 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/4.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -606,7 +664,8 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -617,7 +676,8 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -628,7 +688,8 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -639,7 +700,8 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"
@@ -650,7 +712,8 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "Уз ово препоручујемо",
+                "hereWith": "препорука уз ово",
+                "back": "Назад",
                 "drink": {
                     "drink_1": "Kisela voda",
                     "drink_2": "Desrt"

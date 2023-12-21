@@ -110,7 +110,7 @@ function setTranslations(translations) {
             descriptionDiv.innerHTML = `
                         <div class="description_content flex y_center">
                             <details>
-                                <summary>Opis kategorije</summary>
+                                <summary>${currentData.details}</summary>
                                 <p class="description">${currentData.description}</p>
                             </details>
                         </div>
@@ -165,7 +165,7 @@ function setTranslations(translations) {
 
 
                             <div class="bottomDiv_button grid fg-10 ta-c mtb-10">
-                                <button class="back" title="stop">Nazad</button> 
+                                <button class="back" title="stop">${data.back}</button> 
                             </div>
 
                             <!--
