@@ -62,7 +62,7 @@ function setTranslations(translations) {
 
 
             dataContainer.classList.remove('noneDisplay');
-            dataItem.innerHTML = '';
+            dataItem.remove();
             // descriptionDiv = descriptionDiv
 
             // Access data for the current index (index + 1 because indices in JavaScript start from 0)
