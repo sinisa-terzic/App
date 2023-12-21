@@ -54,7 +54,7 @@
 
 .categoy_description_box,
 .summary {
-    font-size: 1.6rem;
+    font-size: 3.6vw;
 }
 
 
@@ -83,7 +83,7 @@
 } */
 
 .description {
-    font-size: 1.7rem;
+    font-size: 3.8vw;
     transition: all 400ms ease-out;
     padding: 0.5rem 1rem;
 }
