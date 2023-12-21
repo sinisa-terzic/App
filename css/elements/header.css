@@ -2,7 +2,7 @@
 ******************************************* */
 .header {
     position: relative;
-    height: 7dvh;
+    min-block-size: 7dvb;
     padding: 0 1.6rem 0 1rem;
     border-bottom: 1px solid #2f0808;
 }
@@ -116,8 +116,8 @@
 .dark {
     position: fixed;
     width: 100vw;
-    height: 93dvh;
-    top: 7dvh;
+    height: 93vh;
+    top: 7vh;
     right: 0;
     bottom: 0;
     left: 0;

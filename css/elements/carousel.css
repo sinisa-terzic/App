@@ -15,9 +15,9 @@
 
 
 .scene {
-    width: 190px;
-    height: 17dvh;
-    margin: 1.2dvh auto;
+    width: 165px;
+    min-block-size: 15dvb;
+    margin: 1.2dvb auto;
     perspective: 2000px;
     perspective-origin: 50% 50%;
 }
@@ -134,7 +134,7 @@
 
 .carousel_control {
     padding: 0 1rem;
-    height: 3.2dvh;
+    min-block-size: 3.2dvb;
 }
 
 .button {
@@ -154,7 +154,7 @@
 
 /* category description */
 .categoy_description_box {
-    height: 5dvh;
+    min-block-size: 5dvb;
 }
 
 .category {
@@ -210,6 +210,7 @@
         transform: translateX(-100%)
     }
 }
+
 
 details {
     width: 100%;

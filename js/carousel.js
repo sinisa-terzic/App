@@ -8,7 +8,7 @@ const cellCount = cellElements.length;
 let selectedIndex = 0;
 let isPlaying = false;
 let rotationInterval;
-let cellSize = 190; // Širina ili visina pojedinačnog elementa
+let cellSize = 165; // Širina ili visina pojedinačnog elementa
 const gapSize = 6; // Razmak između elemenata
 const isHorizontal = true;
 const rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
@@ -22,11 +22,11 @@ function setDimensions() {
         cellSize = 150; // Prilagodite dimenzije prema potrebi
         scene.classList.remove('medium-screen', 'large-screen');
     } else if (viewportWidth > 400) {
-        cellSize = 220; // Prilagodite dimenzije prema potrebi
+        cellSize = 165; // Prilagodite dimenzije prema potrebi
         // scene.classList.remove('medium-screen');
         // scene.classList.add('large-screen');
     } else {
-        cellSize = 190; // Vratite na osnovnu vrednost
+        cellSize = 165; // Vratite na osnovnu vrednost
     }
 
     changeCarousel(); // Ponovo postavite dimenzije karusela

@@ -31,21 +31,17 @@
     }
 } */
 
-@media screen and (min-width: 370px) {
-    .scene {
-        height: 19dvh;
-    }
-}
 
-@media screen and (min-width: 400px) {
+
+@media screen and (min-width: 370px) {
 
     /* .header {
         height: 7.5vh;
     } */
 
     .scene {
-        width: 220px;
-        height: 140px;
+        width: 165px;
+        min-block-size: 15dvb;
     }
 
     /* .info img {
@@ -55,7 +51,6 @@
 }
 
 
-
 /*******************************************/
 /* Ako je visina viewporta oko 
 /*******************************************/
@@ -63,7 +58,7 @@
 
     .scene {
         width: 150px;
-        height: 95px;
+        height: 20vh;
     }
 
     .carousel_control {
@@ -93,7 +88,7 @@
         height: 3rem;
     }
 
-    /*    .description_content {
+    /* .description_content {
         height: 3rem;
     } */
 

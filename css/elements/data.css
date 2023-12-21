@@ -1,7 +1,8 @@
 /*  ===  DATA  ===
 ******************************************* */
 .data-container {
-    /* position: relative; */
+    /* min-height: 72.4dvb;*/
+    height: 72.4vh;
     overflow-y: scroll;
     width: 100%;
     z-index: 1;

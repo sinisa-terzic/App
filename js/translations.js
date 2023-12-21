@@ -248,6 +248,7 @@ function setTranslations(translations) {
 
     });
 
+    window.dispatchEvent(new Event('data'));
 }
 
 
