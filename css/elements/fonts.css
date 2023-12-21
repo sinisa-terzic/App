@@ -61,7 +61,7 @@
 .summary {
     color: #fff;
     width: 100%;
-    min-block-size: 4dvb;
+    min-block-size: 4.5dvb;
     display: flex;
     align-items: center;
 }
