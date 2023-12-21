@@ -23,7 +23,7 @@ window.addEventListener('resize', setSectionHeights); */
 
 function setSectionHeights() {
     const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-    const margin = 1.2;
+    const margin = 10;
 
     // Visina headera
     const headerHeight = document.getElementById('header').offsetHeight;
