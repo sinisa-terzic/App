@@ -39,11 +39,11 @@
         height: 7.5vh;
     } */
 
-    .scene {
-        width: 165px;
-        /* min-block-size: 15dvb; */
-        height: 15vh;
-    }
+    /* .scene {
+        width: 170px;
+        min-block-size: 15dvb; - ovo zakomentarisati
+        height: 16vh;
+    } */
 
     /* .info img {
         width: 34rem;
