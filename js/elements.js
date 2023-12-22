@@ -31,8 +31,11 @@ function setSectionHeights() {
     // Visina karusela
     const carouselHeight = document.getElementById('carousel').offsetHeight;
 
+    // Visina karusela
+    const categoryBox = document.getElementById('categoryBox').offsetHeight;
+
     // Izračun preostale visine za info sekciju
-    // const infoHeight = viewportHeight - headerHeight - carouselHeight;
+    const infoHeight = viewportHeight - headerHeight - carouselHeight - categoryBox;
     // const infoHeight = 65.6;
 
     // Visina data sekcije
@@ -41,7 +44,7 @@ function setSectionHeights() {
 
 
     // Postavite visinu info sekcije
-    // document.getElementById('info').style.height = infoHeight + 'vh';
+    document.getElementById('info').style.height = infoHeight + 'px';
 
     document.getElementById('data').style.height = dataHeight + 'px';
     document.getElementById('data').style.marginTop = margin + 'px';
