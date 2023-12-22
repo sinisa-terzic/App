@@ -104,7 +104,10 @@ function setTranslations(translations) {
             // Postavljamo podatke u HTML unutar novog div-a
             descriptionDiv.innerHTML = `
                 <div class="description_content">
-                    <p class="summary">${currentData.details}</p>
+                    <div class="flex">
+                        <img class="rotateImg" src="img/food/play.svg" alt="play">
+                        <p class="summary">${currentData.details}</p>
+                    </div>
                     <p class="description noneDisplay">${currentData.description}</p>
                 </div>
             `;
@@ -225,7 +228,8 @@ function setTranslations(translations) {
             });
 
 
-            const summary = document.querySelectorAll('.summary');
+            const summary = document.querySelectorAll('.description_content');
+            const rotate = document.querySelector('.rotateImg');
             const description = descriptionDiv.querySelector('.description');
             summary.forEach(cost => {
                 if (switcherHeader.classList.contains('switcher_dark')) {
@@ -241,10 +245,8 @@ function setTranslations(translations) {
 
             summary.forEach(summary => {
                 summary.addEventListener('click', () => {
-                    // Iteriraj kroz sve elemente unutar NodeList-a
-
-                    // Toggle klasu 'noneDisplay' na svakom elementu
                     description.classList.toggle('noneDisplay');
+                    rotate.classList.toggle('rotate');
                 });
             });
 

@@ -72,7 +72,7 @@
     font-size: 4.2vw;
     /* transition: all 400ms ease-out; */
     padding: 0.5rem;
-    /* display: grid; */
+    background-color: #fff;
     height: 100%;
 }
 

@@ -191,12 +191,21 @@
     margin-bottom: 1rem;
     /* min-block-size: 5dvb; */
     /* height: 5vh; */
-    /* background-color: #fff; */
+    /* background-color: #11161d; */
     /* border-top: 1px dotted #1b121c; */
     border-bottom: 1px dotted #1b121c;
     /* box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03); */
     /* z-index: 1; */
     /* overflow: hidden; */
+}
+
+.description_content img {
+    width: 0.9rem;
+    margin: 0 0 0 0.8rem;
+}
+
+.rotate {
+    transform: rotate(90deg);
 }
 
 /* .description {
