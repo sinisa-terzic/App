@@ -48,7 +48,7 @@ function setSectionHeights() {
     document.getElementById('data').style.marginBottom = margin + 'px';
 }
 
-/* // Disable pull-to-refresh if overscroll occurs
+// Disable pull-to-refresh if overscroll occurs
 window.addEventListener('touchmove', function (event) {
     if (event.touches.length > 1) {
         event.preventDefault();
@@ -60,7 +60,7 @@ window.addEventListener('touchend', function () {
     setTimeout(function () {
         window.scrollTo(0, 0);
     }, 0);
-}); */
+});
 
 // Pozovi funkciju kada se stranica učita
 window.addEventListener('load', setSectionHeights);
