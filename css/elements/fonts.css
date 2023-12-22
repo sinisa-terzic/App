@@ -61,7 +61,8 @@
 .summary {
     color: #fff;
     width: 100%;
-    min-block-size: 5dvb;
+    /* min-block-size: 5dvb; */
+    height: 5vh;
     display: flex;
     align-items: center;
     padding: 0 1rem;
@@ -86,10 +87,10 @@
 } */
 
 .description {
-    font-size: 1.8rem;
+    font-size: 4.7vw;
     transition: all 400ms ease-out;
     padding: 0.5rem;
-    display: flex;
+    display: grid;
 }
 
 .logo,

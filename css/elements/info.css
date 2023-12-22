@@ -4,7 +4,8 @@
     position: relative;
     padding: 0 1rem;
     display: grid;
-    min-block-size: 67.4dvb;
+    /* min-block-size: 67.4dvb; */
+    height: 67.4vh;
     grid-template-rows: 1fr 3fr 1fr;
 }
 
