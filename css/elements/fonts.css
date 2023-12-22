@@ -59,7 +59,7 @@
 
 
 .summary {
-    color: #fff;
+    color: rgb(255 255 255 / 80%);
     width: 100%;
     /* min-block-size: 5dvb; */
     height: 4.5vh;
