@@ -88,9 +88,10 @@
 
 .description {
     font-size: 3.5vw;
-    transition: all 400ms ease-out;
+    /* transition: all 400ms ease-out; */
     padding: 0.5rem;
-    display: grid;
+    /* display: grid; */
+    height: 100%;
 }
 
 .logo,
