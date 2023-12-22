@@ -87,7 +87,7 @@
 } */
 
 .description {
-    font-size: 4.5vw;
+    font-size: 4vw;
     transition: all 400ms ease-out;
     padding: 0.5rem;
     display: grid;
