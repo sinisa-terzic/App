@@ -41,7 +41,8 @@
 
     .scene {
         width: 165px;
-        min-block-size: 15dvb;
+        /* min-block-size: 15dvb; */
+        height: 15vh;
     }
 
     /* .info img {
