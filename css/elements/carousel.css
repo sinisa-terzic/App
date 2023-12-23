@@ -227,6 +227,10 @@
 
 
 
-/* .description {
-    padding: 0.5rem 1rem;
-} */
+.bell {
+    width: 12vw;
+    position: absolute;
+    right: 0;
+    bottom: -40%;
+    z-index: 2;
+}
