@@ -8,7 +8,7 @@ const cellCount = cellElements.length;
 let selectedIndex = 0;
 let isPlaying = false;
 let rotationInterval;
-let cellSize = 42; // Širina ili visina pojedinačnog elementa
+let cellSize = 45; // Širina ili visina pojedinačnog elementa
 const gapSize = 1.7; // Razmak između elemenata
 const isHorizontal = true;
 const rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
