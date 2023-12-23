@@ -58,11 +58,11 @@
         height: 7.5vh;
     } */
 
-    .scene {
+    /* .scene {
         width: 210px;
-        /* min-block-size: 15dvb; */
+        min-block-size: 15dvb; - staviti komentar
         height: 17vh;
-    }
+    } */
 
     /* .info img {
         width: 34rem;
@@ -76,10 +76,10 @@
 /*******************************************/
 @media (max-height: 620px) {
 
-    .scene {
+    /* .scene {
         width: 150px;
         height: 20vh;
-    }
+    } */
 
     .carousel_control {
         height: 1.5rem;

@@ -15,11 +15,11 @@
 
 
 .scene {
-    width: 170px;
+    width: 42vw;
     /* min-block-size: 15dvb; */
-    height: 16vh;
+    height: 27vw;
     /* margin: 1.2dvb auto; */
-    margin: 1.2vh auto;
+    margin: 2vh auto;
     perspective: 2000px;
     perspective-origin: 50% 50%;
 }
