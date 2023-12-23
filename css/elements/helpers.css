@@ -61,6 +61,14 @@ img {
     justify-content: center;
 }
 
+.x_start {
+    justify-content: start;
+}
+
+.x_end {
+    justify-content: end;
+}
+
 .y_center {
     align-items: center;
 }

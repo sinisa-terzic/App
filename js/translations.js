@@ -126,9 +126,18 @@ function setTranslations(translations) {
                 dataDiv.innerHTML = `
                     <img class="dataImg" src="${data.imageSrc}" alt="${data.title_key}">
                     <div class="textContainerDiv">
-                        <p class="title" data-translation-key="title_key">${data.title_key}</p>
+                        
+                        <div class="titleBox flex x_start">
+                            <p class="title" data-translation-key="title_key">${data.title_key}</p>
+                            <!-- mjesto za čekboks -->
+                        </div>
+                        
                         <p class="periphrasis" data-translation-key="text_key">${data.text_key}</p>
-                        <p class="cost" data-translation-key="cost_key">${data.cost_key}</p>
+
+                        <div class="costBox_1 flex x_end">
+                            <!-- mjesto za brojač -->
+                            <p class="cost" data-translation-key="cost_key">${data.cost_key}</p>
+                        </div>
                     </div>
                 `;
 
@@ -144,31 +153,59 @@ function setTranslations(translations) {
 
                 overlay.innerHTML = `
                     <div class="backgroundDiv"></div>
-                    <div class="descriptionDiv">
+                    <div class="descriptionDiv" data-id="uniqueId">
 
                         <div class="topDiv">
                             <img src="${data.imageSrc}" alt="${data.title_key}">
                         </div>
 
                         <div class="bottomDiv">
+
+                            <!-- titleBox -->
                             <div class="flex between_center mtb-10">
                                 <h1 class="title">${data.title_key}</h1>
-                                <p class="cost">${data.cost_key}</p>
-                            </div>
+                                <!-- costBox -->
+                                <div class="costBox_2 flex between_center g-20">
+
+                                    <!-- quantity
+                                     <div class="flex between_center g-10">
+                                        <button title="decrease font" class="quantity" data-action="decrease">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                                                <path d="M9,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h8c0.6,0,1,0.4,1,1S9.6,6,9,6z"></path>
+                                            </svg>
+                                        </button>
+                                        <p class="quantityValue">0</p>
+                                        <button title="increase font" class="quantity" data-action="increase">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                                                    <path d="M10,5c0,0.5-0.5,1-1,1H6v3c0,0.5-0.5,1-1,1S4,9.5,4,9V6H1C0.5,6,0,5.5,0,5s0.5-1,1-1h3V1c0-0.5,0.5-1,1-1  s1,0.5,1,1v3h3C9.5,4,10,4.5,10,5z"></path>
+                                                </svg>
+                                        </button>
+                                    </div> end quantity -->
+
+                                    <p class="cost" data-translation-key="cost_key">${data.cost_key}</p>
+                                </div> <!-- end costBox -->
+                                <!--
+                                <div class="article-check">
+                                    <input type="checkbox" class="select_item">
+                                    <span class="choose">ja</span>
+                                    <span class="unchoose noneDisplay">ti</span>
+                                </div>
+                                -->
+                            </div> <!-- end titleBox -->
                             
                             <p class="periphrasis">${data.text_key}</p>
                             <h2 class="reference">${data.hereWith}:</h2>
                             <ul id="drinkList"></ul> 
 
-
-                            <div class="bottomDiv_button grid fg-10 ta-c mtb-10">
-                                <button class="back" title="stop">${data.back}</button> 
-                            </div>
-
-                            <!--
-                             <div class="bottomDiv_button grid g_2_1 fg-10 ta-c mtb-10">
-                                <button class="basket" title="stop">Ubaci u korpu</button> 
+                            
+                            <div class="bottomDiv_button grid g-10 ta-c mtb-10">
                                 <button class="back" title="stop">Nazad</button> 
+                            </div>
+                            
+                            <!--
+                             <div class="bottomDiv_button grid g_2_1 g-10 ta-c mtb-10">
+                                <button class="basket" title="basket">Ubaci u korpu</button> 
+                                <button class="back" title="back">Nazad</button> 
                             </div> 
                             -->
                         </div>
@@ -211,6 +248,63 @@ function setTranslations(translations) {
                     // descriptionDiv.classList.add('noneDisplay');
                     console.log('neće da radi');
                 });
+
+
+                /* const selectItem = dataDiv.querySelector('.select_item');
+                const chooseSpan = dataDiv.querySelector('.choose');
+                const unchooseSpan = dataDiv.querySelector('.unchoose');
+
+                // Add an event listener for the 'change' event on the checkbox
+                selectItem.addEventListener('change', () => {
+                    if (selectItem.checked) {
+                        chooseSpan.classList.add('noneDisplay');
+                        unchooseSpan.classList.remove('noneDisplay');
+                    } else {
+                        chooseSpan.classList.remove('noneDisplay');
+                        unchooseSpan.classList.add('noneDisplay');
+                    }
+                });
+
+                // Dodajte event listener na ikonicu kako biste simulirali klik na čekboks
+                chooseSpan.addEventListener('click', () => {
+                    selectItem.click();
+                });
+                unchooseSpan.addEventListener('click', () => {
+                    selectItem.click();
+                }); */
+
+
+                /* // Dobijanje referenci na dugmad za povećanje i smanjenje brojača
+                const decreaseBtn = dataDiv.querySelector('.quantity[data-action="decrease"]');
+                const increaseBtn = dataDiv.querySelector('.quantity[data-action="increase"]');
+                const quantityValue = dataDiv.querySelector('.quantityValue');
+                const cost = dataDiv.querySelector('.cost');
+
+                // Postavljanje početne vrednosti brojača
+                let counter = 1;
+
+                // Dodavanje event listenara za dugmad
+                decreaseBtn.addEventListener('click', () => {
+                    if (counter > 1) {
+                        counter--;
+                        updateCounter();
+                    }
+                });
+
+                increaseBtn.addEventListener('click', () => {
+                    counter++;
+                    updateCounter();
+                });
+
+                // Funkcija za ažuriranje prikaza vrednosti brojača
+                function updateCounter() {
+                    quantityValue.textContent = counter;
+                    const newCost = (parseFloat(data.cost_key) * counter).toFixed(2);
+                    cost.textContent = newCost + '€';
+                }
+
+                // Inicijalno postavljanje vrednosti brojača
+                updateCounter(); */
 
             });
 
