@@ -46,13 +46,13 @@
 
 .quantity,
 .quantityValue {
-    font-size: 4vw;
+    font-size: 4.5vw;
 }
 
 .itemDiv svg {
     fill: #11161d;
     stroke: #fff;
-    width: 3vw;
+    width: 3.5vw;
 }
 
 
