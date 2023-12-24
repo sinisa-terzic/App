@@ -230,7 +230,7 @@ headerLogo.addEventListener('click', function () {
     dataContainer.scrollTop = 0;
     setTimeout(function () {
         dataContainer.classList.add('noneDisplay');
-    }, 500);
+    }, 1000);
     call_us.classList.add('noneDisplay');
     categoy_description_box.classList.remove('noneDisplay');
     languageBox.classList.remove('translateX');
