@@ -8,7 +8,7 @@ const cellCount = cellElements.length;
 let selectedIndex = 0;
 let isPlaying = false;
 let rotationInterval;
-let cellSize = 45; // Širina ili visina pojedinačnog elementa
+let cellSize = 42; // Širina ili visina pojedinačnog elementa
 const gapSize = 1.7; // Razmak između elemenata
 const isHorizontal = true;
 const rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
@@ -216,6 +216,7 @@ darkOpen.addEventListener('click', () => {
 const headerLogo = document.querySelector('.headerLogo');
 const description_content = document.querySelector('.description_content');
 const categoy_description_box = document.querySelector('.categoy_description_box');
+const call_us = document.querySelector('.call_us');
 
 headerLogo.addEventListener('click', function () {
     cells.forEach(function (cell) {
@@ -232,6 +233,7 @@ headerLogo.addEventListener('click', function () {
 
     darkOpen.classList.add('noneDisplay');
     dataContainer.classList.add('noneDisplay');
+    // call_us.classList.add('noneDisplay');
     categoy_description_box.classList.remove('noneDisplay');
     languageBox.classList.remove('translateX');
     switcher.classList.remove('translateX');

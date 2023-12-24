@@ -3,7 +3,12 @@ const savedLanguage = localStorage.getItem('selectedLanguage');
 
 // Inicijalno postavite trenutni jezik na "sr" ako nije sačuvan
 let currentLanguage = savedLanguage || 'sr';
+
 const descriptionDiv = document.createElement('div');
+descriptionDiv.classList.add('description_content')
+
+const slogan = document.createElement('div');
+slogan.classList.add('slogan')
 
 // Funkcija za učitavanje prevoda za odabrani jezik
 function loadTranslations(language) {
@@ -57,6 +62,7 @@ function setTranslations(translations) {
             const infoDiv = document.querySelector('.info');
             infoDiv.classList.add('noneDisplay');
 
+            // call_us.classList.remove('noneDisplay');
 
             dataContainer.classList.remove('noneDisplay');
             dataItem.innerHTML = '';
@@ -103,13 +109,11 @@ function setTranslations(translations) {
 
             // Postavljamo podatke u HTML unutar novog div-a
             descriptionDiv.innerHTML = `
-                <div class="description_content">
-                    <div class="flex">
-                        <img class="rotateImg" src="img/food/play.svg" alt="play">
-                        <p class="summary">${currentData.details}</p>
-                    </div>
-                    <p class="description noneDisplay">${currentData.description}</p>
+                <div class="flex">
+                    <img class="rotateImg" src="img/food/play.svg" alt="play">
+                    <p class="summary">${currentData.details}</p>
                 </div>
+                <p class="description noneDisplay">${currentData.description}</p>
             `;
 
             dataContainer.appendChild(descriptionDiv);
@@ -343,6 +347,14 @@ function setTranslations(translations) {
                     rotate.classList.toggle('rotate');
                 });
             });
+
+
+            // Postavljamo podatke u HTML unutar novog div-a
+            slogan.innerHTML = `
+                <p>Naručite brže i uživajte, e-Meni™</p>
+            `;
+
+            dataContainer.appendChild(slogan);
 
         });
 

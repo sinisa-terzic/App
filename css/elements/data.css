@@ -162,3 +162,49 @@
 .g_2_1.bottomDiv_button .back {
     justify-self: auto;
 }
+
+.slogan {
+    font-size: 5.2vw;
+    text-align: center;
+    margin: 2vh 0 5vh 0;
+    /* font-weight: 500; */
+}
+
+.call_us {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* background-color: #fff; */
+}
+
+.call_us p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    /* padding: 1rem; */
+    width: 80vw;
+    height: 7vh;
+    font-size: 5vw;
+    /* text-align: center; */
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+
+.call_us img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding: 1rem;
+    width: 18vw;
+    height: 7vh;
+    border-top-left-radius: 9vw;
+}
