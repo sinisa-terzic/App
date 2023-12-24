@@ -227,10 +227,10 @@ headerLogo.addEventListener('click', function () {
     infoDiv.classList.remove('noneDisplay');
 
     darkOpen.classList.add('noneDisplay');
-    dataContainer.scrollTop = 0;
     setTimeout(function () {
-        dataContainer.classList.add('noneDisplay');
-    }, 1000);
+        dataContainer.scrollTop = 0;
+    }, 10);
+
     call_us.classList.add('noneDisplay');
     categoy_description_box.classList.remove('noneDisplay');
     languageBox.classList.remove('translateX');
