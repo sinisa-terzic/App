@@ -223,19 +223,22 @@ headerLogo.addEventListener('click', function () {
         cell.classList.remove('active');
     });
 
-    // Očistimo sadržaj kontejnera
-    /*  const dataContainer = document.getElementById('data');
-     dataContainer.classList.add('noneDisplay');
-     dataContainer.innerHTML = ''; */
-
     const infoDiv = document.querySelector('.info');
     infoDiv.classList.remove('noneDisplay');
 
     darkOpen.classList.add('noneDisplay');
+<<<<<<< HEAD
     dataContainer.scrollTop = 0;
     setTimeout(function () {
         // dataContainer.classList.add('noneDisplay');
     }, 800);
+=======
+    setTimeout(function () {
+        dataContainer.scrollTop = 0;
+    }, 10);
+
+    call_us.classList.add('noneDisplay');
+>>>>>>> ed87341b2397861e84f4b43a38b9ae47e8cc78f7
     categoy_description_box.classList.remove('noneDisplay');
     languageBox.classList.remove('translateX');
     switcher.classList.remove('translateX');

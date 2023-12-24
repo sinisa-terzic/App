@@ -46,13 +46,13 @@
 
 .quantity,
 .quantityValue {
-    font-size: 4vw;
+    font-size: 4.5vw;
 }
 
 .itemDiv svg {
     fill: #11161d;
     stroke: #fff;
-    width: 3vw;
+    width: 3.5vw;
 }
 
 
@@ -165,49 +165,55 @@
 
 .slogan p {
     font-size: 5.2vw;
-    /* text-align: center; */
-    margin: 2vh 0 5vh 0;
-    /* font-weight: 500; */
+    margin: 2vh 0 10vh 0;
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
-.call_us {
+/* .call_us {
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
-    /* background-color: #fff; */
-}
-
-.call_us p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 0;
-    bottom: 0;
     background-color: #fff;
-    /* padding: 1rem; */
-    width: 80vw;
+} */
+
+#callUs_btnList {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    flex: 1;
+    width: 75vw;
     height: 7vh;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
     font-size: 5vw;
-    /* text-align: center; */
-    border-top: 1px solid;
-    border-right: 1px solid;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
 }
 
-.call_us img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-color: #fff;
-    padding: 1rem;
+#callUs_btnList img {
+    width: 1.6vw;
+}
+
+#callUs_btnImg {
     width: 18vw;
     height: 7vh;
-    border-top-left-radius: 9vw;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#callUs_btnImg img {
+    width: 55%;
 }

@@ -118,7 +118,7 @@ img {
     grid-template-columns: 2fr 1fr;
 }
 
-.g__2_1 {
+.g_1_2_1 {
     grid-template-columns: 1fr 2fr 1fr;
 }
 
@@ -149,6 +149,16 @@ img {
 
 .mb-5 {
     margin-bottom: 0.5rem;
+}
+
+.pl-5 {
+    padding-left: 0.5rem;
+    ;
+}
+
+.pl-10 {
+    padding-left: 1rem;
+    ;
 }
 
 .active_switcher_dark,
