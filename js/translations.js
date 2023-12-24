@@ -62,7 +62,7 @@ function setTranslations(translations) {
             const infoDiv = document.querySelector('.info');
             infoDiv.classList.add('noneDisplay');
 
-            // call_us.classList.remove('noneDisplay');
+            call_us.classList.remove('noneDisplay');
 
             dataContainer.classList.remove('noneDisplay');
             dataItem.innerHTML = '';
