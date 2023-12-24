@@ -185,14 +185,20 @@
     bottom: 0;
     left: 0;
     flex: 1;
-    width: 80%;
+    width: 75vw;
     height: 7vh;
     border-top: 2px solid #fff;
     border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
     font-size: 5vw;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+#callUs_btnList img {
+    width: 1.6vw;
 }
 
 #callUs_btnImg {
@@ -200,6 +206,7 @@
     height: 7vh;
     border-top: 2px solid #fff;
     border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
     display: flex;
     align-items: center;
     justify-content: center;
