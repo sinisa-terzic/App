@@ -165,9 +165,12 @@
 
 .slogan p {
     font-size: 5.2vw;
-    text-align: center;
+    /* text-align: center; */
     margin: 2vh 0 5vh 0;
     /* font-weight: 500; */
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 .call_us {
