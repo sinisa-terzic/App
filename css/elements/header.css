@@ -40,7 +40,7 @@
     right: 0px;
     width: 60vw;
     padding: 1rem;
-    top: calc(100% + 4px);
+    top: calc(100% + 1px);
     background-color: #fff;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;

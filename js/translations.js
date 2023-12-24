@@ -131,15 +131,35 @@ function setTranslations(translations) {
                     <img class="dataImg" src="${data.imageSrc}" alt="${data.title_key}">
                     <div class="textContainerDiv">
                         
-                        <div class="titleBox flex x_start">
+                        <div class="titleBox flex between_center">
                             <p class="title" data-translation-key="title_key">${data.title_key}</p>
-                            <!-- mjesto za čekboks -->
+                            <div class="article-check">
+                                <input type="checkbox" class="select_item">
+                                <span class="choose">
+                                    <img src="img/quantity/plus-circle.svg" alt="plus_circle">
+                                </span>
+                                <span class="unchoose noneDisplay">
+                                    <img src="img/quantity/emblem-checked.svg" alt="emblem-checked">
+                                </span>
+                            </div>
                         </div>
                         
                         <p class="periphrasis" data-translation-key="text_key">${data.text_key}</p>
 
-                        <div class="costBox_1 flex x_end">
-                            <!-- mjesto za brojač -->
+                        <div class="costBox_1 flex between_center">
+                            <div class="grid g_1_2_1 between_center g-5">
+                                <button title="decrease font" class="quantity" data-action="decrease">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                                        <path d="M9,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h8c0.6,0,1,0.4,1,1S9.6,6,9,6z"></path>
+                                    </svg>
+                                </button>
+                                <p class="quantityValue">0</p>
+                                <button title="increase font" class="quantity" data-action="increase">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                                            <path d="M10,5c0,0.5-0.5,1-1,1H6v3c0,0.5-0.5,1-1,1S4,9.5,4,9V6H1C0.5,6,0,5.5,0,5s0.5-1,1-1h3V1c0-0.5,0.5-1,1-1  s1,0.5,1,1v3h3C9.5,4,10,4.5,10,5z"></path>
+                                        </svg>
+                                </button>
+                            </div>
                             <p class="cost" data-translation-key="cost_key">${data.cost_key}</p>
                         </div>
                     </div>
@@ -254,31 +274,69 @@ function setTranslations(translations) {
                 });
 
 
-                /* const selectItem = dataDiv.querySelector('.select_item');
+
+
+                const selectItems = dataDiv.querySelectorAll('.select_item');
                 const chooseSpan = dataDiv.querySelector('.choose');
                 const unchooseSpan = dataDiv.querySelector('.unchoose');
+                // const callUs_btnList = document.getElementById('callUs_btnList');
 
-                // Add an event listener for the 'change' event on the checkbox
-                selectItem.addEventListener('change', () => {
-                    if (selectItem.checked) {
-                        chooseSpan.classList.add('noneDisplay');
-                        unchooseSpan.classList.remove('noneDisplay');
+                const allSelectItems = Array.from(document.querySelectorAll('.select_item'));
+
+                function updateCallUsButtonVisibility() {
+                    // Provjeri jesu li svi čekboksevi nečekirani
+                    const allUnchecked = allSelectItems.every(selectItem => !selectItem.checked);
+
+                    // Ako su svi čekboksevi nečekirani, dodaj klasu 'noneDisplay' na callUs_btnList, inače je ukloni
+                    if (allUnchecked) {
+                        callUs_btnList.classList.add('noneDisplay');
                     } else {
-                        chooseSpan.classList.remove('noneDisplay');
-                        unchooseSpan.classList.add('noneDisplay');
+                        callUs_btnList.classList.remove('noneDisplay');
                     }
+                }
+
+                selectItems.forEach((selectItem, index) => {
+                    // Add an event listener for the 'change' event on the checkbox
+                    selectItem.addEventListener('change', () => {
+                        const selectedIndex = allSelectItems.indexOf(selectItem);
+                        if (selectItem.checked) {
+                            chooseSpan.classList.add('noneDisplay');
+                            unchooseSpan.classList.remove('noneDisplay');
+                            console.log('checked is: ', selectedIndex);
+                        } else {
+                            chooseSpan.classList.remove('noneDisplay');
+                            unchooseSpan.classList.add('noneDisplay');
+                            console.log('unchecked is: ', allSelectItems.indexOf(selectItem));
+                        }
+
+                        // Ažurirajte prikaz broja čekiranih elemenata
+                        // updateCheckedCount();
+
+                        // Ažurirajte prikaz callUs_btnList
+                        updateCallUsButtonVisibility();
+                    });
+
+                    // Dodajte event listener na ikonicu kako biste simulirali klik na čekboks
+                    chooseSpan.addEventListener('click', () => {
+                        selectItem.click();
+                        // console.log('checked is: ', allSelectItems.indexOf(selectItem));
+                    });
+                    unchooseSpan.addEventListener('click', () => {
+                        selectItem.click();
+                    });
                 });
 
-                // Dodajte event listener na ikonicu kako biste simulirali klik na čekboks
-                chooseSpan.addEventListener('click', () => {
-                    selectItem.click();
-                });
-                unchooseSpan.addEventListener('click', () => {
-                    selectItem.click();
-                }); */
+                // Inicijalno postavljanje prikaza broja čekiranih elemenata
+                // updateCheckedCount();
+
+                // Inicijalno postavljanje prikaza callUs_btnList
+                updateCallUsButtonVisibility();
 
 
-                /* // Dobijanje referenci na dugmad za povećanje i smanjenje brojača
+
+
+
+                // Dobijanje referenci na dugmad za povećanje i smanjenje brojača
                 const decreaseBtn = dataDiv.querySelector('.quantity[data-action="decrease"]');
                 const increaseBtn = dataDiv.querySelector('.quantity[data-action="increase"]');
                 const quantityValue = dataDiv.querySelector('.quantityValue');
@@ -308,7 +366,7 @@ function setTranslations(translations) {
                 }
 
                 // Inicijalno postavljanje vrednosti brojača
-                updateCounter(); */
+                updateCounter();
 
             });
 
