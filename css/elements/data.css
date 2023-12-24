@@ -171,13 +171,13 @@
     justify-content: center;
 }
 
-/* .call_us {
+.call_us {
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: #fff;
-} */
+    /* background-color: #fff; */
+}
 
 #callUs_btnList {
     color: #fff;
