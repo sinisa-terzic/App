@@ -147,7 +147,8 @@ function setTranslations(translations) {
                         <p class="periphrasis" data-translation-key="text_key">${data.text_key}</p>
 
                         <div class="costBox_1 flex between_center">
-                            <div class="grid g_1_2_1 between_center g-5 pl-10">
+                        <p class="cost" data-translation-key="cost_key">${data.cost_key}</p>
+                            <div class="grid g_1_2_1 between_center g-5">
                                 <button title="decrease font" class="quantity" data-action="decrease">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
                                         <path d="M9,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h8c0.6,0,1,0.4,1,1S9.6,6,9,6z"></path>
@@ -160,7 +161,6 @@ function setTranslations(translations) {
                                         </svg>
                                 </button>
                             </div>
-                            <p class="cost" data-translation-key="cost_key">${data.cost_key}</p>
                         </div>
                     </div>
                 `;
