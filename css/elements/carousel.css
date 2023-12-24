@@ -15,9 +15,9 @@
 
 
 .scene {
-    width: 42vw;
+    width: 44vw;
     /* min-block-size: 15dvb; */
-    height: 27vw;
+    height: 28vw;
     /* margin: 1.2dvb auto; */
     margin: 2vh auto;
     perspective: 2000px;

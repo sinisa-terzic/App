@@ -8,7 +8,7 @@ const cellCount = cellElements.length;
 let selectedIndex = 0;
 let isPlaying = false;
 let rotationInterval;
-let cellSize = 42; // Širina ili visina pojedinačnog elementa
+let cellSize = 44; // Širina ili visina pojedinačnog elementa
 const gapSize = 1.7; // Razmak između elemenata
 const isHorizontal = true;
 const rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
@@ -232,8 +232,10 @@ headerLogo.addEventListener('click', function () {
     infoDiv.classList.remove('noneDisplay');
 
     darkOpen.classList.add('noneDisplay');
-    dataContainer.classList.add('noneDisplay');
-    // call_us.classList.add('noneDisplay');
+    dataContainer.scrollTop = 0;
+    setTimeout(function () {
+        // dataContainer.classList.add('noneDisplay');
+    }, 800);
     categoy_description_box.classList.remove('noneDisplay');
     languageBox.classList.remove('translateX');
     switcher.classList.remove('translateX');
