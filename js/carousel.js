@@ -108,15 +108,12 @@ carousel.addEventListener(moveEvent, function (e) {
 });
 
 ////////////////////////////////////////////////////////
-
-// Dodajte event listenere za dataContainer
-
 // Dodajte event listenere za dataContainer
 dataContainer.addEventListener(startEvent, function (e) {
     isDragging = true;
     startX = dataContainer ? e.touches[0].clientX : e.clientX;
     previousX = startX;
-    startTime = Date.now(); // Postavi vreme početka povlačenja
+    startTime = Date.now(); // Postavite početno vreme povlačenja
 });
 
 
@@ -132,18 +129,20 @@ dataContainer.addEventListener(moveEvent, function (e) {
 
         // Provera dodatnih pragova za brzinu i dužinu povlačenja
         if (Math.abs(diffX) > minDragDistance && dragSpeed > minDragSpeed) {
+            // Ako se menjaju podaci, postavite opacity na 0
+            dataContainer.style.opacity = 0;
+
             // Simuliraj klik na prethodnu ili sledeću ćeliju u zavisnosti od pokreta prsta
             if (diffX < 0) {
                 selectNextCell();
             } else {
                 selectPreviousCell();
             }
+
             startX = clientX;
         }
     }
 });
-
-
 
 
 // Funkcija za simulaciju klika na prethodnu ćeliju
@@ -151,6 +150,9 @@ function selectPreviousCell() {
     const previousIndex = (selectedIndex - 1 + cells.length) % cells.length;
     if (cells[previousIndex]) {
         cells[previousIndex].click();
+        setTimeout(function () {
+            dataContainer.style.opacity = 1;
+        }, 100);
     }
 }
 
@@ -158,10 +160,19 @@ function selectPreviousCell() {
 function selectNextCell() {
     const nextIndex = (selectedIndex + 1) % cells.length;
     cells[nextIndex].click();
+    setTimeout(function () {
+        dataContainer.style.opacity = 1;
+    }, 100);
 }
 
+// Dodajte event listener za završetak povlačenja
 dataContainer.addEventListener(endEvent, function () {
-    isDragging = false;
+    if (isDragging) {
+        // Resetujte opacity na 1 kada se završi povlačenje
+        dataContainer.style.opacity = 1;
+
+        isDragging = false;
+    }
 });
 
 
