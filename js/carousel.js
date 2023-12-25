@@ -110,29 +110,26 @@ carousel.addEventListener(moveEvent, function (e) {
 ////////////////////////////////////////////////////////
 
 // Dodajte event listenere za dataContainer
-// Postavljanje dodatnih pragova
-const minDragDistance = 50; // Minimalna dužina povlačenja u pikselima
-const minDragSpeed = 0.5; // Minimalna brzina povlačenja u pikselima po milisekundi
+const minDragDistance = 20; // Podesite vrednost prema potrebi
 
 dataContainer.addEventListener(moveEvent, function (e) {
     if (isDragging) {
         const clientX = dataContainer ? e.changedTouches[0].clientX : e.clientX;
         diffX = clientX - startX;
-        const dragSpeed = Math.abs(diffX) / (Date.now() - startTime);
 
-        // Provera dodatnih pragova za brzinu i dužinu povlačenja
-        if (Math.abs(diffX) > minDragDistance && dragSpeed > minDragSpeed) {
+        // Ako je ukupna udaljenost poteza prsta premašila minDragDistance
+        if (Math.abs(diffX) > minDragDistance) {
             // Simuliraj klik na prethodnu ili sledeću ćeliju u zavisnosti od pokreta prsta
             if (diffX < 0) {
                 selectNextCell();
             } else {
                 selectPreviousCell();
             }
+
             startX = clientX;
         }
     }
 });
-
 
 
 // Funkcija za simulaciju klika na prethodnu ćeliju
