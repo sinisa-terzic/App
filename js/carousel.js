@@ -146,9 +146,9 @@ function selectNextCell() {
     cells[nextIndex].click();
 }
 
-dataContainer.addEventListener(endEvent, function () {
+/* dataContainer.addEventListener(endEvent, function () {
     isDragging = false;
-});
+}); */
 
 
 
