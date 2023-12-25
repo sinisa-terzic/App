@@ -33,8 +33,6 @@ function setColorPreference(color) {
         case 'blue':
             switcherHeader.classList.add('switcher_blue');
             switcherInfo.classList.add('switcher_blue');
-            callUs_btnList.classList.add('switcher_blue');
-            callUs_btnImg.classList.add('switcher_blue');
             break;
         case 'brown':
             switcherHeader.classList.add('switcher_brown');

@@ -150,8 +150,9 @@
     font-size: 4vw;
     color: #fff;
     padding: 0.5rem 1rem;
-    background-color: #981b1e;
-    letter-spacing: 0.15rem;
+    background-color: #590002;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
 }
 
 .bottomDiv_button .back {
