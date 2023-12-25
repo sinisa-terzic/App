@@ -169,7 +169,7 @@ function setTranslations(translations) {
 
                             
                             <div class="bottomDiv_button grid g-10 ta-c mtb-10">
-                                <button class="back" title="stop">Nazad</button> 
+                                <button class="back" title="stop">${data.back}</button> 
                             </div>
                             
                             <!--
