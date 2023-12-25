@@ -62,49 +62,11 @@ function setTranslations(translations) {
             const infoDiv = document.querySelector('.info');
             infoDiv.classList.add('noneDisplay');
 
-            // call_us.classList.remove('noneDisplay');
-
             dataContainer.classList.remove('noneDisplay');
             dataItem.innerHTML = '';
-            // descriptionDiv = descriptionDiv
 
             // Access data for the current index (index + 1 because indices in JavaScript start from 0)
             const currentData = translations['cat' + (index + 1)];
-
-
-            /* // Iteriraj kroz svaki element
-            descriptions.forEach((description, index) => {
-                // Postavi tekst za trenutni element
-                if (currentData && currentData.description) {
-                    description.innerHTML = currentData.description;
-                } else {
-                    console.warn(`Description not found for category: ${currentData}`);
-                }
-            }); */
-
-            /* function resetAnimation() {
-                descriptions.forEach((description) => {
-                    description.style.animation = 'none';
-                    description.offsetHeight;
-                    description.style.animation = null;
-                    description.style.paddingLeft = '25%';
-                    description.style.animationPlayState = 'running';
-
-                    const textLength = description.innerText.length;
-
-                    if (textLength > 60) {
-                        description.style.animationDuration = '15s';
-                    } else if (textLength > 50) {
-                        description.style.animationDuration = '12s';
-                    } else if (textLength > 30) {
-                        description.style.animationDuration = '9s';
-                    } else {
-                        description.style.animationDuration = '6s';
-                    }
-                });
-            }
-
-            resetAnimation(); */
 
 
             // Postavljamo podatke u HTML unutar novog div-a
@@ -256,101 +218,6 @@ function setTranslations(translations) {
                     // descriptionDiv.classList.add('noneDisplay');
                     console.log('neće da radi');
                 });
-
-
-
-
-                /*  const selectItems = dataDiv.querySelectorAll('.select_item');
-                 const chooseSpan = dataDiv.querySelector('.choose');
-                 const unchooseSpan = dataDiv.querySelector('.unchoose');
-                 // const callUs_btnList = document.getElementById('callUs_btnList');
- 
-                 const allSelectItems = Array.from(document.querySelectorAll('.select_item'));
- 
-                 function updateCallUsButtonVisibility() {
-                     // Provjeri jesu li svi čekboksevi nečekirani
-                     const allUnchecked = allSelectItems.every(selectItem => !selectItem.checked);
- 
-                     // Ako su svi čekboksevi nečekirani, dodaj klasu 'noneDisplay' na callUs_btnList, inače je ukloni
-                     if (allUnchecked) {
-                         callUs_btnList.classList.add('noneDisplay');
-                     } else {
-                         callUs_btnList.classList.remove('noneDisplay');
-                     }
-                 }
- 
-                 selectItems.forEach((selectItem, index) => {
-                     // Add an event listener for the 'change' event on the checkbox
-                     selectItem.addEventListener('change', () => {
-                         const selectedIndex = allSelectItems.indexOf(selectItem);
-                         if (selectItem.checked) {
-                             chooseSpan.classList.add('noneDisplay');
-                             unchooseSpan.classList.remove('noneDisplay');
-                             console.log('checked is: ', selectedIndex);
-                         } else {
-                             chooseSpan.classList.remove('noneDisplay');
-                             unchooseSpan.classList.add('noneDisplay');
-                             console.log('unchecked is: ', allSelectItems.indexOf(selectItem));
-                         }
- 
-                         // Ažurirajte prikaz broja čekiranih elemenata
-                         // updateCheckedCount();
- 
-                         // Ažurirajte prikaz callUs_btnList
-                         updateCallUsButtonVisibility();
-                     });
- 
-                     // Dodajte event listener na ikonicu kako biste simulirali klik na čekboks
-                     chooseSpan.addEventListener('click', () => {
-                         selectItem.click();
-                         // console.log('checked is: ', allSelectItems.indexOf(selectItem));
-                     });
-                     unchooseSpan.addEventListener('click', () => {
-                         selectItem.click();
-                     });
-                 });
- 
-                 // Inicijalno postavljanje prikaza broja čekiranih elemenata
-                 // updateCheckedCount();
- 
-                 // Inicijalno postavljanje prikaza callUs_btnList
-                 updateCallUsButtonVisibility(); */
-
-
-
-
-
-                /* // Dobijanje referenci na dugmad za povećanje i smanjenje brojača
-                const decreaseBtn = dataDiv.querySelector('.quantity[data-action="decrease"]');
-                const increaseBtn = dataDiv.querySelector('.quantity[data-action="increase"]');
-                const quantityValue = dataDiv.querySelector('.quantityValue');
-                const cost = dataDiv.querySelector('.cost');
-
-                // Postavljanje početne vrednosti brojača
-                let counter = 1;
-
-                // Dodavanje event listenara za dugmad
-                decreaseBtn.addEventListener('click', () => {
-                    if (counter > 1) {
-                        counter--;
-                        updateCounter();
-                    }
-                });
-
-                increaseBtn.addEventListener('click', () => {
-                    counter++;
-                    updateCounter();
-                });
-
-                // Funkcija za ažuriranje prikaza vrednosti brojača
-                function updateCounter() {
-                    quantityValue.textContent = counter;
-                    const newCost = (parseFloat(data.cost_key) * counter).toFixed(2);
-                    cost.textContent = newCost + '€';
-                }
-
-                // Inicijalno postavljanje vrednosti brojača
-                updateCounter(); */
 
             });
 

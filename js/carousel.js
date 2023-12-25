@@ -74,14 +74,19 @@ const startEvent = carousel ? 'touchstart' : 'mousedown';
 const moveEvent = carousel ? 'touchmove' : 'mousemove';
 const endEvent = carousel ? 'touchend' : 'mouseup';
 
-// Add event listener for the start event
+// Funkcija za postavljanje teksta u zavisnosti od jezika
+function setLanguageText(language) {
+    // ... (ostatak koda ostaje nepromenjen)
+}
+
+// Add event listener for the start event on carousel
 carousel.addEventListener(startEvent, function (e) {
     isDragging = true;
     startX = carousel ? e.touches[0].clientX : e.clientX;
     previousX = startX;
 });
 
-// Add event listener for the move event
+// Add event listener for the move event on carousel
 carousel.addEventListener(moveEvent, function (e) {
     if (isDragging) {
         const clientX = carousel ? e.changedTouches[0].clientX : e.clientX;
@@ -91,10 +96,8 @@ carousel.addEventListener(moveEvent, function (e) {
         if (Math.abs(diffX) > cellSize / 2) {
             if (diffX < 0) {
                 selectedIndex += 1;
-                // console.log('aaa');
             } else {
                 selectedIndex -= 1;
-                // console.log('bbb');
             }
             startX = clientX;
             changeCarousel();
@@ -103,6 +106,52 @@ carousel.addEventListener(moveEvent, function (e) {
         stopRotation();
     }
 });
+
+////////////////////////////////////////////////////////
+
+// Dodajte event listenere za dataContainer
+dataContainer.addEventListener(startEvent, function (e) {
+    isDragging = true;
+    startX = dataContainer ? e.touches[0].clientX : e.clientX;
+    previousX = startX;
+});
+
+dataContainer.addEventListener(moveEvent, function (e) {
+    if (isDragging) {
+        const clientX = dataContainer ? e.changedTouches[0].clientX : e.clientX;
+        diffX = clientX - startX;
+
+        // Simuliraj klik na prethodnu ili sledeću ćeliju u zavisnosti od pokreta prsta
+        if (Math.abs(diffX) > cellSize / 2) {
+            if (diffX < 0) {
+                selectNextCell();
+            } else {
+                selectPreviousCell();
+            }
+            startX = clientX;
+        }
+    }
+});
+
+// Funkcija za simulaciju klika na prethodnu ćeliju
+function selectPreviousCell() {
+    const previousIndex = (selectedIndex - 1 + cells.length) % cells.length;
+    if (cells[previousIndex]) {
+        cells[previousIndex].click();
+    }
+}
+
+
+// Funkcija za simulaciju klika na sledeću ćeliju
+function selectNextCell() {
+    const nextIndex = (selectedIndex + 1) % cells.length;
+    cells[nextIndex].click();
+}
+
+dataContainer.addEventListener(endEvent, function () {
+    isDragging = false;
+});
+
 
 
 //////////////////////////////////////////////////////
