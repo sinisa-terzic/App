@@ -67,7 +67,7 @@ function stopRotation() {
 ///////////////////////////////////////////////////////
 // Rotacija pokretom ruke
 let isDragging = false;
-let startX, diffX, previousX;
+let startX, diffX, previousX, startTime;
 
 // Determine the event names based on whether it's a carousel or not
 const startEvent = carousel ? 'touchstart' : 'mousedown';
@@ -116,6 +116,7 @@ dataContainer.addEventListener(startEvent, function (e) {
     isDragging = true;
     startX = dataContainer ? e.touches[0].clientX : e.clientX;
     previousX = startX;
+    startTime = Date.now(); // Postavi vreme početka povlačenja
 });
 
 
