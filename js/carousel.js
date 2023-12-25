@@ -110,7 +110,15 @@ carousel.addEventListener(moveEvent, function (e) {
 ////////////////////////////////////////////////////////
 
 // Dodajte event listenere za dataContainer
-const minDragDistance = 100; // Podesite vrednost prema potrebi
+const minDragDistance = 50; // Podesite vrednost prema potrebi
+
+// Dodajte event listenere za dataContainer
+dataContainer.addEventListener(startEvent, function (e) {
+    isDragging = true;
+    startX = dataContainer ? e.touches[0].clientX : e.clientX;
+    previousX = startX;
+});
+
 
 dataContainer.addEventListener(moveEvent, function (e) {
     if (isDragging) {
@@ -132,6 +140,7 @@ dataContainer.addEventListener(moveEvent, function (e) {
 });
 
 
+
 // Funkcija za simulaciju klika na prethodnu ćeliju
 function selectPreviousCell() {
     const previousIndex = (selectedIndex - 1 + cells.length) % cells.length;
@@ -146,9 +155,9 @@ function selectNextCell() {
     cells[nextIndex].click();
 }
 
-/* dataContainer.addEventListener(endEvent, function () {
+dataContainer.addEventListener(endEvent, function () {
     isDragging = false;
-}); */
+});
 
 
 
