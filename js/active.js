@@ -24,15 +24,11 @@ function loadColorPreference() {
 function setColorPreference(color) {
     switcherHeader.classList.remove('switcher_dark', 'switcher_blue', 'switcher_brown', 'switcher_middle');
     switcherInfo.classList.remove('switcher_dark', 'switcher_blue', 'switcher_brown', 'switcher_middle');
-    callUs_btnList.classList.remove('switcher_dark', 'switcher_blue', 'switcher_brown', 'switcher_middle');
-    callUs_btnImg.classList.remove('switcher_dark', 'switcher_blue', 'switcher_brown', 'switcher_middle');
 
     switch (color) {
         case 'dark':
             switcherHeader.classList.add('switcher_dark');
             switcherInfo.classList.add('switcher_dark');
-            callUs_btnList.classList.add('switcher_dark');
-            callUs_btnImg.classList.add('switcher_dark');
             break;
         case 'blue':
             switcherHeader.classList.add('switcher_blue');
@@ -43,14 +39,10 @@ function setColorPreference(color) {
         case 'brown':
             switcherHeader.classList.add('switcher_brown');
             switcherInfo.classList.add('switcher_brown');
-            callUs_btnList.classList.add('switcher_brown');
-            callUs_btnImg.classList.add('switcher_brown');
             break;
         case 'middle':
             switcherHeader.classList.add('switcher_middle');
             switcherInfo.classList.add('switcher_middle');
-            callUs_btnList.classList.add('switcher_middle');
-            callUs_btnImg.classList.add('switcher_middle');
             break;
         default:
             // Ako nema odgovarajuće vrednosti, možete postaviti podrazumevanu boju

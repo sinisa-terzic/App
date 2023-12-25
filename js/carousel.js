@@ -14,34 +14,11 @@ const isHorizontal = true;
 const rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
 let radius, theta;
 
-// Prilagodi dimenzije prema visini prozora pomoću JavaScript-a
-/* function setDimensions() {
-    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-    if (viewportHeight <= 600) {
-        cellSize = 150; // Prilagodite dimenzije prema potrebi
-        scene.classList.remove('medium-screen', 'large-screen');
-    } else if (viewportWidth > 400) {
-        cellSize = 210; // Prilagodite dimenzije prema potrebi
-        // scene.classList.remove('medium-screen');
-        // scene.classList.add('large-screen');
-    } else if (viewportWidth > 370) {
-        cellSize = 170; // Prilagodite dimenzije prema potrebi
-        // scene.classList.remove('medium-screen');
-        // scene.classList.add('large-screen');
-    } else {
-        cellSize = 170; // Vratite na osnovnu vrednost
-    }
-
-    changeCarousel(); // Ponovo postavite dimenzije karusela
-} */
 
 document.addEventListener('DOMContentLoaded', function () {
-    // setDimensions(); // Postavi dimenzije kada se stranica učita
     startRotation();
 });
 
-// window.addEventListener('resize', setDimensions);
 
 function rotateCarousel() {
     var angle = theta * (selectedIndex + 0.01) * -1;
@@ -133,19 +110,14 @@ carousel.addEventListener(moveEvent, function (e) {
 const play = document.querySelector('.play');
 play.addEventListener('click', () => {
     startRotation();
-    play.classList.add('noneDisplay');
-    // var stop = document.querySelector('.stop');
-    stop.classList.remove('noneDisplay');
 });
+
 
 //////////////////////////////////////////////////////
 // Stopiraj rotaciju
 const stop = document.querySelector('.stop');
 stop.addEventListener('click', () => {
     stopRotation();
-    stop.classList.add('noneDisplay');
-    // var play = document.querySelector('.play');
-    play.classList.remove('noneDisplay');
 });
 
 
@@ -161,14 +133,14 @@ prevButton.addEventListener('click', () => {
 // Dodajte event listenere za touchstart i touchend događaje
 prevButton.addEventListener('touchstart', () => {
     // Funkcija koja se poziva kada se touchstart događa
-    touchInterval = setInterval(function () {
+    touchInterval = setInterval(() => {
         selectedIndex--;
         changeCarousel();
         stopRotation();
     }, 1000); // Promenite vreme intervala prema vašim potrebama
 });
 
-prevButton.addEventListener('touchend', function () {
+prevButton.addEventListener('touchend', () => {
     // Funkcija koja se poziva kada se touchend događa
     clearInterval(touchInterval);
 });
@@ -225,14 +197,13 @@ headerLogo.addEventListener('click', function () {
 
     const infoDiv = document.querySelector('.info');
     infoDiv.classList.remove('noneDisplay');
+
     darkOpen.classList.add('noneDisplay');
-
-    dataContainer.scrollTop = 0;
     setTimeout(function () {
-        // dataContainer.classList.add('noneDisplay');
-    }, 800);
+        dataContainer.scrollTop = 0;
+    }, 10);
 
-    call_us.classList.add('noneDisplay');
+    // call_us.classList.add('noneDisplay');
     categoy_description_box.classList.remove('noneDisplay');
     languageBox.classList.remove('translateX');
     switcher.classList.remove('translateX');
