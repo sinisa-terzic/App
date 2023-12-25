@@ -110,7 +110,7 @@ carousel.addEventListener(moveEvent, function (e) {
 ////////////////////////////////////////////////////////
 
 // Dodajte event listenere za dataContainer
-const minDragDistance = 50; // Podesite vrednost prema potrebi
+const minDragDistance = 500; // Podesite vrednost prema potrebi
 
 // Dodajte event listenere za dataContainer
 dataContainer.addEventListener(startEvent, function (e) {
