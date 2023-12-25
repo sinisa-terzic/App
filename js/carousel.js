@@ -111,7 +111,7 @@ carousel.addEventListener(moveEvent, function (e) {
 
 // Dodajte event listenere za dataContainer
 // Postavljanje dodatnih pragova
-const minDragDistance = 100; // Minimalna dužina povlačenja u pikselima
+const minDragDistance = 50; // Minimalna dužina povlačenja u pikselima
 const minDragSpeed = 0.5; // Minimalna brzina povlačenja u pikselima po milisekundi
 
 dataContainer.addEventListener(moveEvent, function (e) {
