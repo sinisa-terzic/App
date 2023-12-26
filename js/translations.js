@@ -48,6 +48,11 @@ function setTranslations(translations) {
                 cell.classList.remove('active');
             });
 
+            dataContainer.style.opacity = 0;
+            setTimeout(function () {
+                dataContainer.style.opacity = 1;
+            }, 100);
+
             // description_content.classList.remove('noneDisplay');
             categoy_description_box.classList.add('noneDisplay');
             cell.classList.add('active');

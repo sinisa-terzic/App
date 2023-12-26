@@ -6,6 +6,7 @@
     overflow-y: scroll;
     width: 100%;
     z-index: 1;
+    /* transition: all 0.2s ease; */
 }
 
 /* .content-container {
@@ -148,11 +149,12 @@
 .bottomDiv_button .back,
 .bottomDiv_button .basket {
     font-size: 4vw;
-    color: #fff;
+    color: #590002;
     padding: 0.5rem 1rem;
-    background-color: #590002;
+    /* background-color: #590002; */
     letter-spacing: 0.1rem;
-    font-weight: 500;
+    font-weight: bold;
+    border: 2px solid #590002;
 }
 
 .bottomDiv_button .back {
@@ -217,4 +219,18 @@
 
 #callUs_btnImg img {
     width: 55%;
+}
+
+
+/* Klase za dodatne pragove */
+.fast-drag {
+    /* Stilizacija za brzo povlačenje */
+    background-color: green;
+    /* Dodajte druge stilove po potrebi */
+}
+
+.long-drag {
+    /* Stilizacija za dugotrajno povlačenje */
+    background-color: yellow;
+    /* Dodajte druge stilove po potrebi */
 }

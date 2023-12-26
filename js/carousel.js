@@ -116,7 +116,6 @@ dataContainer.addEventListener(startEvent, function (e) {
     startTime = Date.now(); // Postavite početno vreme povlačenja
 });
 
-
 // Postavljanje dodatnih pragova
 const minDragDistance = 100; // Minimalna dužina povlačenja u pikselima
 const minDragSpeed = 0.8; // Minimalna brzina povlačenja u pikselima po milisekundi
@@ -129,8 +128,7 @@ dataContainer.addEventListener(moveEvent, function (e) {
 
         // Provera dodatnih pragova za brzinu i dužinu povlačenja
         if (Math.abs(diffX) > minDragDistance && dragSpeed > minDragSpeed) {
-            // Ako se menjaju podaci, postavite opacity na 0
-            dataContainer.style.opacity = 0;
+
 
             // Simuliraj klik na prethodnu ili sledeću ćeliju u zavisnosti od pokreta prsta
             if (diffX < 0) {
@@ -138,21 +136,16 @@ dataContainer.addEventListener(moveEvent, function (e) {
             } else {
                 selectPreviousCell();
             }
-
             startX = clientX;
         }
     }
 });
-
 
 // Funkcija za simulaciju klika na prethodnu ćeliju
 function selectPreviousCell() {
     const previousIndex = (selectedIndex - 1 + cells.length) % cells.length;
     if (cells[previousIndex]) {
         cells[previousIndex].click();
-        setTimeout(function () {
-            dataContainer.style.opacity = 1;
-        }, 100);
     }
 }
 
@@ -160,9 +153,6 @@ function selectPreviousCell() {
 function selectNextCell() {
     const nextIndex = (selectedIndex + 1) % cells.length;
     cells[nextIndex].click();
-    setTimeout(function () {
-        dataContainer.style.opacity = 1;
-    }, 100);
 }
 
 // Dodajte event listener za završetak povlačenja
@@ -170,7 +160,6 @@ dataContainer.addEventListener(endEvent, function () {
     if (isDragging) {
         // Resetujte opacity na 1 kada se završi povlačenje
         dataContainer.style.opacity = 1;
-
         isDragging = false;
     }
 });
