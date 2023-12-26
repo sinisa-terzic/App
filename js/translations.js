@@ -123,6 +123,9 @@ function setTranslations(translations) {
 
                 dataContainer.appendChild(dataItem);
 
+                // Pozovite onDataContainerCreated nakon što su slike dodate u dataContainer. Kreirano u active.js 198
+                onDataContainerCreated();
+
                 // Kreiranje novog div-a za overlay
                 const overlay = document.createElement('div');
                 overlay.classList.add('overlay');

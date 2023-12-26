@@ -194,6 +194,35 @@ document.querySelectorAll('img').forEach(function (img) {
 
 });
 
+// Funkcija koja se poziva kada se klikne na ćeliju i kreira se dataContainer
+function onDataContainerCreated() {
+    // Odabir svih slika unutar dataContainer-a
+    const imagesInDataContainer = document.querySelectorAll('.itemDiv img');
+
+    // Postavljanje event listenera za svaku sliku
+    imagesInDataContainer.forEach(function (img) {
+        img.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Kreiranje nove slike da bi se dobile stvarne dimenzije
+        var temporaryImage = new Image();
+        temporaryImage.src = img.src;
+
+        // Postavljanje dimenzija nakon što se slika učita
+        temporaryImage.onload = function () {
+            // Postavljanje width i height atributa za sliku
+            img.setAttribute('width', temporaryImage.width);
+            img.setAttribute('height', temporaryImage.height);
+        };
+    });
+}
+
+// Ovo pozivamo kada se kreira dataContainer
+// onDataContainerCreated();
+
+
+
 
 
 
