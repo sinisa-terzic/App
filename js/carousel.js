@@ -117,8 +117,8 @@ dataContainer.addEventListener(startEvent, function (e) {
 });
 
 // Postavljanje dodatnih pragova
-const minDragDistance = 100; // Minimalna dužina povlačenja u pikselima
-const minDragSpeed = 0.5; // Minimalna brzina povlačenja u pikselima po milisekundi
+const minDragDistance = 150; // Minimalna dužina povlačenja u pikselima
+const minDragSpeed = 0.9; // Minimalna brzina povlačenja u pikselima po milisekundi
 
 dataContainer.addEventListener(moveEvent, function (e) {
     if (isDragging) {
