@@ -186,9 +186,9 @@ stop.addEventListener('click', () => {
 // Dodajte klik događaj za dugme za prethodnu ćeliju
 const prevButton = document.querySelector('.previous-button');
 prevButton.addEventListener('click', () => {
-    selectedIndex--;
-    changeCarousel();
-    stopRotation();
+    selectPreviousCell()
+    /* changeCarousel();
+    stopRotation(); */
 });
 
 // Dodajte event listenere za touchstart i touchend događaje
@@ -210,9 +210,9 @@ prevButton.addEventListener('touchend', () => {
 // Dodajte klik događaj za dugme za sledeću ćeliju
 const nextButton = document.querySelector('.next-button');
 nextButton.addEventListener('click', () => {
-    selectedIndex++;
-    changeCarousel();
-    stopRotation();
+    selectNextCell()
+    /* changeCarousel();
+    stopRotation(); */
 });
 
 // Dodajte event listenere za touchstart i touchend događaje

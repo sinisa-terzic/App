@@ -59,12 +59,12 @@ function setTranslations(translations) {
             categoy_description_box.classList.add('noneDisplay');
             cell.classList.add('active');
             selectedIndex = index;
-            rotateCarousel();
+            changeCarousel();
             stopRotation();
 
             dataContainer.scrollTop = 0;
 
-            console.log('Klik na ćeliju sa indeksom:', index);
+            // console.log('Klik na ćeliju sa indeksom:', index);
 
             const infoDiv = document.querySelector('.info');
             infoDiv.classList.add('noneDisplay');
