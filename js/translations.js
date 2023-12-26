@@ -213,7 +213,7 @@ function setTranslations(translations) {
                 dataImg.addEventListener('click', function () {
                     overlay.classList.remove('noneDisplay');
                     // descriptionDiv.classList.remove('noneDisplay');
-                    console.log('slika: ' + index);
+                    // console.log('slika: ' + index);
                 });
 
 
@@ -221,7 +221,7 @@ function setTranslations(translations) {
                 backgroundDiv.addEventListener('click', function () {
                     overlay.classList.add('noneDisplay');
                     // descriptionDiv.classList.add('noneDisplay');
-                    console.log('neće da radi');
+                    // console.log('neće da radi');
                 });
 
             });
@@ -267,7 +267,7 @@ function setTranslations(translations) {
 
             // Postavljamo podatke u HTML unutar novog div-a
             slogan.innerHTML = `
-                <p>Naručite brže i uživajte, e-Meni™</p>
+                <p>${translations.slogan}</p>
             `;
 
             dataContainer.appendChild(slogan);
