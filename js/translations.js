@@ -49,8 +49,10 @@ function setTranslations(translations) {
             });
 
             dataContainer.style.opacity = 0;
+            // dataContainer.style.transform = 'translateY(1%)';
             setTimeout(function () {
                 dataContainer.style.opacity = 1;
+                // dataContainer.style.transform = 'translateY(0%)';
             }, 100);
 
             // description_content.classList.remove('noneDisplay');
