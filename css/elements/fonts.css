@@ -70,10 +70,11 @@
 
 .description {
     font-size: 4.2vw;
-    /* transition: all 400ms ease-out; */
+    text-align: justify;
     padding: 0.5rem;
     background-color: #fff;
     height: 100%;
+    width: 100vw;
 }
 
 .logo,
