@@ -20,7 +20,7 @@
 
 .itemDiv {
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 40% 60%;
     overflow: hidden;
     box-shadow: 4px 4px 2px #f1f0f0;
     margin-bottom: 1rem;
@@ -171,7 +171,7 @@
 
 .slogan p {
     font-size: 5.2vw;
-    margin: 2vh 0 11vh 0;
+    margin: 1vh 0 10vh 0;
     display: flex;
     width: 100%;
     justify-content: center;
