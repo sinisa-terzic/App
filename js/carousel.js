@@ -287,6 +287,8 @@ headerLogo.addEventListener('click', function () {
         cell.classList.remove('active');
     });
 
+    window.location.hash = `headerLogo`;
+
     const infoDiv = document.querySelector('.info');
     infoDiv.classList.remove('noneDisplay');
 
@@ -302,4 +304,37 @@ headerLogo.addEventListener('click', function () {
     checkbox_1.checked = false;
     checkbox_2.checked = false;
 });
+
+
+function closeSetting_1() {
+    checkbox_1.checked = false;
+}
+
+function closeSetting_2() {
+    checkbox_2.checked = false;
+}
+
+///////////////////////////////////////////////////
+// Event listener za promenu hash-a u URL-u
+window.addEventListener('hashchange', () => {
+    // Proveravamo da li postoji hash u URL-u
+    if (window.location.hash) {
+        // Izvlačimo ime ćelije iz hash-a
+        const cellName = window.location.hash.substring(1);
+
+        // Pronalazimo odgovarajuću ćeliju na osnovu imena
+        const targetCell = document.querySelector(`.carousel__cell .food[data-translation-key="${cellName}"]`);
+        // Proveravamo da li smo pronašli ciljanu ćeliju
+        if (targetCell) {
+            // Simuliramo klik na ciljanu ćeliju
+            targetCell.click();
+        }
+    }
+
+    // Omogućavamo back/forward dugmad na pretraživaču
+    window.history.replaceState(null, null, window.location.hash);
+});
+
+
+
 

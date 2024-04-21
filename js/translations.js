@@ -49,6 +49,13 @@ function setTranslations(translations) {
             });
 
 
+            // Izvlačimo ime ćelije iz atributa data-translation-key
+            const cellName = cell.querySelector('.food').getAttribute('data-translation-key');
+
+            // Ažuriramo URL sa imenom ćelije
+            window.location.hash = `#${cellName}`;
+
+
             dataContainer.style.opacity = 0;
 
             setTimeout(function () {
@@ -484,6 +491,7 @@ checkbox_1.addEventListener('change', () => {
 
 // Dodajte event listener na ikonicu kako biste simulirali klik na čekboks
 checkboxIcon_1.addEventListener('click', () => {
+    // window.location.hash = `languageBox`;
     checkbox_1.click();
 });
 
@@ -528,6 +536,7 @@ checkbox_2.addEventListener('change', () => {
 
 // Dodajte event listener na ikonicu kako biste simulirali klik na čekboks
 checkboxIcon_2.addEventListener('click', () => {
+    // window.location.hash = `switcher`;
     checkbox_2.click();
 });
 
