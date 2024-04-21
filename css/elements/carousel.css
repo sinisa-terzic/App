@@ -141,7 +141,7 @@
 }
 
 .button {
-    width: 10vw;
+    width: 9vw;
     border: none;
 }
 
@@ -193,9 +193,14 @@
     padding: 0 0.2rem;
 }
 
-.description_content img {
+.description_content .rotateImg {
     width: 2vw;
     margin: 0 0 0 0.8rem;
+}
+
+.description_content .dotsImg {
+    width: 0.9vw;
+    margin: 0 0.8rem 0 0;
 }
 
 .rotate {

@@ -4,8 +4,19 @@
     overflow-y: scroll;
     width: 100%;
     z-index: 1;
-    transition: all 0.1s ease;
+    /* transition: all 0.1s ease-in-out; */
 }
+
+/* .content-container {
+    gap: 1rem;
+    transition: opacity 0.1s step-end;
+    padding: 0 0 1rem 0;
+}
+
+.content-container.opacity {
+    opacity: 0;
+    transition: opacity 0.2s step-start;
+} */
 
 .itemDiv {
     display: grid;
@@ -20,6 +31,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 0px 10% 10% 0px;
 }
 
 .textContainerDiv {
@@ -27,7 +39,7 @@
     align-items: center;
     text-align: center;
     padding: 0 0.5rem 0 1rem;
-    background: linear-gradient(180deg, rgba(177, 177, 177, 0.02) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(2, 0, 36, 0.03) 100%);
+    background: linear-gradient(180deg, rgba(177, 177, 177, 0.09) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(2, 0, 36, 0.05) 100%);
     width: 100%;
 }
 
@@ -77,6 +89,10 @@
     z-index: 9999;
 }
 
+.descriptionDiv img {
+    border-radius: 10%;
+}
+
 /* .topDiv img {
     width: 250px;
   } */
@@ -112,8 +128,14 @@
     margin-bottom: 0.2rem;
 }
 
+/* .bottomDiv .cost {
+    justify-self: end;
+    margin-top: 2rem;
+  } */
 
 .bottomDiv ul {
+    /* font-size: 1.6rem; */
+    /* list-style: none; */
     list-style-position: inside;
     padding: 0.5rem 0;
 }
@@ -149,27 +171,34 @@
 
 .slogan p {
     font-size: 5.2vw;
-    text-align: center;
-    margin: 2vh 0 4vh 0;
+    margin: 2vh 0 11vh 0;
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
+/* .call_us {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+} */
+
 #callUs_btnList {
+    display: flex;
     color: #fff;
     position: absolute;
     bottom: 0;
     left: 0;
-    flex: 1;
-    width: 75vw;
+    right: 0;
+    /* width: 100%; */
     height: 7vh;
     border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
     border-bottom: 2px solid #fff;
     font-size: 5vw;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 1rem;
 }
 
@@ -189,22 +218,46 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    transition: all 100ms ease;
 }
 
 #callUs_btnImg img {
     width: 55%;
 }
 
-
-/* Klase za dodatne pragove */
-.fast-drag {
-    /* Stilizacija za brzo povlačenje */
-    background-color: green;
-    /* Dodajte druge stilove po potrebi */
+#callUs_btnImg.translateY {
+    transform: translateY(100%);
+    transition: all 0ms ease;
 }
 
-.long-drag {
-    /* Stilizacija za dugotrajno povlačenje */
-    background-color: yellow;
-    /* Dodajte druge stilove po potrebi */
+.operater {
+    width: 29vw;
+    position: absolute;
+    right: -1vw;
+    bottom: -1vh;
+    transition: all 100ms ease;
+    z-index: 3;
+}
+
+.operater.translateY {
+    transform: translateY(100%);
+}
+
+.operatorService {
+    position: absolute;
+    bottom: 31vw;
+    right: 20vw;
+    color: #121212;
+    font-size: 5vw;
+    z-index: 3;
+    font-weight: 600;
+}
+
+.callUs_btn {
+    height: 8vw;
+    width: 120%;
+    text-align: center;
+    border: 2px solid #121212;
+    background: #ffffff;
+    z-index: 3;
 }

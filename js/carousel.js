@@ -1,8 +1,10 @@
+const infoDiv = document.querySelector('.info');
 let carousel = document.querySelector('.carousel');
 const scene = document.querySelector('.scene');
 const dataContainer = document.getElementById('data');
 const dataItem = document.getElementById('content-container');
 const cells = carousel.querySelectorAll('.carousel__cell');
+const activeIndex = document.querySelector('.carousel__cell.active');
 const cellElements = Array.from(cells);
 const cellCount = cellElements.length;
 let selectedIndex = 0;
@@ -82,31 +84,36 @@ function setLanguageText(language) {
 // Add event listener for the start event on carousel
 carousel.addEventListener(startEvent, function (e) {
     isDragging = true;
-    startX = carousel ? e.touches[0].clientX : e.clientX;
+    startX = dataContainer ? e.touches[0].clientX : e.clientX;
     previousX = startX;
+    startTime = Date.now(); // Postavite početno vreme povlačenja
 });
+
+// Postavljanje dodatnih pragova
+const DragDistance = 80; // Minimalna dužina povlačenja u pikselima
+const DragSpeed = 0.2; // Minimalna brzina povlačenja u pikselima po milisekundi
 
 // Add event listener for the move event on carousel
 carousel.addEventListener(moveEvent, function (e) {
     if (isDragging) {
-        const clientX = carousel ? e.changedTouches[0].clientX : e.clientX;
+        const clientX = dataContainer ? e.changedTouches[0].clientX : e.clientX;
         diffX = clientX - startX;
+        const dragSpeed = Math.abs(diffX) / (Date.now() - startTime);
 
-        // Change selectedIndex based on mouse movement
-        if (Math.abs(diffX) > cellSize / 2) {
+        // Provera dodatnih pragova za brzinu i dužinu povlačenja
+        if (Math.abs(diffX) > DragDistance && dragSpeed > DragSpeed) {
+
+
+            // Simuliraj klik na prethodnu ili sledeću ćeliju u zavisnosti od pokreta prsta
             if (diffX < 0) {
-                selectedIndex += 1;
+                selectNextCell();
             } else {
-                selectedIndex -= 1;
+                selectPreviousCell();
             }
             startX = clientX;
-            changeCarousel();
         }
-
-        stopRotation();
     }
 });
-
 ////////////////////////////////////////////////////////
 // Dodajte event listenere za dataContainer
 dataContainer.addEventListener(startEvent, function (e) {
@@ -118,7 +125,7 @@ dataContainer.addEventListener(startEvent, function (e) {
 
 // Postavljanje dodatnih pragova
 const minDragDistance = 150; // Minimalna dužina povlačenja u pikselima
-const minDragSpeed = 0.9; // Minimalna brzina povlačenja u pikselima po milisekundi
+const minDragSpeed = 0.6; // Minimalna brzina povlačenja u pikselima po milisekundi
 
 dataContainer.addEventListener(moveEvent, function (e) {
     if (isDragging) {
@@ -165,6 +172,28 @@ dataContainer.addEventListener(endEvent, function () {
 });
 
 
+//////////////////////////////////////////////////////
+// Ukloni info div
+/* infoDiv.addEventListener('click', () => {
+    // selectNextCell();
+    cells[0].click();
+}); */
+let startY;
+
+infoDiv.addEventListener('touchstart', (event) => {
+    startY = event.touches[0].clientY;
+});
+
+infoDiv.addEventListener('touchmove', (event) => {
+    const touchY = event.touches[0].clientY;
+    const deltaY = touchY - startY;
+
+    if (deltaY > 50) { // Povlačenje prsta dolje za više od 50 piksela
+        cells[0].click();
+    }
+});
+
+
 
 //////////////////////////////////////////////////////
 // Pokreni rotaciju
@@ -186,16 +215,19 @@ stop.addEventListener('click', () => {
 // Dodajte klik događaj za dugme za prethodnu ćeliju
 const prevButton = document.querySelector('.previous-button');
 prevButton.addEventListener('click', () => {
-    selectPreviousCell();
+    selectPreviousCell()
+    /* changeCarousel();
+    stopRotation(); */
 });
 
 // Dodajte event listenere za touchstart i touchend događaje
 prevButton.addEventListener('touchstart', () => {
     // Funkcija koja se poziva kada se touchstart događa
     touchInterval = setInterval(() => {
-        selectedIndex--;
-        changeCarousel();
-        stopRotation();
+        // selectedIndex--;
+        // changeCarousel();
+        selectPreviousCell()
+        // stopRotation();
     }, 1000); // Promenite vreme intervala prema vašim potrebama
 });
 
@@ -208,16 +240,19 @@ prevButton.addEventListener('touchend', () => {
 // Dodajte klik događaj za dugme za sledeću ćeliju
 const nextButton = document.querySelector('.next-button');
 nextButton.addEventListener('click', () => {
-    selectNextCell();
+    selectNextCell()
+    /* changeCarousel();
+    stopRotation(); */
 });
 
 // Dodajte event listenere za touchstart i touchend događaje
 nextButton.addEventListener('touchstart', () => {
     // Funkcija koja se poziva kada se touchstart događa
     touchInterval = setInterval(function () {
-        selectedIndex++;
-        changeCarousel();
-        stopRotation();
+        // selectedIndex++;
+        // changeCarousel();
+        // stopRotation();
+        selectNextCell()
     }, 1000); // Promenite vreme intervala prema vašim potrebama
 });
 
@@ -260,7 +295,7 @@ headerLogo.addEventListener('click', function () {
         dataContainer.scrollTop = 0;
     }, 10);
 
-    // call_us.classList.add('noneDisplay');
+    call_us.classList.add('noneDisplay');
     categoy_description_box.classList.remove('noneDisplay');
     languageBox.classList.remove('translateX');
     switcher.classList.remove('translateX');

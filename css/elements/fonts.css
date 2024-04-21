@@ -3,7 +3,7 @@
 
 .header h1 {
     font-size: 6.5vw;
-    font-weight: 300;
+    font-weight: 400;
     color: #EEE;
     opacity: 0.9;
 }
@@ -16,10 +16,13 @@
 
 .cyrillic_latin {
     font-size: 4vw;
+    font-weight: 400;
 }
 
 .cyrillic_latin_color {
-    color: #890606;
+    color: #f00;
+    font-size: 4.1vw;
+    font-weight: 500;
 }
 
 .switcher {
@@ -70,6 +73,7 @@
 
 .description {
     font-size: 4.2vw;
+    text-align: justify;
     padding: 0.5rem;
     background-color: #fff;
     height: 100%;

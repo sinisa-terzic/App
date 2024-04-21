@@ -3,7 +3,10 @@
 const switcherHeader = document.querySelector('.header');
 const switcherInfo = document.querySelector('.info');
 const callUs_btnList = document.querySelector('.callUs_btnList');
-const callUs_btnImg = document.querySelector('.callUs_btnImg');
+const callUs_btnWaiter = document.querySelector('#callUs_btnWaiter');
+const callUs_btnCost = document.querySelector('#callUs_btnCost');
+const operater = document.querySelector('.operater');
+const operatorService = document.querySelector('.operatorService');
 const switcher_dark = document.querySelector('#switcher_dark');
 const switcher_blue = document.querySelector('#switcher_blue');
 const switcher_brown = document.querySelector('#switcher_brown');
@@ -24,23 +27,28 @@ function loadColorPreference() {
 function setColorPreference(color) {
     switcherHeader.classList.remove('switcher_dark', 'switcher_blue', 'switcher_brown', 'switcher_middle');
     switcherInfo.classList.remove('switcher_dark', 'switcher_blue', 'switcher_brown', 'switcher_middle');
+    callUs_btnList.classList.remove('switcher_dark', 'switcher_blue', 'switcher_brown', 'switcher_middle');
 
     switch (color) {
         case 'dark':
             switcherHeader.classList.add('switcher_dark');
             switcherInfo.classList.add('switcher_dark');
+            callUs_btnList.classList.add('switcher_dark');
             break;
         case 'blue':
             switcherHeader.classList.add('switcher_blue');
             switcherInfo.classList.add('switcher_blue');
+            callUs_btnList.classList.add('switcher_blue');
             break;
         case 'brown':
             switcherHeader.classList.add('switcher_brown');
             switcherInfo.classList.add('switcher_brown');
+            callUs_btnList.classList.add('switcher_brown');
             break;
         case 'middle':
             switcherHeader.classList.add('switcher_middle');
             switcherInfo.classList.add('switcher_middle');
+            callUs_btnList.classList.add('switcher_middle');
             break;
         default:
             // Ako nema odgovarajuće vrednosti, možete postaviti podrazumevanu boju
@@ -194,6 +202,7 @@ document.querySelectorAll('img').forEach(function (img) {
 
 });
 
+
 // Funkcija koja se poziva kada se klikne na ćeliju i kreira se dataContainer
 function onDataContainerCreated() {
     // Odabir svih slika unutar dataContainer-a
@@ -221,7 +230,29 @@ function onDataContainerCreated() {
 // Ovo pozivamo kada se kreira dataContainer
 // onDataContainerCreated();
 
+/* callUs_btnImg.addEventListener('click', function () {
+    callUs_btnImg.classList.add('translateY');
+    operater.classList.remove('translateY');
+    darkOpen.classList.remove('noneDisplay');
 
+    setTimeout(function () {
+        operatorService.classList.remove('noneDisplay');
+    }, 150);
+});
+
+callUs_btnWaiter.addEventListener('click', function () {
+    callUs_btnImg.classList.remove('translateY');
+    operater.classList.add('translateY');
+    darkOpen.classList.add('noneDisplay');
+    operatorService.classList.add('noneDisplay');
+});
+
+callUs_btnCost.addEventListener('click', function () {
+    callUs_btnImg.classList.remove('translateY');
+    operater.classList.add('translateY');
+    darkOpen.classList.add('noneDisplay');
+    operatorService.classList.add('noneDisplay');
+}); */
 
 
 

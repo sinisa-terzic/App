@@ -48,12 +48,14 @@ function setTranslations(translations) {
                 cell.classList.remove('active');
             });
 
+
             dataContainer.style.opacity = 0;
-            // dataContainer.style.transform = 'translateY(1%)';
+
             setTimeout(function () {
                 dataContainer.style.opacity = 1;
-                // dataContainer.style.transform = 'translateY(0%)';
-            }, 100);
+                dataContainer.style.transition = 'all 0.05s ease';
+            }, 150);
+
 
             // description_content.classList.remove('noneDisplay');
             categoy_description_box.classList.add('noneDisplay');
@@ -64,10 +66,19 @@ function setTranslations(translations) {
 
             dataContainer.scrollTop = 0;
 
+            /* const activeCell = document.querySelector('.carousel__cell.active');
+            if (activeCell) {
+                dataContainer.style.opacity = 1;
+                console.log('aktivna ćelija')
+            } */
+
+
             // console.log('Klik na ćeliju sa indeksom:', index);
 
-            const infoDiv = document.querySelector('.info');
+
             infoDiv.classList.add('noneDisplay');
+
+            call_us.classList.remove('noneDisplay');
 
             dataContainer.classList.remove('noneDisplay');
             dataItem.innerHTML = '';
@@ -81,6 +92,7 @@ function setTranslations(translations) {
                 <div class="flex">
                     <img class="rotateImg" src="img/food/play.svg" alt="play">
                     <p class="summary">${currentData.details}</p>
+                    <img class="dotsImg" src="img/menu/menu-icon_dots.svg" alt="play">
                 </div>
                 <p class="description noneDisplay">${currentData.description}</p>
             `;
