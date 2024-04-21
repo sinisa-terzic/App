@@ -20,7 +20,7 @@
 
 .itemDiv {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 42% 58%;
     overflow: hidden;
     box-shadow: 4px 4px 2px #f1f0f0;
     margin-bottom: 1rem;
