@@ -37,41 +37,6 @@
     opacity: 0.8;
 }
 
-/* .info .drop-down {
-    width: 7.5vw;
-    align-self: center;
-    justify-self: center;
-    opacity: 0.3;
-    animation: bounce 2s infinite running;
-} */
-
-.info .drop-down {
-    width: 12vw;
-    align-self: center;
-    justify-self: center;
-    opacity: 0.6;
-    animation: bounce 1.9s infinite running;
-}
-
-@keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-7px);
-    }
-
-    60% {
-        transform: translateY(7px);
-    }
-}
-
 .arrows {
     width: 10vw;
     height: 12vh;

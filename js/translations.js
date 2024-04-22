@@ -479,6 +479,7 @@ const languageBox = document.querySelector(".language");
 // Kreirajte čekboks element
 const checkbox_1 = document.createElement('input');
 checkbox_1.type = 'checkbox';
+checkbox_1.classList = 'languageBox';
 // checkbox_1.id = 'language';
 
 language.parentNode.replaceChild(checkbox_1, language);
@@ -491,17 +492,20 @@ checkbox_1.addEventListener('change', () => {
         switcher.classList.remove('translateX');
         darkOpen.classList.remove('noneDisplay');
         checkbox_2.checked = false;
+
         // console.log('Čekboks je označen.');
     } else {
         languageBox.classList.remove('translateX');
         darkOpen.classList.add('noneDisplay');
+
+        window.location.hash = '';
         // console.log('Čekboks nije označen.');
     }
 });
 
 // Dodajte event listener na ikonicu kako biste simulirali klik na čekboks
 checkboxIcon_1.addEventListener('click', () => {
-    // window.location.hash = `languageBox`;
+    window.location.hash = `languageBox`;
     checkbox_1.click();
 });
 
@@ -525,6 +529,7 @@ const switcher = document.querySelector('.switcher');
 // Kreirajte čekboks element
 const checkbox_2 = document.createElement('input');
 checkbox_2.type = 'checkbox';
+checkbox_2.classList = 'layoutBox';
 // checkbox_2.id = 'Layer_1';
 
 layout.parentNode.replaceChild(checkbox_2, layout);
@@ -536,19 +541,24 @@ checkbox_2.addEventListener('change', () => {
         languageBox.classList.remove('translateX');
         darkOpen.classList.remove('noneDisplay');
         checkbox_1.checked = false;
+
         // console.log('Čekboks je označen.');
     } else {
         switcher.classList.remove('translateX');
         darkOpen.classList.add('noneDisplay');
+
+        window.location.hash = '';
         // console.log('Čekboks nije označen.');
     }
 });
 
 // Dodajte event listener na ikonicu kako biste simulirali klik na čekboks
 checkboxIcon_2.addEventListener('click', () => {
-    // window.location.hash = `switcher`;
+    window.location.hash = `switcher`;
     checkbox_2.click();
 });
+
+
 
 
 
