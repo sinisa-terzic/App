@@ -287,7 +287,7 @@ headerLogo.addEventListener('click', function () {
         cell.classList.remove('active');
     });
 
-    window.location.hash = `headerLogo`;
+    // window.location.hash = `headerLogo`;
 
     const infoDiv = document.querySelector('.info');
     infoDiv.classList.remove('noneDisplay');

@@ -20,7 +20,8 @@
 
 .itemDiv {
     display: grid;
-    grid-template-columns: 42% 58%;
+    grid-template-columns: 2fr 3fr;
+    /* grid-template-columns: 42% 58%; */
     overflow: hidden;
     box-shadow: 4px 4px 2px #f1f0f0;
     margin-bottom: 1rem;
@@ -43,17 +44,24 @@
     width: 100%;
 }
 
+.plus {
+    fill: #053a5f;
+    fill: #11161d;
+    width: 4vw;
+    margin-right: 4px;
+}
+
 
 .quantity,
 .quantityValue {
     font-size: 4.5vw;
 }
 
-.itemDiv svg {
+/* .itemDiv svg {
     fill: #11161d;
     stroke: #fff;
     width: 3.5vw;
-}
+} */
 
 
 .overlay {
@@ -171,7 +179,7 @@
 
 .slogan p {
     font-size: 5.2vw;
-    margin: 1vh 0 10vh 0;
+    margin: 1vh 0 9.5vh 0;
     display: flex;
     width: 100%;
     justify-content: center;

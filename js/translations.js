@@ -61,7 +61,7 @@ function setTranslations(translations) {
             setTimeout(function () {
                 dataContainer.style.opacity = 1;
                 dataContainer.style.transition = 'all 0.05s ease';
-            }, 150);
+            }, 250);
 
 
             // description_content.classList.remove('noneDisplay');
@@ -119,10 +119,13 @@ function setTranslations(translations) {
                     <img class="dataImg" src="${data.imageSrc}" alt="${data.title_key}">
                     <div class="textContainerDiv">
                         
-                        <div class="titleBox flex x_start">
+                        <div class="titleBox flex between">
                             <p class="title" data-translation-key="title_key">${data.title_key}</p>
                             
                             <!-- mjesto za čekboks -->
+                            <svg class="plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                                    <path class="st0" d="M10,5c0,0.5-0.5,1-1,1H6v3c0,0.5-0.5,1-1,1S4,9.5,4,9V6H1C0.5,6,0,5.5,0,5s0.5-1,1-1h3V1c0-0.5,0.5-1,1-1  s1,0.5,1,1v3h3C9.5,4,10,4.5,10,5z"></path>
+                            </svg>
 
                         </div>
                         
@@ -234,7 +237,14 @@ function setTranslations(translations) {
 
 
                 const dataImg = dataDiv.querySelector('.dataImg');
+                const textContainerDiv = dataDiv.querySelector('.textContainerDiv');
                 dataImg.addEventListener('click', function () {
+                    overlay.classList.remove('noneDisplay');
+                    // descriptionDiv.classList.remove('noneDisplay');
+                    // console.log('slika: ' + index);
+                });
+
+                textContainerDiv.addEventListener('click', function () {
                     overlay.classList.remove('noneDisplay');
                     // descriptionDiv.classList.remove('noneDisplay');
                     // console.log('slika: ' + index);
