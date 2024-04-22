@@ -282,7 +282,7 @@ const description_content = document.querySelector('.description_content');
 const categoy_description_box = document.querySelector('.categoy_description_box');
 const call_us = document.querySelector('.call_us');
 
-headerLogo.addEventListener('click', function () {
+headerLogo.addEventListener('click', () => {
     cells.forEach(function (cell) {
         cell.classList.remove('active');
     });
@@ -303,6 +303,19 @@ headerLogo.addEventListener('click', function () {
     switcher.classList.remove('translateX');
     checkbox_1.checked = false;
     checkbox_2.checked = false;
+});
+
+
+call_us.addEventListener('click', () => {
+    cells.forEach(function (cell) {
+        cell.classList.remove('active');
+    });
+
+    infoDiv.classList.remove('noneDisplay');
+    call_us.classList.add('noneDisplay');
+    categoy_description_box.classList.remove('noneDisplay');
+
+    startRotation();
 });
 
 

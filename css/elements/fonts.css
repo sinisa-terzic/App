@@ -80,12 +80,12 @@
     width: 100vw;
 }
 
-.logo,
+.welcome,
 .info_content {
     color: #ede7e7;
 }
 
-.logo {
+.welcome {
     font-size: 5vw;
     font-weight: 300;
     letter-spacing: 0.1rem;
