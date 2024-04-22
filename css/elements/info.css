@@ -41,7 +41,7 @@
     width: 7.5vw;
     align-self: center;
     justify-self: center;
-    opacity: 0.4;
+    opacity: 0.3;
     animation: bounce 2s infinite running;
 }
 
