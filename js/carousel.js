@@ -5,6 +5,7 @@ const dataContainer = document.getElementById('data');
 const dataItem = document.getElementById('content-container');
 const cells = carousel.querySelectorAll('.carousel__cell');
 const activeCell = document.querySelector('.carousel__cell.active');
+const carousel_control = document.querySelector('.carousel_control');
 const cellElements = Array.from(cells);
 const cellCount = cellElements.length;
 let selectedIndex = 0;
@@ -204,7 +205,6 @@ infoDiv.addEventListener('touchmove', (event) => {
 });
 
 
-
 //////////////////////////////////////////////////////
 // Pokreni rotaciju
 const play = document.querySelector('.play');
@@ -322,6 +322,7 @@ headerLogo.addEventListener('click', () => {
         dataContainer.scrollTop = 0;
     }, 10);
 
+    carousel_control.classList.remove('box-shadow');
     call_us.classList.add('noneDisplay');
     categoy_description_box.classList.remove('noneDisplay');
     languageBox.classList.remove('translateX');
@@ -329,20 +330,16 @@ headerLogo.addEventListener('click', () => {
     checkbox_1.checked = false;
     checkbox_2.checked = false;
 
-    startRotation();
 });
+
+// headerLogo.removeEventListener("click", startRotation());
 
 
 callUs_btnList.addEventListener('click', () => {
-    // cells.forEach(function (cell) {
-    //     cell.classList.remove('active');
-    // });
-
+    carousel_control.classList.remove('box-shadow');
     infoDiv.classList.remove('noneDisplay');
     call_us.classList.add('noneDisplay');
     categoy_description_box.classList.remove('noneDisplay');
-
-    // startRotation();
 });
 
 

@@ -37,12 +37,20 @@
     opacity: 0.8;
 }
 
-.info .drop-down {
+/* .info .drop-down {
     width: 7.5vw;
     align-self: center;
     justify-self: center;
     opacity: 0.3;
     animation: bounce 2s infinite running;
+} */
+
+.info .drop-down {
+    width: 12vw;
+    align-self: center;
+    justify-self: center;
+    opacity: 0.6;
+    animation: bounce 1.9s infinite running;
 }
 
 @keyframes bounce {
@@ -56,10 +64,84 @@
     }
 
     40% {
-        transform: translateY(-5px);
+        transform: translateY(-7px);
     }
 
     60% {
-        transform: translateY(-3px);
+        transform: translateY(7px);
     }
+}
+
+.arrows {
+    width: 10vw;
+    height: 12vh;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.arrows path {
+    stroke: #2994D1;
+    stroke: #ffffff;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+    {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    /* Safari 和 Chrome */
 }

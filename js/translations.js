@@ -61,7 +61,7 @@ function setTranslations(translations) {
             setTimeout(function () {
                 dataContainer.style.opacity = 1;
                 dataContainer.style.transition = 'all 0.05s ease';
-            }, 250);
+            }, 150);
 
 
             // description_content.classList.remove('noneDisplay');
@@ -81,7 +81,7 @@ function setTranslations(translations) {
 
 
             // console.log('Klik na ćeliju sa indeksom:', index);
-
+            carousel_control.classList.add('box-shadow');
 
             infoDiv.classList.add('noneDisplay');
 
