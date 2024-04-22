@@ -2,7 +2,7 @@
 // change color
 const switcherHeader = document.querySelector('.header');
 const switcherInfo = document.querySelector('.info');
-const callUs_btnList = document.querySelector('.callUs_btnList');
+// const call_us = document.querySelector('.call_us');
 const callUs_btnWaiter = document.querySelector('#callUs_btnWaiter');
 const callUs_btnCost = document.querySelector('#callUs_btnCost');
 const operater = document.querySelector('.operater');
@@ -27,28 +27,28 @@ function loadColorPreference() {
 function setColorPreference(color) {
     switcherHeader.classList.remove('switcher_dark', 'switcher_blue', 'switcher_brown', 'switcher_middle');
     switcherInfo.classList.remove('switcher_dark', 'switcher_blue', 'switcher_brown', 'switcher_middle');
-    callUs_btnList.classList.remove('switcher_dark', 'switcher_blue', 'switcher_brown', 'switcher_middle');
+    call_us.classList.remove('switcher_dark', 'switcher_blue', 'switcher_brown', 'switcher_middle');
 
     switch (color) {
         case 'dark':
             switcherHeader.classList.add('switcher_dark');
             switcherInfo.classList.add('switcher_dark');
-            callUs_btnList.classList.add('switcher_dark');
+            call_us.classList.add('switcher_dark');
             break;
         case 'blue':
             switcherHeader.classList.add('switcher_blue');
             switcherInfo.classList.add('switcher_blue');
-            callUs_btnList.classList.add('switcher_blue');
+            call_us.classList.add('switcher_blue');
             break;
         case 'brown':
             switcherHeader.classList.add('switcher_brown');
             switcherInfo.classList.add('switcher_brown');
-            callUs_btnList.classList.add('switcher_brown');
+            call_us.classList.add('switcher_brown');
             break;
         case 'middle':
             switcherHeader.classList.add('switcher_middle');
             switcherInfo.classList.add('switcher_middle');
-            callUs_btnList.classList.add('switcher_middle');
+            call_us.classList.add('switcher_middle');
             break;
         default:
             // Ako nema odgovarajuće vrednosti, možete postaviti podrazumevanu boju

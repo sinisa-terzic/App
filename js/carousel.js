@@ -214,8 +214,15 @@ stop.addEventListener('click', () => {
 //////////////////////////////////////////////////////
 // Dodajte klik događaj za dugme za prethodnu ćeliju
 const prevButton = document.querySelector('.previous-button');
+const btn_right = document.querySelector('.btn_right');
 prevButton.addEventListener('click', () => {
     selectPreviousCell()
+    /* changeCarousel();
+    stopRotation(); */
+});
+
+btn_right.addEventListener('click', () => {
+    selectNextCell()
     /* changeCarousel();
     stopRotation(); */
 });
@@ -239,8 +246,15 @@ prevButton.addEventListener('touchend', () => {
 //////////////////////////////////////////////////////
 // Dodajte klik događaj za dugme za sledeću ćeliju
 const nextButton = document.querySelector('.next-button');
+const btn_left = document.querySelector('.btn_left');
 nextButton.addEventListener('click', () => {
     selectNextCell()
+    /* changeCarousel();
+    stopRotation(); */
+});
+
+btn_left.addEventListener('click', () => {
+    selectPreviousCell()
     /* changeCarousel();
     stopRotation(); */
 });
@@ -281,6 +295,7 @@ const headerLogo = document.querySelector('.headerLogo');
 const description_content = document.querySelector('.description_content');
 const categoy_description_box = document.querySelector('.categoy_description_box');
 const call_us = document.querySelector('.call_us');
+const callUs_btnList = document.querySelector('.callUs_btnList');
 
 headerLogo.addEventListener('click', () => {
     cells.forEach(function (cell) {
@@ -306,7 +321,7 @@ headerLogo.addEventListener('click', () => {
 });
 
 
-call_us.addEventListener('click', () => {
+callUs_btnList.addEventListener('click', () => {
     cells.forEach(function (cell) {
         cell.classList.remove('active');
     });
