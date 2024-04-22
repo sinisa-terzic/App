@@ -4,7 +4,7 @@ const scene = document.querySelector('.scene');
 const dataContainer = document.getElementById('data');
 const dataItem = document.getElementById('content-container');
 const cells = carousel.querySelectorAll('.carousel__cell');
-const activeIndex = document.querySelector('.carousel__cell.active');
+const activeCell = document.querySelector('.carousel__cell.active');
 const cellElements = Array.from(cells);
 const cellCount = cellElements.length;
 let selectedIndex = 0;
@@ -189,7 +189,17 @@ infoDiv.addEventListener('touchmove', (event) => {
     const deltaY = touchY - startY;
 
     if (deltaY > 50) { // Povlačenje prsta dolje za više od 50 piksela
-        cells[0].click();
+
+        cells.forEach(function (cell, index) {
+            const activeCell = document.querySelector('.carousel__cell.active');
+
+            if (activeCell) {
+                activeCell.click();
+                dataContainer.style.opacity = 1;
+            } else {
+                cells[0].click();
+            }
+        });
     }
 });
 
@@ -318,19 +328,21 @@ headerLogo.addEventListener('click', () => {
     switcher.classList.remove('translateX');
     checkbox_1.checked = false;
     checkbox_2.checked = false;
+
+    startRotation();
 });
 
 
 callUs_btnList.addEventListener('click', () => {
-    cells.forEach(function (cell) {
-        cell.classList.remove('active');
-    });
+    // cells.forEach(function (cell) {
+    //     cell.classList.remove('active');
+    // });
 
     infoDiv.classList.remove('noneDisplay');
     call_us.classList.add('noneDisplay');
     categoy_description_box.classList.remove('noneDisplay');
 
-    startRotation();
+    // startRotation();
 });
 
 
