@@ -322,6 +322,14 @@ headerLogo.addEventListener('click', () => {
         dataContainer.scrollTop = 0;
     }, 10);
 
+    // Odmah zaustavite rotaciju
+    stopRotation();
+
+    // Pokrenite rotaciju nakon kratkog vremenskog intervala
+    setTimeout(function () {
+        startRotation();
+    }, 10);
+
     carousel_control.classList.remove('box-shadow');
     call_us.classList.add('noneDisplay');
     categoy_description_box.classList.remove('noneDisplay');
@@ -329,10 +337,10 @@ headerLogo.addEventListener('click', () => {
     switcher.classList.remove('translateX');
     checkbox_1.checked = false;
     checkbox_2.checked = false;
-
 });
 
-// headerLogo.removeEventListener("click", startRotation());
+
+
 
 
 callUs_btnList.addEventListener('click', () => {
