@@ -48,58 +48,41 @@ function setTranslations(translations) {
                 cell.classList.remove('active');
             });
 
-
-            // Izvlačimo ime ćelije iz atributa data-translation-key
-            const cellName = cell.querySelector('.food').getAttribute('data-translation-key');
-
-            // Ažuriramo URL sa imenom ćelije
-            window.location.hash = `#${cellName}`;
-
-
             dataContainer.style.opacity = 0;
-
+            // dataContainer.style.transform = 'translateY(1%)';
             setTimeout(function () {
                 dataContainer.style.opacity = 1;
-                dataContainer.style.transition = 'all 0.05s ease';
-            }, 150);
-
+                // dataContainer.style.transform = 'translateY(0%)';
+            }, 100);
 
             // description_content.classList.remove('noneDisplay');
             categoy_description_box.classList.add('noneDisplay');
             cell.classList.add('active');
             selectedIndex = index;
-            changeCarousel();
+            rotateCarousel();
             stopRotation();
 
             dataContainer.scrollTop = 0;
 
-            /* const activeCell = document.querySelector('.carousel__cell.active');
-            if (activeCell) {
-                dataContainer.style.opacity = 1;
-                console.log('aktivna ćelija')
-            } */
-
-
             // console.log('Klik na ćeliju sa indeksom:', index);
-            carousel_control.classList.add('box-shadow');
 
+            const infoDiv = document.querySelector('.info');
             infoDiv.classList.add('noneDisplay');
 
             call_us.classList.remove('noneDisplay');
 
             dataContainer.classList.remove('noneDisplay');
             dataItem.innerHTML = '';
+            // descriptionDiv = descriptionDiv
 
             // Access data for the current index (index + 1 because indices in JavaScript start from 0)
             const currentData = translations['cat' + (index + 1)];
-
 
             // Postavljamo podatke u HTML unutar novog div-a
             descriptionDiv.innerHTML = `
                 <div class="flex">
                     <img class="rotateImg" src="img/food/play.svg" alt="play">
                     <p class="summary">${currentData.details}</p>
-                    <img class="dotsImg" src="img/menu/menu-icon_dots.svg" alt="play">
                 </div>
                 <p class="description noneDisplay">${currentData.description}</p>
             `;
@@ -119,23 +102,36 @@ function setTranslations(translations) {
                     <img class="dataImg" src="${data.imageSrc}" alt="${data.title_key}">
                     <div class="textContainerDiv">
                         
-                        <div class="titleBox flex between">
+                        <div class="titleBox flex between_center">
                             <p class="title" data-translation-key="title_key">${data.title_key}</p>
-                            
-                            <!-- mjesto za čekboks -->
-                            <svg class="plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
-                                    <path class="st0" d="M10,5c0,0.5-0.5,1-1,1H6v3c0,0.5-0.5,1-1,1S4,9.5,4,9V6H1C0.5,6,0,5.5,0,5s0.5-1,1-1h3V1c0-0.5,0.5-1,1-1  s1,0.5,1,1v3h3C9.5,4,10,4.5,10,5z"></path>
-                            </svg>
-
+                            <div class="article-check">
+                                <input type="checkbox" class="select_item">
+                                <span class="choose">
+                                    <img src="img/quantity/plus-circle.svg" alt="plus_circle">
+                                </span>
+                                <span class="unchoose noneDisplay">
+                                    <img src="img/quantity/emblem-checked.svg" alt="emblem-checked">
+                                </span>
+                            </div>
                         </div>
                         
                         <p class="periphrasis" data-translation-key="text_key">${data.text_key}</p>
 
-                        <div class="costBox_1 flex x_end">
-                            
-                             <!-- mjesto za brojač -->
-                        
-                            <p class="cost" data-translation-key="cost_key">${data.cost_key}</p>
+                        <div class="costBox_1 flex between_center" data-id="1">
+                         <p class="cost" data-translation-key="cost_key">${data.cost_key}</p>
+                            <div class="grid g_1_2_1 between_center g-5">
+                                <button title="decrease font" class="quantity" data-action="decrease">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                                        <path d="M9,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h8c0.6,0,1,0.4,1,1S9.6,6,9,6z"></path>
+                                    </svg>
+                                </button>
+                                <p class="quantityValue">0</p>
+                                <button title="increase font" class="quantity" data-action="increase">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                                            <path d="M10,5c0,0.5-0.5,1-1,1H6v3c0,0.5-0.5,1-1,1S4,9.5,4,9V6H1C0.5,6,0,5.5,0,5s0.5-1,1-1h3V1c0-0.5,0.5-1,1-1  s1,0.5,1,1v3h3C9.5,4,10,4.5,10,5z"></path>
+                                        </svg>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 `;
@@ -145,7 +141,7 @@ function setTranslations(translations) {
 
                 dataContainer.appendChild(dataItem);
 
-                // Pozovite onDataContainerCreated nakon što su slike dodate u dataContainer. Kreirano u active.js 198
+                // Pozovite onDataContainerCreated nakon što su slike dodate u dataContainer. Kreirano u active.js 209
                 onDataContainerCreated();
 
                 // Kreiranje novog div-a za overlay
@@ -169,20 +165,20 @@ function setTranslations(translations) {
                                 <!-- costBox -->
                                 <div class="costBox_2 flex between_center g-20">
 
-                                    <!-- quantity
-                                     <div class="flex between_center g-10">
+                                    
+                                <div class="flex between_center g-10" costBox_1 data-id="1">
                                         <button title="decrease font" class="quantity" data-action="decrease">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                                            <path d="M9,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h8c0.6,0,1,0.4,1,1S9.6,6,9,6z"></path>
+                                        </svg>
+                                    </button>
+                                    <p class="quantityValue">0</p>
+                                    <button title="increase font" class="quantity" data-action="increase">
                                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
-                                                <path d="M9,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h8c0.6,0,1,0.4,1,1S9.6,6,9,6z"></path>
+                                                <path d="M10,5c0,0.5-0.5,1-1,1H6v3c0,0.5-0.5,1-1,1S4,9.5,4,9V6H1C0.5,6,0,5.5,0,5s0.5-1,1-1h3V1c0-0.5,0.5-1,1-1  s1,0.5,1,1v3h3C9.5,4,10,4.5,10,5z"></path>
                                             </svg>
-                                        </button>
-                                        <p class="quantityValue">0</p>
-                                        <button title="increase font" class="quantity" data-action="increase">
-                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
-                                                    <path d="M10,5c0,0.5-0.5,1-1,1H6v3c0,0.5-0.5,1-1,1S4,9.5,4,9V6H1C0.5,6,0,5.5,0,5s0.5-1,1-1h3V1c0-0.5,0.5-1,1-1  s1,0.5,1,1v3h3C9.5,4,10,4.5,10,5z"></path>
-                                                </svg>
-                                        </button>
-                                    </div> end quantity -->
+                                    </button>
+                                </div> <!-- quantity end quantity -->
 
                                     <p class="cost" data-translation-key="cost_key">${data.cost_key}</p>
                                 </div> <!-- end costBox -->
@@ -201,7 +197,7 @@ function setTranslations(translations) {
 
                             
                             <div class="bottomDiv_button grid g-10 ta-c mtb-10">
-                                <button class="back" title="stop">${data.back}</button> 
+                                <button class="back" title="stop">Nazad</button> 
                             </div>
                             
                             <!--
@@ -237,17 +233,13 @@ function setTranslations(translations) {
 
 
                 const dataImg = dataDiv.querySelector('.dataImg');
-                const textContainerDiv = dataDiv.querySelector('.textContainerDiv');
                 dataImg.addEventListener('click', function () {
                     overlay.classList.remove('noneDisplay');
                     // descriptionDiv.classList.remove('noneDisplay');
                     // console.log('slika: ' + index);
-                });
-
-                textContainerDiv.addEventListener('click', function () {
-                    overlay.classList.remove('noneDisplay');
-                    // descriptionDiv.classList.remove('noneDisplay');
-                    // console.log('slika: ' + index);
+                    decreaseBtn
+                    increaseBtn
+                    updateCounter()
                 });
 
 
@@ -256,6 +248,107 @@ function setTranslations(translations) {
                     overlay.classList.add('noneDisplay');
                     // descriptionDiv.classList.add('noneDisplay');
                     // console.log('neće da radi');
+                    updateCounter()
+                });
+
+
+
+
+                const selectItems = dataDiv.querySelectorAll('.select_item');
+                const chooseSpan = dataDiv.querySelector('.choose');
+                const unchooseSpan = dataDiv.querySelector('.unchoose');
+                // const callUs_btnList = document.getElementById('callUs_btnList');
+
+                const allSelectItems = Array.from(document.querySelectorAll('.select_item'));
+
+                function updateCallUsButtonVisibility() {
+                    // Provjeri jesu li svi čekboksevi nečekirani
+                    const allUnchecked = allSelectItems.every(selectItem => !selectItem.checked);
+
+                    // Ako su svi čekboksevi nečekirani, dodaj klasu 'noneDisplay' na callUs_btnList, inače je ukloni
+                    if (allUnchecked) {
+                        // callUs_btnList.classList.add('noneDisplay');
+                    } else {
+                        // callUs_btnList.classList.remove('noneDisplay');
+                    }
+                }
+
+                selectItems.forEach((selectItem, index) => {
+                    // Add an event listener for the 'change' event on the checkbox
+                    selectItem.addEventListener('change', () => {
+                        const selectedIndex = allSelectItems.indexOf(selectItem);
+                        if (selectItem.checked) {
+                            chooseSpan.classList.add('noneDisplay');
+                            unchooseSpan.classList.remove('noneDisplay');
+                            console.log('checked is: ', selectedIndex);
+                        } else {
+                            chooseSpan.classList.remove('noneDisplay');
+                            unchooseSpan.classList.add('noneDisplay');
+                            console.log('unchecked is: ', allSelectItems.indexOf(selectItem));
+                        }
+
+                        // Ažurirajte prikaz broja čekiranih elemenata
+                        // updateCheckedCount();
+
+                        // Ažurirajte prikaz callUs_btnList
+                        updateCallUsButtonVisibility();
+                    });
+
+                    // Dodajte event listener na ikonicu kako biste simulirali klik na čekboks
+                    chooseSpan.addEventListener('click', () => {
+                        selectItem.click();
+                        // console.log('checked is: ', allSelectItems.indexOf(selectItem));
+                    });
+                    unchooseSpan.addEventListener('click', () => {
+                        selectItem.click();
+                    });
+                });
+
+                // Inicijalno postavljanje prikaza broja čekiranih elemenata
+                // updateCheckedCount();
+
+                // Inicijalno postavljanje prikaza callUs_btnList
+                updateCallUsButtonVisibility();
+
+
+
+
+
+                // Dobijanje referenci na dugmad za povećanje i smanjenje brojača
+                const decreaseBtn = dataDiv.querySelector('.quantity[data-action="decrease"]');
+                const increaseBtn = dataDiv.querySelector('.quantity[data-action="increase"]');
+                const quantityValue = dataDiv.querySelector('.quantityValue');
+                const cost = dataDiv.querySelector('.cost');
+
+                // Postavljanje početne vrednosti brojača
+                let counter = 1;
+
+                // Dodavanje event listenara za dugmad
+                decreaseBtn.addEventListener('click', () => {
+                    if (counter > 1) {
+                        counter--;
+                        updateCounter();
+                    }
+                });
+
+                increaseBtn.addEventListener('click', () => {
+                    counter++;
+                    updateCounter();
+                });
+
+                // Funkcija za ažuriranje prikaza vrednosti brojača
+                function updateCounter() {
+                    quantityValue.textContent = counter;
+                    const newCost = (parseFloat(data.cost_key) * counter).toFixed(2);
+                    cost.textContent = newCost + '€';
+                }
+
+                // Inicijalno postavljanje vrednosti brojača
+                updateCounter();
+
+                // Iteriranje kroz sve dataDiv elemente i dodavanje brojača
+                document.querySelectorAll('.costBox_1').forEach((dataDiv) => {
+                    updateCounter();
                 });
 
             });
@@ -479,7 +572,6 @@ const languageBox = document.querySelector(".language");
 // Kreirajte čekboks element
 const checkbox_1 = document.createElement('input');
 checkbox_1.type = 'checkbox';
-checkbox_1.classList = 'languageBox';
 // checkbox_1.id = 'language';
 
 language.parentNode.replaceChild(checkbox_1, language);
@@ -492,20 +584,16 @@ checkbox_1.addEventListener('change', () => {
         switcher.classList.remove('translateX');
         darkOpen.classList.remove('noneDisplay');
         checkbox_2.checked = false;
-
         // console.log('Čekboks je označen.');
     } else {
         languageBox.classList.remove('translateX');
         darkOpen.classList.add('noneDisplay');
-
-        window.location.hash = '';
         // console.log('Čekboks nije označen.');
     }
 });
 
 // Dodajte event listener na ikonicu kako biste simulirali klik na čekboks
 checkboxIcon_1.addEventListener('click', () => {
-    window.location.hash = `languageBox`;
     checkbox_1.click();
 });
 
@@ -529,7 +617,6 @@ const switcher = document.querySelector('.switcher');
 // Kreirajte čekboks element
 const checkbox_2 = document.createElement('input');
 checkbox_2.type = 'checkbox';
-checkbox_2.classList = 'layoutBox';
 // checkbox_2.id = 'Layer_1';
 
 layout.parentNode.replaceChild(checkbox_2, layout);
@@ -541,24 +628,18 @@ checkbox_2.addEventListener('change', () => {
         languageBox.classList.remove('translateX');
         darkOpen.classList.remove('noneDisplay');
         checkbox_1.checked = false;
-
         // console.log('Čekboks je označen.');
     } else {
         switcher.classList.remove('translateX');
         darkOpen.classList.add('noneDisplay');
-
-        window.location.hash = '';
         // console.log('Čekboks nije označen.');
     }
 });
 
 // Dodajte event listener na ikonicu kako biste simulirali klik na čekboks
 checkboxIcon_2.addEventListener('click', () => {
-    window.location.hash = `switcher`;
     checkbox_2.click();
 });
-
-
 
 
 

@@ -2,7 +2,7 @@
 // change color
 const switcherHeader = document.querySelector('.header');
 const switcherInfo = document.querySelector('.info');
-// const call_us = document.querySelector('.call_us');
+const call_us = document.querySelector('.call_us');
 const callUs_btnWaiter = document.querySelector('#callUs_btnWaiter');
 const callUs_btnCost = document.querySelector('#callUs_btnCost');
 const operater = document.querySelector('.operater');
@@ -11,6 +11,9 @@ const switcher_dark = document.querySelector('#switcher_dark');
 const switcher_blue = document.querySelector('#switcher_blue');
 const switcher_brown = document.querySelector('#switcher_brown');
 const switcher_middle = document.querySelector('#switcher_middle');
+const darkOpen = document.querySelector('.dark');
+const setting = document.querySelector('.setting');
+// const switcher_middle = document.querySelector('description_content');
 
 
 // Funkcija za postavljanje izabrane boje u lokalnom skladištu
@@ -63,9 +66,8 @@ switcher_dark.addEventListener('click', function () {
     setColorPreference('dark');
     changeBackgroundColors();
     changeDescriptionColors();
-    switcher.classList.remove('translateX');
     darkOpen.classList.add('noneDisplay');
-    checkbox_2.checked = false;
+    setting.classList.add('noneDisplay');
 });
 
 switcher_blue.addEventListener('click', function () {
@@ -73,9 +75,8 @@ switcher_blue.addEventListener('click', function () {
     setColorPreference('blue');
     changeBackgroundColors();
     changeDescriptionColors();
-    switcher.classList.remove('translateX');
     darkOpen.classList.add('noneDisplay');
-    checkbox_2.checked = false;
+    setting.classList.add('noneDisplay');
 });
 
 switcher_brown.addEventListener('click', function () {
@@ -83,9 +84,8 @@ switcher_brown.addEventListener('click', function () {
     setColorPreference('brown');
     changeBackgroundColors();
     changeDescriptionColors();
-    switcher.classList.remove('translateX');
     darkOpen.classList.add('noneDisplay');
-    checkbox_2.checked = false;
+    setting.classList.add('noneDisplay');
 });
 
 switcher_middle.addEventListener('click', function () {
@@ -93,9 +93,8 @@ switcher_middle.addEventListener('click', function () {
     setColorPreference('middle');
     changeBackgroundColors();
     changeDescriptionColors();
-    switcher.classList.remove('translateX');
     darkOpen.classList.add('noneDisplay');
-    checkbox_2.checked = false;
+    setting.classList.add('noneDisplay');
 });
 
 

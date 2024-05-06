@@ -9,18 +9,9 @@
     "info": {
         "info_content": "Инфо: +382 67 806 066"
     },
-    "category": {
-        "category_1": "Хладна предјела",
-        "category_2": "Специјалитети од поврћа",
-        "category_3": "Салате и прилози",
-        "category_4": "Морски специјалитети",
-        "category_5": "Карта вина",
-        "category_6": "Жестока пића",
-        "category_7": "Безалкохолна пића",
-        "category_8": "Уговорене групе",
-        "category_9": "Посластице"
-    },
+    "category": {},
     "cat1": {
+        "category_1": "Хладна предјела",
         "details": "Опис категорије",
         "description": "&#9642; СР U hladna predjela se nalazi domaći pršut, domaći sir, slana riba i ... još mnogo toga ...",
         "translations": [
@@ -99,6 +90,7 @@
         ]
     },
     "cat2": {
+        "category_2": "Специјалитети од поврћа",
         "details": "Опис категорије",
         "description": "&#9642; СР Specijaliteti od povrća ubrajaju paprike, tikvice, patlidžan, šargarepu i ...",
         "translations": [
@@ -177,6 +169,7 @@
         ]
     },
     "cat3": {
+        "category_3": "Салате и прилози",
         "details": "Опис категорије",
         "description": "&#9642; СР Salate i prilozi: masline, paradajz, krompir, kupus ...",
         "translations": [
@@ -255,6 +248,7 @@
         ]
     },
     "cat4": {
+        "category_4": "Морски специјалитети",
         "details": "Опис категорије",
         "description": "&#9642; СР riba, lignje, hobotnica, školje, bakalar ...",
         "translations": [
@@ -333,6 +327,7 @@
         ]
     },
     "cat5": {
+        "category_5": "Карта вина",
         "details": "Опис категорије",
         "description": "&#9642; СР crno, rose, bijelo ...",
         "translations": [
@@ -411,6 +406,7 @@
         ]
     },
     "cat6": {
+        "category_6": "Жестока пића",
         "details": "Опис категорије",
         "description": "&#9642; СР loza, viljamovka, vodtka, viski, likeri ...",
         "translations": [
@@ -489,6 +485,7 @@
         ]
     },
     "cat7": {
+        "category_7": "Безалкохолна пића",
         "details": "Опис категорије",
         "description": "&#9642; СР kafa, čaj, bezalkoholna pića, pivo, voda ...",
         "translations": [
@@ -567,6 +564,7 @@
         ]
     },
     "cat8": {
+        "category_8": "Уговорене групе",
         "details": "Опис категорије",
         "description": "&#9642; СР meni za ugovorene grupe",
         "translations": [
@@ -645,6 +643,7 @@
         ]
     },
     "cat9": {
+        "category_9": "Посластице",
         "details": "Опис категорије",
         "description": "&#9642; СР voćni, čokoladni, slani kolači ...",
         "translations": [
