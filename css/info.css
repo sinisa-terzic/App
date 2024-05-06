@@ -17,7 +17,7 @@
     content: '';
     width: 100%;
     height: 1rem;
-    background-image: url(../../img/border/border-top.svg);
+    background-image: url(../img/border/border-top.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
