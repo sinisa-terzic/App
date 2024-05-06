@@ -545,8 +545,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         stopButton.addEventListener('click', stopCarousel);
 
-        // startCarousel();
-        changeCarousel()
+        startCarousel();
+        // changeCarousel()
     }
 
     // Initially load translations for the current language
