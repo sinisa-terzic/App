@@ -493,7 +493,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         // Minimalna udaljenost za pomeranje prsta kako bi se aktiviralo pomeranje kontejnera
-        const minSwipeDistance = 150;
+        const minSwipeDistance = 250;
 
         // Pomeranje prsta na dataContainer elementu
         dataContainer.addEventListener('touchstart', function (event) {
