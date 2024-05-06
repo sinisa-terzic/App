@@ -477,15 +477,6 @@ document.addEventListener("DOMContentLoaded", function () {
             handleSwipe();
         });
 
-        /* dataContainer.addEventListener('touchstart', function (event) {
-            touchStartX = event.touches[0].clientX;
-        });
-
-        dataContainer.addEventListener('touchend', function (event) {
-            touchEndX = event.changedTouches[0].clientX;
-            handleSwipe();
-        }); */
-
         // pomeranje karausela prstom
         function handleSwipe() {
             let swipeDistance = touchEndX - touchStartX;
@@ -499,6 +490,35 @@ document.addEventListener("DOMContentLoaded", function () {
                 updateNextSlide()
             }
         }
+
+
+        // Minimalna udaljenost za pomeranje prsta kako bi se aktiviralo pomeranje kontejnera
+        const minSwipeDistance = 150;
+
+        // Pomeranje prsta na dataContainer elementu
+        dataContainer.addEventListener('touchstart', function (event) {
+            touchStartX = event.touches[0].clientX;
+        });
+
+        dataContainer.addEventListener('touchend', function (event) {
+            touchEndX = event.changedTouches[0].clientX;
+            handleSwipeOnDataContainer();
+        });
+
+        // Funkcija za obradu pomeranja prsta na dataContainer elementu
+        function handleSwipeOnDataContainer() {
+            let swipeDistance = touchEndX - touchStartX;
+            if (swipeDistance > minSwipeDistance) {
+                // Swipe to the right
+                handleButtonClick(-1); // Move to previous cell
+                updatePrevSlide();
+            } else if (swipeDistance < -minSwipeDistance) {
+                // Swipe to the left
+                handleButtonClick(1); // Move to next cell
+                updateNextSlide();
+            }
+        }
+
 
 
         // POKRETANjE KARAUSELA
