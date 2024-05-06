@@ -203,11 +203,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     // console.log('index je: ' + index)
                 }
 
-                // Funkcija za obradu klika na određenu ćeliju
-                /* infoDiv.addEventListener('touchmove', function (event) {
-                    handleCellClick(index);
-                    console.log('index je: ' + index)
-                }); */
                 function handleCellClick(index) {
                     // Pronađite aktivnu ćeliju
                     const activeCell = document.querySelector('.carousel__cell.active');
@@ -215,12 +210,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     // dataContainer.classList.add('translateY');
                     chooseBox.classList.add('noneDisplay');
                     closeDescrition();
+                    stopCarousel();
                     // dataContainer.classList.remove('noneDisplay');
 
                     // Ako postoji aktivna ćelija, simulirajte klik na njoj
                     if (activeCell) {
-                        // activeCell.click();
-                        // activeCell.click();
                         carousel_control.classList.add('box-shadow');
                         dataContainer.scrollTo({
                             top: 0,
