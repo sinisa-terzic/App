@@ -477,14 +477,14 @@ document.addEventListener("DOMContentLoaded", function () {
             handleSwipe();
         });
 
-        dataContainer.addEventListener('touchstart', function (event) {
+        /* dataContainer.addEventListener('touchstart', function (event) {
             touchStartX = event.touches[0].clientX;
         });
 
         dataContainer.addEventListener('touchend', function (event) {
             touchEndX = event.changedTouches[0].clientX;
             handleSwipe();
-        });
+        }); */
 
         // pomeranje karausela prstom
         function handleSwipe() {
