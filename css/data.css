@@ -35,6 +35,32 @@
     z-index: 1;
 }
 
+.description_content {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-bottom: 1px dotted #1b121c;
+}
+
+.rotateImg {
+    width: 2vw;
+    margin: 0 0 0 0.8rem;
+}
+
+.summary {
+    color: rgb(255 255 255 / 90%);
+    width: 100%;
+    /* min-block-size: 5dvb; */
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.dotsImg {
+    width: 0.9vw;
+    margin: 0 0.8rem 0 0;
+}
+
 .itemDiv {
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -174,7 +200,7 @@
 
 .slogan p {
     font-size: 5.2vw;
-    margin: 2vh 0 8vh 0;
+    margin: 2vh 0 8.5vh 0;
     display: flex;
     width: 100%;
     justify-content: center;
