@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         carousel_control.classList.add('box-shadow');
                         dataContainer.scrollTo({
                             top: 0,
-                            behavior: 'smooth' // Dodajte ovu opciju za glatki efekat
+                            behavior: 'smooth'
                         });
                     }
                 }
@@ -378,6 +378,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     // Logika za dodavanje/uklanjanje klasa
                     description.classList.toggle('noneDisplay');
                     rotate.classList.toggle('rotate');
+
+                    stopCarousel();
                 });
             }
         }
@@ -519,13 +521,16 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
+        dataContainer.addEventListener('touchmove', function () {
+            stopCarousel();
+        });
 
 
         // POKRETANjE KARAUSELA
         function startCarousel() {
             selectedIndex++;
             changeCarousel();
-            updateNextSlide()
+            updateNextSlide();
             stopButton.classList.remove('noneDisplay');
             startButton.classList.add('noneDisplay');
             intervalId = setInterval(function () {
