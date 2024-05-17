@@ -6,6 +6,8 @@
     "language": "Язык",
     "switcher": "Макет",
     "slogan": "Заказывайте быстрее, e-Мeни™",
+    "back": "Назад",
+    "hereWith": "рекомендуется к этому",
     "info": {
         "info_content": "Инфо: +382 67 806 066"
     },
@@ -29,8 +31,6 @@
                 "text_key": "Описание к статье 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -41,8 +41,6 @@
                 "text_key": "Описание к статье 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -53,8 +51,6 @@
                 "text_key": "Описание к статье 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -65,8 +61,6 @@
                 "text_key": "Описание к статье 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -77,8 +71,6 @@
                 "text_key": "Описание к статье 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -89,8 +81,6 @@
                 "text_key": "Описание к статье 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -107,8 +97,6 @@
                 "text_key": "Описание к статье 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -119,8 +107,6 @@
                 "text_key": "Описание к статье 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -131,8 +117,6 @@
                 "text_key": "Описание к статье 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -143,8 +127,6 @@
                 "text_key": "Описание к статье 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -155,8 +137,6 @@
                 "text_key": "Описание к статье 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -167,8 +147,6 @@
                 "text_key": "Описание к статье 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -185,8 +163,6 @@
                 "text_key": "Описание к статье 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -197,8 +173,6 @@
                 "text_key": "Описание к статье 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -209,8 +183,6 @@
                 "text_key": "Описание к статье 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -221,8 +193,6 @@
                 "text_key": "Описание к статье 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -233,8 +203,6 @@
                 "text_key": "Описание к статье 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -245,8 +213,6 @@
                 "text_key": "Описание к статье 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -263,8 +229,6 @@
                 "text_key": "Описание к статье 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -275,8 +239,6 @@
                 "text_key": "Описание к статье 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -287,8 +249,6 @@
                 "text_key": "Описание к статье 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -299,8 +259,6 @@
                 "text_key": "Описание к статье 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -311,8 +269,6 @@
                 "text_key": "Описание к статье 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -323,8 +279,6 @@
                 "text_key": "Описание к статье 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -341,8 +295,6 @@
                 "text_key": "Описание к статье 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -353,8 +305,6 @@
                 "text_key": "Описание к статье 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -365,8 +315,6 @@
                 "text_key": "Описание к статье 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -377,8 +325,6 @@
                 "text_key": "Описание к статье 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -389,8 +335,6 @@
                 "text_key": "Описание к статье 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -401,8 +345,6 @@
                 "text_key": "Описание к статье 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -419,8 +361,6 @@
                 "text_key": "Описание к статье 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -431,8 +371,6 @@
                 "text_key": "Описание к статье 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -443,8 +381,6 @@
                 "text_key": "Описание к статье 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -455,8 +391,6 @@
                 "text_key": "Описание к статье 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -467,8 +401,6 @@
                 "text_key": "Описание к статье 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -479,8 +411,6 @@
                 "text_key": "Описание к статье 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -497,8 +427,6 @@
                 "text_key": "Описание к статье 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -509,8 +437,6 @@
                 "text_key": "Описание к статье 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -521,8 +447,6 @@
                 "text_key": "Описание к статье 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -533,8 +457,6 @@
                 "text_key": "Описание к статье 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -545,8 +467,6 @@
                 "text_key": "Описание к статье 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -557,8 +477,6 @@
                 "text_key": "Описание к статье 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -575,8 +493,6 @@
                 "text_key": "Описание к статье 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -587,8 +503,6 @@
                 "text_key": "Описание к статье 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -599,8 +513,6 @@
                 "text_key": "Описание к статье 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -611,8 +523,6 @@
                 "text_key": "Описание к статье 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -623,8 +533,6 @@
                 "text_key": "Описание к статье 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -635,8 +543,6 @@
                 "text_key": "Описание к статье 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -653,8 +559,6 @@
                 "text_key": "Описание к статье 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/4.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -665,8 +569,6 @@
                 "text_key": "Описание к статье 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -677,8 +579,6 @@
                 "text_key": "Описание к статье 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -689,8 +589,6 @@
                 "text_key": "Описание к статье 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -701,8 +599,6 @@
                 "text_key": "Описание к статье 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"
@@ -713,8 +609,6 @@
                 "text_key": "Описание к статье 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "рекомендуется к этому",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Минеральная вода",
                     "drink_2": "Десерт"

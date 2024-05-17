@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    let currentLanguage = 'sr';
+    // let currentLanguage = 'sr'; // Početni jezik
 
     // Function to load translations for the selected language
     function loadTranslations(language) {
@@ -12,7 +12,71 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTranslations(data);
             })
             .catch(error => console.error('Error loading translations:', error));
+
     }
+
+
+    // Funkcija za postavljanje teksta i slika u zavisnosti od jezika
+    function setLanguageText(language) {
+        const languageImg = document.getElementById("language");
+        const srButtonL = document.getElementById("latin");
+        const srButtonC = document.getElementById("cyrillic");
+        const enButton = document.getElementById("enButton");
+        const ruButton = document.getElementById("ruButton");
+
+        // Uklonite sve klase koje označavaju trenutno odabrani jezik
+        [srButtonL, srButtonC, enButton, ruButton].forEach(button => {
+            button.classList.remove('cyrillic_latin_color');
+        });
+
+        // Postavite tekst i sliku u zavisnosti od odabranog jezika
+        if (language === 'en') {
+            languageImg.innerHTML = '<img id="languageImg" src="img/flag/eng.svg" alt="English">';
+            enButton.classList.add('cyrillic_latin_color');
+        } else if (language === 'sr') {
+            languageImg.innerHTML = '<img id="languageImg" src="img/flag/yu.svg" alt="Srpski">';
+            srButtonL.classList.add('cyrillic_latin_color');
+        } else if (language === 'sr_cy') {
+            languageImg.innerHTML = '<img id="languageImg" src="img/flag/yu.svg" alt="Srpski">';
+            srButtonC.classList.add('cyrillic_latin_color');
+        } else if (language === 'ru') {
+            languageImg.innerHTML = '<img id="languageImg" src="img/flag/rus.svg" alt="Русский">';
+            ruButton.classList.add('cyrillic_latin_color');
+        }
+    }
+
+    // Funkcija za učitavanje prijevoda za odabrani jezik
+    function loadTranslations(language) {
+        const jsonFileName = `js/translations_${language}.json`;
+        fetch(jsonFileName)
+            .then(response => response.json())
+            .then(data => {
+                setTranslations(data);
+            })
+            .catch(error => console.error('Error loading translations:', error));
+    }
+
+    // Funkcija za postavljanje prijevoda
+    function setTranslations(translations) {
+        // Implementacija postavljanja prijevoda na odgovarajuće HTML elemente
+    }
+
+    // Postavljanje početnog jezika iz local storage-a, ako postoji
+    let currentLanguage = localStorage.getItem('currentLanguage') || 'sr_cy';
+    setLanguageText(currentLanguage);
+    loadTranslations(currentLanguage);
+
+    // Event listener za promenu jezika
+    document.querySelectorAll('.changeLanguageButton').forEach(button => {
+        button.addEventListener('click', function () {
+            currentLanguage = this.dataset.language;
+            localStorage.setItem('currentLanguage', currentLanguage); // Čuvanje u local storage
+            setLanguageText(currentLanguage);
+            loadTranslations(currentLanguage);
+            location.reload()
+        });
+    });
+
 
     // Function to set translations
     function setTranslations(translations) {
@@ -305,6 +369,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Iterate over each translation object within the translations array
                 const translationsHTML = category.translations.map(translation => {
+                    // Kreirajte listu pića
+                    const drinksList = Object.values(translation.drink).map(drink => `<li class="periphrasis">${drink}</li>`).join('');
+
                     return `
                         <div class="itemDiv">
                             <img class="dataImg" src="${translation.imageSrc}" alt="${translation.title_key}">
@@ -321,22 +388,22 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <!-- Place for counter -->
                                     <p class="cost" data-translation-key="cost_key">${translation.cost_key}</p>
                                 </div>
+                                <ul class="drinksList noneDisplay">${drinksList}</ul> <!-- Dodajte listu pića -->
                             </div>
                         </div>
                     `;
                 }).join('');
 
+
                 // Postavljamo podatke u HTML unutar novog div-a
                 slogan.innerHTML = `
-                            <p> ${translations.slogan}</p>
-                        `;
-
+                    <p> ${translations.slogan}</p>
+                `;
 
                 // Dodajte translationsHTML u categoryDiv
                 categoryDiv.innerHTML += translationsHTML;
                 // Dodajte descriptionDiv u categoryDiv
                 categoryDiv.appendChild(slogan);
-
 
                 // Dodajte categoryDiv u scrollWrapper
                 scrollWrapper.appendChild(categoryDiv);
@@ -353,7 +420,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         cost.classList.add('switcher_middle');
                     }
                 });
-
 
                 const summary = document.querySelectorAll('.description_content');
                 const rotate = document.querySelectorAll('.rotateImg');
@@ -381,8 +447,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     stopCarousel();
                 });
+
             }
         }
+
 
 
         // za rotiranje podataka kategorije
@@ -495,7 +563,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         // Minimalna udaljenost za pomeranje prsta kako bi se aktiviralo pomeranje kontejnera
-        const minSwipeDistance = 250;
+        const minSwipeDistance = 200;
 
         // Pomeranje prsta na dataContainer elementu
         dataContainer.addEventListener('touchstart', function (event) {
@@ -552,9 +620,176 @@ document.addEventListener("DOMContentLoaded", function () {
 
         startCarousel();
         // changeCarousel()
+
+
+
+
+        // Pronađite sve elemente itemDiv i dodajte event listenere
+        const itemDivs = document.querySelectorAll('.itemDiv');
+        itemDivs.forEach((itemDiv, index) => {
+            itemDiv.addEventListener('click', function (event) {
+                // Sprečavamo širenje događaja na roditeljske elemente
+                event.stopPropagation();
+
+                // Prikazujemo informacije o kliknutom itemDiv-u
+                const title = itemDiv.querySelector('.title').textContent;
+                const text = itemDiv.querySelector('.periphrasis').textContent;
+                const cost = itemDiv.querySelector('.cost').textContent;
+                const imageSrc = itemDiv.querySelector('.dataImg').getAttribute('src');
+
+                // Prikazujemo sadržaj ključa drink
+                const drinksListItems = itemDiv.querySelectorAll('.drinksList li');
+                const drinks = Array.from(drinksListItems).map(drinkItem => `<li class="periphrasis">${drinkItem.textContent}</li>`).join('');
+
+                // Kreiranje dinamičke strukture za modalni prozor
+                const modalHTML = `
+            <div class="overlay">
+                <div class="backgroundDiv"></div>
+                <div class="descriptionDiv">
+                    <div class="topDiv">
+                        <img class="modalImg" src="${imageSrc}" alt="${title}">
+                    </div>
+                    <div class="bottomDiv">
+                        <!-- titleBox -->
+                        <div class="flex between_center mtb-10">
+                            <h1 class="title">${title}</h1>
+                            <!-- costBox -->
+                            <div class="costBox_2 flex between_center g-20">
+                                <p class="cost switcher_cost">${cost}</p>
+                            </div> <!-- end costBox -->
+                        </div> <!-- end titleBox -->
+                        <p class="periphrasis">${text}</p>
+                        <h2 class="reference">${translations.hereWith}:</h2>
+                        <ul id="drinkList">
+                            ${drinks} <!-- Dodajemo sadržaj ključa drink -->
+                        </ul>
+                        <div class="bottomDiv_button grid g-10 ta-c mtb-10">
+                            <button class="closeModal back">${translations.back}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+                // Dodavanje modalnog prozora na stranicu
+                document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+                // Zaustavljanje karusela
+                stopCarousel();
+
+                // Ispis indeksa itemDiv-a i informacija u konzolu
+                console.log('Title:', title);
+                console.log('Text:', text);
+                console.log('Cost:', cost);
+                console.log('Image Src:', imageSrc);
+                console.log('Drinks:', drinks);
+                console.log('Back translation:', translations.back);
+                console.log('Clicked on itemDiv with index:', index + 1);
+                console.log('=======================');
+
+                // Dodajte event listenere za zatvaranje modalnog prozora
+                const overlay = document.querySelector('.overlay');
+                const closeModalButton = overlay.querySelector('.closeModal');
+                const backgroundDiv = overlay.querySelector('.backgroundDiv');
+
+                closeModalButton.addEventListener('click', closeModal);
+                backgroundDiv.addEventListener('click', closeModal);
+            });
+        });
+
+        function closeModal() {
+            // Uklanjanje modalnog prozora
+            const overlay = document.querySelector('.overlay');
+            overlay.remove();
+        }
+
+
+
+
+
+
+
+
+        /*  function showModal(itemDiv, translations) {
+              // Učitavanje podataka povezanih s itemDiv u modalni prozor
+              const imgSrc = itemDiv.querySelector('.dataImg').getAttribute('src');
+              const title = itemDiv.querySelector('.title').textContent;
+              const periphrasis = itemDiv.querySelector('.periphrasis').textContent;
+              const cost = itemDiv.querySelector('.cost').textContent;
+              // const drink = itemDiv.querySelector('.drink').textContent;
+              const drink = itemDiv.querySelector('.drink')
+              // drinksList.classList.remove('noneDisplay');
+  
+  
+               // Kreiranje HTML-a za modalni prozor s podacima
+              const modalHTML = `
+                  <div class="overlay">
+                      <div class="backgroundDiv"></div>
+                      <div class="descriptionDiv">
+                          <div class="topDiv">
+                              <img class="modalImg" src="${imgSrc}" alt="${title}">
+                          </div>
+                          <div class="bottomDiv">
+                              <!-- titleBox -->
+                              <div class="flex between_center mtb-10">
+                                  <h1 class="title">${title}</h1>
+                                  <!-- costBox -->
+                                  <div class="costBox_2 flex between_center g-20">
+                                      <p class="cost switcher_cost">${cost}</p>
+                                  </div> <!-- end costBox -->
+                              </div> <!-- end titleBox -->
+                              <p class="periphrasis">${periphrasis}</p>
+                              <h2 class="reference">${translations.hereWith}:</h2>
+                              <ul class="drinksList">
+                              <li class="periphrasis">${drink}</li>
+                              </ul>
+                              <div class="bottomDiv_button grid g-10 ta-c mtb-10">
+                                  <button class="closeModal back">${translations.back}</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              `;
+  
+              // Dodavanje modalnog prozora na stranicu
+              document.body.insertAdjacentHTML('beforeend', modalHTML);
+  
+              const overlay = document.querySelector('.overlay');
+  
+              // Pronalaženje odgovarajućeg prevoda koristeći naslov kao ključ
+              const translation = translations[title];
+  
+              if (translation && translation.drink) {
+                  const drinkList = overlay.querySelector('#drinkList');
+                  // Iteriranje kroz sve ključeve pića i dodavanje u <ul>
+                  for (const drinkKey in translation.drink) {
+                      if (translation.drink.hasOwnProperty(drinkKey)) {
+                          const drinkItem = translation.drink[drinkKey];
+                          const listItem = document.createElement('li');
+                          listItem.textContent = drinkKey + ': ' + drinkItem;
+                          drinkList.appendChild(listItem);
+                      }
+                  }
+              }
+  
+              // Dodajte event listenere za zatvaranje modalnog prozora
+              const closeModalButton = overlay.querySelector('.closeModal');
+              const backgroundDiv = overlay.querySelector('.backgroundDiv');
+  
+              closeModalButton.addEventListener('click', closeModal);
+              backgroundDiv.addEventListener('click', closeModal);
+  
+              function closeModal() {
+                  // Uklanjanje modalnog prozora
+                  overlay.remove();
+              }
+          } */
+
+
     }
 
-    // Initially load translations for the current language
-    loadTranslations(currentLanguage);
+    // Poziv funkcije za postavljanje početnog jezika
+    /*   setLanguageText(currentLanguage);
+    loadTranslations(currentLanguage);*/
 
 })

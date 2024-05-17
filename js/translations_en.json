@@ -6,6 +6,8 @@
     "language": "Language",
     "switcher": "Loyaut",
     "slogan": "Order faster, e-Menu™",
+    "back": "Back",
+    "hereWith": "recommended with this",
     "info": {
         "info_content": "Info: +382 67 806 066"
     },
@@ -29,8 +31,6 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -41,8 +41,6 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -53,8 +51,6 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -65,8 +61,6 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -77,8 +71,6 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -89,8 +81,6 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -107,8 +97,6 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -119,8 +107,6 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -131,8 +117,6 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -143,8 +127,6 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -155,8 +137,6 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -167,8 +147,6 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -185,8 +163,6 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -197,8 +173,6 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -209,8 +183,6 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -221,8 +193,6 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -233,8 +203,6 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -245,8 +213,6 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -263,8 +229,6 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -275,8 +239,6 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -287,8 +249,6 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -299,8 +259,6 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -311,8 +269,6 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -323,8 +279,6 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -341,8 +295,6 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -353,8 +305,6 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -365,8 +315,6 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -377,8 +325,6 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -389,8 +335,6 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -401,8 +345,6 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -419,8 +361,6 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -431,8 +371,6 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -443,8 +381,6 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -455,8 +391,6 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -467,8 +401,6 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -479,8 +411,6 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -497,8 +427,6 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -509,8 +437,6 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -521,8 +447,6 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -533,8 +457,6 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -545,8 +467,6 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -557,8 +477,6 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -575,8 +493,6 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -587,8 +503,6 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -599,8 +513,6 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -611,8 +523,6 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -623,8 +533,6 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -635,8 +543,6 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -653,8 +559,6 @@
                 "text_key": "Description for article 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/4.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -665,8 +569,6 @@
                 "text_key": "Description for article 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -677,8 +579,6 @@
                 "text_key": "Description for article 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -689,8 +589,6 @@
                 "text_key": "Description for article 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -701,8 +599,6 @@
                 "text_key": "Description for article 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"
@@ -713,8 +609,6 @@
                 "text_key": "Description for article 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "recommended with this",
-                "back": "Back",
                 "drink": {
                     "drink_1": "Mineral water",
                     "drink_2": "Desert"

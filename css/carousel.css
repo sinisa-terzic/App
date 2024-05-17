@@ -28,7 +28,7 @@
     transform: translateZ(-288px);
     transform-style: preserve-3d;
     /* transition: transform 1s ease; */
-    transition: 0.22s all cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: 0.16s all cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .carousel__cell {

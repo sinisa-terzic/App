@@ -97,6 +97,9 @@
     background-color: #8C5000;
 }
 
+.switcher_cost {
+    background-color: #323a45;
+}
 
 .translateX {
     transform: translateX(0%);

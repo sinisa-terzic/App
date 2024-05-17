@@ -104,7 +104,7 @@
 .title {
     color: #383838;
     font-size: 4.7vw;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .periphrasis,
@@ -118,6 +118,9 @@
 }
 
 .cost {
-    padding: 5px 10px;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18vw;
+    height: 6.4vw;
 }

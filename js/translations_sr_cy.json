@@ -6,10 +6,22 @@
     "language": "Језик",
     "switcher": "Изглед",
     "slogan": "Наручите брже, e-Мeни™",
+    "back": "Назад",
+    "hereWith": "препорука уз ово",
     "info": {
         "info_content": "Инфо: +382 67 806 066"
     },
-    "category": {},
+    "category": {
+        "category_1": "Хладна предјела",
+        "category_2": "Специјалитети од поврћа",
+        "category_3": "Салате и прилози",
+        "category_4": "Морски спацијалитети",
+        "category_5": "Карта вина",
+        "category_6": "Жестока пића",
+        "category_7": "Безалкохолна пића",
+        "category_8": "Уговорене групе",
+        "category_9": "Посластице"
+    },
     "cat1": {
         "category_1": "Хладна предјела",
         "details": "Опис категорије",
@@ -20,8 +32,6 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -32,8 +42,6 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -44,8 +52,6 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -56,8 +62,6 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -68,8 +72,6 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -80,8 +82,6 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -99,8 +99,6 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -111,8 +109,6 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -123,8 +119,6 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -135,8 +129,6 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -147,8 +139,6 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -159,8 +149,6 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -178,8 +166,6 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -190,8 +176,6 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -202,8 +186,6 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -214,8 +196,6 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -226,8 +206,6 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -238,8 +216,6 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -257,8 +233,6 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -269,8 +243,6 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -281,8 +253,6 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -293,8 +263,6 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -305,8 +273,6 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -317,8 +283,6 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -336,8 +300,6 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -348,8 +310,6 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -360,8 +320,6 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -372,8 +330,6 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -384,8 +340,6 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -396,8 +350,6 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -415,8 +367,6 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -427,8 +377,6 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -439,8 +387,6 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -451,8 +397,6 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -463,8 +407,6 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -475,8 +417,6 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -494,8 +434,6 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -506,8 +444,6 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -518,8 +454,6 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -530,8 +464,6 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -542,8 +474,6 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -554,8 +484,6 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -573,8 +501,6 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -585,8 +511,6 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -597,8 +521,6 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -609,8 +531,6 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -621,8 +541,6 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -633,8 +551,6 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -652,8 +568,6 @@
                 "text_key": "Опис за артикл 1.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/4.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -664,8 +578,6 @@
                 "text_key": "Опис за артикл 3.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -676,8 +588,6 @@
                 "text_key": "Опис за артикл 2.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -688,8 +598,6 @@
                 "text_key": "Опис за артикл 4.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/3.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -700,8 +608,6 @@
                 "text_key": "Опис за артикл 5.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/2.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
@@ -712,8 +618,6 @@
                 "text_key": "Опис за артикл 6.",
                 "cost_key": "25.00€",
                 "imageSrc": "img/food/pr/1.jpg",
-                "hereWith": "препорука уз ово",
-                "back": "Назад",
                 "drink": {
                     "drink_1": "Кисела вода",
                     "drink_2": "Десерт"
