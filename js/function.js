@@ -234,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const cellElements = Array.from(carousel.querySelectorAll('.carousel__cell'));
             const cellCount = cellElements.length;
             const rotateFn = 'rotateY'; // Smjer rotacije (Y osa)
-            let cellSize = 44; // Širina ili visina pojedinačnog elementa
+            let cellSize = 46; // Širina ili visina pojedinačnog elementa
             const gapSize = 1.4; // Razmak između elemenata
 
             theta = 360 / cellCount;
