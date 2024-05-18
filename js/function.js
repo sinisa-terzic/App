@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Postavljanje početnog jezika iz local storage-a, ako postoji
-    let currentLanguage = localStorage.getItem('currentLanguage') || 'sr_cy';
+    let currentLanguage = localStorage.getItem('currentLanguage') || 'sr';
     setLanguageText(currentLanguage);
     loadTranslations(currentLanguage);
 
