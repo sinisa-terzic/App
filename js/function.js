@@ -234,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const cellElements = Array.from(carousel.querySelectorAll('.carousel__cell'));
             const cellCount = cellElements.length;
             const rotateFn = 'rotateY'; // Smjer rotacije (Y osa)
-            let cellSize = 46; // Širina ili visina pojedinačnog elementa
+            let cellSize = 48; // Širina ili visina pojedinačnog elementa
             const gapSize = 1.4; // Razmak između elemenata
 
             theta = 360 / cellCount;
@@ -388,7 +388,6 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <!-- Place for counter -->
                                     <p class="cost" data-translation-key="cost_key">${translation.cost_key}</p>
                                 </div>
-                                <ul class="drinksList noneDisplay">${drinksList}</ul> <!-- Dodajte listu pića -->
                             </div>
                         </div>
                     `;
