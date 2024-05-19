@@ -384,7 +384,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                     </svg>
                                 </div>
                                 <p class="periphrasis" data-translation-key="text_key">${translation.text_key}</p>
-                                <div class="costBox_1 flex x_end">
+                                <div class="costBox_1 flex x_end y_s_end">
                                     <!-- Place for counter -->
                                     <p class="cost" data-translation-key="cost_key">${translation.cost_key}</p>
                                 </div>
