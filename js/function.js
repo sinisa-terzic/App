@@ -388,6 +388,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <!-- Place for counter -->
                                     <p class="cost" data-translation-key="cost_key">${translation.cost_key}</p>
                                 </div>
+                                <ul class="drinksList noneDisplay">${drinksList}</ul> <!-- Dodajte listu pića -->
                             </div>
                         </div>
                     `;

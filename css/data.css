@@ -63,7 +63,7 @@
 
 .itemDiv {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1.9fr 3fr;
     /* grid-template-columns: 42% 58%; */
     overflow: hidden;
     box-shadow: 4px 4px 2px #f1f0f0;
