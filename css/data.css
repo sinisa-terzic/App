@@ -70,7 +70,7 @@
     margin-bottom: 1rem;
 }
 
-.itemDiv img {
+.itemDiv .itemDivImg {
     vertical-align: bottom;
     width: 100%;
     height: auto;
@@ -90,7 +90,8 @@
 .plus {
     fill: #053a5f;
     fill: #11161d;
-    width: 4vw;
+    width: 5vw;
+    height: 5vw;
     margin-right: 4px;
 }
 

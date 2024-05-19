@@ -374,14 +374,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     return `
                         <div class="itemDiv">
-                            <img class="dataImg" src="${translation.imageSrc}" alt="${translation.title_key}">
+                            <img class="itemDivImg" src="${translation.imageSrc}" alt="${translation.title_key}">
                             <div class="textContainerDiv">
                                 <div class="titleBox flex between">
                                     <p class="title" data-translation-key="title_key">${translation.title_key}</p>
                                     <!-- Place for checkbox -->
-                                    <svg class="plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
+                                    <!-- <svg class="plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 10 10" xml:space="preserve">
                                         <path class="st0" d="M10,5c0,0.5-0.5,1-1,1H6v3c0,0.5-0.5,1-1,1S4,9.5,4,9V6H1C0.5,6,0,5.5,0,5s0.5-1,1-1h3V1c0-0.5,0.5-1,1-1  s1,0.5,1,1v3h3C9.5,4,10,4.5,10,5z"></path>
-                                    </svg>
+                                    </svg> -->
+                                    <img class="plus" src="img/command/plus.png" alt="plus">
                                 </div>
                                 <p class="periphrasis" data-translation-key="text_key">${translation.text_key}</p>
                                 <div class="costBox_1 flex x_end y_s_end">
@@ -635,7 +636,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const title = itemDiv.querySelector('.title').textContent;
                 const text = itemDiv.querySelector('.periphrasis').textContent;
                 const cost = itemDiv.querySelector('.cost').textContent;
-                const imageSrc = itemDiv.querySelector('.dataImg').getAttribute('src');
+                const imageSrc = itemDiv.querySelector('.itemDivImg').getAttribute('src');
 
                 // Prikazujemo sadržaj ključa drink
                 const drinksListItems = itemDiv.querySelectorAll('.drinksList li');
