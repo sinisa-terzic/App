@@ -786,6 +786,25 @@ document.addEventListener("DOMContentLoaded", function () {
               }
           } */
 
+        // Funkcija koja promeni tekst na svakih 5 sekundi
+        function promeniTekst() {
+            const tekstovi = ["KONOBA BOKEŠKI GUŠTI", "Hvala na posjeti!"];
+            const trajanjeTekstova = [2500, 4000]; // Trajanje svakog teksta u milisekundama
+            let trenutniIndeks = 0;
+            const element = document.getElementById("callUs_btnList").querySelector("span");
+
+            setInterval(() => {
+                element.classList.add("fade-out"); // Dodajemo klasu za nestajanje
+                setTimeout(() => {
+                    element.textContent = tekstovi[trenutniIndeks]; // Postavljamo novi tekst
+                    element.classList.add("fade-out"); // Uklanjamo klasu za nestajanje
+                    trenutniIndeks = (trenutniIndeks + 1) % tekstovi.length;
+                }, trajanjeTekstova[trenutniIndeks] - 0); // Preostalo vreme - 2 sekunde
+            }, trajanjeTekstova.reduce((a, b) => a + b, 0)); // Suma trajanja svih tekstova
+        }
+
+        // Pokretanje funkcije za promenu teksta
+        promeniTekst();
 
     }
 
