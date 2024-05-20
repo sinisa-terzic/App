@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     cell.removeEventListener('click', stopCarousel);
                     cell.addEventListener('click', cellClickHandler);
                     cell.addEventListener('click', handleCellClick);
-                    dataContainer.scrollTop = 0;
+                    // dataContainer.scrollTop = 0;
                     // console.log('index je: ' + index)
                 }
 
@@ -278,13 +278,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     // dataContainer.classList.remove('noneDisplay');
 
                     // Ako postoji aktivna ćelija, simulirajte klik na njoj
-                    if (activeCell) {
+                    /* if (activeCell) {
                         carousel_control.classList.add('box-shadow');
                         dataContainer.scrollTo({
                             top: 0,
                             behavior: 'smooth'
                         });
-                    }
+                    } */
+                    dataContainer.scrollTop = 0;
                 }
 
             });
@@ -628,7 +629,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Pronađite sve elemente itemDiv i dodajte event listenere
         const itemDivs = document.querySelectorAll('.itemDiv');
         itemDivs.forEach((itemDiv, index) => {
-            itemDiv.addEventListener('click', function (event) {
+            // Pronalaženje elementa plus unutar itemDiv-a
+            const plus = itemDiv.querySelector('.plus');
+
+            // Dodavanje event listenera za klik na plus
+            plus.addEventListener('click', function (event) {
                 // Sprečavamo širenje događaja na roditeljske elemente
                 event.stopPropagation();
 
@@ -678,16 +683,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Zaustavljanje karusela
                 stopCarousel();
 
-                // Ispis indeksa itemDiv-a i informacija u konzolu
-                console.log('Title:', title);
-                console.log('Text:', text);
-                console.log('Cost:', cost);
-                console.log('Image Src:', imageSrc);
-                console.log('Drinks:', drinks);
-                console.log('Back translation:', translations.back);
-                console.log('Clicked on itemDiv with index:', index + 1);
-                console.log('=======================');
-
                 // Dodajte event listenere za zatvaranje modalnog prozora
                 const overlay = document.querySelector('.overlay');
                 const closeModalButton = overlay.querySelector('.closeModal');
@@ -703,88 +698,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const overlay = document.querySelector('.overlay');
             overlay.remove();
         }
-
-
-
-
-
-
-
-
-        /*  function showModal(itemDiv, translations) {
-              // Učitavanje podataka povezanih s itemDiv u modalni prozor
-              const imgSrc = itemDiv.querySelector('.dataImg').getAttribute('src');
-              const title = itemDiv.querySelector('.title').textContent;
-              const periphrasis = itemDiv.querySelector('.periphrasis').textContent;
-              const cost = itemDiv.querySelector('.cost').textContent;
-              // const drink = itemDiv.querySelector('.drink').textContent;
-              const drink = itemDiv.querySelector('.drink')
-              // drinksList.classList.remove('noneDisplay');
-  
-  
-               // Kreiranje HTML-a za modalni prozor s podacima
-              const modalHTML = `
-                  <div class="overlay">
-                      <div class="backgroundDiv"></div>
-                      <div class="descriptionDiv">
-                          <div class="topDiv">
-                              <img class="modalImg" src="${imgSrc}" alt="${title}">
-                          </div>
-                          <div class="bottomDiv">
-                              <!-- titleBox -->
-                              <div class="flex between_center mtb-10">
-                                  <h1 class="title">${title}</h1>
-                                  <!-- costBox -->
-                                  <div class="costBox_2 flex between_center g-20">
-                                      <p class="cost switcher_cost">${cost}</p>
-                                  </div> <!-- end costBox -->
-                              </div> <!-- end titleBox -->
-                              <p class="periphrasis">${periphrasis}</p>
-                              <h2 class="reference">${translations.hereWith}:</h2>
-                              <ul class="drinksList">
-                              <li class="periphrasis">${drink}</li>
-                              </ul>
-                              <div class="bottomDiv_button grid g-10 ta-c mtb-10">
-                                  <button class="closeModal back">${translations.back}</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              `;
-  
-              // Dodavanje modalnog prozora na stranicu
-              document.body.insertAdjacentHTML('beforeend', modalHTML);
-  
-              const overlay = document.querySelector('.overlay');
-  
-              // Pronalaženje odgovarajućeg prevoda koristeći naslov kao ključ
-              const translation = translations[title];
-  
-              if (translation && translation.drink) {
-                  const drinkList = overlay.querySelector('#drinkList');
-                  // Iteriranje kroz sve ključeve pića i dodavanje u <ul>
-                  for (const drinkKey in translation.drink) {
-                      if (translation.drink.hasOwnProperty(drinkKey)) {
-                          const drinkItem = translation.drink[drinkKey];
-                          const listItem = document.createElement('li');
-                          listItem.textContent = drinkKey + ': ' + drinkItem;
-                          drinkList.appendChild(listItem);
-                      }
-                  }
-              }
-  
-              // Dodajte event listenere za zatvaranje modalnog prozora
-              const closeModalButton = overlay.querySelector('.closeModal');
-              const backgroundDiv = overlay.querySelector('.backgroundDiv');
-  
-              closeModalButton.addEventListener('click', closeModal);
-              backgroundDiv.addEventListener('click', closeModal);
-  
-              function closeModal() {
-                  // Uklanjanje modalnog prozora
-                  overlay.remove();
-              }
-          } */
 
         // Funkcija koja promeni tekst na svakih 5 sekundi
         function promeniTekst() {
@@ -805,8 +718,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Pokretanje funkcije za promenu teksta
         promeniTekst();
-
     }
+
 
     // Poziv funkcije za postavljanje početnog jezika
     /*   setLanguageText(currentLanguage);

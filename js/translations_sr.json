@@ -572,7 +572,8 @@
                 "imageSrc": "img/food/pr/3.jpg",
                 "drink": {
                     "drink_1": "Kisela voda",
-                    "drink_2": "Desert"
+                    "drink_2": "Desert",
+                    "drink_3": "Sok"
                 }
             },
             {

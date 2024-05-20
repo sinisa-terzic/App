@@ -307,3 +307,14 @@
     background: #ffffff;
     z-index: 3;
 }
+
+.callUs_btnList span {
+    opacity: 1;
+    transition: opacity 4s ease-in-out;
+    /* Postavljanje tranzicije za opacity */
+}
+
+.fade-out {
+    opacity: 0;
+    /* Tekst nestaje */
+}
