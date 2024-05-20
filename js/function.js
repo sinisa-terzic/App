@@ -519,6 +519,7 @@ document.addEventListener("DOMContentLoaded", function () {
             chooseBox.classList.add('noneDisplay');
             carousel_control.classList.add('box-shadow');
             closeDescrition();
+            dataContainer.scrollTop = 0;
         }
 
         prevButton.forEach(prevButton => {
