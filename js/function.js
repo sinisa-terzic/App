@@ -278,13 +278,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     // dataContainer.classList.remove('noneDisplay');
 
                     // Ako postoji aktivna ćelija, simulirajte klik na njoj
-                    /* if (activeCell) {
+                    if (activeCell) {
                         carousel_control.classList.add('box-shadow');
-                        dataContainer.scrollTo({
+                        /* dataContainer.scrollTo({
                             top: 0,
                             behavior: 'smooth'
-                        });
-                    } */
+                        }); */
+                    }
                     dataContainer.scrollTop = 0;
                 }
 
