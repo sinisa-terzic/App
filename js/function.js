@@ -291,9 +291,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     cell.addEventListener('click', handleCellClick);
                     infoDiv.addEventListener('touchmove', handleCellClick);
 
-                    // Ažuravamo URL sa imenom ćelije koristeći history.pushState
-                    history.pushState({ clickedIndex: selectedIndex }, '', `#${selectedIndex}`);
-
                     console.log('index je: ' + index)
                 } else {
                     cell.classList.remove('active');
@@ -302,6 +299,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     cell.addEventListener('click', handleCellClick);
                     // dataContainer.scrollTop = 0;
                     // console.log('index je: ' + index)
+
+                    // Ažuravamo URL sa imenom ćelije koristeći history.pushState
+                    window.location.hash = `#${selectedIndex}`;
                 }
 
                 function handleCellClick(index) {
