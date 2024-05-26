@@ -238,7 +238,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     updatePrevSlide();
                 }
             }
-
             // Ako nema state u history-u, zatvaramo modal ako je otvoren
             closeModal()
 
@@ -290,6 +289,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     cell.addEventListener('click', stopCarousel);
                     cell.addEventListener('click', handleCellClick);
                     infoDiv.addEventListener('touchmove', handleCellClick);
+
+                    history.pushState({ index: index }, '', `#${index}`);
 
                     console.log('index je: ' + index)
                 } else {
