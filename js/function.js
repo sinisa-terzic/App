@@ -238,8 +238,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     updatePrevSlide();
                 }
             }
-            // Ako nema state u history-u, zatvaramo modal ako je otvoren
-            closeModal()
 
         };
 
@@ -251,8 +249,8 @@ document.addEventListener("DOMContentLoaded", function () {
             let css = '';
             for (let i = 1; i <= numCategories; i++) {
                 css += `.carousel__cell:nth-child(${numCategories}n+${i}) {
-        background-image: url('${imageURLPrefix}${i}.jpg');
-      }`;
+                background-image: url('${imageURLPrefix}${i}.jpg');
+            }`;
             }
             return css;
         }
@@ -289,8 +287,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     cell.addEventListener('click', stopCarousel);
                     cell.addEventListener('click', handleCellClick);
                     infoDiv.addEventListener('touchmove', handleCellClick);
-
-                    history.pushState({ index: index }, '', `#${index}`);
 
                     console.log('index je: ' + index)
                 } else {
@@ -718,9 +714,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Dodavanje modalnog prozora na stranicu
                 document.body.insertAdjacentHTML('beforeend', modalHTML);
-
-                // Ažuriramo URL sa informacijama o overlay-u
-                history.pushState({ overlay: true }, '', `#overlay`);
 
                 // Zaustavljanje karusela
                 stopCarousel();
