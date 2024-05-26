@@ -238,6 +238,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     updatePrevSlide();
                 }
             }
+
+            // Ako nema state u history-u, zatvaramo modal ako je otvoren
+            closeModal()
+
         };
 
 
@@ -714,6 +718,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Dodavanje modalnog prozora na stranicu
                 document.body.insertAdjacentHTML('beforeend', modalHTML);
 
+                // Ažuriramo URL sa informacijama o overlay-u
+                history.pushState({ overlay: true }, '', `#overlay`);
+
                 // Zaustavljanje karusela
                 stopCarousel();
 
@@ -736,7 +743,9 @@ document.addEventListener("DOMContentLoaded", function () {
         function closeModal() {
             // Uklanjanje modalnog prozora
             const overlay = document.querySelector('.overlay');
-            overlay.remove();
+            if (overlay) {
+                overlay.remove();
+            }
         }
 
         // Funkcija koja promeni tekst na svakih 5 sekundi
