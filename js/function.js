@@ -644,6 +644,8 @@ document.addEventListener("DOMContentLoaded", function () {
             stopButton.classList.remove('noneDisplay');
             startButton.classList.add('noneDisplay');
 
+            dataContainer.scrollTop = 0;
+
             intervalId = setInterval(function () {
                 selectedIndex++;
                 changeCarousel();
