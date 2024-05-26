@@ -239,6 +239,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
 
+            // Ako nema state u history-u, zatvaramo modal ako je otvoren
+            closeModal()
+
         };
 
 
@@ -714,6 +717,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Dodavanje modalnog prozora na stranicu
                 document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+                // Ažuriramo URL sa informacijama o overlay-u
+                history.pushState({ overlay: false }, '', `#overlay`);
 
                 // Zaustavljanje karusela
                 stopCarousel();
