@@ -188,10 +188,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-        // za normalan tok karausela
+        // Funkcija za normalan tok karusela
         function cellClickHandler() {
             let clickedIndex = parseInt(this.getAttribute('data-index'), 10); // Dohvaćamo indeks kliknute ćelije
             let difference = clickedIndex - selectedIndex % numCategories; // Računamo razliku između kliknutog indeksa i trenutnog indeksa
+
+            // Ažuravamo URL sa imenom ćelije koristeći history.pushState
+            history.pushState({ clickedIndex: clickedIndex }, '', `#${clickedIndex}`);
 
             if (difference > numCategories / 2) {
                 difference -= numCategories; // Ako je razlika veća od pola broja kategorija, smanjujemo je za broj kategorija kako bismo se približili kraju
@@ -211,6 +214,32 @@ document.addEventListener("DOMContentLoaded", function () {
                 updatePrevSlide();
             }
         }
+
+        // Event listener za back/forward dugme na pretraživaču
+        window.onpopstate = function (event) {
+            if (event.state && event.state.clickedIndex !== undefined) {
+                let clickedIndex = event.state.clickedIndex;
+                let difference = clickedIndex - selectedIndex % numCategories; // Računamo razliku između kliknutog indeksa i trenutnog indeksa
+
+                if (difference > numCategories / 2) {
+                    difference -= numCategories; // Ako je razlika veća od pola broja kategorija, smanjujemo je za broj kategorija kako bismo se približili kraju
+                } else if (difference < -numCategories / 2) {
+                    difference += numCategories; // Ako je razlika manja od minus pola broja kategorija, povećavamo je za broj kategorija kako bismo se približili početku
+                }
+
+                selectedIndex += difference; // Povećavamo ili smanjujemo trenutni indeks na osnovu izračunate razlike
+
+                changeCarousel();
+
+                // Pozivamo funkcije updatePrevSlide() i updateNextSlide() u zavisnosti od razlike
+                if (difference > 0) {
+                    updateNextSlide();
+                } else if (difference < 0) {
+                    updatePrevSlide();
+                }
+            }
+        };
+
 
 
 
@@ -257,6 +286,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     cell.addEventListener('click', stopCarousel);
                     cell.addEventListener('click', handleCellClick);
                     infoDiv.addEventListener('touchmove', handleCellClick);
+
                     console.log('index je: ' + index)
                 } else {
                     cell.classList.remove('active');
@@ -520,19 +550,21 @@ document.addEventListener("DOMContentLoaded", function () {
             carousel_control.classList.add('box-shadow');
             closeDescrition();
             dataContainer.scrollTop = 0;
+            // Ažuravamo URL sa imenom ćelije koristeći history.pushState
+            history.pushState({ clickedIndex: selectedIndex }, '', `#${selectedIndex}`);
         }
 
         prevButton.forEach(prevButton => {
             prevButton.addEventListener('click', () => {
                 handleButtonClick(-1)
-                updatePrevSlide()
+                updatePrevSlide();
             });
         });
 
         nextButton.forEach(nextButton => {
             nextButton.addEventListener('click', () => {
                 handleButtonClick(1)
-                updateNextSlide()
+                updateNextSlide();
             });
         });
 
@@ -630,11 +662,12 @@ document.addEventListener("DOMContentLoaded", function () {
         // Pronađite sve elemente itemDiv i dodajte event listenere
         const itemDivs = document.querySelectorAll('.itemDiv');
         itemDivs.forEach((itemDiv, index) => {
-            // Pronalaženje elementa plus unutar itemDiv-a
+            // Pronalaženje elemenata plus i itemDivImg unutar itemDiv-a
             const plus = itemDiv.querySelector('.plus');
+            const itemDivImg = itemDiv.querySelector('.itemDivImg');
 
-            // Dodavanje event listenera za klik na plus
-            plus.addEventListener('click', function (event) {
+            // Funkcija za otvaranje overlay-a
+            function openOverlay(event) {
                 // Sprečavamo širenje događaja na roditeljske elemente
                 event.stopPropagation();
 
@@ -650,33 +683,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Kreiranje dinamičke strukture za modalni prozor
                 const modalHTML = `
-            <div class="overlay">
-                <div class="backgroundDiv"></div>
-                <div class="descriptionDiv">
-                    <div class="topDiv">
-                        <img class="modalImg" src="${imageSrc}" alt="${title}">
-                    </div>
-                    <div class="bottomDiv">
-                        <!-- titleBox -->
-                        <div class="flex between_center mtb-10">
-                            <h1 class="title">${title}</h1>
-                            <!-- costBox -->
-                            <div class="costBox_2 flex between_center g-20">
-                                <p class="cost switcher_cost">${cost}</p>
-                            </div> <!-- end costBox -->
-                        </div> <!-- end titleBox -->
-                        <p class="periphrasis">${text}</p>
-                        <h2 class="reference">${translations.hereWith}:</h2>
-                        <ul id="drinkList">
-                            ${drinks} <!-- Dodajemo sadržaj ključa drink -->
-                        </ul>
-                        <div class="bottomDiv_button grid g-10 ta-c mtb-10">
-                            <button class="closeModal back">${translations.back}</button>
+                    <div class="overlay">
+                        <div class="backgroundDiv"></div>
+                        <div class="descriptionDiv">
+                            <div class="topDiv">
+                                <img class="modalImg" src="${imageSrc}" alt="${title}">
+                            </div>
+                            <div class="bottomDiv">
+                                <!-- titleBox -->
+                                <div class="flex between_center mtb-10">
+                                    <h1 class="title">${title}</h1>
+                                    <!-- costBox -->
+                                    <div class="costBox_2 flex between_center g-20">
+                                        <p class="cost switcher_cost">${cost}</p>
+                                    </div> <!-- end costBox -->
+                                </div> <!-- end titleBox -->
+                                <p class="periphrasis">${text}</p>
+                                <h2 class="reference">${translations.hereWith}:</h2>
+                                <ul id="drinkList">
+                                    ${drinks} <!-- Dodajemo sadržaj ključa drink -->
+                                </ul>
+                                <div class="bottomDiv_button grid g-10 ta-c mtb-10">
+                                    <button class="closeModal back">${translations.back}</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        `;
+                `;
 
                 // Dodavanje modalnog prozora na stranicu
                 document.body.insertAdjacentHTML('beforeend', modalHTML);
@@ -691,7 +724,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 closeModalButton.addEventListener('click', closeModal);
                 backgroundDiv.addEventListener('click', closeModal);
-            });
+            }
+
+            // Dodavanje event listenera za klik na plus
+            plus.addEventListener('click', openOverlay);
+
+            // Dodavanje event listenera za klik na itemDivImg
+            itemDivImg.addEventListener('click', openOverlay);
         });
 
         function closeModal() {
@@ -702,28 +741,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Funkcija koja promeni tekst na svakih 5 sekundi
         function promeniTekst() {
-            const tekstovi = ["KONOBA BOKEŠKI GUŠTI", "Hvala na posjeti!"];
-            const trajanjeTekstova = [2500, 4000]; // Trajanje svakog teksta u milisekundama
-            let trenutniIndeks = 0;
+            const tekstovi = ["Hvala na posjeti!", "KONOBA BOKEŠKI GUŠTI"];
+            const trajanjeTekstova = [4000, 2500]; // Trajanje svakog teksta u milisekundama
+            let trenutniIndeks = 1;
             const element = document.getElementById("callUs_btnList").querySelector("span");
 
             setInterval(() => {
                 element.classList.add("fade-out"); // Dodajemo klasu za nestajanje
                 setTimeout(() => {
                     element.textContent = tekstovi[trenutniIndeks]; // Postavljamo novi tekst
-                    element.classList.add("fade-out"); // Uklanjamo klasu za nestajanje
+                    element.classList.remove("fade-out"); // Uklanjamo klasu za nestajanje
                     trenutniIndeks = (trenutniIndeks + 1) % tekstovi.length;
                 }, trajanjeTekstova[trenutniIndeks] - 0); // Preostalo vreme - 2 sekunde
-            }, trajanjeTekstova.reduce((a, b) => a + b, 0)); // Suma trajanja svih tekstova
+            }, trajanjeTekstova.reduce((a, b) => a + b, 1000)); // Suma trajanja svih tekstova
         }
 
         // Pokretanje funkcije za promenu teksta
         promeniTekst();
     }
-
-
-    // Poziv funkcije za postavljanje početnog jezika
-    /*   setLanguageText(currentLanguage);
-    loadTranslations(currentLanguage);*/
 
 })

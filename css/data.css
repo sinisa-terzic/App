@@ -310,7 +310,7 @@
 
 .callUs_btnList span {
     opacity: 1;
-    transition: opacity 4s ease-in-out;
+    transition: opacity 1s ease-in-out;
     /* Postavljanje tranzicije za opacity */
 }
 
