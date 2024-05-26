@@ -291,6 +291,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     cell.addEventListener('click', handleCellClick);
                     infoDiv.addEventListener('touchmove', handleCellClick);
 
+                    // Ažuravamo URL sa imenom ćelije koristeći history.pushState
+                    history.pushState({ clickedIndex: selectedIndex }, '', `#${selectedIndex}`);
+
                     console.log('index je: ' + index)
                 } else {
                     cell.classList.remove('active');
@@ -640,6 +643,7 @@ document.addEventListener("DOMContentLoaded", function () {
             updateNextSlide();
             stopButton.classList.remove('noneDisplay');
             startButton.classList.add('noneDisplay');
+
             intervalId = setInterval(function () {
                 selectedIndex++;
                 changeCarousel();
@@ -658,7 +662,7 @@ document.addEventListener("DOMContentLoaded", function () {
         stopButton.addEventListener('click', stopCarousel);
 
         startCarousel();
-        // changeCarousel()
+        // changeCarousel();
 
 
 
