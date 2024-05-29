@@ -778,7 +778,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        // Funkcija koja promeni tekst na svakih 5 sekundi
+        /* // Funkcija koja promeni tekst na svakih 5 sekundi
         function promeniTekst() {
             const tekstovi = ["Hvala na posjeti!", "KONOBA BOKEŠKI GUŠTI"];
             const trajanjeTekstova = [4000, 2500]; // Trajanje svakog teksta u milisekundama
@@ -796,7 +796,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Pokretanje funkcije za promenu teksta
-        promeniTekst();
+        promeniTekst(); */
     }
 
 })
