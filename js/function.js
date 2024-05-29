@@ -605,20 +605,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         // Minimalna udaljenost za pomeranje prsta kako bi se aktiviralo pomeranje kontejnera
-        const minSwipeDistance = 300;
+        const minSwipeDistance = 150;
+        // let touchStartX = 0;
+        let touchStartY = 0;
+        let isSwipingHorizontally = null;
 
-        // Pomeranje prsta na dataContainer elementu
         dataContainer.addEventListener('touchstart', function (event) {
             touchStartX = event.touches[0].clientX;
+            touchStartY = event.touches[0].clientY;
+            isSwipingHorizontally = null; // Resetovanje na početku svakog dodira
+        });
+
+        dataContainer.addEventListener('touchmove', function (event) {
+            if (isSwipingHorizontally === null) {
+                // Detekcija prvog pokreta prsta
+                const touchMoveX = event.touches[0].clientX;
+                const touchMoveY = event.touches[0].clientY;
+                const deltaX = Math.abs(touchMoveX - touchStartX);
+                const deltaY = Math.abs(touchMoveY - touchStartY);
+
+                if (deltaX > deltaY) {
+                    isSwipingHorizontally = true;
+                } else {
+                    isSwipingHorizontally = false;
+                }
+            }
+
+            if (isSwipingHorizontally) {
+                event.preventDefault(); // Sprečavanje vertikalnog skrolovanja
+                stopCarousel(); // Zaustavljanje karusela na horizontalni swipe
+            }
         });
 
         dataContainer.addEventListener('touchend', function (event) {
-            touchEndX = event.changedTouches[0].clientX;
-            handleSwipeOnDataContainer();
+            if (isSwipingHorizontally) {
+                const touchEndX = event.changedTouches[0].clientX;
+                handleSwipeOnDataContainer(touchEndX);
+            }
         });
 
         // Funkcija za obradu pomeranja prsta na dataContainer elementu
-        function handleSwipeOnDataContainer() {
+        function handleSwipeOnDataContainer(touchEndX) {
             let swipeDistance = touchEndX - touchStartX;
             if (swipeDistance > minSwipeDistance) {
                 // Swipe to the right
@@ -631,9 +658,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        dataContainer.addEventListener('touchmove', function () {
-            stopCarousel();
-        });
 
 
         // POKRETANjE KARAUSELA
