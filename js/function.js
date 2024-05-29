@@ -605,7 +605,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         // Minimalna udaljenost za pomeranje prsta kako bi se aktiviralo pomeranje kontejnera
-        const minSwipeDistance = 150;
+        const minSwipeDistance = 100;
         // let touchStartX = 0;
         let touchStartY = 0;
         let isSwipingHorizontally = null;
