@@ -193,9 +193,6 @@ document.addEventListener("DOMContentLoaded", function () {
             let clickedIndex = parseInt(this.getAttribute('data-index'), 10); // Dohvaćamo indeks kliknute ćelije
             let difference = clickedIndex - selectedIndex % numCategories; // Računamo razliku između kliknutog indeksa i trenutnog indeksa
 
-            // Ažuravamo URL sa imenom ćelije koristeći history.pushState
-            history.pushState({ clickedIndex: clickedIndex }, '', `#${clickedIndex}`);
-
             if (difference > numCategories / 2) {
                 difference -= numCategories; // Ako je razlika veća od pola broja kategorija, smanjujemo je za broj kategorija kako bismo se približili kraju
             } else if (difference < -numCategories / 2) {
@@ -215,36 +212,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        // Event listener za back/forward dugme na pretraživaču
-        window.onpopstate = function (event) {
-            if (event.state && event.state.clickedIndex !== undefined) {
-                let clickedIndex = event.state.clickedIndex;
-                let difference = clickedIndex - selectedIndex % numCategories; // Računamo razliku između kliknutog indeksa i trenutnog indeksa
-
-                if (difference > numCategories / 2) {
-                    difference -= numCategories; // Ako je razlika veća od pola broja kategorija, smanjujemo je za broj kategorija kako bismo se približili kraju
-                } else if (difference < -numCategories / 2) {
-                    difference += numCategories; // Ako je razlika manja od minus pola broja kategorija, povećavamo je za broj kategorija kako bismo se približili početku
-                }
-
-                selectedIndex += difference; // Povećavamo ili smanjujemo trenutni indeks na osnovu izračunate razlike
-
-                changeCarousel();
-
-                // Pozivamo funkcije updatePrevSlide() i updateNextSlide() u zavisnosti od razlike
-                if (difference > 0) {
-                    updateNextSlide();
-                } else if (difference < 0) {
-                    updatePrevSlide();
-                }
-            }
-
-            // Ako nema state u history-u, zatvaramo modal ako je otvoren
-            closeModal()
-
-        };
-
-
 
 
         // Funkcija za generiranje CSS pravila za pozadinske slike
@@ -252,8 +219,8 @@ document.addEventListener("DOMContentLoaded", function () {
             let css = '';
             for (let i = 1; i <= numCategories; i++) {
                 css += `.carousel__cell:nth-child(${numCategories}n+${i}) {
-                background-image: url('${imageURLPrefix}${i}.jpg');
-            }`;
+        background-image: url('${imageURLPrefix}${i}.jpg');
+      }`;
             }
             return css;
         }
@@ -290,18 +257,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     cell.addEventListener('click', stopCarousel);
                     cell.addEventListener('click', handleCellClick);
                     infoDiv.addEventListener('touchmove', handleCellClick);
-
                     console.log('index je: ' + index)
                 } else {
                     cell.classList.remove('active');
                     cell.removeEventListener('click', stopCarousel);
                     cell.addEventListener('click', cellClickHandler);
                     cell.addEventListener('click', handleCellClick);
-                    // dataContainer.scrollTop = 0;
+                    dataContainer.scrollTop = 0;
                     // console.log('index je: ' + index)
-
-                    // Ažuravamo URL sa imenom ćelije koristeći history.pushState
-                    window.location.hash = `#${selectedIndex}`;
                 }
 
                 function handleCellClick(index) {
@@ -317,12 +280,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     // Ako postoji aktivna ćelija, simulirajte klik na njoj
                     if (activeCell) {
                         carousel_control.classList.add('box-shadow');
-                        /* dataContainer.scrollTo({
+                        dataContainer.scrollTo({
                             top: 0,
                             behavior: 'smooth'
-                        }); */
+                        });
                     }
-                    dataContainer.scrollTop = 0;
                 }
 
             });
@@ -556,22 +518,19 @@ document.addEventListener("DOMContentLoaded", function () {
             chooseBox.classList.add('noneDisplay');
             carousel_control.classList.add('box-shadow');
             closeDescrition();
-            dataContainer.scrollTop = 0;
-            // Ažuravamo URL sa imenom ćelije koristeći history.pushState
-            history.pushState({ clickedIndex: selectedIndex }, '', `#${selectedIndex}`);
         }
 
         prevButton.forEach(prevButton => {
             prevButton.addEventListener('click', () => {
                 handleButtonClick(-1)
-                updatePrevSlide();
+                updatePrevSlide()
             });
         });
 
         nextButton.forEach(nextButton => {
             nextButton.addEventListener('click', () => {
                 handleButtonClick(1)
-                updateNextSlide();
+                updateNextSlide()
             });
         });
 
@@ -659,7 +618,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
 
-
         // POKRETANjE KARAUSELA
         function startCarousel() {
             selectedIndex++;
@@ -667,9 +625,6 @@ document.addEventListener("DOMContentLoaded", function () {
             updateNextSlide();
             stopButton.classList.remove('noneDisplay');
             startButton.classList.add('noneDisplay');
-
-            dataContainer.scrollTop = 0;
-
             intervalId = setInterval(function () {
                 selectedIndex++;
                 changeCarousel();
@@ -688,7 +643,7 @@ document.addEventListener("DOMContentLoaded", function () {
         stopButton.addEventListener('click', stopCarousel);
 
         startCarousel();
-        // changeCarousel();
+        // changeCarousel()
 
 
 
@@ -778,25 +733,93 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        /* // Funkcija koja promeni tekst na svakih 5 sekundi
-        function promeniTekst() {
-            const tekstovi = ["Hvala na posjeti!", "KONOBA BOKEŠKI GUŠTI"];
-            const trajanjeTekstova = [4000, 2500]; // Trajanje svakog teksta u milisekundama
-            let trenutniIndeks = 1;
-            const element = document.getElementById("callUs_btnList").querySelector("span");
 
-            setInterval(() => {
-                element.classList.add("fade-out"); // Dodajemo klasu za nestajanje
-                setTimeout(() => {
-                    element.textContent = tekstovi[trenutniIndeks]; // Postavljamo novi tekst
-                    element.classList.remove("fade-out"); // Uklanjamo klasu za nestajanje
-                    trenutniIndeks = (trenutniIndeks + 1) % tekstovi.length;
-                }, trajanjeTekstova[trenutniIndeks] - 0); // Preostalo vreme - 2 sekunde
-            }, trajanjeTekstova.reduce((a, b) => a + b, 1000)); // Suma trajanja svih tekstova
-        }
 
-        // Pokretanje funkcije za promenu teksta
-        promeniTekst(); */
+
+
+
+
+
+        /*  function showModal(itemDiv, translations) {
+              // Učitavanje podataka povezanih s itemDiv u modalni prozor
+              const imgSrc = itemDiv.querySelector('.dataImg').getAttribute('src');
+              const title = itemDiv.querySelector('.title').textContent;
+              const periphrasis = itemDiv.querySelector('.periphrasis').textContent;
+              const cost = itemDiv.querySelector('.cost').textContent;
+              // const drink = itemDiv.querySelector('.drink').textContent;
+              const drink = itemDiv.querySelector('.drink')
+              // drinksList.classList.remove('noneDisplay');
+  
+  
+               // Kreiranje HTML-a za modalni prozor s podacima
+              const modalHTML = `
+                  <div class="overlay">
+                      <div class="backgroundDiv"></div>
+                      <div class="descriptionDiv">
+                          <div class="topDiv">
+                              <img class="modalImg" src="${imgSrc}" alt="${title}">
+                          </div>
+                          <div class="bottomDiv">
+                              <!-- titleBox -->
+                              <div class="flex between_center mtb-10">
+                                  <h1 class="title">${title}</h1>
+                                  <!-- costBox -->
+                                  <div class="costBox_2 flex between_center g-20">
+                                      <p class="cost switcher_cost">${cost}</p>
+                                  </div> <!-- end costBox -->
+                              </div> <!-- end titleBox -->
+                              <p class="periphrasis">${periphrasis}</p>
+                              <h2 class="reference">${translations.hereWith}:</h2>
+                              <ul class="drinksList">
+                              <li class="periphrasis">${drink}</li>
+                              </ul>
+                              <div class="bottomDiv_button grid g-10 ta-c mtb-10">
+                                  <button class="closeModal back">${translations.back}</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              `;
+  
+              // Dodavanje modalnog prozora na stranicu
+              document.body.insertAdjacentHTML('beforeend', modalHTML);
+  
+              const overlay = document.querySelector('.overlay');
+  
+              // Pronalaženje odgovarajućeg prevoda koristeći naslov kao ključ
+              const translation = translations[title];
+  
+              if (translation && translation.drink) {
+                  const drinkList = overlay.querySelector('#drinkList');
+                  // Iteriranje kroz sve ključeve pića i dodavanje u <ul>
+                  for (const drinkKey in translation.drink) {
+                      if (translation.drink.hasOwnProperty(drinkKey)) {
+                          const drinkItem = translation.drink[drinkKey];
+                          const listItem = document.createElement('li');
+                          listItem.textContent = drinkKey + ': ' + drinkItem;
+                          drinkList.appendChild(listItem);
+                      }
+                  }
+              }
+  
+              // Dodajte event listenere za zatvaranje modalnog prozora
+              const closeModalButton = overlay.querySelector('.closeModal');
+              const backgroundDiv = overlay.querySelector('.backgroundDiv');
+  
+              closeModalButton.addEventListener('click', closeModal);
+              backgroundDiv.addEventListener('click', closeModal);
+  
+              function closeModal() {
+                  // Uklanjanje modalnog prozora
+                  overlay.remove();
+              }
+          } */
+
+
     }
+
+    // Poziv funkcije za postavljanje početnog jezika
+    /*   setLanguageText(currentLanguage);
+    loadTranslations(currentLanguage);*/
 
 })

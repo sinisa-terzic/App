@@ -87,6 +87,13 @@
     width: 100%;
 }
 
+/* .plus {
+    fill: #053a5f;
+    fill: #11161d;
+    width: 4vw;
+    margin-right: 4px;
+} */
+
 .plus {
     fill: #053a5f;
     fill: #11161d;
@@ -207,6 +214,7 @@
     width: 100%;
     justify-content: center;
     font-style: italic;
+
 }
 
 .call_us {
@@ -307,15 +315,4 @@
     border: 2px solid #121212;
     background: #ffffff;
     z-index: 3;
-}
-
-.callUs_btnList span {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-    /* Postavljanje tranzicije za opacity */
-}
-
-.fade-out {
-    opacity: 0;
-    /* Tekst nestaje */
 }
