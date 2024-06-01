@@ -159,7 +159,7 @@
 
 .bottomDiv .reference {
     margin: 1rem 0 0.5rem;
-    font-size: 4vw;
+    font-size: 3.8vw;
     color: #11161d;
     font-weight: 600;
     border-bottom: 1px solid #37474F;
@@ -213,8 +213,6 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    font-style: italic;
-
 }
 
 .call_us {
