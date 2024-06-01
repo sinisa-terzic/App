@@ -50,10 +50,10 @@
     text-shadow: 2px 1px #303336;
     text-transform: uppercase;
     text-align: center;
-    font-size: 80%;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.75);
-    letter-spacing: 1px;
+    font-size: 4.3vw;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.80);
+    letter-spacing: 1.5px;
 }
 
 .categoy_description_box,
