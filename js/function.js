@@ -280,11 +280,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     // Ako postoji aktivna ćelija, simulirajte klik na njoj
                     if (activeCell) {
                         carousel_control.classList.add('box-shadow');
-                        dataContainer.scrollTo({
-                            top: 0,
-                            behavior: 'smooth'
-                        });
+
                     }
+                    // dataContainer.scrollTop = 0;
+                    dataContainer.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
                 }
 
             });
