@@ -282,11 +282,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         carousel_control.classList.add('box-shadow');
 
                     }
-                    // dataContainer.scrollTop = 0;
-                    dataContainer.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
+                    dataContainer.scrollTop = 0;
                 }
 
             });
