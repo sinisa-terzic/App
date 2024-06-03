@@ -464,6 +464,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             if (index === 8) {
                 slide.classList.add('prevData');
+            } else {
+                slide.classList.add('prevData');
             }
         });
 
