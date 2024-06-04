@@ -244,7 +244,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 const cell = cellElements[i];
                 const cellAngle = theta * i;
                 cell.style.transform = `${rotateFn}(${cellAngle}deg) translateZ(${radius}vw)`;
-                cell.style.opacity = 1;
             }
 
             let middleIndex = (selectedIndex % cellCount + cellCount) % cellCount;
@@ -256,7 +255,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     cell.removeEventListener('click', cellClickHandler);
                     cell.addEventListener('click', stopCarousel);
                     cell.addEventListener('click', handleCellClick);
-                    cell.style.opacity = 1;
+                    // cell.style.opacity = 1;
                     cell.classList.remove('blur');
                     infoDiv.addEventListener('touchmove', handleCellClick);
                     console.log('index je: ' + index)
@@ -265,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     cell.removeEventListener('click', stopCarousel);
                     cell.addEventListener('click', cellClickHandler);
                     cell.addEventListener('click', handleCellClick);
-                    cell.style.opacity = 0.84;
+                    // cell.style.opacity = 0.84;
                     cell.classList.add('blur');
                     dataContainer.scrollTop = 0;
                     // console.log('index je: ' + index)
@@ -634,7 +633,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 selectedIndex++;
                 changeCarousel();
                 updateNextSlide()
-            }, 3500); // Promijenite ovo na željeni interval automatskog pokretanja (u milisekundama)
+            }, 3200); // Promijenite ovo na željeni interval automatskog pokretanja (u milisekundama)
         }
         startButton.addEventListener('click', startCarousel);
 

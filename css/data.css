@@ -284,7 +284,9 @@
 }
 
 .blur {
-    filter: blur(1px);
+    /* filter: blur(1px) opacity(80%) grayscale(20%); */
+    /* filter: opacity(80%) grayscale(35%); */
+    filter: opacity(75%) brightness(0.85);
 }
 
 .operater {
