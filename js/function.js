@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     cell.removeEventListener('click', stopCarousel);
                     cell.addEventListener('click', cellClickHandler);
                     cell.addEventListener('click', handleCellClick);
-                    // cell.style.opacity = 0.84;
+                    // cell.style.opacity = 0.7;
                     cell.classList.add('blur');
                     dataContainer.scrollTop = 0;
                     // console.log('index je: ' + index)
