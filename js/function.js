@@ -587,12 +587,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     isSwipingHorizontally = true;
                 } else {
                     isSwipingHorizontally = false;
+                    stopCarousel(); // Zaustavljanje karusela na horizontalni swipe
                 }
             }
 
             if (isSwipingHorizontally) {
                 event.preventDefault(); // Sprečavanje vertikalnog skrolovanja
-                stopCarousel(); // Zaustavljanje karusela na horizontalni swipe
+                // stopCarousel(); // Zaustavljanje karusela na horizontalni swipe
             }
         });
 
