@@ -256,6 +256,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     cell.removeEventListener('click', cellClickHandler);
                     cell.addEventListener('click', stopCarousel);
                     cell.addEventListener('click', handleCellClick);
+                    cell.style.opacity = 1;
+                    cell.classList.remove('blur');
                     infoDiv.addEventListener('touchmove', handleCellClick);
                     console.log('index je: ' + index)
                 } else {
@@ -263,6 +265,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     cell.removeEventListener('click', stopCarousel);
                     cell.addEventListener('click', cellClickHandler);
                     cell.addEventListener('click', handleCellClick);
+                    cell.style.opacity = 0.84;
+                    cell.classList.add('blur');
                     dataContainer.scrollTop = 0;
                     // console.log('index je: ' + index)
                 }

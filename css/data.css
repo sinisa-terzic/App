@@ -283,6 +283,10 @@
     transition: all 0ms ease;
 }
 
+.blur {
+    filter: blur(1px);
+}
+
 .operater {
     width: 29vw;
     position: absolute;
