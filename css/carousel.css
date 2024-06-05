@@ -10,10 +10,10 @@
 /* Dodajte stilove za progres bar */
 .progress-bar-container {
     position: absolute;
-    top: -1.2vh;
+    top: -1.1vh;
     left: 0;
     width: 105%;
-    background-color: #e0e0e0;
+    /* background-color: #e0e0e0; */
     height: 1px;
     overflow: hidden;
     z-index: 99999;
