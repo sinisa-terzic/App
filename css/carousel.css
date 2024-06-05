@@ -14,7 +14,7 @@
     left: 0;
     width: 105%;
     background-color: #e0e0e0;
-    height: 2px;
+    height: 1px;
     overflow: hidden;
     z-index: 99999;
 }
@@ -22,7 +22,7 @@
 .progress-bar {
     width: 0%;
     height: 100%;
-    background-color: #2e0000;
+    background-color: #ff0000;
     transition: width 3.2s linear;
     /* Mora odgovarati intervalu u startCarousel funkciji */
 }
