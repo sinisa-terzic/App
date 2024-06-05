@@ -629,13 +629,42 @@ document.addEventListener("DOMContentLoaded", function () {
             updateNextSlide();
             stopButton.classList.remove('noneDisplay');
             startButton.classList.add('noneDisplay');
+            startProgressBar();
             intervalId = setInterval(function () {
                 selectedIndex++;
                 changeCarousel();
                 updateNextSlide()
+                resetProgressBar();
             }, 3200); // Promijenite ovo na željeni interval automatskog pokretanja (u milisekundama)
         }
         startButton.addEventListener('click', startCarousel);
+
+
+
+        const progressBar = document.getElementById('progressBar');
+        function startProgressBar() {
+            progressBar.style.transition = 'none';
+            progressBar.style.width = '0%';
+            setTimeout(() => {
+                progressBar.style.transition = 'width 3.2s linear'; // Mora odgovarati intervalu u startCarousel funkciji
+                progressBar.style.width = '100%';
+            }, 50);
+        }
+
+        function resetProgressBar() {
+            progressBar.style.transition = 'none';
+            progressBar.style.width = '0%';
+            setTimeout(() => {
+                progressBar.style.transition = 'width 3.2s linear'; // Mora odgovarati intervalu u startCarousel funkciji
+                progressBar.style.width = '100%';
+            }, 50);
+        }
+
+        function resetProgressBarImmediate() {
+            progressBar.style.transition = 'none';
+            progressBar.style.width = '0%';
+        }
+
 
 
         // ZAUSTAVLjANjE KARAUSELA
@@ -643,6 +672,7 @@ document.addEventListener("DOMContentLoaded", function () {
             stopButton.classList.add('noneDisplay');
             startButton.classList.remove('noneDisplay');
             clearInterval(intervalId);
+            resetProgressBarImmediate(); // Resetuj progres bar odmah
         }
         stopButton.addEventListener('click', stopCarousel);
 
