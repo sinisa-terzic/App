@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 function handleCellClick(index) {
                     // Pronađite aktivnu ćeliju
-                    const activeCell = document.querySelector('.carousel__cell.active');
+                    const activeCell = document.querySelector('.active');
                     infoDiv.classList.add('translateY');
                     // dataContainer.classList.add('translateY');
                     chooseBox.classList.add('noneDisplay');
@@ -283,9 +283,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     // Ako postoji aktivna ćelija, simulirajte klik na njoj
                     if (activeCell) {
                         carousel_control.classList.add('box-shadow');
-
+                        dataContainer.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
                     }
-                    dataContainer.scrollTop = 0;
+                    // dataContainer.scrollTop = 0;
                 }
 
             });
