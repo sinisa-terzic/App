@@ -718,7 +718,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <h1 class="title">${title}</h1>
                                     <!-- costBox -->
                                     <div class="costBox_2 flex between_center g-20">
-                                        <p class="cost switcher_cost">${cost}</p>
+                                        <p class="cost switcher_blue">${cost}</p>
                                     </div> <!-- end costBox -->
                                 </div> <!-- end titleBox -->
                                 <p class="periphrasis">${text}</p>
