@@ -51,22 +51,22 @@
     align-self: self-end;
     justify-self: center;
     opacity: 0.7;
-    animation: pulse 4s infinite;
+    animation: float 6s ease-in-out infinite;
 }
 
-@keyframes pulse {
+@keyframes float {
     0% {
-        /* transform: scale(0.9); */
+        transform: translatey(0px);
         opacity: 0.6;
     }
 
     50% {
-        /* transform: scale(1); */
+        transform: translatey(-10px);
         opacity: 0.3;
     }
 
     100% {
-        /* transform: scale(0.9); */
+        transform: translatey(0px);
         opacity: 0.6;
     }
 }
