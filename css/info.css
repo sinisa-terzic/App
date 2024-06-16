@@ -48,14 +48,12 @@
 
 
 .opacity_0_7 {
-    opacity: 0.7;
-    filter: grayscale(50%);
+    filter: opacity(70%) grayscale(50%);
     /* border: 2px solid #b1b1b1; */
 }
 
 .opacity_1 {
-    opacity: 1;
-    filter: grayscale(0%);
+    filter: opacity(100%) grayscale(0%);
     /* border: 2px solid #f5f5f5; */
 }
 
