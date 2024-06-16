@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             console.log("Uspravni položaj ekrana.");
             window.addEventListener('load', setSectionHeights);
-            setSectionHeights();
         }
     }
     // Poziv funkcije pri učitavanju stranice
