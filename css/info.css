@@ -13,16 +13,21 @@
     z-index: 3;
 }
 
-.info .flag {
-    width: 9.4vw;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    opacity: 0.7;
+.opacity_0_7 {
+    opacity: 0.8;
+    border: 1px solid #b1b1b1;
 }
 
 .opacity_1 {
     opacity: 1;
+    border: 1px solid #f5f5f5;
 }
+
+.info .flag_info {
+    width: 9.5vw;
+    border-radius: 100%;
+}
+
 
 .info::before {
     content: '';

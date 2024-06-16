@@ -23,27 +23,47 @@ document.addEventListener("DOMContentLoaded", function () {
         const srButtonC = document.getElementById("cyrillic");
         const enButton = document.getElementById("enButton");
         const ruButton = document.getElementById("ruButton");
+        const flagInfoElements = document.querySelectorAll(".flag_info");
 
         // Uklonite sve klase koje označavaju trenutno odabrani jezik
         [srButtonL, srButtonC, enButton, ruButton].forEach(button => {
             button.classList.remove('cyrillic_latin_color');
         });
 
+        // Reset the opacity for all flag_info elements
+        flagInfoElements.forEach(element => {
+            element.classList.remove('opacity_1');
+            element.classList.add('opacity_0_7');
+        });
+
         // Postavite tekst i sliku u zavisnosti od odabranog jezika
         if (language === 'en') {
             languageImg.innerHTML = '<img id="languageImg" src="img/flag/eng.svg" alt="English">';
             enButton.classList.add('cyrillic_latin_color');
+            // Set the opacity to 1 for the selected flag_info element
+            document.querySelector(`.flag_info[data-language="en"]`).classList.add('opacity_1');
+            document.querySelector(`.flag_info[data-language="en"]`).classList.remove('opacity_0_7');
         } else if (language === 'sr') {
             languageImg.innerHTML = '<img id="languageImg" src="img/flag/yu.svg" alt="Srpski">';
             srButtonL.classList.add('cyrillic_latin_color');
+            // Set the opacity to 1 for the selected flag_info element
+            document.querySelector(`.flag_info[data-language="sr"]`).classList.add('opacity_1');
+            document.querySelector(`.flag_info[data-language="sr"]`).classList.remove('opacity_0_7');
         } else if (language === 'sr_cy') {
             languageImg.innerHTML = '<img id="languageImg" src="img/flag/yu.svg" alt="Srpski">';
             srButtonC.classList.add('cyrillic_latin_color');
+            // Set the opacity to 1 for the selected flag_info element
+            document.querySelector(`.flag_info[data-language="sr_cy"]`).classList.add('opacity_1');
+            document.querySelector(`.flag_info[data-language="sr_cy"]`).classList.remove('opacity_0_7');
         } else if (language === 'ru') {
             languageImg.innerHTML = '<img id="languageImg" src="img/flag/rus.svg" alt="Русский">';
             ruButton.classList.add('cyrillic_latin_color');
+            // Set the opacity to 1 for the selected flag_info element
+            document.querySelector(`.flag_info[data-language="ru"]`).classList.add('opacity_1');
+            document.querySelector(`.flag_info[data-language="ru"]`).classList.remove('opacity_0_7');
         }
     }
+
 
     // Funkcija za učitavanje prijevoda za odabrani jezik
     function loadTranslations(language) {
