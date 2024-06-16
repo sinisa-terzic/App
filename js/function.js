@@ -129,6 +129,21 @@ document.addEventListener("DOMContentLoaded", function () {
         const call_us = document.querySelector('.call_us');
         const callUs_btnList = document.querySelector('.callUs_btnList');
 
+
+        const phoneNumber = document.getElementById('phoneNumber');
+        const callOptions = document.getElementById('callOptions');
+
+        phoneNumber.addEventListener('click', () => {
+            callOptions.classList.toggle('show');
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!phoneNumber.contains(event.target) && !callOptions.contains(event.target)) {
+                callOptions.classList.remove('show');
+            }
+        });
+
+
         function toggleAlertTheme() {
             setting_box.classList.toggle('noneDisplay');
             darkOpen.classList.toggle('noneDisplay');
