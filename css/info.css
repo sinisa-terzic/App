@@ -27,20 +27,20 @@
     font-size: 4.5vw;
     background-color: white;
     border-top-right-radius: 5vw;
-    padding: 6vw;
+    padding: 5vw 5vw 0 5vw;
     z-index: 1000;
 }
 
 .call-option {
     display: block;
-    margin-bottom: 3vw;
+    margin-bottom: 5vw;
     color: black;
     text-decoration: none;
 }
 
-/* .call-option:hover {
-    text-decoration: underline;
-} */
+.call-option img {
+    width: 6vw;
+}
 
 .call-options.show {
     display: block;
