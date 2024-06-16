@@ -39,9 +39,9 @@
     text-decoration: none;
 }
 
-.call-option:hover {
+/* .call-option:hover {
     text-decoration: underline;
-}
+} */
 
 .call-options.show {
     display: block;
