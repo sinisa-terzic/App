@@ -144,6 +144,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
 
+
+
         function toggleAlertTheme() {
             setting_box.classList.toggle('noneDisplay');
             darkOpen.classList.toggle('noneDisplay');
