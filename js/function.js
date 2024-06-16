@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
             languageImg.innerHTML = '<img id="languageImg" src="img/flag/yu.svg" alt="Srpski">';
             srButtonC.classList.add('cyrillic_latin_color');
             // Set the opacity to 1 for the selected flag_info element
-            document.querySelector(`.flag_info[data-language="sr_cy"]`).classList.add('opacity_1');
-            document.querySelector(`.flag_info[data-language="sr_cy"]`).classList.remove('opacity_0_7');
+            document.querySelector(`.flag_info[data-language="sr"]`).classList.add('opacity_1');
+            document.querySelector(`.flag_info[data-language="sr"]`).classList.remove('opacity_0_7');
         } else if (language === 'ru') {
             languageImg.innerHTML = '<img id="languageImg" src="img/flag/rus.svg" alt="Русский">';
             ruButton.classList.add('cyrillic_latin_color');
