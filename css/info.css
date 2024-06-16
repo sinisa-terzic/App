@@ -15,7 +15,6 @@
 
 
 .phone-number {
-    cursor: pointer;
     color: blue;
     text-decoration: underline;
 }
@@ -23,18 +22,18 @@
 .call-options {
     display: none;
     position: absolute;
-    bottom: 2rem;
-    font-size: 2rem;
+    left: 5vw;
+    bottom: 8vw;
+    font-size: 4.5vw;
     background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 5vw;
+    padding: 6vw;
     z-index: 1000;
 }
 
 .call-option {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 3vw;
     color: black;
     text-decoration: none;
 }
@@ -49,7 +48,7 @@
 
 
 .opacity_0_7 {
-    opacity: 0.7;
+    opacity: 0.8;
     border: 1px solid #b1b1b1;
 }
 
