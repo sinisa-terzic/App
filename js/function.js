@@ -129,19 +129,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const call_us = document.querySelector('.call_us');
         const callUs_btnList = document.querySelector('.callUs_btnList');
 
-        callUs_btnList.addEventListener('click', () => {
+        function handleCallUs() {
             infoDiv.classList.remove('translateY');
             call_us.classList.add('noneDisplay');
             chooseBox.classList.remove('noneDisplay');
             carousel_control.classList.remove('box-shadow');
-        });
+        }
 
-        callUs_btnList.addEventListener('touchmove', () => {
-            infoDiv.classList.remove('translateY');
-            call_us.classList.add('noneDisplay');
-            chooseBox.classList.remove('noneDisplay');
-            carousel_control.classList.remove('box-shadow');
-        });
+        callUs_btnList.addEventListener('click', handleCallUs);
+        callUs_btnList.addEventListener('touchmove', handleCallUs);
 
 
         const phoneNumber = document.getElementById('phoneNumber');
