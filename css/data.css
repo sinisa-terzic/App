@@ -299,7 +299,7 @@
 .blur {
     /* filter: blur(1px) opacity(80%) grayscale(20%); */
     /* filter: opacity(80%) grayscale(35%); */
-    filter: opacity(85%) brightness(0.9);
+    filter: opacity(80%) brightness(0.75);
 }
 
 .operater {
