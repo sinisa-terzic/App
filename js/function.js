@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         callUs_btnList.addEventListener('click', handleCallUs);
-        callUs_btnList.addEventListener('touchmove', handleCallUs);
+        // callUs_btnList.addEventListener('touchmove', handleCallUs);
 
 
         const phoneNumber = document.getElementById('phoneNumber');
