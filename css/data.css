@@ -260,7 +260,7 @@
 }
 
 .callUs_btnList {
-    justify-self: center
+    padding: 0.5rem;
 }
 
 #callUs_btnList img {
