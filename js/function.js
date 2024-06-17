@@ -137,6 +137,14 @@ document.addEventListener("DOMContentLoaded", function () {
             carousel_control.classList.remove('box-shadow');
         });
 
+        callUs_btnList.addEventListener('touchmove', () => {
+            // clossAll();
+            infoDiv.classList.remove('translateY');
+            call_us.classList.add('noneDisplay');
+            chooseBox.classList.remove('noneDisplay');
+            carousel_control.classList.remove('box-shadow');
+        });
+
 
         const phoneNumber = document.getElementById('phoneNumber');
         const callOptions = document.getElementById('callOptions');
