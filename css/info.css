@@ -13,6 +13,9 @@
     z-index: 3;
 }
 
+.info_content img {
+    width: 6vw;
+}
 
 .phone-number {
     color: blue;
@@ -45,7 +48,6 @@
 .call-options.show {
     display: block;
 }
-
 
 .opacity_0_7 {
     filter: opacity(70%) grayscale(50%);
