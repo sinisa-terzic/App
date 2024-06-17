@@ -259,9 +259,14 @@
     margin-left: 2vw;
 }
 
-.callUs_btnList span {
+.callUs_btnList {
     padding: 0.5rem;
+    justify-self: center;
 }
+
+/* .callUs_btnList span {
+    padding: 0.5rem;
+} */
 
 #callUs_btnList img {
     width: 1.6vw;
