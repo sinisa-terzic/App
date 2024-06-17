@@ -129,14 +129,20 @@ document.addEventListener("DOMContentLoaded", function () {
         const call_us = document.querySelector('.call_us');
         const callUs_btnList = document.querySelector('.callUs_btnList');
 
+        callUs_btnList.addEventListener('click', () => {
+            // clossAll();
+            infoDiv.classList.remove('translateY');
+            call_us.classList.add('noneDisplay');
+            chooseBox.classList.remove('noneDisplay');
+            carousel_control.classList.remove('box-shadow');
+        });
+
 
         const phoneNumber = document.getElementById('phoneNumber');
         const callOptions = document.getElementById('callOptions');
-
         phoneNumber.addEventListener('click', () => {
             callOptions.classList.toggle('show');
         });
-
         document.addEventListener('click', (event) => {
             if (!phoneNumber.contains(event.target) && !callOptions.contains(event.target)) {
                 callOptions.classList.remove('show');
