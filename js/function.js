@@ -130,7 +130,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const callUs_btnList = document.querySelector('.callUs_btnList');
 
         callUs_btnList.addEventListener('click', () => {
-            // clossAll();
             infoDiv.classList.remove('translateY');
             call_us.classList.add('noneDisplay');
             chooseBox.classList.remove('noneDisplay');
@@ -138,7 +137,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         callUs_btnList.addEventListener('touchmove', () => {
-            // clossAll();
             infoDiv.classList.remove('translateY');
             call_us.classList.add('noneDisplay');
             chooseBox.classList.remove('noneDisplay');
