@@ -321,7 +321,20 @@ document.addEventListener("DOMContentLoaded", function () {
                     cell.addEventListener('click', handleCellClick);
                     // cell.style.opacity = 1;
                     cell.classList.remove('blur');
-                    infoDiv.addEventListener('touchmove', handleCellClick);
+
+                    infoDiv.addEventListener('touchstart', function (event) {
+                        const touch = event.touches[0];
+                        startY = touch.clientY;
+                    }, false);
+                    infoDiv.addEventListener('touchmove', function (event) {
+                        const touch = event.touches[0];
+                        const deltaY = touch.clientY - startY;
+                        if (deltaY > 20) { // Adjust the threshold as needed
+                            handleCellClick();
+                            startY = touch.clientY; // Reset startY to handle continuous swipes
+                        }
+                    }, false);
+
                     console.log('index je: ' + index)
                 } else {
                     cell.classList.remove('active');
