@@ -129,6 +129,22 @@ document.addEventListener("DOMContentLoaded", function () {
         const call_us = document.querySelector('.call_us');
         const callUs_btnList = document.querySelector('.callUs_btnList');
 
+        let startY = 0;
+
+        function handleTouchStart(event) {
+            startY = event.touches[0].clientY;
+        }
+
+        function handleTouchMove(event) {
+            const moveY = event.touches[0].clientY;
+            const deltaY = startY - moveY;
+
+            // Determine if it's a swipe up (deltaY > some threshold)
+            if (deltaY > 10) { // 50 pixels threshold for swipe up
+                handleCallUs();
+            }
+        }
+
         function handleCallUs() {
             infoDiv.classList.remove('translateY');
             call_us.classList.add('noneDisplay');
@@ -137,6 +153,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         callUs_btnList.addEventListener('click', handleCallUs);
+        callUs_btnList.addEventListener('touchstart', handleTouchStart);
+        callUs_btnList.addEventListener('touchmove', handleTouchMove);
         // callUs_btnList.addEventListener('touchmove', handleCallUs);
 
 
