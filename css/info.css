@@ -15,6 +15,7 @@
 
 .info_content img {
     width: 6vw;
+    opacity: 0.8;
 }
 
 .phone-number {

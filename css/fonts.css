@@ -85,7 +85,8 @@
 
 .welcome,
 .info_content {
-    color: #e5eff4;
+    color: #fff;
+    opacity: 0.9;
 }
 
 .welcome {
