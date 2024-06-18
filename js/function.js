@@ -568,6 +568,7 @@ document.addEventListener("DOMContentLoaded", function () {
             stopCarousel();
             infoDiv.classList.add('translateY');
             // dataContainer.classList.add('translateY');
+            call_us.classList.remove('noneDisplay');
             chooseBox.classList.add('noneDisplay');
             carousel_control.classList.add('box-shadow');
             closeDescrition();
