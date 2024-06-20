@@ -107,7 +107,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const setting_box = document.querySelector('.setting');
         const languageBox = document.querySelector('.languageBox');
         const languageImg = document.getElementById('languageImg');
+        const switcherImg = document.querySelector('.switcherImg');
         const language = document.querySelector('.language');
+        const switcherBox = document.querySelector('.switcherBox');
+        const contact = document.querySelector('.contact');
+        const callBox = document.querySelector('.callBox');
         const darkOpen = document.querySelector('.dark');
         const headerLogo = document.querySelector('.headerLogo');
 
@@ -176,6 +180,8 @@ document.addEventListener("DOMContentLoaded", function () {
             setting_box.classList.toggle('noneDisplay');
             darkOpen.classList.toggle('noneDisplay');
             language.classList.add('noneDisplay');
+            switcherBox.classList.add('noneDisplay');
+            callBox.classList.add('noneDisplay');
         }
 
 
@@ -223,6 +229,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
         languageImg.addEventListener('click', () => {
             language.classList.toggle('noneDisplay');
+            switcherBox.classList.add('noneDisplay');
+            callBox.classList.add('noneDisplay');
+        });
+
+        switcherImg.addEventListener('click', () => {
+            switcherBox.classList.toggle('noneDisplay');
+            language.classList.add('noneDisplay');
+            callBox.classList.add('noneDisplay');
+        });
+
+        contact.addEventListener('click', () => {
+            callBox.classList.toggle('noneDisplay');
+            language.classList.add('noneDisplay');
+            switcherBox.classList.add('noneDisplay');
         });
 
 
@@ -322,6 +342,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     // cell.style.opacity = 1;
                     cell.classList.remove('blur');
 
+
                     infoDiv.addEventListener('touchstart', function (event) {
                         const touch = event.touches[0];
                         startY = touch.clientY;
@@ -334,6 +355,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             startY = touch.clientY; // Reset startY to handle continuous swipes
                         }
                     }, false);
+
 
                     console.log('index je: ' + index)
                 } else {

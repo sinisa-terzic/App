@@ -70,7 +70,7 @@
         <!-- setting -->
         <div class="setting noneDisplay grid g-10" id="setting">
             <!-- language -->
-            <div class="languageBox flex between_center">
+            <div class="languageBox bb-1 flex between_center">
                 <p class="language_titl" data-translation-key="language">Jezik</p>
                 <!-- languageSection -->
                 <div class="languageSection noSelected">
@@ -110,8 +110,10 @@
             <!-- end language -->
 
             <!-- switcher -->
-            <div class="switcher">
+            <div class="switcher flex between_center">
                 <p class="switcher_titl" data-translation-key="switcher">Izgled</p>
+                <img class="switcherImg" src="img/call/icons8-layout-100.png" alt="Layout">
+                <!-- <div class="colorchange switcher_blue" id="switcher_blue"></div> -->
                 <div class="switcherBox flex g-10">
                     <div class="colorchange switcher_dark" id="switcher_dark"></div>
                     <div class="colorchange switcher_blue" id="switcher_blue"></div>
@@ -120,6 +122,21 @@
                 </div>
             </div>
             <!-- end switcher -->
+
+            <div class="contact flex pt-10 bt-1 between_center">
+                <img class="callImg" src="img/call/call-as.svg" alt="phone">
+                <p class="call_titl" data-translation-key="info_content">Info</p>
+
+                <div class="callBox grid">
+                    <a href="tel:+38267806066" class="call-option flex g-10 y_center"><img
+                            src="img/call/viber_152851.png" alt="phone">Phone</a>
+                    <a href="viber://add?number=%2B38267806066" class="call-option flex g-10 y_center"><img
+                            src="img/call/viber_2504948.png" alt="phone"> Viber</a>
+                    <a href="https://wa.me/38267806066" class="call-option flex g-10 y_center"><img
+                            src="img/call/whatsapp_3536445.png" alt="phone"> WhatsApp</a>
+                </div>
+            </div>
+
         </div> <!-- end setting -->
 
         <div class="dark noneDisplay" title="Click to close"></div>

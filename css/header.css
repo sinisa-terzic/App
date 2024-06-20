@@ -36,27 +36,49 @@
 
 
 /* language */
-.languageBox {
+.languageBox,
+.switcher,
+.contact {
     position: relative;
-    border-bottom: 1px solid #607d8b;
-    padding: 0 0 1rem;
 }
 
-.language {
+.callBox {
+    position: absolute;
+    top: 110%;
+    background-color: #fbfbfb;
+    left: calc(0px - 1rem);
+    right: calc(0px - 1rem);
+    padding: 2rem 1rem 0 1rem;
+    font-size: 4vw;
+}
+
+.language,
+.switcherBox {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
     position: absolute;
     top: 100%;
     background-color: #fbfbfb;
     left: calc(0px - 1rem);
     right: calc(0px - 1rem);
     padding: 1rem;
+    z-index: 1;
+}
+
+.language {
+    flex-direction: column;
+    gap: 2rem;
     font-size: 1.6rem;
 }
 
+.switcherBox {
+    margin: 1.5rem 0;
+    padding-top: 1.2rem;
+}
 
-#languageImg {
+
+#languageImg,
+.switcherImg,
+.callImg {
     width: 7vw;
 }
 
@@ -65,9 +87,9 @@
 }
 
 
-.switcherBox {
+/* .switcherBox {
     padding: 3vw 0 0;
-}
+} */
 
 .colorchange {
     width: 6vw;
