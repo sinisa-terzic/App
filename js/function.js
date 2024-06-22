@@ -106,6 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const manu_icon_open = document.querySelector('.setIcon')
         const setting_box = document.querySelector('.setting');
         const languageBox = document.querySelector('.languageBox');
+        const switcher = document.querySelector('.switcher');
         const languageImg = document.getElementById('languageImg');
         const switcherImg = document.querySelector('.switcherImg');
         const language = document.querySelector('.language');
@@ -227,13 +228,13 @@ document.addEventListener("DOMContentLoaded", function () {
         manu_icon_open.addEventListener('click', toggleAlertTheme);
         darkOpen.addEventListener('click', toggleAlertTheme);
 
-        languageImg.addEventListener('click', () => {
+        languageBox.addEventListener('click', () => {
             language.classList.toggle('noneDisplay');
             switcherBox.classList.add('noneDisplay');
             callBox.classList.add('noneDisplay');
         });
 
-        switcherImg.addEventListener('click', () => {
+        switcher.addEventListener('click', () => {
             switcherBox.classList.toggle('noneDisplay');
             language.classList.add('noneDisplay');
             callBox.classList.add('noneDisplay');
@@ -529,6 +530,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const summary = document.querySelectorAll('.description_content');
                 const rotate = document.querySelectorAll('.rotateImg');
                 const description = document.querySelectorAll('.description');
+
                 summary.forEach(cost => {
                     if (switcherHeader.classList.contains('switcher_dark')) {
                         cost.classList.add('switcher_dark');
