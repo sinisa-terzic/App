@@ -23,7 +23,7 @@
         "category_9": "Poslastice"
     },
     "cat1": {
-        "details": "Opis kategorije",
+        "details": "Hladna predjela sadrži:",
         "description": "&#9642; SR U hladna predjela se nalazi domaći pršut, domaći sir, slana riba i ... još mnogo toga ...",
         "translations": [
             {
@@ -90,7 +90,7 @@
         ]
     },
     "cat2": {
-        "details": "Opis kategorije",
+        "details": "Specijaliteti od povrća sadrži:",
         "description": "&#9642; SR Specijaliteti od povrća ubrajaju paprike, tikvice, patlidžan, šargarepu i ... ... još mnogo toga ... ... još mnogo toga ...",
         "translations": [
             {
@@ -156,7 +156,7 @@
         ]
     },
     "cat3": {
-        "details": "Opis kategorije",
+        "details": "Salate i prilozi sadrži:",
         "description": "&#9642; SR Salate i prilozi: masline, paradajz, krompir, kupus ...",
         "translations": [
             {
@@ -222,7 +222,7 @@
         ]
     },
     "cat4": {
-        "details": "Opis kategorije",
+        "details": "Morski specijaliteti sadrži:",
         "description": "&#9642; SR riba, lignje, hobotnica, školje, bakalar ...",
         "translations": [
             {
@@ -288,7 +288,7 @@
         ]
     },
     "cat5": {
-        "details": "Opis kategorije",
+        "details": "Karta vina sadrži:",
         "description": "&#9642; SR crno, rose, bijelo ...",
         "translations": [
             {
@@ -354,7 +354,7 @@
         ]
     },
     "cat6": {
-        "details": "Opis kategorije",
+        "details": "Žestoka pića sadrži:",
         "description": "&#9642; SR loza, viljamovka, vodtka, viski, likeri ...",
         "translations": [
             {
@@ -420,7 +420,7 @@
         ]
     },
     "cat7": {
-        "details": "Opis kategorije",
+        "details": "Bezalkoholna pića sadrži:",
         "description": "&#9642; SR kafa, čaj, bezalkoholna pića, pivo, voda ...",
         "translations": [
             {
@@ -486,7 +486,7 @@
         ]
     },
     "cat8": {
-        "details": "Opis kategorije",
+        "details": "Ugovorene grupe sadrži:",
         "description": "&#9642; SR meni za ugovorene grupe",
         "translations": [
             {
@@ -552,7 +552,7 @@
         ]
     },
     "cat9": {
-        "details": "Opis kategorije",
+        "details": "Poslastice sadrži:",
         "description": "&#9642; SR voćni, čokoladni, slani kolači ...",
         "translations": [
             {
