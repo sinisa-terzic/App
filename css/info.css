@@ -27,7 +27,7 @@
     display: none;
     position: absolute;
     left: 4vw;
-    bottom: 8vw;
+    bottom: 9vw;
     font-size: 4.5vw;
     background-color: white;
     border-top-right-radius: 5vw;
@@ -126,23 +126,6 @@
         opacity: 0.6;
     }
 }
-
-/* @keyframes pulse {
-    0% {
-        transform: scale(0.1);
-        opacity: 0.1;
-    }
-
-    70% {
-        transform: scale(1);
-        opacity: 0.6;
-    }
-
-    100% {
-        transform: scale(0.98);
-        opacity: 0.5;
-    }
-} */
 
 .arrows {
     width: 10vw;
