@@ -875,4 +875,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
+
+
+    // Funkcija za postavljanje vremena postavljanja podataka
+    function setLocalStorageWithTimestamp() {
+        const now = new Date();
+        localStorage.setItem('timestamp', now.getTime());
+    }
+
+    // Funkcija za proveru vremena pri učitavanju stranice
+    function checkLocalStorageExpiry() {
+        const timestamp = localStorage.getItem('timestamp');
+        const now = new Date();
+
+        // Ako timestamp ne postoji, ne radite ništa
+        if (!timestamp) {
+            return;
+        }
+
+        const timeDifference = now.getTime() - timestamp;
+        const minutesDifference = timeDifference / (1000 * 60);
+
+        // Ako je prošlo više od 1 minuta, obrišite localStorage
+        if (minutesDifference > 1) {
+            localStorage.clear();
+            location.reload()
+        }
+    }
+
+    // Postavljanje vremena postavljanja podataka pri prvom pozivu
+    if (!localStorage.getItem('timestamp')) {
+        setLocalStorageWithTimestamp();
+    }
+
+    // Provera vremena pri učitavanju stranice
+    checkLocalStorageExpiry();
+
+
+
 })
