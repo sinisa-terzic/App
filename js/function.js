@@ -894,10 +894,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         const timeDifference = now.getTime() - timestamp;
-        const minutesDifference = timeDifference / (1000 * 60);
+        const hoursDifference = timeDifference / (1000 * 60 * 60);
 
-        // Ako je prošlo više od 1 minuta, obrišite localStorage
-        if (minutesDifference > 1) {
+        // Ako je prošlo više od 12 sati, obrišite localStorage
+        if (hoursDifference > 12) {
             localStorage.clear();
             location.reload()
         }
