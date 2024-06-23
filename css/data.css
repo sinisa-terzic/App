@@ -26,13 +26,13 @@
 .prevData {
     transform: translateX(-100%) translateZ(0);
     transition: 0.2s all cubic-bezier(0.4, 0.0, 0.2, 1);
-    z-index: 1;
+    opacity: 0;
 }
 
 .nextData {
     transform: translateX(100%) translateZ(0);
     transition: 0.2s all cubic-bezier(0.4, 0.0, 0.2, 1);
-    z-index: 1;
+    opacity: 0;
 }
 
 .description_content {
